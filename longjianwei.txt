@@ -2,3 +2,4 @@ hello longjianwei
 longjianwei first git
 longjiawnei third
 longjianwei foust git
+git is distributed version 5
