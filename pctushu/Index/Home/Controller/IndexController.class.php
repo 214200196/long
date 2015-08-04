@@ -3,7 +3,8 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
-    	
+
+    	echo htmlspecialchars("alert('hello');");
     	$this->display();
     }
 }

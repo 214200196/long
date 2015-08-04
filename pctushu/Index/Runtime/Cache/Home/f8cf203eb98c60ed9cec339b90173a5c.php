@@ -153,9 +153,9 @@
         <button type="submit" class="btn btn-default">搜 索</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <li><a href="<?php echo U('Register/index');?>">注册</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">登入 <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -180,20 +180,20 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="image/qq2015.png" alt="">
+      <img src="/pctushu/Public/image/banner.jpg" alt="">
       <div class="carousel-caption">
        <!-- <p>有了新一代 802.11ac 技术，MacBook Air 令 Wi-Fi 速度超越极限。</p> -->
       </div>
     </div>
     
     <div class="item">
-      <img src="image/apic02.jpg" alt="">
+      <img src="/pctushu/Public/image/apic02.jpg" alt="">
       <div class="carousel-caption">
         <!-- <p>11 英寸 MacBook Air 充电一次可运行长达 9 小时，而 13 英寸机型则可运行长达 12 小时。</p> -->
       </div>
     </div>
         <div class="item">
-      <img src="image/apic03.jpg" alt="">
+      <img src="/pctushu/Public/image/apic03.jpg" alt="">
       <div class="carousel-caption">
         <!-- <p>无论是什么任务，配备 Intel HD Graphics 5000 图形处理器的第四代 Intel Core 处理器都能应对自如。</p> -->
       </div>
@@ -225,7 +225,7 @@
 		<div class="row">
 		  <div class="col-sm-6 col-md-4">
 		    <div  class="thumbnail" >
-		      <img src="image/apic12099.jpg" alt="...">
+		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
 		      <div class="caption">
 		        <h3>Thumbnail label</h3>
 		        <p>...</p>
@@ -238,7 +238,7 @@
 		<div class="row">
 		  <div class="col-sm-6 col-md-4">
 		    <div  class="thumbnail" >
-		      <img src="image/apic12099.jpg" alt="...">
+		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
 		      <div class="caption">
 		        <h3>Thumbnail label</h3>
 		        <p>...</p>
@@ -250,7 +250,7 @@
 		<div class="row">
 		  <div class="col-sm-6 col-md-4">
 		    <div  class="thumbnail" >
-		      <img src="image/apic12099.jpg" alt="...">
+		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
 		      <div class="caption">
 		        <h3>Thumbnail label</h3>
 		        <p>...</p>
@@ -262,7 +262,7 @@
 		<div class="row">
 		  <div class="col-sm-6 col-md-4">
 		    <div  class="thumbnail" >
-		      <img src="image/apic12099.jpg" alt="...">
+		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
 		      <div class="caption">
 		        <h3>Thumbnail label</h3>
 		        <p>...</p>
@@ -274,7 +274,7 @@
 		<div class="row">
 		  <div class="col-sm-6 col-md-4">
 		    <div  class="thumbnail" >
-		      <img src="image/apic12099.jpg" alt="...">
+		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
 		      <div class="caption">
 		        <h3>Thumbnail label</h3>
 		        <p>...</p>
@@ -286,7 +286,7 @@
 			<div class="row">
 		  <div class="col-sm-6 col-md-4">
 		    <div  class="thumbnail" >
-		      <img src="image/apic12099.jpg" alt="...">
+		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
 		      <div class="caption">
 		        <h3>Thumbnail label</h3>
 		        <p>...</p>
@@ -298,7 +298,7 @@
 			<div class="row">
 		  <div class="col-sm-6 col-md-4">
 		    <div  class="thumbnail" >
-		      <img src="image/apic12099.jpg" alt="...">
+		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
 		      <div class="caption">
 		        <h3>Thumbnail label</h3>
 		        <p>...</p>
@@ -310,7 +310,7 @@
 				<div class="row">
 		  <div class="col-sm-6 col-md-4">
 		    <div  class="thumbnail" >
-		      <img src="image/apic12099.jpg" alt="...">
+		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
 		      <div class="caption">
 		        <h3>Thumbnail label</h3>
 		        <p>...</p>
@@ -322,7 +322,7 @@
 				<div class="row">
 		  <div class="col-sm-6 col-md-4">
 		    <div  class="thumbnail" >
-		      <img src="image/apic12099.jpg" alt="...">
+		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
 		      <div class="caption">
 		        <h3>Thumbnail label</h3>
 		        <p>...</p>
@@ -334,7 +334,7 @@
 				<div class="row">
 		  <div class="col-sm-6 col-md-4">
 		    <div  class="thumbnail" >
-		      <img src="image/apic12099.jpg" alt="...">
+		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
 		      <div class="caption">
 		        <h3>Thumbnail label</h3>
 		        <p>...</p>
