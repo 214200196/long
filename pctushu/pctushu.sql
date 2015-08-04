@@ -13,30 +13,31 @@ CREATE  TABLE IF NOT EXISTS `pcbooks`.`book_user` (
   `email` VARCHAR(45) NOT NULL DEFAULT '' ,
   `passworld` VARCHAR(45) NOT NULL DEFAULT '' ,
   `name` VARCHAR(45) NOT NULL DEFAULT '' ,
-  `add_time` INT UNSIGNED NOT NULL ,
-  PRIMARY KEY (`id`) ,
-  UNIQUE INDEX `email` (`email` ASC) )
-ENGINE = MyISAM;
-
-
--- -----------------------------------------------------
--- Table `pcbooks`.`book_userinfo`
--- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `pcbooks`.`book_userinfo` (
-  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT ,
+  `add_time` INT UNSIGNED NOT NULL DEFAULT 0 ,
   `user_face` VARCHAR(60) NOT NULL DEFAULT '' ,
   `user_work` VARCHAR(30) NOT NULL DEFAULT '' ,
   `user_experience` INT UNSIGNED NOT NULL DEFAULT 0 ,
   `user_abstract` VARCHAR(150) NOT NULL DEFAULT '' ,
-  `uid` INT UNSIGNED NOT NULL ,
   PRIMARY KEY (`id`) ,
-  INDEX `uid` (`uid` ASC) ,
-  CONSTRAINT `fk_think_userinfo_think_user`
-    FOREIGN KEY (`uid` )
-    REFERENCES `pcbooks`.`book_user` (`id` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = MyISAM;
+  UNIQUE INDEX `email` (`email` ASC) )
+ENGINE = MyISAM
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
+
+-- -----------------------------------------------------
+-- Table `pcbooks`.`book_books_category`
+-- -----------------------------------------------------
+CREATE  TABLE IF NOT EXISTS `pcbooks`.`book_books_category` (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT ,
+  `category_name` VARCHAR(45) NOT NULL DEFAULT '' ,
+  `category_sort` TINYINT(5) UNSIGNED NOT NULL DEFAULT 0 ,
+  `pid` SMALLINT(5) UNSIGNED NOT NULL DEFAULT 0 ,
+  PRIMARY KEY (`id`) ,
+  INDEX `category_name` (`category_name` ASC) )
+ENGINE = MyISAM
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
@@ -49,34 +50,24 @@ CREATE  TABLE IF NOT EXISTS `pcbooks`.`book_books_list` (
   `add_time` INT UNSIGNED NOT NULL DEFAULT 0 ,
   `books_face` VARCHAR(60) NOT NULL DEFAULT '' ,
   `uid` INT UNSIGNED NOT NULL ,
+  `category_id` INT UNSIGNED NOT NULL ,
   PRIMARY KEY (`id`) ,
   INDEX `uid` (`uid` ASC) ,
   UNIQUE INDEX `books_name` (`books_name` ASC) ,
+  INDEX `category_id` (`category_id` ASC) ,
   CONSTRAINT `fk_book_books_list_book_user1`
     FOREIGN KEY (`uid` )
     REFERENCES `pcbooks`.`book_user` (`id` )
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = MyISAM;
-
-
--- -----------------------------------------------------
--- Table `pcbooks`.`book_books_category`
--- -----------------------------------------------------
-CREATE  TABLE IF NOT EXISTS `pcbooks`.`book_books_category` (
-  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT ,
-  `category_name` VARCHAR(45) NOT NULL DEFAULT '' ,
-  `category_sort` TINYINT(5) UNSIGNED NOT NULL DEFAULT 0 ,
-  `pid` SMALLINT(5) UNSIGNED NOT NULL DEFAULT 0 ,
-  `books_id` INT UNSIGNED NOT NULL ,
-  PRIMARY KEY (`id`) ,
-  INDEX `books_id` (`books_id` ASC) ,
-  CONSTRAINT `fk_book_books_category_book_books_list1`
-    FOREIGN KEY (`books_id` )
-    REFERENCES `pcbooks`.`book_books_list` (`id` )
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_book_books_list_book_books_category1`
+    FOREIGN KEY (`category_id` )
+    REFERENCES `pcbooks`.`book_books_category` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = MyISAM;
+ENGINE = MyISAM
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
@@ -96,7 +87,9 @@ CREATE  TABLE IF NOT EXISTS `pcbooks`.`book_books_content` (
     REFERENCES `pcbooks`.`book_books_list` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = MyISAM;
+ENGINE = MyISAM
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
@@ -114,7 +107,9 @@ CREATE  TABLE IF NOT EXISTS `pcbooks`.`book_content_category` (
     REFERENCES `pcbooks`.`book_books_content` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = MyISAM;
+ENGINE = MyISAM
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 -- -----------------------------------------------------
@@ -122,8 +117,11 @@ ENGINE = MyISAM;
 -- -----------------------------------------------------
 CREATE  TABLE IF NOT EXISTS `pcbooks`.`book_follow` (
   `uid` INT UNSIGNED NOT NULL ,
-  `books_id` INT UNSIGNED NOT NULL )
-ENGINE = MyISAM;
+  `books_id` INT UNSIGNED NOT NULL ,
+  INDEX `uid` (`uid` ASC) )
+ENGINE = MyISAM
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 
