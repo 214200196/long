@@ -61,12 +61,13 @@
 }
 .yanzhengma{
   float: left;
-  margin-top: 20px;
   width: 150px;
   margin-left: 10px;
-  height: 50px;
   border: 1px solid #3C763D;
   border-radius: 5px;
+  margin-top: 20px;
+  height: 50px;
+
 }
 
 
@@ -106,8 +107,9 @@
 <script type="text/javascript">
   var verifyurl="{:U('verify')}";
   var asynemail="{:U('asynemail')}";
+  var asynverify="{:U('asynverify')}";
 </script>
-
+<!-- {$Verifys|dump} -->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
 
@@ -179,7 +181,7 @@
       <label class="control-label" for="inputError2"></label>
         <div class="input-group">
             <span class="input-group-addon">密&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp码&nbsp<b class="glyphicon glyphicon-lock"></b></span>
-            <input type="text" class="form-control" id="pwd" aria-describedby="inputError2Status" name="pwd">
+            <input type="password" class="form-control" id="pwd" aria-describedby="inputError2Status" name="pwd">
         </div>
       <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
     </div>
@@ -188,7 +190,7 @@
       <label class="control-label" for="inputError2"></label>
         <div class="input-group">
           <span class="input-group-addon">重复密码&nbsp<b class="glyphicon glyphicon-lock"></b></span>
-          <input type="text" class="form-control" id="pwded" aria-describedby="inputError2Status" name="pwded">
+          <input type="password" class="form-control" id="pwded" aria-describedby="inputError2Status" name="pwded">
         </div>
       <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
     </div>
@@ -203,17 +205,18 @@
     </div>
 
      <div class="yanzhengma-list">
-          <div class="form-group  has-feedback">
-            <label class="control-label" for="inputSuccess2"></label>
-              <div class="input-group">
-                <span class="input-group-addon">&nbsp验&nbsp证&nbsp码&nbsp<b class="glyphicon glyphicon-barcode"></b></span>
-                <input type="text" class="form-control" id="verify" aria-describedby="inputError2Status" name="verify">
-              </div>
-            <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
-          </div>
-      </div>
+        <div class="form-group  has-feedback">
+          <label class="control-label" for="inputError2"></label>
+            <div class="input-group">
+              <span class="input-group-addon">&nbsp验&nbsp证&nbsp码&nbsp<b class="glyphicon glyphicon-barcode"></b></span>
+              <input type="text" class="form-control" id="verify" aria-describedby="inputError2Status" name="verify"/>
+            </div>
+          <span class="glyphicon  form-control-feedback" id="verifyok" aria-hidden="true"></span>
+        </div>
+    </div>
     <div class="yanzhengma"><img id ="yanzhengma" src="{:U('Register/verify')}" style="height:45px;width:145px;border-radius:5px;"></div>
-    <input type="submit" class="btn btn-success" value="提交注册"/>
+
+    <input type="submit" id="submit" class="btn btn-success" value="提交注册"/>
 </div>
 </form>
 

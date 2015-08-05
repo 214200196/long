@@ -4,7 +4,7 @@ return array(
 	'DEFAULT_GROUP'     =>'Home',//默认分组
 	'URL_MODEL'          => '2', //URL模式
 	'URL_HTML_SUFFIX'=>'',   //伪静态
-    'SESSION_AUTO_START' => true, //是否开启session
+    //'SESSION_AUTO_START' => true, //是否开启session
     'URL_CASE_INSENSITIVE'=>true,//关闭大小写为true.忽略地址大小写
 
     'URL_ROUTER_ON'   => true, // 开启路由

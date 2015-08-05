@@ -18,6 +18,9 @@ CREATE  TABLE IF NOT EXISTS `pcbooks`.`book_user` (
   `user_work` VARCHAR(30) NOT NULL DEFAULT '' ,
   `user_experience` INT UNSIGNED NOT NULL DEFAULT 0 ,
   `user_abstract` VARCHAR(150) NOT NULL DEFAULT '' ,
+  `client_id` VARCHAR(45) NOT NULL DEFAULT '' ,
+  `today_visitor` TINYINT(5) NOT NULL DEFAULT 0 ,
+  `count_visitor` INT NOT NULL DEFAULT 0 ,
   PRIMARY KEY (`id`) ,
   UNIQUE INDEX `email` (`email` ASC) )
 ENGINE = MyISAM
@@ -76,7 +79,7 @@ COLLATE = utf8_general_ci;
 CREATE  TABLE IF NOT EXISTS `pcbooks`.`book_books_content` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT ,
   `acticle_name` VARCHAR(45) NOT NULL DEFAULT '' ,
-  `key_word` VARCHAR(120) NOT NULL DEFAULT '' ,
+  `key_word` VARCHAR(255) NOT NULL DEFAULT '' ,
   `acticle_content` LONGTEXT NOT NULL ,
   `add_time` INT UNSIGNED NOT NULL DEFAULT 0 ,
   `books_id` INT UNSIGNED NOT NULL ,
