@@ -38,8 +38,7 @@
    
 .register{
   width: 500px;
-  height: 720px;
-  margin: 50px auto 50px auto;
+  margin: 150px auto 300px auto;
 }
 .input-group, .input-group input{
   height: 50px;
@@ -50,10 +49,10 @@
 
 .btn-success{
   width: 500px;
-  margin-top: 40px;
   height: 50px;
   font-weight: bold;
 }
+
 
 .yanzhengma-list{
   float: left;
@@ -67,6 +66,18 @@
   border-radius: 5px;
   margin-top: 20px;
   height: 50px;
+
+}
+
+.checkbox label{
+  margin-top: 20px;
+  height: 50px;
+  width: 500px;
+}
+.checkbox label input{
+  margin-top: 0px;
+  height: 20px;
+  width: 20px;
 
 }
 
@@ -97,7 +108,6 @@
     	margin-left: 40px;
     	padding-top: 5px;
     	color: #Fff;
-
     }
 </style>
 
@@ -106,10 +116,9 @@
 
 <script type="text/javascript">
   var verifyurl="<?php echo U('verify');?>";
-  var asynemail="<?php echo U('asynemail');?>";
   var asynverify="<?php echo U('asynverify');?>";
 </script>
-<!-- <?php echo (dump($Verifys)); ?> -->
+
 <nav class="navbar navbar-default">
   <div class="container-fluid">
 
@@ -150,66 +159,61 @@
         <button type="submit" class="btn btn-default">搜 索</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="<?php echo U('Register/Index');?>">注册</a></li>
-        <li><a href="<?php echo U('Login/Index');?>">登入</a></li>
+          <?php if($_SESSION['uid']): ?><li><a href="<?php echo U('Member/index');?>">个人中心</a></li>
+            <li><a href="<?php echo U('Login/loginOut');?>">退出</a></li>
+          <?php else: ?>
+            <li><a href="<?php echo U('Register/Index');?>">注册</a></li>
+            <li><a href="<?php echo U('Login/Index');?>">登入</a></li><?php endif; ?>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="register">
-<form action="<?php echo U('CheckRegister');?>" method="POST">
-    <div class="form-group  has-feedback">
-      <label class="control-label" for="inputError2"></label>
-        <div class="input-group">
-          <span class="input-group-addon">电子邮箱&nbsp<b class="glyphicon glyphicon-envelope"></b></span>
-          <input type="text" class="form-control" id="email" aria-describedby="inputError2Status" name="email">
+<form action="<?php echo U('CheckLogin');?>" method="POST">
+  <div class="register">
+        <div class="form-group  has-feedback">
+          <label class="control-label" for="inputSuccess2"></label>
+            <div class="input-group">
+            <span class="input-group-addon">电子邮箱&nbsp<b class="glyphicon glyphicon-envelope"></b></span>
+            <input type="text" class="form-control" id="email" name="email" aria-describedby="inputError2Status">
+          </div>
+          <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
         </div>
-      <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-    </div>
 
-    <div class="form-group  has-feedback">
-      <label class="control-label" for="inputError2"></label>
-        <div class="input-group">
-            <span class="input-group-addon">密&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp码&nbsp<b class="glyphicon glyphicon-lock"></b></span>
-            <input type="password" class="form-control" id="pwd" aria-describedby="inputError2Status" name="pwd">
-        </div>
-      <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
-    </div>
 
-    <div class="form-group  has-feedback">
-      <label class="control-label" for="inputError2"></label>
-        <div class="input-group">
-          <span class="input-group-addon">重复密码&nbsp<b class="glyphicon glyphicon-lock"></b></span>
-          <input type="password" class="form-control" id="pwded" aria-describedby="inputError2Status" name="pwded">
+        <div class="form-group  has-feedback">
+          <label class="control-label" for="inputError2"></label>
+            <div class="input-group">
+              <span class="input-group-addon">&nbsp密&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp码&nbsp<b class="glyphicon glyphicon-lock"></b></span>
+              <input type="password" class="form-control" id="pwd" name="pwd" aria-describedby="inputError2Status">
+            </div>
+          <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
         </div>
-      <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
-    </div>
 
-    <div class="form-group  has-feedback">
-      <label class="control-label" for="inputSuccess2"></label>
-        <div class="input-group">
-          <span class="input-group-addon">用户昵称&nbsp<b class="glyphicon glyphicon-user"></b></span>
-          <input type="text" class="form-control" id="username" aria-describedby="inputError2Status" name="username">
-        </div>
-      <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
-    </div>
+
 
      <div class="yanzhengma-list">
         <div class="form-group  has-feedback">
           <label class="control-label" for="inputError2"></label>
             <div class="input-group">
               <span class="input-group-addon">&nbsp验&nbsp证&nbsp码&nbsp<b class="glyphicon glyphicon-barcode"></b></span>
-              <input type="text" class="form-control" id="verify" aria-describedby="inputError2Status" name="verify"/>
+              <input type="text" class="form-control" id="verify" name = "verify" aria-describedby="inputError2Status"/>
             </div>
           <span class="glyphicon  form-control-feedback" id="verifyok" aria-hidden="true"></span>
         </div>
     </div>
-    <div class="yanzhengma"><img id ="yanzhengma" src="<?php echo U('Register/verify');?>" style="height:45px;width:145px;border-radius:5px;"></div>
+    <div class="yanzhengma"><img id ="yanzhengmas" src="<?php echo U('Register/verify');?>" style="height:45px;width:145px;border-radius:5px;"></div>
 
-    <input type="submit" id="submit" class="btn btn-success" value="提交注册"/>
-</div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"/>&nbsp&nbsp下次自动登入
+        </label>
+      </div>
+       
+        <button type="submit" id="submit" class="btn btn-success">登&nbsp&nbsp入</button>
+  </div>
 </form>
+
 
 
 <div id="footer" >
@@ -247,7 +251,7 @@
 	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 	<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-  <script src="/pctushu/Public/js/validata.js"></script>
+  <script src="/pctushu/Public/js/login.js"></script>
 
 </body>
 </html>

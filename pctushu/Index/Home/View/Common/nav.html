@@ -1,0 +1,51 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{:U('Index/Index')}">PC图书</a>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">图书库<span class="sr-only">(current)</span></a></li>
+        <li class=""><a href="#">计 划<span class="sr-only">(current)</span></a></li>
+        <li class=""><a href="#">社 区<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">手 册</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">图书导航<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="书籍名称">
+        </div>
+        <button type="submit" class="btn btn-default">搜 索</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+          <if condition="$_SESSION['uid']">
+            <li><a href="{:U('Member/index')}">个人中心</a></li>
+            <li><a href="{:U('Login/loginOut')}">退出</a></li>
+          <else/>
+            <li><a href="{:U('Register/Index')}">注册</a></li>
+            <li><a href="{:U('Login/Index')}">登入</a></li>
+          </if>
+      </ul>
+    </div>
+  </div>
+</nav>

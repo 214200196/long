@@ -1,7 +1,7 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class RegisterController extends Controller {
+class RegisterController extends CommonController {
     public function index(){
     	//dump($_GET);
     	$this->display();
@@ -26,7 +26,13 @@ class RegisterController extends Controller {
     	if(!$db->create()){
     		exit($db->getError());
     	}
-    	p($db->create());
+    	if($uid=$db->add()){
+    		// 将用户注册成功后ID 注册到session中
+    		session('uid',$uid);
+    		$this->success("注册成功,正在为你跳转.....",U('Index/Index'));
+    	}else{
+    		$this->error("注册失败，请重试！");
+    	}
     }
 
     // 异步检测用户名是否存在

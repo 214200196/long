@@ -35,41 +35,37 @@
 	.navbar-collapse{
 		padding-top:5px; 
 	}
+
    
-.register{
-  width: 500px;
-  height: 720px;
-  margin: 50px auto 50px auto;
+.edit-main{
+  width: 600px;
+  height: 650px;
+  margin:100px auto; 
 }
-.input-group, .input-group input{
-  height: 50px;
+
+.edit-main-title{
+  margin: 40px auto;
 }
-.form-control-feedback{
-  margin-top: 8px;
+
+.edit-main-title input{
+  width: 600px;
+}
+
+.select-box{
+  margin: 40px auto;
+}
+
+.select-box select{
+  height: 35px;
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 
 .btn-success{
-  width: 500px;
-  margin-top: 40px;
-  height: 50px;
   font-weight: bold;
-}
-
-.yanzhengma-list{
-  float: left;
-  width: 300px;
-}
-.yanzhengma{
-  float: left;
-  width: 150px;
-  margin-left: 10px;
-  border: 1px solid #3C763D;
-  border-radius: 5px;
   margin-top: 20px;
-  height: 50px;
-
 }
-
 
 
 
@@ -100,16 +96,9 @@
 
     }
 </style>
-
 </head>
 <body>
 
-<script type="text/javascript">
-  var verifyurl="<?php echo U('verify');?>";
-  var asynemail="<?php echo U('asynemail');?>";
-  var asynverify="<?php echo U('asynverify');?>";
-</script>
-<!-- <?php echo (dump($Verifys)); ?> -->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
 
@@ -150,67 +139,56 @@
         <button type="submit" class="btn btn-default">搜 索</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="<?php echo U('Register/Index');?>">注册</a></li>
-        <li><a href="<?php echo U('Login/Index');?>">登入</a></li>
+          <?php if($_SESSION['uid']): ?><li><a href="<?php echo U('Member/index');?>">个人中心</a></li>
+            <li><a href="<?php echo U('Login/loginOut');?>">退出</a></li>
+          <?php else: ?>
+            <li><a href="<?php echo U('Register/Index');?>">注册</a></li>
+            <li><a href="<?php echo U('Login/Index');?>">登入</a></li><?php endif; ?>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="register">
-<form action="<?php echo U('CheckRegister');?>" method="POST">
-    <div class="form-group  has-feedback">
-      <label class="control-label" for="inputError2"></label>
-        <div class="input-group">
-          <span class="input-group-addon">电子邮箱&nbsp<b class="glyphicon glyphicon-envelope"></b></span>
-          <input type="text" class="form-control" id="email" aria-describedby="inputError2Status" name="email">
-        </div>
-      <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-    </div>
 
-    <div class="form-group  has-feedback">
-      <label class="control-label" for="inputError2"></label>
-        <div class="input-group">
-            <span class="input-group-addon">密&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp码&nbsp<b class="glyphicon glyphicon-lock"></b></span>
-            <input type="password" class="form-control" id="pwd" aria-describedby="inputError2Status" name="pwd">
-        </div>
-      <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
-    </div>
 
-    <div class="form-group  has-feedback">
-      <label class="control-label" for="inputError2"></label>
-        <div class="input-group">
-          <span class="input-group-addon">重复密码&nbsp<b class="glyphicon glyphicon-lock"></b></span>
-          <input type="password" class="form-control" id="pwded" aria-describedby="inputError2Status" name="pwded">
-        </div>
-      <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
-    </div>
+<div class="edit-main">
+  <div class="edit-main-title">
+    <label>图书名称 </label>
+    <input type="text" class="form-control" placeholder="请输入图书名称">
+  </div>
 
-    <div class="form-group  has-feedback">
-      <label class="control-label" for="inputSuccess2"></label>
-        <div class="input-group">
-          <span class="input-group-addon">用户昵称&nbsp<b class="glyphicon glyphicon-user"></b></span>
-          <input type="text" class="form-control" id="username" aria-describedby="inputError2Status" name="username">
-        </div>
-      <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
-    </div>
 
-     <div class="yanzhengma-list">
-        <div class="form-group  has-feedback">
-          <label class="control-label" for="inputError2"></label>
-            <div class="input-group">
-              <span class="input-group-addon">&nbsp验&nbsp证&nbsp码&nbsp<b class="glyphicon glyphicon-barcode"></b></span>
-              <input type="text" class="form-control" id="verify" aria-describedby="inputError2Status" name="verify"/>
-            </div>
-          <span class="glyphicon  form-control-feedback" id="verifyok" aria-hidden="true"></span>
-        </div>
-    </div>
-    <div class="yanzhengma"><img id ="yanzhengma" src="<?php echo U('Register/verify');?>" style="height:45px;width:145px;border-radius:5px;"></div>
+  <div class="select-box">
+  <select class="selectpicker" id="topselect">
+    <?php if(is_array($cateList)): foreach($cateList as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["category_name"]); ?></option><?php endforeach; endif; ?>
+  </select>
 
-    <input type="submit" id="submit" class="btn btn-success" value="提交注册"/>
+  <select class="selectpicker hidden">
+    <optgroup label="Picnic">
+      <option>Mustard</option>
+      <option>Ketchup</option>
+      <option>Relish</option>
+    </optgroup>
+    <optgroup label="Camping">
+      <option>Tent</option>
+      <option>Flashlight</option>
+      <option>Toilet Paper</option>
+    </optgroup>
+  </select>
+
+
+  </div>
+
+     <div class="form-group">
+        <label for="exampleInputFile">选择封面图片</label>
+        <input type="file" id="exampleInputFile">
+        <p class="help-block">Example block-level help text here.</p>
+      </div>
+   
+
+    <button type="button" class="btn btn-success">上 传 图 书</button>
+
 </div>
-</form>
-
 
 <div id="footer" >
     <div class="waper">
@@ -247,7 +225,9 @@
 	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 	<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-  <script src="/pctushu/Public/js/validata.js"></script>
+  <script src="/pctushu/Public/js/addbooks.js"></script>
+
+
 
 </body>
 </html>
