@@ -44,15 +44,24 @@
 }
 
 .edit-main-title{
-  margin: 40px auto;
+  margin: 80px auto;
 }
 
 .edit-main-title input{
-  width: 600px;
+  float: left;
+  width: 550px;
+}
+.glyphicon{
+  font-size: 30px;
+  color:red; 
+  float: right;
+}
+.greencolor{
+  color:#5cb85c;
 }
 
 .select-box{
-  margin: 40px auto;
+  margin: 80px auto 40px auto;
 }
 
 .select-box select{
@@ -64,7 +73,7 @@
 
 .btn-success{
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 
@@ -151,44 +160,36 @@
 
 
 
+<form action="<?php echo U('addBooks');?>" enctype="multipart/form-data" method="POST">
 <div class="edit-main">
-  <div class="edit-main-title">
-    <label>图书名称 </label>
-    <input type="text" class="form-control" placeholder="请输入图书名称">
-  </div>
+    <div class="edit-main-title">
+      <label>图书名称</label>
+      <input type="text" class="form-control" name="booksname" id ="booksname"placeholder="请输入图书名称"/>
+      <span class="glyphicon "></span>
+    </div>
+    <div class="select-box">
+      <select class="selectpicker" name="firstcate" id="topselect">
+        <option>请选择分类</option>
+        <?php if(is_array($cateList)): foreach($cateList as $key=>$v): ?><option  value="<?php echo ($v["id"]); ?>"><?php echo ($v["category_name"]); ?></option><?php endforeach; endif; ?>
+      </select>
 
+      <select class="selectpicker" name="secendcate" id="midselect">
+          
+      </select>
 
-  <div class="select-box">
-  <select class="selectpicker" id="topselect">
-    <?php if(is_array($cateList)): foreach($cateList as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["category_name"]); ?></option><?php endforeach; endif; ?>
-  </select>
+      <select class="selectpicker"name="thirdcate" id="botselect">
 
-  <select class="selectpicker hidden">
-    <optgroup label="Picnic">
-      <option>Mustard</option>
-      <option>Ketchup</option>
-      <option>Relish</option>
-    </optgroup>
-    <optgroup label="Camping">
-      <option>Tent</option>
-      <option>Flashlight</option>
-      <option>Toilet Paper</option>
-    </optgroup>
-  </select>
+      </select>
+      <span id="selectif" class="glyphicon"></span>
 
-
-  </div>
-
-     <div class="form-group">
-        <label for="exampleInputFile">选择封面图片</label>
-        <input type="file" id="exampleInputFile">
-        <p class="help-block">Example block-level help text here.</p>
+    </div>
+       <div class="form-group">
+          <label for="exampleInputFile">选择封面图片</label>
+          <input type="file" id="exampleInputFile" name="photo"/>
       </div>
-   
-
-    <button type="button" class="btn btn-success">上 传 图 书</button>
-
+      <button type="submit" id="submit" class="btn btn-success">上 传 图 书</button>
 </div>
+</form>
 
 <div id="footer" >
     <div class="waper">
@@ -219,6 +220,10 @@
     </div>
 </div>
 
+
+  <script type="text/javascript">
+      var getcate="U('getCate')";  
+  </script>
 
 	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 	<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>

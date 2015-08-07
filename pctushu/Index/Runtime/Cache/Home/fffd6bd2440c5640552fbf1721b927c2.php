@@ -150,8 +150,11 @@
         <button type="submit" class="btn btn-default">搜 索</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="<?php echo U('Register/Index');?>">注册</a></li>
-        <li><a href="<?php echo U('Login/Index');?>">登入</a></li>
+          <?php if($_SESSION['uid']): ?><li><a href="<?php echo U('Member/index');?>">个人中心</a></li>
+            <li><a href="<?php echo U('Login/loginOut');?>">退出</a></li>
+          <?php else: ?>
+            <li><a href="<?php echo U('Register/Index');?>">注册</a></li>
+            <li><a href="<?php echo U('Login/Index');?>">登入</a></li><?php endif; ?>
       </ul>
     </div>
   </div>

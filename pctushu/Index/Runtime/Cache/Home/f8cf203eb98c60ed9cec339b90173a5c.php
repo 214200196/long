@@ -123,7 +123,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">PC图书</a>
+      <a class="navbar-brand" href="<?php echo U('Index/Index');?>">PC图书</a>
     </div>
 
 
@@ -153,17 +153,11 @@
         <button type="submit" class="btn btn-default">搜 索</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="<?php echo U('Register/index');?>">注册</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">登入 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
+          <?php if($_SESSION['uid']): ?><li><a href="<?php echo U('Member/index');?>">个人中心</a></li>
+            <li><a href="<?php echo U('Login/loginOut');?>">退出</a></li>
+          <?php else: ?>
+            <li><a href="<?php echo U('Register/Index');?>">注册</a></li>
+            <li><a href="<?php echo U('Login/Index');?>">登入</a></li><?php endif; ?>
       </ul>
     </div>
   </div>
