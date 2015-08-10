@@ -33,6 +33,8 @@ $(function(){
 			if(!status){
 				msg="该邮箱已注册";
 				label.html(msg);
+				label.parent().removeClass("has-success");
+				$(this).parent().next().removeClass("glyphicon-ok");
 				label.parent().addClass("has-error");
 				$(this).parent().next().addClass("glyphicon-remove");
 				return false;

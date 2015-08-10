@@ -1,114 +1,12 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-	<title></title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<style>
-
-  body a{
-    color: #444444;
-    text-decoration:none;
-    cursor: pointer;
-  }
-  body a:hover{
-    text-decoration: none;
-  }
-
-	.navbar-default{
-		height: 60px;
-		margin-bottom: 0px;
-		border-radius: 0px;
-		border:none;
-		background: #101010
-	}
-	.container-fluid{
-		height: 60px;
-	}
-	.navbar-header{
-		padding-top:5px;
-		width: 100px;
-	}
-	.navbar-brand{
-		padding-left: 25px;
-	}
-	.navbar-collapse{
-		padding-top:5px; 
-	}
-    .carousel{
-        height:250px;
-    }
-    .carousel p{
-    	color:red;
-    }
-    .carousel .item{
-        height:250px;
-    }
-    .carousel .item img{
-    	margin-top: 0px;
-        width:100%;
-    }
-
-    .thumbnail{
-      width:191px;
-      padding-top: 8px;
-      margin-left: 4px;
-      margin-right: 4px;
-      border-radius:0px; 
-      border: 0px;
-    }
-    .row{
-      float:left;
-    }
-    .nav-tabs{
-      width:1200px;
-    }
-    .bookslist{
-      width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 5px;
-    }
-    .bookslist-list{
-      border: 1px solid #ccc;
-      border-top:0px;
-      width:1200px;
-      height:auto;
-      min-height:700px; 
-    }
-    .books-list-page{
-      width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .pagination{
-      margin-left: 460px;
-    }
-    #footer{
-    	width:100%;
-    	height: 100px;
-    	background: #101010;
-    }
-    .waper{
-    	width:1090px;
-    	height: 100px;
-    	margin-left: auto;
-    	margin-right: auto;
-    }
-    .footer_link li{
-    	float: left;
-    	list-style-type: none;
-    	margin-right: 20px;
-    	padding-top: 20px;
-    }
-    .copyright{
-    	float: left;
-    	margin-left: 40px;
-    	padding-top: 5px;
-    	color: #Fff;
-
-    }
-</style>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>会员中心</title>
+  <link rel="stylesheet" href="/pctushu/Public/css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="/pctushu/Public/css/index.css" type="text/css">
 
 </head>
 <body>
@@ -123,13 +21,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo U('Index/Index');?>">PC图书</a>
+      <a class="navbar-brand" href="<?php echo U('Index/index');?>">PC图书</a>
     </div>
 
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">图书库<span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="<?php echo U('Bookslist/index');?>">图书库<span class="sr-only">(current)</span></a></li>
         <li class=""><a href="#">计 划<span class="sr-only">(current)</span></a></li>
         <li class=""><a href="#">社 区<span class="sr-only">(current)</span></a></li>
         <li><a href="#">手 册</a></li>
@@ -162,6 +60,9 @@
     </div>
   </div>
 </nav>
+<script type="text/javascript">
+  var cid = <?php echo ($cid); ?>;
+</script>
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -206,138 +107,24 @@
 </div>
 
 <div class="bookslist">
-<ul class="nav nav-tabs">
-  <li role="presentation" class=""><a href="#">猜你喜欢<strong style="color:red;" class="glyphicon glyphicon-heart"></strong></a></li>
-  <li role="presentation" class="active"><a href="#">计算机</a></li>
-  <li role="presentation"><a href="#">经济</a></li>
-  <li role="presentation"><a href="#">英语</a></li>
-  <li role="presentation"><a href="#">文学</a></li>
-  <li role="presentation"><a href="#">医学</a></li>
-  <li role="presentation"><a href="#">小说</a></li>
-</ul>
-	<div class="bookslist-list">
-		<div class="row">
-		  <div class="col-sm-6 col-md-4">
-		    <div  class="thumbnail" >
-		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
-		      <div class="caption">
-		        <h3>Thumbnail label</h3>
-		        <p>...</p>
-		        <p><a href="#" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-
-		<div class="row">
-		  <div class="col-sm-6 col-md-4">
-		    <div  class="thumbnail" >
-		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
-		      <div class="caption">
-		        <h3>Thumbnail label</h3>
-		        <p>...</p>
-		        <p><a href="#" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart"></strong></a></p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-		<div class="row">
-		  <div class="col-sm-6 col-md-4">
-		    <div  class="thumbnail" >
-		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
-		      <div class="caption">
-		        <h3>Thumbnail label</h3>
-		        <p>...</p>
-		        <p><a href="#" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-		<div class="row">
-		  <div class="col-sm-6 col-md-4">
-		    <div  class="thumbnail" >
-		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
-		      <div class="caption">
-		        <h3>Thumbnail label</h3>
-		        <p>...</p>
-		        <p><a href="#" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-		<div class="row">
-		  <div class="col-sm-6 col-md-4">
-		    <div  class="thumbnail" >
-		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
-		      <div class="caption">
-		        <h3>Thumbnail label</h3>
-		        <p>...</p>
-		        <p><a href="#" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-			<div class="row">
-		  <div class="col-sm-6 col-md-4">
-		    <div  class="thumbnail" >
-		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
-		      <div class="caption">
-		        <h3>Thumbnail label</h3>
-		        <p>...</p>
-		        <p><a href="#" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-			<div class="row">
-		  <div class="col-sm-6 col-md-4">
-		    <div  class="thumbnail" >
-		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
-		      <div class="caption">
-		        <h3>Thumbnail label</h3>
-		        <p>...</p>
-		        <p><a href="#" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-				<div class="row">
-		  <div class="col-sm-6 col-md-4">
-		    <div  class="thumbnail" >
-		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
-		      <div class="caption">
-		        <h3>Thumbnail label</h3>
-		        <p>...</p>
-		        <p><a href="#" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-				<div class="row">
-		  <div class="col-sm-6 col-md-4">
-		    <div  class="thumbnail" >
-		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
-		      <div class="caption">
-		        <h3>Thumbnail label</h3>
-		        <p>...</p>
-		        <p><a href="#" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-				<div class="row">
-		  <div class="col-sm-6 col-md-4">
-		    <div  class="thumbnail" >
-		      <img src="/pctushu/Public/image/apic12099.jpg" alt="...">
-		      <div class="caption">
-		        <h3>Thumbnail label</h3>
-		        <p>...</p>
-		        <p><a href="#" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-	</div>
+  <ul class="nav nav-tabs" id="category-select">
+    <li role="presentation" class=""><a href="#">猜你喜欢<strong style="color:red;" class="glyphicon glyphicon-heart"></strong></a></li>
+    <?php if(is_array($topCate)): foreach($topCate as $key=>$v): ?><li role="presentation" class=""><a href="<?php echo U('index',array('cid'=>$v['id']));?>"><?php echo ($v["category_name"]); ?></a></li><?php endforeach; endif; ?>
+  </ul>
+  	<div class="bookslist-list">
+      <?php if(is_array($booksList)): foreach($booksList as $key=>$v): ?><div class="row">
+      		  <div class="col-sm-6 col-md-4">
+      		    <div  class="thumbnail" >
+      		      <img src="/pctushu/Uploads/mini/<?php echo ($v["books_face"]); ?>" alt="<?php echo ($v["books_name"]); ?>">
+      		      <div class="caption">
+      		        <h4><?php echo ($v["books_name"]); ?></h4>
+      		        <p><a style="color:#2e6da4" href="<?php echo U('Member/index',array('uid'=>$v['uid']));?>"><?php echo ($v["name"]); ?></a><span style="color:#888; font-size:10px;float:right;padding-top:3px;"><?php echo (date("Y-m-d",$v["add_time"])); ?></span></p>
+      		        <p><a href="<?php echo U('Books/index',array('bid'=>$v['id']));?>" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
+      		      </div>
+      		    </div>
+      		  </div>
+      		</div><?php endforeach; endif; ?>
+  	</div>
 </div>
 
 
@@ -385,9 +172,10 @@
 </div>
 
 
-	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-	<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-	<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+  <script src="/pctushu/Public/js/jquery-2.1.4.min.js"></script>
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="/pctushu/Public/js/bootstrap.min.js"></script>
+  <script src="/pctushu/Public/js/index.js"></script>
 </body>
 </html>

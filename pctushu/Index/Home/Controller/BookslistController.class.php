@@ -1,7 +1,7 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class IndexController extends CommonController {
+class BookslistController extends CommonController {
 	public function _initialize(){
 		// 数据缓存操作
 		if (S('topCateCache')) {
@@ -14,13 +14,8 @@ class IndexController extends CommonController {
    			S('topCateCache',$topCate,3600*24);
    			//echo "缓存测试";
 		}
-
-
-	}
-    public function index(){
-    	//echo htmlspecialchars("alert('hello');");
-   		//p($_SESSION['uid']);
-   		// 获取链接过来分类cid
+		
+		// 获取链接过来分类cid
    		isset($_GET['cid']) ? $this->cid = $_GET['cid'] : $this->cid = 1;
    		
    		// 获取子cid
@@ -63,9 +58,11 @@ class IndexController extends CommonController {
    		$booksList = D('BooksView')->where($where)->select();
    		
    		$this->booksList = $booksList;
-   		//p($booksList);
+
+	}
+
+    public function index(){
+
     	$this->display();
     }
-
-
 }

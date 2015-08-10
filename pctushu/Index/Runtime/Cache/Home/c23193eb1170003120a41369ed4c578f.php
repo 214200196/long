@@ -35,58 +35,92 @@
 	.navbar-collapse{
 		padding-top:5px; 
 	}
-   
-.register{
-  width: 500px;
-  margin: 150px auto 300px auto;
+
+    .book-content-top-box{
+    width: 100%;
+    background: #1F1E1E;
+  }
+  .book-content-top{
+    width: 1200px;
+    height: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .book-content-top span{
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .book-content-top span p{
+    font-size: 10px;
+    margin: 0px 5px 0px 5px;
+  }
+  .book-content-top span a{
+    color:#777;
+  }
+  .book-content-top span a:hover{
+    color:#ccc;
+  }
+
+.content-main{
+  width: 1200px;
+  margin: 0px auto;
 }
-.input-group, .input-group input{
-  height: 50px;
+
+.edit-left{
+  float: left;
+  width: 280px;
+  min-height: 600px;
+  height: auto;
+  background: #EDE8D5;
+  margin-right: 20px;
+  border-radius: 5px;
 }
-.form-control-feedback{
-  margin-top: 8px;
+
+.col-lg-6{
+  width: 280px;
+  margin: 20px auto;
 }
+
+.edit-main{
+  float: left;
+  width: 900px;
+  margin:20px auto; 
+}
+
+.edit-main-title{
+  margin: 20px auto;
+}
+
+.edit-main-title input{
+  width: 600px;
+  margin-bottom:25px; 
+}
+
+.select-box{
+  margin-bottom: 20px;
+}
+
+.select-box select{
+  height: 30px;
+  width: 150px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+
 
 .btn-success{
-  width: 500px;
-  height: 50px;
   font-weight: bold;
-}
-
-
-.yanzhengma-list{
-  float: left;
-  width: 300px;
-}
-.yanzhengma{
-  float: left;
-  width: 150px;
-  margin-left: 10px;
-  border: 1px solid #3C763D;
-  border-radius: 5px;
   margin-top: 20px;
-  height: 50px;
-
 }
-
-.checkbox label{
-  margin-top: 20px;
-  height: 50px;
-  width: 500px;
-}
-.checkbox label input{
-  margin-top: 0px;
-  height: 20px;
-  width: 20px;
-
-}
-
 
 
 
 
 
     #footer{
+      clear: both;
     	width:100%;
     	height: 100px;
     	background: #101010;
@@ -108,16 +142,19 @@
     	margin-left: 40px;
     	padding-top: 5px;
     	color: #Fff;
+
     }
 </style>
-
 </head>
 <body>
 
-<script type="text/javascript">
-  var verifyurl="<?php echo U('verify');?>";
-  var asynverify="<?php echo U('asynverify');?>";
-</script>
+  <script type="text/javascript">
+      var options ={
+        cssPath: '/css/index.css',
+        filterMode: true
+      };
+      var editor = k.create('textarea[name="content"]',options);
+  </script>
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -168,53 +205,59 @@
     </div>
   </div>
 </nav>
+<div class="book-content-top-box">
+  <div class="book-content-top">
+    <span><a>图书库<a><p class="glyphicon glyphicon-menu-right"></p><a>计算机<a><p class="glyphicon glyphicon-menu-right"></p><a>后台编程<a><p class="glyphicon glyphicon-menu-right"></p><a>PHP高级编程与设计<a></span>
+  </div>
+</div>
+<div class="content-main">
 
-<form action="<?php echo U('CheckLogin');?>" method="POST">
-  <div class="register">
-        <div class="form-group  has-feedback">
-          <label class="control-label" for="inputSuccess2"></label>
-            <div class="input-group">
-            <span class="input-group-addon">电子邮箱&nbsp<b class="glyphicon glyphicon-envelope"></b></span>
-            <input type="text" class="form-control" id="email" name="email" aria-describedby="inputError2Status">
+    <div class="edit-left">
+      
+        <div class="col-lg-6">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="请添加目录名称">
+            <span class="input-group-btn">
+              <button class="btn btn-primary" type="button">增加目录</button>
+            </span>
           </div>
-          <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
         </div>
+  </div>
 
 
-        <div class="form-group  has-feedback">
-          <label class="control-label" for="inputError2"></label>
-            <div class="input-group">
-              <span class="input-group-addon">&nbsp密&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp码&nbsp<b class="glyphicon glyphicon-lock"></b></span>
-              <input type="password" class="form-control" id="pwd" name="pwd" aria-describedby="inputError2Status">
-            </div>
-          <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
-        </div>
+    <div class="edit-main">
+      <label>选择目录</label>
+      <div class="select-box"> 
+        <select class="selectpicker">
+        <optgroup label="Picnic">
+          <option>Mustard</option>
+          <option>Ketchup</option>
+          <option>Relish</option>
+        </optgroup>
+        <optgroup label="Camping">
+          <option>Tent</option>
+          <option>Flashlight</option>
+          <option>Toilet Paper</option>
+        </optgroup>
+      </select>
+      </div>
 
+      <div class="edit-main-title">
+        <label>标题 </label>
+        <input type="text" class="form-control" placeholder="请输入文章标题">
+      </div>
 
-
-     <div class="yanzhengma-list">
-        <div class="form-group  has-feedback">
-          <label class="control-label" for="inputError2"></label>
-            <div class="input-group">
-              <span class="input-group-addon">&nbsp验&nbsp证&nbsp码&nbsp<b class="glyphicon glyphicon-barcode"></b></span>
-              <input type="text" class="form-control" id="verify" name = "verify" aria-describedby="inputError2Status"/>
-            </div>
-          <span class="glyphicon  form-control-feedback" id="verifyok" aria-hidden="true"></span>
-        </div>
-    </div>
-    <div class="yanzhengma"><img id ="yanzhengmas" src="<?php echo U('Register/verify');?>" style="height:45px;width:145px;border-radius:5px;"></div>
-
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"/>&nbsp&nbsp下次自动登入
-        </label>
+        <div class="edit-main-title">
+        <label>设置关键字 </label>
+        <input type="text" class="form-control" placeholder="请输入关键字">
       </div>
        
-        <button type="submit" id="submit" class="btn btn-success">登&nbsp&nbsp入</button>
-  </div>
-</form>
+        <textarea class="form-control" rows="16" id="editor_id" name="content" ></textarea>
 
+        <button type="button" class="btn btn-success">上 传 文 章</button>
+    </div>
 
+</div>
 
 <div id="footer" >
     <div class="waper">
@@ -251,7 +294,14 @@
 	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 	<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-  <script src="/pctushu/Public/js/login.js"></script>
+  <script type="text/javascript" src="/pctushu/editor/kindeditor.js"></script>
+  <script type="text/javascript" src="/pctushu/editor/lang/zh-CN.js"></script>
+ 
+  <script type="text/javascript">
+      KindEditor.ready(function(k){
+        window.editor=k.create('#editor_id');
+      });
+  </script>
 
 </body>
 </html>
