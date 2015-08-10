@@ -49,13 +49,13 @@
     margin-left: 5px;
   }
   .book-content-top span a{
-    color:#fff;
-  }
-  .book-content-top span a:hover{
     color:#ccc;
   }
-  .glyphicon-menu-right{
+  .book-content-top span a:hover{
     color:#fff;
+  }
+  .glyphicon-menu-right{
+    color:#ccc;
   }
 
   .book-content-box{
@@ -267,7 +267,7 @@
   <div class="book-content-top">
     <span><a href="<?php echo U('Bookslist/index');?>">图书库</a><p class="glyphicon glyphicon-menu-right"></p>
     <?php if(is_array($cateResult)): foreach($cateResult as $key=>$v): ?><a href="<?php echo U('Bookslist/index',array('cid'=>$v['id']));?>"><?php echo ($v["category_name"]); ?></a><p class="glyphicon glyphicon-menu-right"></p><?php endforeach; endif; ?>
-    <a>PHP高级编程与设计</a></span>
+    <a><?php echo ($booksInfo["books_name"]); ?></a></span>
   </div>
 </div>
 <div class="book-content-box">

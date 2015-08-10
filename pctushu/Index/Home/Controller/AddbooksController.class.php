@@ -137,7 +137,7 @@ class AddbooksController extends CommonController {
 
             $image1 = new \Think\Image(); 
             $image1->open($file_path);
-            $image1->thumb(220, 123)->save("./Uploads/middle/".$save_path);
+            $image1->thumb(350, 350)->save("./Uploads/middle/".$save_path);
 
             return $save_path;
 

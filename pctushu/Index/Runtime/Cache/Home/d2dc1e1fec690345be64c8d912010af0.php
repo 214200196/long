@@ -245,23 +245,10 @@
                     <div class="bd">
                         <ul class="">
                             <li class="course-nav-item on">
-                                <a href="/course/list">全部</a>
+                                <a href="">全部</a>
                             </li>
-                             <li class="course-nav-item">
-                                    <a href="" data-ct="fe">计算机</a>
-                                </li>
-                               <li class="course-nav-item">
-                                    <a href="" data-ct="be">经济</a>
-                                </li>
-                               <li class="course-nav-item">
-                                    <a href="" data-ct="mobile">外语</a>
-                                </li>
-                                 <li class="course-nav-item">
-                                 <a href="" data-ct="data">医学</a>
-                                </li>
-                                  <li class="course-nav-item">
-                                    <a href="" data-ct="photo">文学</a>
-                                </li>
+                            <?php if(is_array($topCate)): foreach($topCate as $key=>$v): ?><li class="course-nav-item"><a href="<?php echo U('index',array('cid'=>$v['id']));?>" data-ct="fe"><?php echo ($v["category_name"]); ?></a></li><?php endforeach; endif; ?>
+            
                           </ul>
                     </div>
                 </div>
@@ -270,23 +257,9 @@
                     <div class="bd">
                         <ul class="">
                             <li class="course-nav-item on">
-                                <a href="/course/list">全部</a>
+                                <a href="">全部</a>
                             </li>
-                             <li class="course-nav-item">
-                                    <a href="" data-ct="fe">前端开发</a>
-                                </li>
-                               <li class="course-nav-item">
-                                    <a href="" data-ct="be">后端开发</a>
-                                </li>
-                               <li class="course-nav-item">
-                                    <a href="" data-ct="mobile">移动开发</a>
-                                </li>
-                                 <li class="course-nav-item">
-                                 <a href="" data-ct="data">数据处理</a>
-                                </li>
-                                  <li class="course-nav-item">
-                                    <a href="" data-ct="photo">图像处理</a>
-                                </li>
+                            <?php if(is_array($secendCate)): foreach($secendCate as $key=>$v): ?><li class="course-nav-item"><a href="<?php echo U('index',array('cid'=>$v['id']));?>" data-ct="fe"><?php echo ($v["category_name"]); ?></a></li><?php endforeach; endif; ?>
                           </ul>
                     </div>
                 </div>
@@ -298,131 +271,13 @@
                              <li class="course-nav-item on">
                                 <a href="">全部</a>
                             </li>
-                               <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>      <li class="course-nav-item ">
-                                   <a href="" data-id=7 data-ct=fe>HTML/CSS</a>
-                              </li>
+                            <?php if(is_array($thirdCate)): foreach($thirdCate as $key=>$v): ?><li class="course-nav-item ">
+                                   <a href="<?php echo U('index',array('cid'=>$v['id']));?>" data-id=7 data-ct="fe"><?php echo ($v["category_name"]); ?></a>
+                              </li><?php endforeach; endif; ?>    
                         </ul>
                     </div>
                 </div>
-                <div class="course-nav-row clearfix">
-                    <span class="hd l">难度：</span>
-                    <div class="bd">
-                        <ul class="">
-                             <li class="course-nav-item  on">
-                                <a href="">全部</a>
-                            </li>
-                            <li class="course-nav-item ">
-                                <a href="">初级</a>
-                            </li>
-                             <li class="course-nav-item ">
-                                <a href="">中级</a>
-                            </li>
-                             <li class="course-nav-item ">
-                                <a href="">高级</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+
          </div>
      </div> 
 

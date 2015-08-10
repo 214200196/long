@@ -14,8 +14,25 @@ class BookslistController extends CommonController {
    			S('topCateCache',$topCate,3600*24);
    			//echo "缓存测试";
 		}
-		
-		// 获取链接过来分类cid
+
+		   isset($_GET['cid']) ? $this->cid = $_GET['cid'] : $this->cid = 1;
+         // 判断传过来分类id是否存在
+         $ifCate = M('books_category')->where(array('id'=>$this->cid))->select();
+         if(empty($ifCate)) $this->cid = 1; 
+
+         $allLikeCate=M('books_category')->where(array('pid_path'=>array('LIKE','%,'.$this->cid.'%')))->select();
+         //echo  M('books_category')->getLastSql();
+         //dump($allLikeCate);
+         if(count($allLikeCate)>1){
+            $oneCate = foreach_arr($allLikeCate,'id');
+         }else{
+            // 合并本身cid
+            $oneCate[] = $this->cid;
+         }
+         //dump($oneCate);
+
+         /*****************************逻辑也有点问题
+		  // 获取链接过来分类cid
    		isset($_GET['cid']) ? $this->cid = $_GET['cid'] : $this->cid = 1;
    		
    		// 获取子cid
@@ -27,7 +44,9 @@ class BookslistController extends CommonController {
    			$childCateThird = M("books_category")->where(array('pid' => array('IN',$oneCateSecend)))->select();
    			$oneCateThird  = foreach_arr($childCateThird,'id');
    			// 合并第二层子类和第三层子类下的图书
-   			$oneCate = array_merge($oneCateSecend, $oneCateThird); 
+            // 合并本身cid
+            $selfCid[]=$this->cid;
+            $oneCate = array_merge($oneCateSecend, $oneCateThird, $selfCid); 
    		}
 
    		// 如果不存在子类
@@ -47,21 +66,74 @@ class BookslistController extends CommonController {
 		   			$oneCateThird  = foreach_arr($childCateThird,'id');
 		   			// 合并第二层子类和第三层子类下的图书
 		   			$oneCate = array_merge($oneCateSecend, $oneCateThird); 
+                  // 合并本身cid
+                  $selfCid[]=$this->cid;
+                  $oneCate = array_merge($oneCateSecend, $oneCateThird, $selfCid); 
    				}
 
    			}
    		}
    		//echo count($oneCate);
    		//p($oneCate);
+         ********************************************************************************/
    		// 获取选中分类下的内容数据（即books_list表中cid的父id在$oneCate数组中）
    		$where = array ('category_id' => array ('IN',$oneCate));
    		$booksList = D('BooksView')->where($where)->select();
    		
    		$this->booksList = $booksList;
+     
 
 	}
 
-    public function index(){
+    public function index() {
+
+      // 获取顶部分类
+      $topCate = M('books_category')->where(array('pid'=>0))->field(array('id','category_name'))->select();
+      $this->topCate = $topCate;
+
+      isset($_GET['cid']) ? $this->cid = $_GET['cid'] : $this->cid = 1;
+      // 判断传过来分类id是否存在
+      $ifCate = M('books_category')->where(array('id'=>$this->cid))->select();
+      if(empty($ifCate)) $this->cid = 1; 
+      
+
+      $secendCate = M('books_category')->where(array('pid'=>$this->cid))->field(array('id','category_name'))->select();
+      //echo  M('books_category')->getLastSql();
+      $this->secendCate = $secendCate;
+      
+      //dump($secendCate);
+
+      // 获取一维数组二级分类id
+      $secendCateId = foreach_arr($secendCate,'id');
+      //dump($secendCateId);
+      if(!empty($secendCateId)){
+            // 获取第三层分类
+            $thirdCate = M('books_category')->where(array('pid' => array('IN',$secendCateId)))->field(array('id','category_name'))->select();
+           // echo  M('books_category')->getLastSql();
+      }else{
+            $thirdCate = M('books_category')->where(array('id' =>$this->cid))->field(array('id','category_name'))->select();
+      }
+      $this->thirdCate = $thirdCate;
+
+      /*************逻辑出了问题
+      // 获取一维数组顶级分类id
+      $topCateId = foreach_arr($topCate,'id');
+      p($topCateId);
+      // 获取第二层分类 且必须在顶层分类下获取
+      isset($_GET['cid']) ? $cid = intval($_GET['cid']) : $cid = 1;
+      // $secendCate = M('books_category')->where(array('pid'=>$cid, array('pid'=>array('IN',$topCateId))),'AND')->field(array('id','category_name'))->select();
+      $secendCate = M('books_category')->where(array('pid'=>$cid))->field(array('id','category_name'))->select();
+      //echo  M('books_category')->getLastSql();
+      $this->secendCate = $secendCate;
+      // 获取一维数组二级分类id
+      $secendCateId = foreach_arr($secendCate,'id');
+      dump($secendCateId);
+
+      // 获取第三层分类
+      $thirdCate = M('books_category')->where(array('pid' => array('IN',$secendCateId)))->field(array('id','category_name'))->select();
+      echo  M('books_category')->getLastSql();
+      $this->thirdCate = $thirdCate;
+      *****************/
 
     	$this->display();
     }

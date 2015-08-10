@@ -80,7 +80,7 @@ $(function(){
 			return false;
 		}
 		//var reg = /^[\w\u4e00-\u9fa5]{2,15}$/;
-		var reg = /^[\S]{2,15}$/;
+		var reg = /^[\s\S]{2,15}$/;
 		if(!reg.test(booksname)){
 			$(this).prev().html("必须为2-15位中文或字母或数字或下划线");
 			$(this).next().addClass("glyphicon-remove-sign");

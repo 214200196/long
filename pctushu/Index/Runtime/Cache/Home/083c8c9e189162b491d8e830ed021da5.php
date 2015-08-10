@@ -184,7 +184,7 @@
                       </div>
                       <div class="study-btm">
                           <a href="<?php echo U('Books/index',array('bid'=>$v['id']));?>" class="beginstudy" data-title="1-1 内容简介" target="_blank">查看</a>
-                          <a href="<?php echo U('Editorbooks/index',array('id'=>$v['id']));?>" class="beginstudy" data-title="1-1 内容简介" target="_blank">编辑</a>
+                          <a href="<?php echo U('Editorbooks/index',array('bid'=>$v['id']));?>" class="beginstudy" data-title="1-1 内容简介" target="_blank">编辑</a>
                           <a href="" class="beginstudy" data-title="1-1 内容简介">删除</a>
                       </div>
                   </div>

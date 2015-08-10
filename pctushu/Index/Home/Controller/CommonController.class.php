@@ -30,5 +30,12 @@ class CommonController extends Controller {
     	//dump($selectByBooksCate);
     }
 
+    //获取图书名称
+    public function getBooksInfo() {
+        if(empty($_GET['bid'])) $_GET['bid'] = 1;
+        $booksInfo = M('books_list')->where(array('id'=>intval($_GET['bid'])))->find();
+        $this->booksInfo = $booksInfo;
+    }
+
 
 }

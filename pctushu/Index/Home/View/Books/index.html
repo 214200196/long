@@ -49,13 +49,13 @@
     margin-left: 5px;
   }
   .book-content-top span a{
-    color:#fff;
-  }
-  .book-content-top span a:hover{
     color:#ccc;
   }
-  .glyphicon-menu-right{
+  .book-content-top span a:hover{
     color:#fff;
+  }
+  .glyphicon-menu-right{
+    color:#ccc;
   }
 
   .book-content-box{
@@ -221,7 +221,7 @@
     <foreach name="cateResult" item="v">
        <a href="{:U('Bookslist/index',array('cid'=>$v['id']))}">{$v.category_name}</a><p class="glyphicon glyphicon-menu-right"></p>
     </foreach>
-    <a>PHP高级编程与设计</a></span>
+    <a>{$booksInfo.books_name}</a></span>
   </div>
 </div>
 <div class="book-content-box">

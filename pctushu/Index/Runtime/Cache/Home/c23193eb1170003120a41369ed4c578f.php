@@ -1,9 +1,11 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-	<title></title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>图书库</title>
+  <link rel="stylesheet" href="/pctushu/Public/css/bootstrap.css" type="text/css">
 	<style>
 
   body a{
@@ -56,9 +58,12 @@
     margin: 0px 5px 0px 5px;
   }
   .book-content-top span a{
-    color:#777;
+    color:#ccc;
   }
   .book-content-top span a:hover{
+    color:#fff;
+  }
+  .glyphicon-menu-right{
     color:#ccc;
   }
 
@@ -70,12 +75,13 @@
 .edit-left{
   float: left;
   width: 280px;
-  min-height: 600px;
+  min-height: 880px;
   height: auto;
   background: #EDE8D5;
   margin-right: 20px;
   border-radius: 5px;
 }
+
 
 .col-lg-6{
   width: 280px;
@@ -205,23 +211,27 @@
     </div>
   </div>
 </nav>
+
 <div class="book-content-top-box">
   <div class="book-content-top">
-    <span><a>图书库<a><p class="glyphicon glyphicon-menu-right"></p><a>计算机<a><p class="glyphicon glyphicon-menu-right"></p><a>后台编程<a><p class="glyphicon glyphicon-menu-right"></p><a>PHP高级编程与设计<a></span>
+    <span><a href="<?php echo U('Bookslist/index');?>">图书库</a><p class="glyphicon glyphicon-menu-right"></p>
+    <?php if(is_array($cateResult)): foreach($cateResult as $key=>$v): ?><a href="<?php echo U('Bookslist/index',array('cid'=>$v['id']));?>"><?php echo ($v["category_name"]); ?></a><p class="glyphicon glyphicon-menu-right"></p><?php endforeach; endif; ?>
+    <a><?php echo ($booksInfo["books_name"]); ?></a></span>
   </div>
 </div>
 <div class="content-main">
 
     <div class="edit-left">
-      
+      <form action="<?php echo U('addContentCate');?>" method="POST">
         <div class="col-lg-6">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="请添加目录名称">
+            <input type="text" class="form-control" name="addContentCate" placeholder="请添加目录名称"/>
             <span class="input-group-btn">
-              <button class="btn btn-primary" type="button">增加目录</button>
+              <button class="btn btn-primary" type="submit">增加目录</button>
             </span>
           </div>
         </div>
+      </form>
   </div>
 
 
@@ -252,7 +262,7 @@
         <input type="text" class="form-control" placeholder="请输入关键字">
       </div>
        
-        <textarea class="form-control" rows="16" id="editor_id" name="content" ></textarea>
+        <textarea class="form-control" rows="26" id="editor_id" name="content" ></textarea>
 
         <button type="button" class="btn btn-success">上 传 文 章</button>
     </div>
@@ -289,10 +299,10 @@
 </div>
 
 
-	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-	<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-	<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+  <script src="/pctushu/Public/js/jquery-2.1.4.min.js"></script>
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="/pctushu/Public/js/bootstrap.min.js"></script>
 
   <script type="text/javascript" src="/pctushu/editor/kindeditor.js"></script>
   <script type="text/javascript" src="/pctushu/editor/lang/zh-CN.js"></script>
