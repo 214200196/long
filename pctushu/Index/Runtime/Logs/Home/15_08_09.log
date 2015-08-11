@@ -1,0 +1,2850 @@
+[ 2015-08-09T21:49:37+08:00 ] ::1 /pctushu/books/index/bid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0079s ]
+SQL: SELECT `category_id` FROM `book_books_list` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0070s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000352s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002182s ]
+
+[ 2015-08-09T21:49:37+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+
+[ 2015-08-09T21:49:37+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+
+[ 2015-08-09T21:49:49+08:00 ] ::1 /pctushu/books/index/bid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001410s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0142s ]
+SQL: SELECT `category_id` FROM `book_books_list` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0127s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002020s ]
+
+[ 2015-08-09T21:49:49+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+
+[ 2015-08-09T21:49:49+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+
+[ 2015-08-09T21:50:00+08:00 ] ::1 /pctushu/books/index/bid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001296s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0128s ]
+SQL: SELECT `category_id` FROM `book_books_list` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0115s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000400s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001592s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002086s ]
+
+[ 2015-08-09T21:50:00+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+
+[ 2015-08-09T21:50:00+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+
+[ 2015-08-09T21:50:23+08:00 ] ::1 /pctushu/books/index/bid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 3  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: category_id C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0120s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = null LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002420s ]
+
+[ 2015-08-09T21:50:24+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000923s ]
+
+[ 2015-08-09T21:50:24+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002444s ]
+
+[ 2015-08-09T21:50:55+08:00 ] ::1 /pctushu/books/index/bid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 3  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0118s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000391s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026155s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002051s ]
+
+[ 2015-08-09T21:50:55+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+
+[ 2015-08-09T21:50:55+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001058s ]
+
+[ 2015-08-09T21:51:21+08:00 ] ::1 /pctushu/books/index/bid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0094s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001643s ]
+
+[ 2015-08-09T21:51:21+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000788s ]
+
+[ 2015-08-09T21:51:21+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+
+[ 2015-08-09T21:52:01+08:00 ] ::1 /pctushu/books/index/bid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0115s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000386s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002596s ]
+
+[ 2015-08-09T21:52:01+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001047s ]
+
+[ 2015-08-09T21:52:01+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+
+[ 2015-08-09T21:52:19+08:00 ] ::1 /pctushu/books/index/bid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0127s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000414s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001987s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002172s ]
+
+[ 2015-08-09T21:52:19+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001043s ]
+
+[ 2015-08-09T21:52:19+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+
+[ 2015-08-09T22:14:34+08:00 ] ::1 /pctushu/books/index/bid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0134s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002154s ]
+
+[ 2015-08-09T22:14:34+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+
+[ 2015-08-09T22:14:34+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001413s ]
+
+[ 2015-08-09T22:15:30+08:00 ] ::1 /pctushu/books/index/bid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0106s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000383s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001520s ]
+
+[ 2015-08-09T22:15:30+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+
+[ 2015-08-09T22:15:30+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000642s ]
+
+[ 2015-08-09T22:16:41+08:00 ] ::1 /pctushu/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0118s ]
+SQL: SELECT `category_name`,`id` FROM `book_books_category` WHERE `pid` = 0  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 1  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` IN ('6','7','8')  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0095s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('6','7','8','9','10','11','12','13','14','15','16')  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019151s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001332s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001469s ]
+
+[ 2015-08-09T22:16:44+08:00 ] ::1 /pctushu/index/index/cid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 3  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0109s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('3')  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001813s ]
+
+[ 2015-08-09T22:16:46+08:00 ] ::1 /pctushu/index/index/cid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 2  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0063s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('2')  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000994s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001093s ]
+
+[ 2015-08-09T22:16:48+08:00 ] ::1 /pctushu/index/index/cid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` IN ('6','7','8')  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0046s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('6','7','8','9','10','11','12','13','14','15','16')  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001377s ]
+
+[ 2015-08-09T22:16:51+08:00 ] ::1 /pctushu/books/index/bid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001430s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0081s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000320s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000481s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001639s ]
+
+[ 2015-08-09T22:16:51+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+
+[ 2015-08-09T22:16:51+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001773s ]
+
+[ 2015-08-09T22:16:54+08:00 ] ::1 /pctushu/books/index/bid/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0129s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001925s ]
+
+[ 2015-08-09T22:16:54+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+
+[ 2015-08-09T22:16:55+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+
+[ 2015-08-09T22:17:01+08:00 ] ::1 /pctushu/books/index/bid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0045s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001224s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001370s ]
+
+[ 2015-08-09T22:17:01+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+
+[ 2015-08-09T22:17:01+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+
+[ 2015-08-09T22:17:27+08:00 ] ::1 /pctushu/bookslist/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 1  [ RunTime:0.0019s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` IN ('6','7','8')  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0070s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('6','7','8','9','10','11','12','13','14','15','16')  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\d2dc1e1fec690345be64c8d912010af0.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001751s ]
+
+[ 2015-08-09T22:17:43+08:00 ] ::1 /pctushu/bookslist/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 1  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` IN ('6','7','8')  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0116s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0067s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('6','7','8','9','10','11','12','13','14','15','16')  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\d2dc1e1fec690345be64c8d912010af0.php 第 227 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001877s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002088s ]
+
+[ 2015-08-09T22:19:08+08:00 ] ::1 /pctushu/books/index/bid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0076s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2015-08-09T22:19:08+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+
+[ 2015-08-09T22:19:08+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000932s ]
+
+[ 2015-08-09T22:19:13+08:00 ] ::1 /pctushu/books/index/bid/100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 100 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0096s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = null LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001329s ]
+
+[ 2015-08-09T22:19:13+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+
+[ 2015-08-09T22:19:13+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+
+[ 2015-08-09T22:20:20+08:00 ] ::1 /pctushu/books/index/bid/100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001462s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 100 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0118s ]
+NOTIC: [8] Undefined variable: cid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 17 行.
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = null LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: cid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000399s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001573s ]
+
+[ 2015-08-09T22:20:20+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+
+[ 2015-08-09T22:20:20+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+
+[ 2015-08-09T22:20:25+08:00 ] ::1 /pctushu/books/index/bid/00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0076s ]
+NOTIC: [8] Undefined variable: cid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 17 行.
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = null LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: cid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000380s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026739s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001543s ]
+
+[ 2015-08-09T22:20:25+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000746s ]
+
+[ 2015-08-09T22:20:25+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001486s ]
+
+[ 2015-08-09T22:20:30+08:00 ] ::1 /pctushu/books/index/bid/100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001461s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 100 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0115s ]
+NOTIC: [8] Undefined variable: cid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 17 行.
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = null LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: cid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000366s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002939s ]
+
+[ 2015-08-09T22:20:30+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+
+[ 2015-08-09T22:20:30+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001877s ]
+
+[ 2015-08-09T22:20:32+08:00 ] ::1 /pctushu/books/index/bid/100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 100 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0127s ]
+NOTIC: [8] Undefined variable: cid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 17 行.
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = null LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: cid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001716s ]
+
+[ 2015-08-09T22:20:33+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+
+[ 2015-08-09T22:20:33+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+
+[ 2015-08-09T22:21:04+08:00 ] ::1 /pctushu/books/index/bid/100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 100 LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: cid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0115s ]
+NOTIC: [8] Undefined variable: cid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 18 行.
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = null LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined variable: cid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001592s ]
+
+[ 2015-08-09T22:21:04+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+
+[ 2015-08-09T22:21:04+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001345s ]
+
+[ 2015-08-09T22:21:19+08:00 ] ::1 /pctushu/books/index/bid/100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 100 LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: cid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0124s ]
+NOTIC: [8] Undefined variable: cid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 18 行.
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = null LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: cid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 26 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020360s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002253s ]
+
+[ 2015-08-09T22:21:19+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+
+[ 2015-08-09T22:21:19+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+
+[ 2015-08-09T22:22:01+08:00 ] ::1 /pctushu/books/index/bid/100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 100 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0117s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000375s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001751s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002888s ]
+
+[ 2015-08-09T22:22:01+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000683s ]
+
+[ 2015-08-09T22:22:01+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000786s ]
+
+[ 2015-08-09T22:25:49+08:00 ] ::1 /pctushu/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\8568c9968b5b48cb7715112de401a702.php 第 162 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001742s ]
+
+[ 2015-08-09T22:25:49+08:00 ] ::1 /pctushu/register/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001864s ]
+
+[ 2015-08-09T22:25:53+08:00 ] ::1 /pctushu/login/asynverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001933s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001542s ]
+
+[ 2015-08-09T22:25:59+08:00 ] ::1 /pctushu/login/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0128s ]
+SQL: SELECT `id`,`name` FROM `book_user` WHERE `email` = 'longjianwei@163.com' AND `passworld` = '29fd06e62faa920cbe4b9c62018aa064' LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020118s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001661s ]
+
+[ 2015-08-09T22:26:01+08:00 ] ::1 /pctushu/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `book_books_list` WHERE `uid` = 1 ORDER BY add_time DESC  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001925s ]
+
+[ 2015-08-09T22:26:11+08:00 ] ::1 /pctushu/books/index/id/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001893s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0069s ]
+NOTIC: [8] Undefined index: bid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 12 行.
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0053s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000916s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001885s ]
+
+[ 2015-08-09T22:26:11+08:00 ] ::1 /pctushu/books/index/id/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+
+[ 2015-08-09T22:26:11+08:00 ] ::1 /pctushu/books/index/id/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+
+[ 2015-08-09T22:27:51+08:00 ] ::1 /pctushu/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 1  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` IN ('6','7','8')  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0060s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('6','7','8','9','10','11','12','13','14','15','16')  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001613s ]
+
+[ 2015-08-09T22:27:53+08:00 ] ::1 /pctushu/books/index/bid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001650s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0146s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004262s ]
+
+[ 2015-08-09T22:27:53+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+
+[ 2015-08-09T22:27:53+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+
+[ 2015-08-09T22:28:49+08:00 ] ::1 /pctushu/books/index/bid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0124s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002335s ]
+
+[ 2015-08-09T22:28:50+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+
+[ 2015-08-09T22:28:50+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+
+[ 2015-08-09T22:28:53+08:00 ] ::1 /pctushu/books/index/id/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0124s ]
+NOTIC: [8] Undefined index: bid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 12 行.
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0115s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000296s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000537s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002644s ]
+
+[ 2015-08-09T22:28:53+08:00 ] ::1 /pctushu/books/index/id/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000914s ]
+
+[ 2015-08-09T22:28:53+08:00 ] ::1 /pctushu/books/index/id/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001606s ]
+
+[ 2015-08-09T22:29:09+08:00 ] ::1 /pctushu/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `book_books_list` WHERE `uid` = 1 ORDER BY add_time DESC  [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001518s ]
+
+[ 2015-08-09T22:29:12+08:00 ] ::1 /pctushu/books/index/bid/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001595s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0127s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001892s ]
+
+[ 2015-08-09T22:29:12+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+
+[ 2015-08-09T22:29:12+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001012s ]
+
+[ 2015-08-09T22:31:59+08:00 ] ::1 /pctushu/books/index/bid/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0113s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001600s ]
+
+[ 2015-08-09T22:31:59+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+
+[ 2015-08-09T22:31:59+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+
+[ 2015-08-09T22:35:41+08:00 ] ::1 /pctushu/books/index/bid/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0049s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001367s ]
+
+[ 2015-08-09T22:35:41+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000685s ]
+
+[ 2015-08-09T22:35:41+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+
+[ 2015-08-09T22:35:55+08:00 ] ::1 /pctushu/books/index/bid/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0089s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000425s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001352s ]
+
+[ 2015-08-09T22:35:55+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+
+[ 2015-08-09T22:35:55+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+
+[ 2015-08-09T22:38:54+08:00 ] ::1 /pctushu/books/index/bid/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001455s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0051s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` IN ('11','6','1')  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `book_books_category`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001695s ]
+
+[ 2015-08-09T22:38:54+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+
+[ 2015-08-09T22:38:54+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001334s ]
+
+[ 2015-08-09T22:39:46+08:00 ] ::1 /pctushu/books/index/bid/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0142s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` IN ('11','6','1')  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000398s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002383s ]
+
+[ 2015-08-09T22:39:46+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001027s ]
+
+[ 2015-08-09T22:39:46+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+
+[ 2015-08-09T22:40:45+08:00 ] ::1 /pctushu/books/index/bid/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0121s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `category_name`,`category_sort`,`pid`,`pid_path` FROM `book_books_category` WHERE `id` IN ('11','6','1')  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001873s ]
+
+[ 2015-08-09T22:40:46+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+
+[ 2015-08-09T22:40:46+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+
+[ 2015-08-09T22:41:04+08:00 ] ::1 /pctushu/books/index/bid/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001426s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0076s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `category_name`,`category_sort`,`pid`,`pid_path` FROM `book_books_category` WHERE `id` IN ('11','6','1')  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000380s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001895s ]
+
+[ 2015-08-09T22:41:04+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+
+[ 2015-08-09T22:41:04+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+
+[ 2015-08-09T22:41:49+08:00 ] ::1 /pctushu/books/index/bid/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0046s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('11','6','1')  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001428s ]
+
+[ 2015-08-09T22:41:49+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+
+[ 2015-08-09T22:41:49+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001705s ]
+
+[ 2015-08-09T22:42:32+08:00 ] ::1 /pctushu/books/index/bid/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0117s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('11','6','1')  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002346s ]
+
+[ 2015-08-09T22:42:33+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+
+[ 2015-08-09T22:42:33+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+
+[ 2015-08-09T22:42:36+08:00 ] ::1 /pctushu/bookslist/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001918s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 1  [ RunTime:0.0022s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` IN ('6','7','8')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0077s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('6','7','8','9','10','11','12','13','14','15','16')  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002261s ]
+
+[ 2015-08-09T22:42:39+08:00 ] ::1 /pctushu/books/index/bid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0124s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('8','1')  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000372s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001514s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002133s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002339s ]
+
+[ 2015-08-09T22:42:39+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+
+[ 2015-08-09T22:42:39+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001505s ]
+
+[ 2015-08-09T22:43:26+08:00 ] ::1 /pctushu/bookslist/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 1  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` IN ('6','7','8')  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0064s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('6','7','8','9','10','11','12','13','14','15','16')  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001404s ]
+
+[ 2015-08-09T22:51:32+08:00 ] ::1 /pctushu/books/index/bid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001371s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0121s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('9','6','1')  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002323s ]
+
+[ 2015-08-09T22:51:32+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+
+[ 2015-08-09T22:51:32+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+
+[ 2015-08-09T22:51:53+08:00 ] ::1 /pctushu/books/index/bid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0109s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('9','6','1')  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000244s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000425s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001528s ]
+
+[ 2015-08-09T22:51:53+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+
+[ 2015-08-09T22:51:53+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+
+[ 2015-08-09T22:56:20+08:00 ] ::1 /pctushu/books/index/bid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0120s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('9','6','1')  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001685s ]
+
+[ 2015-08-09T22:56:20+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+
+[ 2015-08-09T22:56:20+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+
+[ 2015-08-09T22:56:33+08:00 ] ::1 /pctushu/books/index/bid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0154s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0116s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('9','6','1')  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001754s ]
+
+[ 2015-08-09T22:56:33+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+
+[ 2015-08-09T22:56:33+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001021s ]
+
+[ 2015-08-09T22:56:40+08:00 ] ::1 /pctushu/books/index/bid/%7BU('Bookslist/index',array('cid'=%3E$v['id']))%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0045s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('1')  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001645s ]
+
+[ 2015-08-09T22:56:40+08:00 ] ::1 /pctushu/books/index/bid/%7BU('Bookslist/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+
+[ 2015-08-09T22:56:40+08:00 ] ::1 /pctushu/books/index/bid/%7BU('Bookslist/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000892s ]
+
+[ 2015-08-09T22:58:41+08:00 ] ::1 /pctushu/books/index/bid/%7BU('Bookslist/index',array('cid'=%3E$v['id']))%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0118s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('1')  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000330s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000660s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001854s ]
+
+[ 2015-08-09T22:58:41+08:00 ] ::1 /pctushu/books/index/bid/%7BU('Bookslist/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000875s ]
+
+[ 2015-08-09T22:58:41+08:00 ] ::1 /pctushu/books/index/bid/%7BU('Bookslist/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001156s ]
+
+[ 2015-08-09T22:58:46+08:00 ] ::1 /pctushu/books/index/bid/%7BU('Bookslist/index',array('cid'=%3E$v['id']))%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0128s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('1')  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000360s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000676s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003281s ]
+
+[ 2015-08-09T22:58:46+08:00 ] ::1 /pctushu/books/index/bid/%7BU('Bookslist/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000644s ]
+
+[ 2015-08-09T22:58:46+08:00 ] ::1 /pctushu/books/index/bid/%7BU('Bookslist/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+
+[ 2015-08-09T22:58:50+08:00 ] ::1 /pctushu/bookslist/index/cid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 1  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` IN ('6','7','8')  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0060s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('6','7','8','9','10','11','12','13','14','15','16')  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000251s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000385s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002002s ]
+
+[ 2015-08-09T22:58:57+08:00 ] ::1 /pctushu/books/index/bid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0121s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('8','1')  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036041s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002063s ]
+
+[ 2015-08-09T22:58:57+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+
+[ 2015-08-09T22:58:57+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+
+[ 2015-08-09T23:00:23+08:00 ] ::1 /pctushu/books/index/bid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0071s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('8','1')  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001422s ]
+
+[ 2015-08-09T23:00:23+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+
+[ 2015-08-09T23:00:23+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+
+[ 2015-08-09T23:00:57+08:00 ] ::1 /pctushu/bookslist/index/cid/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 8  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0079s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('8')  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000471s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001434s ]
+
+[ 2015-08-09T23:01:48+08:00 ] ::1 /pctushu/books/index/bid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001488s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0130s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('8','1')  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002131s ]
+
+[ 2015-08-09T23:01:48+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+
+[ 2015-08-09T23:01:48+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001230s ]
+
+[ 2015-08-09T23:03:57+08:00 ] ::1 /pctushu/books/index/bid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001281s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0133s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('8','1')  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000372s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027663s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001871s ]
+
+[ 2015-08-09T23:03:57+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+
+[ 2015-08-09T23:03:57+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000578s ]
+
+[ 2015-08-09T23:05:07+08:00 ] ::1 /pctushu/books/index/bid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001286s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0123s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('8','1')  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001627s ]
+
+[ 2015-08-09T23:05:07+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+
+[ 2015-08-09T23:05:07+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+
+[ 2015-08-09T23:05:07+08:00 ] ::1 /pctushu/books/index/bid/image/jian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+
+[ 2015-08-09T23:05:25+08:00 ] ::1 /pctushu/books/index/bid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0116s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('8','1')  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000314s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000552s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001494s ]
+
+[ 2015-08-09T23:05:25+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000712s ]
+
+[ 2015-08-09T23:05:25+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000756s ]
+
+[ 2015-08-09T23:05:25+08:00 ] ::1 /pctushu/books/index/bid/image/jian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+
+[ 2015-08-09T23:05:53+08:00 ] ::1 /pctushu/bookslist/index/cid/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001462s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 8  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0082s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('8')  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000468s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001802s ]
+
+[ 2015-08-09T23:06:08+08:00 ] ::1 /pctushu/bookslist/index/cid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 1  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` IN ('6','7','8')  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0109s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0106s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('6','7','8','9','10','11','12','13','14','15','16')  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030576s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001416s ]
+
+[ 2015-08-09T23:06:30+08:00 ] ::1 /pctushu/books/index/bid/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0124s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('11','6','1')  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000979s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002425s ]
+
+[ 2015-08-09T23:06:30+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+
+[ 2015-08-09T23:06:30+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001165s ]
+
+[ 2015-08-09T23:06:30+08:00 ] ::1 /pctushu/books/index/bid/image/jian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+
+[ 2015-08-09T23:06:33+08:00 ] ::1 /pctushu/bookslist/index/cid/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 11  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0068s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('11')  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001566s ]
+
+[ 2015-08-09T23:06:48+08:00 ] ::1 /pctushu/bookslist/index/cid/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 6  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` IN ('9','10','11','12')  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0122s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('9','10','11','12')  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001520s ]
+
+[ 2015-08-09T23:06:54+08:00 ] ::1 /pctushu/bookslist/index/cid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 1  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` IN ('6','7','8')  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0123s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('6','7','8','9','10','11','12','13','14','15','16')  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001361s ]
+
+[ 2015-08-09T23:10:32+08:00 ] ::1 /pctushu/books/index/bid/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001763s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0167s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('13','7','1')  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000934s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002103s ]
+
+[ 2015-08-09T23:10:32+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+
+[ 2015-08-09T23:10:32+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000941s ]
+
+[ 2015-08-09T23:10:32+08:00 ] ::1 /pctushu/books/index/bid/image/jian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001692s ]
+
+[ 2015-08-09T23:10:44+08:00 ] ::1 /pctushu/bookslist/index/cid/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 13  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0094s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('13')  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001537s ]
+
+[ 2015-08-09T23:11:27+08:00 ] ::1 /pctushu/books/index/bid/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0088s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('11','6','1')  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024463s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000847s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001360s ]
+
+[ 2015-08-09T23:11:27+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000911s ]
+
+[ 2015-08-09T23:11:27+08:00 ] ::1 /pctushu/books/index/bid/image/jian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001005s ]
+
+[ 2015-08-09T23:11:27+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+
+[ 2015-08-09T23:11:31+08:00 ] ::1 /pctushu/bookslist/index/cid/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 11  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0083s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('11')  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000454s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001440s ]
+
+[ 2015-08-09T23:12:02+08:00 ] ::1 /pctushu/books/index/bid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0119s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('8','1')  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001365s ]
+
+[ 2015-08-09T23:12:02+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+
+[ 2015-08-09T23:12:02+08:00 ] ::1 /pctushu/books/index/bid/image/jian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001107s ]
+
+[ 2015-08-09T23:12:02+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004314s ]
+
+[ 2015-08-09T23:12:06+08:00 ] ::1 /pctushu/bookslist/index/cid/8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 8  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0086s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0077s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('8')  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001474s ]
+
+[ 2015-08-09T23:12:22+08:00 ] ::1 /pctushu/bookslist/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 1  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` IN ('6','7','8')  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0074s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0080s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('6','7','8','9','10','11','12','13','14','15','16')  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001199s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001347s ]
+
+[ 2015-08-09T23:12:37+08:00 ] ::1 /pctushu/bookslist/index/cid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 4  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0072s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('4')  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001526s ]
+
+[ 2015-08-09T23:12:40+08:00 ] ::1 /pctushu/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `book_books_list` WHERE `uid` = 1 ORDER BY add_time DESC  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000512s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002106s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002310s ]
+
+[ 2015-08-09T23:12:44+08:00 ] ::1 /pctushu/editorbooks/index/id/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000363s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017481s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001978s ]
+
+[ 2015-08-09T23:12:44+08:00 ] ::1 /pctushu/editor/lang/zh-CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000981s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001920s ]
+ERR: 无法加载控制器:Editor
+
+[ 2015-08-09T23:12:55+08:00 ] ::1 /pctushu/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `book_books_list` WHERE `uid` = 1 ORDER BY add_time DESC  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001188s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001325s ]
+
+[ 2015-08-09T23:14:37+08:00 ] ::1 /pctushu/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` IN ('6','7','8')  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0047s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('6','7','8','9','10','11','12','13','14','15','16')  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001764s ]
+
+[ 2015-08-09T23:14:41+08:00 ] ::1 /pctushu/books/index/bid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0123s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('16','7','1')  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002256s ]
+
+[ 2015-08-09T23:14:41+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+
+[ 2015-08-09T23:14:41+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000947s ]
+
+[ 2015-08-09T23:14:41+08:00 ] ::1 /pctushu/books/index/bid/image/jian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+
+[ 2015-08-09T23:14:48+08:00 ] ::1 /pctushu/bookslist/index/cid/16
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 16  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0079s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('16')  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000323s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000485s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002528s ]
+
+[ 2015-08-09T23:14:54+08:00 ] ::1 /pctushu/books/index/bid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0125s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('16','7','1')  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000424s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001209s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001341s ]
+
+[ 2015-08-09T23:14:54+08:00 ] ::1 /pctushu/books/index/bid/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000889s ]
+
+[ 2015-08-09T23:14:54+08:00 ] ::1 /pctushu/books/index/bid/image/jia.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001090s ]
+
+[ 2015-08-09T23:14:54+08:00 ] ::1 /pctushu/books/index/bid/image/jian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+

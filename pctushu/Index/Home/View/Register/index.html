@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<style>
+
+  body a{
+    color: #444444;
+    text-decoration:none;
+    cursor: pointer;
+  }
+  body a:hover{
+    text-decoration: none;
+  }
+
+	.navbar-default{
+		height: 60px;
+		margin-bottom: 0px;
+		border-radius: 0px;
+		border:none;
+		background: #101010
+	}
+	.container-fluid{
+		height: 60px;
+	}
+	.navbar-header{
+		padding-top:5px;
+		width: 100px;
+	}
+	.navbar-brand{
+		padding-left: 25px;
+	}
+	.navbar-collapse{
+		padding-top:5px; 
+	}
+   
+.register{
+  width: 500px;
+  height: 720px;
+  margin: 50px auto 50px auto;
+}
+.input-group, .input-group input{
+  height: 50px;
+}
+.form-control-feedback{
+  margin-top: 8px;
+}
+
+.btn-success{
+  width: 500px;
+  margin-top: 40px;
+  height: 50px;
+  font-weight: bold;
+}
+
+.yanzhengma-list{
+  float: left;
+  width: 300px;
+}
+.yanzhengma{
+  float: left;
+  width: 150px;
+  margin-left: 10px;
+  border: 1px solid #3C763D;
+  border-radius: 5px;
+  margin-top: 20px;
+  height: 50px;
+
+}
+
+
+
+
+
+
+    #footer{
+    	width:100%;
+    	height: 100px;
+    	background: #101010;
+    }
+    .waper{
+    	width:1090px;
+    	height: 100px;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+    .footer_link li{
+    	float: left;
+    	list-style-type: none;
+    	margin-right: 20px;
+    	padding-top: 20px;
+    }
+    .copyright{
+    	float: left;
+    	margin-left: 40px;
+    	padding-top: 5px;
+    	color: #Fff;
+
+    }
+</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+  var verifyurl="{:U('verify')}";
+  var asynemail="{:U('asynemail')}";
+  var asynverify="{:U('asynverify')}";
+</script>
+<!-- {$Verifys|dump} -->
+<include file="Common:nav"/>
+
+<div class="register">
+<form action="{:U('CheckRegister')}" method="POST">
+    <div class="form-group  has-feedback">
+      <label class="control-label" for="inputError2"></label>
+        <div class="input-group">
+          <span class="input-group-addon">电子邮箱&nbsp<b class="glyphicon glyphicon-envelope"></b></span>
+          <input type="text" class="form-control" id="email" aria-describedby="inputError2Status" name="email">
+        </div>
+      <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+    </div>
+
+    <div class="form-group  has-feedback">
+      <label class="control-label" for="inputError2"></label>
+        <div class="input-group">
+            <span class="input-group-addon">密&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp码&nbsp<b class="glyphicon glyphicon-lock"></b></span>
+            <input type="password" class="form-control" id="pwd" aria-describedby="inputError2Status" name="pwd">
+        </div>
+      <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
+    </div>
+
+    <div class="form-group  has-feedback">
+      <label class="control-label" for="inputError2"></label>
+        <div class="input-group">
+          <span class="input-group-addon">重复密码&nbsp<b class="glyphicon glyphicon-lock"></b></span>
+          <input type="password" class="form-control" id="pwded" aria-describedby="inputError2Status" name="pwded">
+        </div>
+      <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
+    </div>
+
+    <div class="form-group  has-feedback">
+      <label class="control-label" for="inputSuccess2"></label>
+        <div class="input-group">
+          <span class="input-group-addon">用户昵称&nbsp<b class="glyphicon glyphicon-user"></b></span>
+          <input type="text" class="form-control" id="username" aria-describedby="inputError2Status" name="username">
+        </div>
+      <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
+    </div>
+
+     <div class="yanzhengma-list">
+        <div class="form-group  has-feedback">
+          <label class="control-label" for="inputError2"></label>
+            <div class="input-group">
+              <span class="input-group-addon">&nbsp验&nbsp证&nbsp码&nbsp<b class="glyphicon glyphicon-barcode"></b></span>
+              <input type="text" class="form-control" id="verify" aria-describedby="inputError2Status" name="verify"/>
+            </div>
+          <span class="glyphicon  form-control-feedback" id="verifyok" aria-hidden="true"></span>
+        </div>
+    </div>
+    <div class="yanzhengma"><img id ="yanzhengma" src="{:U('Register/verify')}" style="height:45px;width:145px;border-radius:5px;"></div>
+
+    <input type="submit" id="submit" class="btn btn-success" value="提交注册"/>
+</div>
+</form>
+
+
+<div id="footer" >
+    <div class="waper">
+        <div class="footerwaper clearfix">
+            <div class="followus r">
+                <a class="followus-weixin" href="javascript:;"  target="_blank" title="微信">
+                    <div class="flw-weixin-box"></div>
+                </a>
+                <a class="followus-weibo" href="http://weibo.com/u/3306361973"  target="_blank" title="新浪微博"></a>
+                <a class="followus-qzone" href="http://user.qzone.qq.com/1059809142/" target="_blank" title="QQ空间"></a>
+            </div>
+            <div class="footer_intro l">
+                <div class="footer_link">
+                    <ul>
+                        <li><a href="http://www.imooc.com/" target="_blank">网站首页</a></li>
+                        <li><a href="/about/job" target="_blank">人才招聘</a></li>
+                        <li> <a href="/about/contact" target="_blank">联系我们</a></li>
+                        <li><a href="http://daxue.imooc.com/" target="_blank">高校联盟</a></li>
+                        <li><a href="/about/us" target="_blank">关于我们</a></li>
+                        <li> <a href="/about/recruit" target="_blank">讲师招募</a></li>
+                        <li> <a href="/user/feedback" target="_blank">意见反馈</a></li>
+                        <li> <a href="/about/friendly" target="_blank">友情链接</a></li>
+                    </ul>
+                </div>
+                <div class ="copyright" ><p>Copyright © 2015 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <script src="__PUBLIC__/js/validata.js"></script>
+
+</body>
+</html>
