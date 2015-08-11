@@ -3,7 +3,10 @@ namespace Home\Controller;
 use Think\Controller;
 class CommonController extends Controller {
     public function _initialize(){
-    	//echo "longjianwei";
+
+    	$this->uid = $_SESSION['uid'];
+        $this->username = $_SESSION['username'];
+        
     }
     // 获取图书位置
     public function getLocation() {

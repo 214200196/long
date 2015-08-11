@@ -81,6 +81,10 @@
   margin-right: 20px;
   border-radius: 5px;
 }
+.content-Cate{
+ /* background: #ccc;*/
+  margin-top: 75px;
+}
 
 
 .col-lg-6{
@@ -222,7 +226,7 @@
 <div class="content-main">
 
     <div class="edit-left">
-      <form action="<?php echo U('addContentCate');?>" method="POST">
+      <form action="<?php echo U('addContentCate',array('bid' => $booksInfo['id']));?>" method="POST">
         <div class="col-lg-6">
           <div class="input-group">
             <input type="text" class="form-control" name="addContentCate" placeholder="请添加目录名称"/>
@@ -232,40 +236,38 @@
           </div>
         </div>
       </form>
+      <div class="content-Cate">
+        <ol>
+          <?php if(is_array($getContentCate)): foreach($getContentCate as $key=>$v): ?><li><a href="<?php echo U('index',array('bid' => $booksInfo['id'],'cid'=>$v['id']));?>"><?php echo ($v["content_category_name"]); ?></a></li><?php endforeach; endif; ?>
+        </ol>       
+      </div>
   </div>
 
-
+    <form action="<?php echo U('addContentList',array('bid' => $booksInfo['id']));?>" method="POST">
     <div class="edit-main">
       <label>选择目录</label>
       <div class="select-box"> 
-        <select class="selectpicker">
-        <optgroup label="Picnic">
-          <option>Mustard</option>
-          <option>Ketchup</option>
-          <option>Relish</option>
-        </optgroup>
-        <optgroup label="Camping">
-          <option>Tent</option>
-          <option>Flashlight</option>
-          <option>Toilet Paper</option>
-        </optgroup>
+      <select class="selectpicker" name="acticleCateName">
+          <option>请选择分类</option>
+          <?php if(is_array($getContentCate)): foreach($getContentCate as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["content_category_name"]); ?></option><?php endforeach; endif; ?>
       </select>
       </div>
 
       <div class="edit-main-title">
         <label>标题 </label>
-        <input type="text" class="form-control" placeholder="请输入文章标题">
+        <input type="text" class="form-control" name="acticleName" placeholder="请输入文章标题">
       </div>
 
         <div class="edit-main-title">
         <label>设置关键字 </label>
-        <input type="text" class="form-control" placeholder="请输入关键字">
+        <input type="text" class="form-control" name="keyword" placeholder="请输入关键字">
       </div>
        
         <textarea class="form-control" rows="26" id="editor_id" name="content" ></textarea>
 
-        <button type="button" class="btn btn-success">上 传 文 章</button>
+        <button type="submit" class="btn btn-success">上 传 文 章</button>
     </div>
+    </form>
 
 </div>
 

@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version phpStudy 2014
+-- version 3.3.7
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2015 年 08 月 09 日 23:17
+-- 生成日期: 2015 年 08 月 11 日 17:59
 -- 服务器版本: 5.5.40
--- PHP 版本: 5.3.29
+-- PHP 版本: 5.4.33
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -34,18 +33,18 @@ CREATE TABLE IF NOT EXISTS `book_books_category` (
   `pid_path` varchar(20) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   KEY `category_name` (`category_name`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
 
 --
 -- 转存表中的数据 `book_books_category`
 --
 
 INSERT INTO `book_books_category` (`id`, `category_name`, `category_sort`, `pid`, `pid_path`) VALUES
-(1, '计算机', 0, 0, '1'),
-(2, '财经', 0, 0, '2'),
-(3, '英语', 0, 0, '3'),
-(4, '数学', 0, 0, '4'),
-(5, '医学', 0, 0, '5'),
+(1, '计算机', 0, 0, ',1'),
+(2, '财经', 0, 0, ',2'),
+(3, '英语', 0, 0, ',3'),
+(4, '数学', 0, 0, ',4'),
+(5, '医学', 0, 0, ',5'),
 (6, '前段开发', 0, 1, '6,1'),
 (7, '后台开发', 0, 1, '7,1'),
 (8, '移动开发', 0, 1, '8,1'),
@@ -56,7 +55,9 @@ INSERT INTO `book_books_category` (`id`, `category_name`, `category_sort`, `pid`
 (13, 'php', 0, 7, '13,7,1'),
 (14, 'java', 0, 7, '14,7,1'),
 (15, 'c语言', 0, 7, '15,7,1'),
-(16, 'c++', 0, 7, '16,7,1');
+(16, 'c++', 0, 7, '16,7,1'),
+(17, '会计', 0, 2, '17,2'),
+(18, 'ios', 0, 8, '18,8,1');
 
 -- --------------------------------------------------------
 
@@ -74,6 +75,11 @@ CREATE TABLE IF NOT EXISTS `book_books_content` (
   PRIMARY KEY (`id`),
   KEY `books_id` (`books_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+--
+-- 转存表中的数据 `book_books_content`
+--
+
 
 -- --------------------------------------------------------
 
@@ -94,7 +100,7 @@ CREATE TABLE IF NOT EXISTS `book_books_list` (
   KEY `uid` (`uid`),
   KEY `category_id` (`category_id`),
   FULLTEXT KEY `books_face` (`books_face`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
 
 --
 -- 转存表中的数据 `book_books_list`
@@ -113,7 +119,10 @@ INSERT INTO `book_books_list` (`id`, `books_name`, `books_counts`, `add_time`, `
 (10, 'C语言基础', 0, 1439091229, '55c6cd0e4c236.jpg', 1, 15),
 (11, 'android开发', 0, 1439091469, '55c6cd0e4c236.jpg', 1, 8),
 (12, '计算机基础', 0, 1439091983, '55c6cd0e4c236.jpg', 1, 8),
-(13, 'CSS', 0, 1439093425, '55c6d2b095a82.jpg', 1, 11);
+(13, 'CSS', 0, 1439093425, '55c6d2b095a82.jpg', 1, 11),
+(14, 'git 教程', 0, 1439171276, '55c802cc2480f.jpg', 1, 1),
+(15, '会计基础', 0, 1439187288, '55c84157e8189.jpg', 1, 17),
+(16, '注册会计（会计）', 0, 1439274836, '55c99753a024e.jpg', 7, 17);
 
 -- --------------------------------------------------------
 
@@ -125,10 +134,24 @@ CREATE TABLE IF NOT EXISTS `book_content_category` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `content_category_name` varchar(45) NOT NULL DEFAULT '',
   `pid` tinyint(5) unsigned NOT NULL DEFAULT '0',
+  `bid` int(11) NOT NULL,
   `content_id` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `content_id` (`content_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  KEY `content_id` (`content_id`),
+  KEY `bid` (`bid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+
+--
+-- 转存表中的数据 `book_content_category`
+--
+
+INSERT INTO `book_content_category` (`id`, `content_category_name`, `pid`, `bid`, `content_id`) VALUES
+(1, '介绍', 0, 16, 0),
+(2, '第一章', 0, 16, 0),
+(3, '第二章', 0, 16, 0),
+(4, '第三章', 0, 16, 0),
+(5, '第四章', 0, 16, 0),
+(6, '第五章', 0, 16, 0);
 
 -- --------------------------------------------------------
 
@@ -141,6 +164,11 @@ CREATE TABLE IF NOT EXISTS `book_follow` (
   `books_id` int(10) unsigned NOT NULL,
   KEY `uid` (`uid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `book_follow`
+--
+
 
 -- --------------------------------------------------------
 
@@ -175,7 +203,3 @@ INSERT INTO `book_user` (`id`, `email`, `passworld`, `name`, `add_time`, `user_f
 (6, 'longjianwei@hotmail.com3', '38458ad99f11915d7601c42ab5edd4d0', 'long', 1438826268, '', '', 0, '', '0.0.0.0', 0, 0),
 (7, '214200196@qq.com', '4297f44b13955235245b2497399d7a93', 'admin', 1438826839, '', '', 0, '', '0.0.0.0', 0, 0),
 (8, '13568946@qq.com', '4297f44b13955235245b2497399d7a93', '123123', 1438827055, '', '', 0, '', '0.0.0.0', 0, 0);
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
