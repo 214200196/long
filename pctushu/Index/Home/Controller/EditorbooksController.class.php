@@ -19,16 +19,11 @@ class EditorbooksController extends CommonController {
     	if ( ! isset($_POST['addContentCate'])) {
     		$this -> error("该内容不能为空,请重试");
     	} else {
-    			// 判断是否为该用户发布书籍
-    			$where['id']  = intval($_GET['bid']);
-    			$where['uid'] = intval($_SESSION['uid']);
-    			$where['_logic'] = 'AND';
 
-	    		$ifuserbooks  = M('books_list')->where($where)->find();
-	    		//echo M('books_list')->getLastSql();
-	    		//dump($ifuserbooks);die;
-
-	    	if(!empty($ifuserbooks)) {
+            //$this->ifuserbooks();
+            //echo M('books_list')->getLastSql();
+            //dump($this->ifuserbooks());
+	    	if($this->ifuserbooks()) {
 	    		$data = array(
 	    			'content_category_name' => htmlspecialchars($_POST['addContentCate']),
 	    			'pid' => 0,
@@ -42,17 +37,49 @@ class EditorbooksController extends CommonController {
     		} else{
     			$this->error('图书不存在');
     		}
-    	}
+    	 }
 
+    }
+    // 判断是否操作自己所编辑的文章
+    public function ifuserbooks() {
+        $where['id']  = intval($_GET['bid']);
+        $where['uid'] = intval($_SESSION['uid']);
+        $where['_logic'] = 'AND';
+
+        $ifuserbooks  = M('books_list')->where($where)->find();
+        if( ! empty($ifuserbooks)) {
+            return true;
+        }else{
+            return false;
+        }
+          
     }
     // 添加内容
     public function addContentList() {
     	if( ! IS_POST) $this->error('页面不存在');
+        // 判断是否操作自己所编辑的文章
+        if($this->ifuserbooks()){
+            if( ! is_numeric($_POST['acticleCateName'])) {
+                $this->error('请选择分类名称');
+            }
+            if(empty($_POST['acticleName'])) {
+                $this->error('标题不能为空');
+            }
+            if(empty($_POST['keyword'])) {
+                $this->error('关键字不能为空');
+            }
+            if(empty($_POST['content'])) {
+                $this->error('内容不能为空');
+            }
+
+        } else {
+            $this->error('非法操作',U('Member/index'));
+        }
     	dump($_POST);
     }
 
     // 获取左侧分类
-    public function getContentCate(){
+    public function getContentCate() {
     	$getContentCate = M('content_category')->where(array('bid'=>intval($_GET['bid'])))->select();
     	$this->getContentCate = $getContentCate;
     }
