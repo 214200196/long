@@ -136,16 +136,62 @@ class EditorbooksController extends CommonController {
     // 获取内容
     public function getContentList(){
     	if($_GET['content_id']){
-    		$db = D('Bookscontent');
+    		$db = D('BookscontentView');
     		$contentList = $db->where(array('content_id'=>$_GET['content_id']))->find();
-    		dump($contentList);
-
+            // 判断是否操作自己的图书
+            if($this->ifuserbooks()){
+                $this->getContentList = $contentList;
+                //dump($contentList);
+            }
     	}
 
     }
 
     // 修改内容
     public function modifyContentList(){
+        if ( ! IS_POST) $this->error('页面不存在');
+        // 判断是否操作自己所编辑的文章
+            if ($this->ifuserbooks()) {
+                if ( ! is_numeric($_POST['acticleCateName'])) {
+                    $this->error('请选择分类名称');
+                }
+                if (empty($_POST['acticleName'])) {
+                    $this->error('标题不能为空');
+                }
+                if (empty($_POST['keyword'])) {
+                    $this->error('关键字不能为空');
+                }
+                if (empty($_POST['content'])) {
+                    $this->error('内容不能为空');
+                }
+
+                $userSelectCateLeval = M('content_category')->where(array('id'=>intval($_POST['acticleCateName'])))->field('level')->find();
+                $userSelectCateLeval['level'] == 2 ? $addLevel = 3 : $addLevel = 2 ;
+
+                $books_content_modify = array(
+                    'acticle_name'   => trim($_POST['acticleName']),
+                    'key_word'       => $_POST['keyword'],
+                    'acticle_content'=> $_POST['content'],
+                    );
+
+                if (M('books_content')->where(array('id'=>$_POST['content_id']))->data($books_content_modify)->save()) {
+                    $content_category_modify = array(
+                        'content_category_name' => trim($_POST['acticleName']),
+                        'pid' => intval($_POST['acticleCateName']),
+                        'level' => $addLevel
+                        );
+                   M('content_category')->where(array('id'=>$_POST['cid']))->data($content_category_modify)->save();
+                    
+                   $this->success("修改成功！");
+                    
+                    
+                } else {
+                    $this->error("修改失败！请重试。。。");
+                }
+                
+            } else {
+                $this->error('非法操作',U('Member/index'));
+            }
 
     }
 

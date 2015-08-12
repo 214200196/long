@@ -244,7 +244,7 @@
              <select class="selectpicker" name="addActicleCateName">
               <optgroup label="顶级目录">
               <option>顶级</option>
-              <optgroup label="二级目录">
+              <optgroup label="点击下面一级目录添加二级目录">
               <?php if(is_array($getTopContentCate)): foreach($getTopContentCate as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["content_category_name"]); ?></option><?php endforeach; endif; ?>
             </select>
         </div>
@@ -259,18 +259,19 @@
       </form>
       <div class="content-Cate">
         <ul>
-          <?php if(is_array($getAllContentCateResult)): foreach($getAllContentCateResult as $key=>$v): ?><li><a href="<?php echo U('index',array('bid' => $booksInfo['id'],'cid'=>$v['id'],'content_id'=>$v['content_id']));?>">
+          <?php if(is_array($getAllContentCateResult)): foreach($getAllContentCateResult as $key=>$v): ?><li><a <?php if($v['content_id']): ?>style="color:blue"<?php endif; ?> href="<?php echo U('index',array('bid' => $booksInfo['id'],'cid'=>$v['id'],'content_id'=>$v['content_id']));?>">
           <?php if($v['level'] == 2): ?>&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; if($v['level'] == 3): ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; echo ($v["content_category_name"]); ?></a></li><?php endforeach; endif; ?>
         </ul>       
       </div>
   </div>
-  <?php if($_GET['content_id']): ?><form action="<?php echo U('addContentList',array('bid' => $booksInfo['id']));?>" method="POST">
+  <?php if($_GET['content_id']): ?><form action="<?php echo U('modifyContentList',array('bid' => $booksInfo['id']));?>" method="POST">
       <div class="edit-main">
         <label>绑定目录</label>
         <div class="select-box"> 
         <select class="selectpicker" name="acticleCateName">
             <option>请选择目录</option>
-            <?php if(is_array($getContentCate)): foreach($getContentCate as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php if($v['level'] == 2): ?>&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; ?>
+            <?php if(is_array($getContentCate)): foreach($getContentCate as $key=>$v): ?><option <?php if($v['id'] == $getContentList['pid']): ?>selected = "selected"<?php endif; ?> value="<?php echo ($v["id"]); ?>">
+              <?php if($v['level'] == 2): ?>&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; ?>
                <?php echo ($v["content_category_name"]); ?>
               </option><?php endforeach; endif; ?>
         </select>
@@ -278,16 +279,17 @@
 
         <div class="edit-main-title">
           <label>标题 </label>
-          <input type="text" class="form-control" name="acticleName" placeholder="请输入文章标题">
+          <input type="text" class="form-control" name="acticleName" value="<?php echo ($getContentList["acticle_name"]); ?>" placeholder="请输入文章标题">
         </div>
 
           <div class="edit-main-title">
-          <label>设置关键字 </label>
-          <input type="text" class="form-control" name="keyword" placeholder="请输入关键字">
+          <label>设置关键字（以逗号，分格多个关键字） </label>
+          <input type="text" class="form-control" name="keyword" value="<?php echo ($getContentList["key_word"]); ?>" placeholder="请输入关键字">
         </div>
          
-          <textarea class="form-control" rows="26" id="editor_id" name="content" ></textarea>
-
+          <textarea class="form-control" rows="26" id="editor_id" name="content" ><?php echo ($getContentList["acticle_content"]); ?></textarea>
+          <input type="hidden" name = "cid" value="<?php echo ($_GET['cid']); ?>"/>
+          <input type="hidden" name = "content_id" value="<?php echo ($_GET['content_id']); ?>"/>
           <button type="submit" class="btn btn-success">修 改 文 章</button>
       </div>
       </form>
