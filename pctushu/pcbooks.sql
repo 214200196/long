@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2015 年 08 月 11 日 17:59
+-- 生成日期: 2015 年 08 月 12 日 18:04
 -- 服务器版本: 5.5.40
 -- PHP 版本: 5.4.33
 
@@ -74,12 +74,18 @@ CREATE TABLE IF NOT EXISTS `book_books_content` (
   `books_id` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`),
   KEY `books_id` (`books_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
 
 --
 -- 转存表中的数据 `book_books_content`
 --
 
+INSERT INTO `book_books_content` (`id`, `acticle_name`, `key_word`, `acticle_content`, `add_time`, `books_id`) VALUES
+(7, '第1节内容', '内容', '你好啊', 1439359335, 16),
+(8, '第5 节内容', '55555555555555555555', '555555555555555555', 1439367841, 16),
+(6, '概要介绍', '会计', '<h3>\r\n	标题\r\n</h3>\r\n<table style="width:100%;" cellpadding="2" cellspacing="0" border="1">\r\n	<tbody>\r\n		<tr>\r\n			<td>\r\n				<h3>\r\n					标题1\r\n				</h3>\r\n			</td>\r\n			<td>\r\n				<h3>\r\n					标题1\r\n				</h3>\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n				内容1\r\n			</td>\r\n			<td>\r\n				内容2\r\n			</td>\r\n		</tr>\r\n		<tr>\r\n			<td>\r\n				内容3\r\n			</td>\r\n			<td>\r\n				内容4\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n<p>\r\n	表格说明\r\n</p>', 1439358575, 16),
+(9, '第三章内容', '33333333333333', '三三', 1439367886, 16),
+(10, '又是第5节内容', '1111111111111111111111111111', '1111111111111111', 1439370656, 16);
 
 -- --------------------------------------------------------
 
@@ -134,24 +140,41 @@ CREATE TABLE IF NOT EXISTS `book_content_category` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `content_category_name` varchar(45) NOT NULL DEFAULT '',
   `pid` tinyint(5) unsigned NOT NULL DEFAULT '0',
+  `level` smallint(2) unsigned NOT NULL DEFAULT '1',
   `bid` int(11) NOT NULL,
   `content_id` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`),
   KEY `content_id` (`content_id`),
   KEY `bid` (`bid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=39 ;
 
 --
 -- 转存表中的数据 `book_content_category`
 --
 
-INSERT INTO `book_content_category` (`id`, `content_category_name`, `pid`, `bid`, `content_id`) VALUES
-(1, '介绍', 0, 16, 0),
-(2, '第一章', 0, 16, 0),
-(3, '第二章', 0, 16, 0),
-(4, '第三章', 0, 16, 0),
-(5, '第四章', 0, 16, 0),
-(6, '第五章', 0, 16, 0);
+INSERT INTO `book_content_category` (`id`, `content_category_name`, `pid`, `level`, `bid`, `content_id`) VALUES
+(17, '第一章', 0, 1, 16, 0),
+(18, '第二章', 0, 1, 16, 0),
+(19, '第三章', 0, 1, 16, 0),
+(20, '第四章', 0, 1, 16, 0),
+(21, '第五章', 0, 1, 16, 0),
+(22, '概要介绍', 17, 2, 16, 6),
+(23, '第1节', 17, 2, 16, 0),
+(24, '第2节', 17, 2, 16, 0),
+(25, '第3节', 18, 2, 16, 0),
+(26, '第4节', 18, 2, 16, 0),
+(27, '第5节', 19, 2, 16, 0),
+(28, '第6节', 19, 2, 16, 0),
+(29, '第10节', 21, 2, 16, 0),
+(30, '第11节', 21, 2, 16, 0),
+(31, '第1节内容', 23, 3, 16, 7),
+(32, '第六章', 0, 1, 16, 0),
+(33, '第7节', 19, 2, 16, 0),
+(34, '第5 节内容', 27, 3, 16, 8),
+(35, '第三章内容', 19, 2, 16, 9),
+(36, '第8节', 21, 2, 16, 0),
+(37, '第8节', 19, 2, 16, 0),
+(38, '又是第5节内容', 27, 3, 16, 10);
 
 -- --------------------------------------------------------
 
