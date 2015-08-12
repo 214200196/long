@@ -83,7 +83,10 @@
 }
 .content-Cate{
  /* background: #ccc;*/
-  margin-top: 75px;
+  margin-top: 110px;
+}
+.content-Cate ul li{
+  list-style-type: none;
 }
 
 
@@ -91,6 +94,15 @@
   width: 280px;
   margin: 20px auto;
 }
+
+.select-cate-top select{
+  height: 30px;
+  border-radius:5px;
+  width: 250px;
+  margin-bottom: 5px;
+  border-color:#2e6da4; 
+}
+
 
 .edit-main{
   float: left;
@@ -228,7 +240,16 @@
     <div class="edit-left">
       <form action="<?php echo U('addContentCate',array('bid' => $booksInfo['id']));?>" method="POST">
         <div class="col-lg-6">
+        <div class="select-cate-top">
+             <select class="selectpicker" name="addActicleCateName">
+              <optgroup label="顶级目录">
+              <option>顶级</option>
+              <optgroup label="二级目录">
+              <?php if(is_array($getTopContentCate)): foreach($getTopContentCate as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["content_category_name"]); ?></option><?php endforeach; endif; ?>
+            </select>
+        </div>
           <div class="input-group">
+
             <input type="text" class="form-control" name="addContentCate" placeholder="请添加目录名称"/>
             <span class="input-group-btn">
               <button class="btn btn-primary" type="submit">增加目录</button>
@@ -237,37 +258,69 @@
         </div>
       </form>
       <div class="content-Cate">
-        <ol>
-          <?php if(is_array($getContentCate)): foreach($getContentCate as $key=>$v): ?><li><a href="<?php echo U('index',array('bid' => $booksInfo['id'],'cid'=>$v['id']));?>"><?php echo ($v["content_category_name"]); ?></a></li><?php endforeach; endif; ?>
-        </ol>       
+        <ul>
+          <?php if(is_array($getAllContentCateResult)): foreach($getAllContentCateResult as $key=>$v): ?><li><a href="<?php echo U('index',array('bid' => $booksInfo['id'],'cid'=>$v['id'],'content_id'=>$v['content_id']));?>">
+          <?php if($v['level'] == 2): ?>&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; if($v['level'] == 3): ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; echo ($v["content_category_name"]); ?></a></li><?php endforeach; endif; ?>
+        </ul>       
       </div>
   </div>
-
-    <form action="<?php echo U('addContentList',array('bid' => $booksInfo['id']));?>" method="POST">
-    <div class="edit-main">
-      <label>选择目录</label>
-      <div class="select-box"> 
-      <select class="selectpicker" name="acticleCateName">
-          <option>请选择分类</option>
-          <?php if(is_array($getContentCate)): foreach($getContentCate as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["content_category_name"]); ?></option><?php endforeach; endif; ?>
-      </select>
-      </div>
-
-      <div class="edit-main-title">
-        <label>标题 </label>
-        <input type="text" class="form-control" name="acticleName" placeholder="请输入文章标题">
-      </div>
+  <?php if($_GET['content_id']): ?><form action="<?php echo U('addContentList',array('bid' => $booksInfo['id']));?>" method="POST">
+      <div class="edit-main">
+        <label>绑定目录</label>
+        <div class="select-box"> 
+        <select class="selectpicker" name="acticleCateName">
+            <option>请选择目录</option>
+            <?php if(is_array($getContentCate)): foreach($getContentCate as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php if($v['level'] == 2): ?>&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; ?>
+               <?php echo ($v["content_category_name"]); ?>
+              </option><?php endforeach; endif; ?>
+        </select>
+        </div>
 
         <div class="edit-main-title">
-        <label>设置关键字 </label>
-        <input type="text" class="form-control" name="keyword" placeholder="请输入关键字">
-      </div>
-       
-        <textarea class="form-control" rows="26" id="editor_id" name="content" ></textarea>
+          <label>标题 </label>
+          <input type="text" class="form-control" name="acticleName" placeholder="请输入文章标题">
+        </div>
 
-        <button type="submit" class="btn btn-success">上 传 文 章</button>
-    </div>
-    </form>
+          <div class="edit-main-title">
+          <label>设置关键字 </label>
+          <input type="text" class="form-control" name="keyword" placeholder="请输入关键字">
+        </div>
+         
+          <textarea class="form-control" rows="26" id="editor_id" name="content" ></textarea>
+
+          <button type="submit" class="btn btn-success">修 改 文 章</button>
+      </div>
+      </form>
+
+
+  <?php else: ?>
+      <form action="<?php echo U('addContentList',array('bid' => $booksInfo['id']));?>" method="POST">
+      <div class="edit-main">
+        <label>绑定目录</label>
+        <div class="select-box"> 
+        <select class="selectpicker" name="acticleCateName">
+            <option>请选择目录</option>
+            <?php if(is_array($getContentCate)): foreach($getContentCate as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php if($v['level'] == 2): ?>&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; ?>
+               <?php echo ($v["content_category_name"]); ?>
+              </option><?php endforeach; endif; ?>
+        </select>
+        </div>
+
+        <div class="edit-main-title">
+          <label>标题 </label>
+          <input type="text" class="form-control" name="acticleName" placeholder="请输入文章标题">
+        </div>
+
+          <div class="edit-main-title">
+          <label>设置关键字 </label>
+          <input type="text" class="form-control" name="keyword" placeholder="请输入关键字">
+        </div>
+         
+          <textarea class="form-control" rows="26" id="editor_id" name="content" ></textarea>
+
+          <button type="submit" class="btn btn-success">上 传 文 章</button>
+      </div>
+      </form><?php endif; ?>
 
 </div>
 
