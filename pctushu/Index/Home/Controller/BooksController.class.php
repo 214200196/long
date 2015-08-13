@@ -11,7 +11,7 @@ class BooksController extends CommonController {
     }
     // 获取目录
     public function getBooksCate() {
-    	$getAllContentCate = M('content_category')->where(array('bid'=>intval($_GET['bid'])))->select();
+    	$getAllContentCate = M('content_category')->where(array('bid'=>intval($_GET['bid'])))->order("id ASC")->select();
     	$getAllContentCateResult = booksCateArr($getAllContentCate);
     	$this->getAllContentCateResult = $getAllContentCateResult;
     }

@@ -37,6 +37,15 @@ class CommonController extends Controller {
     public function getBooksInfo() {
         if(empty($_GET['bid'])) $_GET['bid'] = 1;
         $booksInfo = M('books_list')->where(array('id'=>intval($_GET['bid'])))->find();
+
+        $getMiniContentId = M('content_category')->where(array('bid'=>$booksInfo['id'],array('content_id'=>array('NEQ',0))),'AND')->order("content_id ASC")->field("content_id")->limit(1)->find();
+        $this->getMiniContentId = $getMiniContentId;
+
+        $getMaxContentId = M('content_category')->where(array('bid'=>$booksInfo['id'],array('content_id'=>array('NEQ',0))),'AND')->order("content_id DESC")->field("content_id")->limit(1)->find();
+        $this->getMaxContentId = $getMaxContentId;
+
+        //echo M('content_category')->getLastSql();
+        //dump($getMaxContentId);
         $this->booksInfo = $booksInfo;
     }
 

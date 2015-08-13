@@ -4,179 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="pctushu,pc图书,在线图书,在线pdf图书,图书,图书馆,计算机书籍下载,计算机书籍,会计" />
+    <meta name="description" content="pc图书网—只为用户提供免费精品图书，计算机（为主）、财经、英语、数学、医学、陆续健全所有体系！感谢大家支持@_@!" />
   <title>图书库</title>
   <link rel="stylesheet" href="/pctushu/Public/css/bootstrap.css" type="text/css">
-	<style>
-
-	.navbar-default{
-		height: 60px;
-		margin-bottom: 0px;
-		border-radius: 0px;
-		border:none;
-		background: #101010;
-	}
-	.container-fluid{
-		height: 60px;
-	}
-	.navbar-header{
-		padding-top:5px;
-		width: 100px;
-	}
-	.navbar-brand{
-		padding-left: 25px;
-	}
-	.navbar-collapse{
-		padding-top:5px; 
-	}
-
-
-
-
-
-/* v2 */
-.container {
-  width: 1200px;
-}
-
-.course-content {
-  float: none;
-
-}
-.course-nav-hd {
-  position: relative;
-  height: 50px;
-  line-height: 50px;
-  border-bottom: 1px solid #d0d6d9;
-  font-size: 16px;
-  font-weight: bold;
-  color: #14191e;
-}
-.course-nav-row { 
-  border-bottom: 1px solid #edf1f2;
-
-}
-.course-nav-row .hd {
-    width: 56px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 12px;
-    color: #787d82;
-    text-align: right;
-    padding-top: 7.5px;
-
-}
-
-.l {
-    float: left;
-}
-
-.course-nav-item {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  padding: 7.5px 10px 0px 5px;
-
-
-}
-.course-nav-item a {
-  display: block;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 6px;
-  font-size: 12px;
-}
-.course-nav-item.on a {
-  background: #f01400;
-  color: #fff;
-}
-
-
-
-
-
-
-  body{
-    font-size: 15px;
-    background: #fff;
-  }
-  body a{
-    color: #444444;
-    text-decoration:none;
-    cursor: pointer;
-  }
-  body a:hover{
-    text-decoration: none;
-  }
-  body label{
-    color: #444444;
-    font-weight:normal;
-  }
-
-
-    .thumbnail{
-      width:191px;
-      padding-top: 8px;
-      margin-left: 4px;
-      margin-right: 4px;
-      border-radius:0px; 
-      border: 0px;
-    }
-    .row{
-      float:left;
-    }
-    .nav-tabs{
-      width:1200px;
-    }
-    .bookslist{
-      width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 5px;
-    }
-    .bookslist-list{
-      border: 1px solid #ccc;
-      border-top:0px;
-      width:1200px;
-      height:auto;
-      min-height:700px; 
-    }
-    .books-list-page{
-      width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .pagination{
-      margin-left: 460px;
-    }
-
-
-  
-    #footer{
-      clear: both;
-    	width:100%;
-    	height: 100px;
-    	background: #101010;
-    }
-    .waper{
-    	width:1090px;
-    	height: 100px;
-    	margin-left: auto;
-    	margin-right: auto;
-    }
-    .footer_link li{
-    	float: left;
-    	list-style-type: none;
-    	margin-right: 20px;
-    	padding-top: 20px;
-    }
-    .copyright{
-    	float: left;
-    	margin-left: 40px;
-    	padding-top: 5px;
-    	color: #Fff;
-
-    }
-</style>
+  <link rel="stylesheet" href="/pctushu/Public/css/bookslist.css" type="text/css">
 <script type="text/javascript">
   var cid = <?php echo ($cid); ?>;
 </script>
@@ -294,14 +126,14 @@
                 <div class="caption">
                   <h4><?php echo ($v["books_name"]); ?></h4>
                   <p><a style="color:#2e6da4" href="<?php echo U('Member/index',array('uid'=>$v['uid']));?>"><?php echo ($v["name"]); ?></a><span style="color:#888; font-size:10px;float:right;padding-top:3px;"><?php echo (date("Y-m-d",$v["add_time"])); ?></span></p>
-                  <p><a href="<?php echo U('Books/index',array('bid'=>$v['id']));?>" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
+                      <?php if(S('getMiniContentId')){ $getMiniContentId = S('getMiniContentId'); } else { $getMiniContentId = M('content_category')->where(array('bid'=>$v['id'],array('content_id'=>array('NEQ',0))),'AND')->order("content_id ASC")->field("content_id")->limit(1)->find(); S('getMiniContentId', $getMiniContentId,3600*24); } ?>
+                  <p><a href="<?php echo U('Books/index',array('bid'=>$v['id'],'content_id'=>$getMiniContentId['content_id']));?>" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
                 </div>
               </div>
             </div>
           </div><?php endforeach; endif; ?>
     </div>
 </div>
-
 
 <nav class="books-list-page">
   <ul class="pagination">
@@ -315,7 +147,6 @@
   </ul>
 </nav>
 
-
 <div id="footer" >
     <div class="waper">
         <div class="footerwaper clearfix">
@@ -323,23 +154,22 @@
                 <a class="followus-weixin" href="javascript:;"  target="_blank" title="微信">
                     <div class="flw-weixin-box"></div>
                 </a>
-                <a class="followus-weibo" href="http://weibo.com/u/3306361973"  target="_blank" title="新浪微博"></a>
-                <a class="followus-qzone" href="http://user.qzone.qq.com/1059809142/" target="_blank" title="QQ空间"></a>
+                <a class="followus-weibo" href=""  target="_blank" title="新浪微博"></a>
+                <a class="followus-qzone" href="" target="_blank" title="QQ空间"></a>
             </div>
             <div class="footer_intro l">
                 <div class="footer_link">
                     <ul>
-                        <li><a href="http://www.imooc.com/" target="_blank">网站首页</a></li>
-                        <li><a href="/about/job" target="_blank">人才招聘</a></li>
-                        <li> <a href="/about/contact" target="_blank">联系我们</a></li>
-                        <li><a href="http://daxue.imooc.com/" target="_blank">高校联盟</a></li>
-                        <li><a href="/about/us" target="_blank">关于我们</a></li>
-                        <li> <a href="/about/recruit" target="_blank">讲师招募</a></li>
-                        <li> <a href="/user/feedback" target="_blank">意见反馈</a></li>
-                        <li> <a href="/about/friendly" target="_blank">友情链接</a></li>
+                        <li><a href="" >网站首页</a></li>
+                        <li> <a href="" >联系我们</a></li>
+                        <li><a href="" >关于我们</a></li>
+                        <li> <a href="" >意见反馈</a></li>
+                        <li> <a href="" >友情链接</a></li>
                     </ul>
                 </div>
-                <div class ="copyright" ><p>Copyright © 2015 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p></div>
+                <div class ="copyright" ><p>Copyright © 2015.08 ~ 2015 www.pctushu.com All Rights Reserved   &nbsp; &nbsp;
+                  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+                </p></div>
             </div>
         </div>
     </div>

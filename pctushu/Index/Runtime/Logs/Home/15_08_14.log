@@ -1,0 +1,951 @@
+[ 2015-08-14T00:00:11+08:00 ] ::1 /pctushu/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001453s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0121s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `book_books_list` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `book_books_list` WHERE `uid` = 2 ORDER BY add_time DESC LIMIT 0,6   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+NOTIC: [8] Undefined variable: username C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 88 行.
+NOTIC: [8] Undefined index: p C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 166 行.
+NOTIC: [8] Undefined index: p C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001765s ]
+
+[ 2015-08-14T00:04:13+08:00 ] ::1 /pctushu/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 1  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid_path` LIKE '%,1%'  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0065s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('1','6','7','8','9','10','11','12','13','14','15','16','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39')  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001681s ]
+
+[ 2015-08-14T00:06:22+08:00 ] ::1 /pctushu/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 1  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid_path` LIKE '%,1%'  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0129s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('1','6','7','8','9','10','11','12','13','14','15','16','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39')  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000403s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001693s ]
+
+[ 2015-08-14T00:06:29+08:00 ] ::1 /pctushu/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `book_books_list` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `book_books_list` WHERE `uid` = 2 ORDER BY add_time DESC LIMIT 0,6   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8] Undefined variable: username C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 88 行.
+NOTIC: [8] Undefined index: p C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 166 行.
+NOTIC: [8] Undefined index: p C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001479s ]
+
+[ 2015-08-14T00:09:57+08:00 ] ::1 /pctushu/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `book_books_list` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `book_books_list` WHERE `uid` = 2 ORDER BY add_time DESC LIMIT 0,6   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+NOTIC: [8] Undefined variable: username C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 88 行.
+NOTIC: [8] Undefined index: p C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 166 行.
+NOTIC: [8] Undefined index: p C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000970s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001454s ]
+
+[ 2015-08-14T00:10:00+08:00 ] ::1 /pctushu/addbooks/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid` = 0  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001237s ]
+
+[ 2015-08-14T00:10:04+08:00 ] ::1 /pctushu/login/loginout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+
+[ 2015-08-14T00:10:05+08:00 ] ::1 /pctushu/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 1  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid_path` LIKE '%,1%'  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0132s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('1','6','7','8','9','10','11','12','13','14','15','16','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39')  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000956s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001566s ]
+
+[ 2015-08-14T00:10:08+08:00 ] ::1 /pctushu/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\8568c9968b5b48cb7715112de401a702.php 第 162 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001821s ]
+
+[ 2015-08-14T00:10:08+08:00 ] ::1 /pctushu/register/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001764s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001755s ]
+
+[ 2015-08-14T00:10:17+08:00 ] ::1 /pctushu/login/asynverify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001494s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000979s ]
+
+[ 2015-08-14T00:10:18+08:00 ] ::1 /pctushu/login/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001727s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0148s ]
+SQL: SELECT `id`,`name` FROM `book_user` WHERE `email` = 'longjianwei@163.com' AND `passworld` = '29fd06e62faa920cbe4b9c62018aa064' LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001429s ]
+
+[ 2015-08-14T00:10:20+08:00 ] ::1 /pctushu/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0118s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `book_books_list` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `book_books_list` WHERE `uid` = 1 ORDER BY add_time DESC LIMIT 0,6   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+NOTIC: [8] Undefined variable: username C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 88 行.
+NOTIC: [8] Undefined index: p C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 166 行.
+NOTIC: [8] Undefined index: p C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001154s ]
+
+[ 2015-08-14T00:10:22+08:00 ] ::1 /pctushu/editorbooks/index/bid/17
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001363s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0121s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('39','7','1')  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `book_content_category` [ RunTime:0.0079s ]
+SQL: SELECT `content_id` FROM `book_content_category` WHERE `bid` = 17 AND (  `content_id` <> 0 ) ORDER BY content_id ASC LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `content_id` FROM `book_content_category` WHERE `bid` = 17 AND (  `content_id` <> 0 ) ORDER BY content_id DESC LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `book_content_category` WHERE `bid` = 17 AND (  `content_id` = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `book_content_category` WHERE `bid` = 17 AND (  `content_id` = 0 ) AND (  `pid` = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `book_content_category` WHERE `bid` = 17 ORDER BY id ASC  [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: content_id C:\php\www\pctushu\Index\Home\Controller\EditorbooksController.class.php 第 138 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined index: content_id C:\php\www\pctushu\Index\Runtime\Cache\Home\c23193eb1170003120a41369ed4c578f.php 第 107 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001402s ]
+
+[ 2015-08-14T00:10:22+08:00 ] ::1 /pctushu/editor/lang/zh-CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+ERR: 无法加载控制器:Editor
+
+[ 2015-08-14T00:11:25+08:00 ] ::1 /pctushu/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `book_books_list` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `book_books_list` WHERE `uid` = 1 ORDER BY add_time DESC LIMIT 0,6   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000404s ]
+NOTIC: [8] Undefined variable: username C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 88 行.
+NOTIC: [8] Undefined index: p C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 166 行.
+NOTIC: [8] Undefined index: p C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051977s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003346s ]
+
+[ 2015-08-14T00:12:37+08:00 ] ::1 /pctushu/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0125s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `book_books_list` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `book_books_list` WHERE `uid` = 1 ORDER BY add_time DESC LIMIT 0,6   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+NOTIC: [8] Undefined variable: username C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 7 行.
+NOTIC: [8] Undefined variable: username C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 88 行.
+NOTIC: [8] Undefined index: p C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 166 行.
+NOTIC: [8] Undefined index: p C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044684s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002159s ]
+
+[ 2015-08-14T00:15:12+08:00 ] ::1 /pctushu/member/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0136s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `book_books_list` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `book_books_list` WHERE `uid` = 1 ORDER BY add_time DESC LIMIT 0,6   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+NOTIC: [8] Undefined variable: username C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 88 行.
+NOTIC: [8] Undefined index: p C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 166 行.
+NOTIC: [8] Undefined index: p C:\php\www\pctushu\Index\Runtime\Cache\Home\083c8c9e189162b491d8e830ed021da5.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001537s ]
+
+[ 2015-08-14T00:20:00+08:00 ] ::1 /pctushu/login/loginout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+
+[ 2015-08-14T00:20:01+08:00 ] ::1 /pctushu/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 1  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid_path` LIKE '%,1%'  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0097s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('1','6','7','8','9','10','11','12','13','14','15','16','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39')  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001422s ]
+
+[ 2015-08-14T00:20:02+08:00 ] ::1 /pctushu/register/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+NOTIC: [8] Undefined variable: Verifys C:\php\www\pctushu\Index\Runtime\Cache\Home\fffd6bd2440c5640552fbf1721b927c2.php 第 19 行.
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\fffd6bd2440c5640552fbf1721b927c2.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001153s ]
+
+[ 2015-08-14T00:20:02+08:00 ] ::1 /pctushu/register/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002828s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001993s ]
+
+[ 2015-08-14T00:20:08+08:00 ] ::1 /pctushu/register/verify/0.3945830187294632
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000922s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001058s ]
+
+[ 2015-08-14T00:20:09+08:00 ] ::1 /pctushu/register/verify/0.29082184354774654
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001057s ]
+
+[ 2015-08-14T00:20:09+08:00 ] ::1 /pctushu/register/verify/0.5437689910177141
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001322s ]
+
+[ 2015-08-14T00:20:09+08:00 ] ::1 /pctushu/register/verify/0.11260092817246914
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2015-08-14T00:20:09+08:00 ] ::1 /pctushu/register/verify/0.23032021801918745
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001077s ]
+
+[ 2015-08-14T00:20:11+08:00 ] ::1 /pctushu/register/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+NOTIC: [8] Undefined variable: Verifys C:\php\www\pctushu\Index\Runtime\Cache\Home\fffd6bd2440c5640552fbf1721b927c2.php 第 19 行.
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\fffd6bd2440c5640552fbf1721b927c2.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000990s ]
+
+[ 2015-08-14T00:20:11+08:00 ] ::1 /pctushu/register/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001830s ]
+
+[ 2015-08-14T00:20:12+08:00 ] ::1 /pctushu/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\8568c9968b5b48cb7715112de401a702.php 第 162 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001208s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001341s ]
+
+[ 2015-08-14T00:20:12+08:00 ] ::1 /pctushu/register/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001805s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001216s ]
+
+[ 2015-08-14T00:20:16+08:00 ] ::1 /pctushu/register/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001289s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] Undefined variable: Verifys C:\php\www\pctushu\Index\Runtime\Cache\Home\fffd6bd2440c5640552fbf1721b927c2.php 第 19 行.
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\fffd6bd2440c5640552fbf1721b927c2.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001003s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001124s ]
+
+[ 2015-08-14T00:20:17+08:00 ] ::1 /pctushu/register/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001800s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001195s ]
+
+[ 2015-08-14T00:21:05+08:00 ] ::1 /pctushu/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\8568c9968b5b48cb7715112de401a702.php 第 162 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001174s ]
+
+[ 2015-08-14T00:21:05+08:00 ] ::1 /pctushu/register/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001382s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001629s ]
+
+[ 2015-08-14T00:21:08+08:00 ] ::1 /pctushu/bookslist/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid_path` LIKE '%,1%'  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0046s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('1','6','7','8','9','10','11','12','13','14','15','16','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39')  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `pid` = 0  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 1  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `pid` = 1  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `pid` = 1 AND (  `pid` IN ('1','2','3','4','5') )  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`category_name` FROM `book_books_category` WHERE `id` = 1 AND (  `pid` IN ('1','2','3','4','5') )  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `pid` IN ('6','7','8','19','20','32')  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid_path` LIKE '%,0%'  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\d2dc1e1fec690345be64c8d912010af0.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001293s ]
+
+[ 2015-08-14T00:21:12+08:00 ] ::1 /pctushu/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 1  [ RunTime:0.0018s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid_path` LIKE '%,1%'  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0078s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('1','6','7','8','9','10','11','12','13','14','15','16','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39')  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024893s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001448s ]
+
+[ 2015-08-14T00:21:46+08:00 ] ::1 /pctushu/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 1  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid_path` LIKE '%,1%'  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0063s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('1','6','7','8','9','10','11','12','13','14','15','16','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39')  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002557s ]
+
+[ 2015-08-14T00:22:35+08:00 ] ::1 /pctushu/member/index/uid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+
+[ 2015-08-14T00:22:38+08:00 ] ::1 /pctushu/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001596s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\8568c9968b5b48cb7715112de401a702.php 第 162 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014151s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001143s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001291s ]
+
+[ 2015-08-14T00:22:38+08:00 ] ::1 /pctushu/register/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 8 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2015-08-14T00:22:41+08:00 ] ::1 /pctushu/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 1  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid_path` LIKE '%,1%'  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0115s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0143s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('1','6','7','8','9','10','11','12','13','14','15','16','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39')  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000398s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001396s ]
+
+[ 2015-08-14T00:22:48+08:00 ] ::1 /pctushu/bookslist/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 1  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid_path` LIKE '%,1%'  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0116s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0123s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('1','6','7','8','9','10','11','12','13','14','15','16','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39')  [ RunTime:0.0015s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `pid` = 0  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 1  [ RunTime:0.0009s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `pid` = 1  [ RunTime:0.0008s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `pid` = 1 AND (  `pid` IN ('1','2','3','4','5') )  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`pid`,`category_name` FROM `book_books_category` WHERE `id` = 1 AND (  `pid` IN ('1','2','3','4','5') )  [ RunTime:0.0011s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `pid` IN ('6','7','8','19','20','32')  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid_path` LIKE '%,0%'  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\d2dc1e1fec690345be64c8d912010af0.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001356s ]
+
+[ 2015-08-14T00:23:01+08:00 ] ::1 /pctushu/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 1  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid_path` LIKE '%,1%'  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0066s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('1','6','7','8','9','10','11','12','13','14','15','16','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39')  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000320s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000498s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001756s ]
+
+[ 2015-08-14T00:23:20+08:00 ] ::1 /pctushu/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001590s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `book_books_category` WHERE `id` = 1  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `book_books_category` WHERE `pid_path` LIKE '%,1%'  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `book_user` [ RunTime:0.0085s ]
+SQL: SELECT Books_list.id AS id,Books_list.books_name AS books_name,Books_list.books_counts AS books_counts,Books_list.add_time AS add_time,Books_list.books_face AS books_face,Books_list.uid AS uid,Books_list.category_id AS category_id,Books_category.category_name AS category_name,User.name AS name FROM book_books_list Books_list LEFT JOIN book_books_category Books_category ON Books_list.category_id = Books_category.id  JOIN book_user User ON Books_list.uid = User.id WHERE Books_list.category_id IN ('1','6','7','8','9','10','11','12','13','14','15','16','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39')  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000389s ]
+NOTIC: [8] Undefined index: uid C:\php\www\pctushu\Index\Runtime\Cache\Home\f8cf203eb98c60ed9cec339b90173a5c.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001184s ]
+

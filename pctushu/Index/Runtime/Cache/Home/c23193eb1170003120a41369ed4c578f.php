@@ -4,171 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>图书库</title>
+  <title>图书编辑</title>
   <link rel="stylesheet" href="/pctushu/Public/css/bootstrap.css" type="text/css">
-	<style>
-
-  body a{
-    color: #444444;
-    text-decoration:none;
-    cursor: pointer;
-  }
-  body a:hover{
-    text-decoration: none;
-  }
-
-	.navbar-default{
-		height: 60px;
-		margin-bottom: 0px;
-		border-radius: 0px;
-		border:none;
-		background: #101010
-	}
-	.container-fluid{
-		height: 60px;
-	}
-	.navbar-header{
-		padding-top:5px;
-		width: 100px;
-	}
-	.navbar-brand{
-		padding-left: 25px;
-	}
-	.navbar-collapse{
-		padding-top:5px; 
-	}
-
-    .book-content-top-box{
-    width: 100%;
-    background: #1F1E1E;
-  }
-  .book-content-top{
-    width: 1200px;
-    height: 30px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .book-content-top span{
-    font-size: 15px;
-    height: 30px;
-    line-height: 30px;
-  }
-  .book-content-top span p{
-    font-size: 10px;
-    margin: 0px 5px 0px 5px;
-  }
-  .book-content-top span a{
-    color:#ccc;
-  }
-  .book-content-top span a:hover{
-    color:#fff;
-  }
-  .glyphicon-menu-right{
-    color:#ccc;
-  }
-
-.content-main{
-  width: 1200px;
-  margin: 0px auto;
-}
-
-.edit-left{
-  float: left;
-  width: 280px;
-  min-height: 880px;
-  height: auto;
-  background: #EDE8D5;
-  margin-right: 20px;
-  border-radius: 5px;
-}
-.content-Cate{
- /* background: #ccc;*/
-  margin-top: 110px;
-}
-.content-Cate ul li{
-  list-style-type: none;
-}
-
-
-.col-lg-6{
-  width: 280px;
-  margin: 20px auto;
-}
-
-.select-cate-top select{
-  height: 30px;
-  border-radius:5px;
-  width: 250px;
-  margin-bottom: 5px;
-  border-color:#2e6da4; 
-}
-
-
-.edit-main{
-  float: left;
-  width: 900px;
-  margin:20px auto; 
-}
-
-.edit-main-title{
-  margin: 20px auto;
-}
-
-.edit-main-title input{
-  width: 600px;
-  margin-bottom:25px; 
-}
-
-.select-box{
-  margin-bottom: 20px;
-}
-
-.select-box select{
-  height: 30px;
-  width: 150px;
-  margin-right: 10px;
-  border-radius: 5px;
-}
-
-/*.form-control{
-  width: 750px;
-}*/
-
-.btn-success{
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-
-
-
-
-    #footer{
-      clear: both;
-    	width:100%;
-    	height: 100px;
-    	background: #101010;
-    }
-    .waper{
-    	width:1090px;
-    	height: 100px;
-    	margin-left: auto;
-    	margin-right: auto;
-    }
-    .footer_link li{
-    	float: left;
-    	list-style-type: none;
-    	margin-right: 20px;
-    	padding-top: 20px;
-    }
-    .copyright{
-    	float: left;
-    	margin-left: 40px;
-    	padding-top: 5px;
-    	color: #Fff;
-
-    }
-</style>
+  <link rel="stylesheet" href="/pctushu/Public/css/editorbooks.css" type="text/css">
 </head>
 <body>
 
@@ -335,23 +173,22 @@
                 <a class="followus-weixin" href="javascript:;"  target="_blank" title="微信">
                     <div class="flw-weixin-box"></div>
                 </a>
-                <a class="followus-weibo" href="http://weibo.com/u/3306361973"  target="_blank" title="新浪微博"></a>
-                <a class="followus-qzone" href="http://user.qzone.qq.com/1059809142/" target="_blank" title="QQ空间"></a>
+                <a class="followus-weibo" href=""  target="_blank" title="新浪微博"></a>
+                <a class="followus-qzone" href="" target="_blank" title="QQ空间"></a>
             </div>
             <div class="footer_intro l">
                 <div class="footer_link">
                     <ul>
-                        <li><a href="http://www.imooc.com/" target="_blank">网站首页</a></li>
-                        <li><a href="/about/job" target="_blank">人才招聘</a></li>
-                        <li> <a href="/about/contact" target="_blank">联系我们</a></li>
-                        <li><a href="http://daxue.imooc.com/" target="_blank">高校联盟</a></li>
-                        <li><a href="/about/us" target="_blank">关于我们</a></li>
-                        <li> <a href="/about/recruit" target="_blank">讲师招募</a></li>
-                        <li> <a href="/user/feedback" target="_blank">意见反馈</a></li>
-                        <li> <a href="/about/friendly" target="_blank">友情链接</a></li>
+                        <li><a href="" >网站首页</a></li>
+                        <li> <a href="" >联系我们</a></li>
+                        <li><a href="" >关于我们</a></li>
+                        <li> <a href="" >意见反馈</a></li>
+                        <li> <a href="" >友情链接</a></li>
                     </ul>
                 </div>
-                <div class ="copyright" ><p>Copyright © 2015 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p></div>
+                <div class ="copyright" ><p>Copyright © 2015.08 ~ 2015 www.pctushu.com All Rights Reserved   &nbsp; &nbsp;
+                  &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+                </p></div>
             </div>
         </div>
     </div>

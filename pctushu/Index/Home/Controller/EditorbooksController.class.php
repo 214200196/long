@@ -211,7 +211,7 @@ class EditorbooksController extends CommonController {
     	$getTopContentCate = M('content_category')->where(array('bid'=>intval($_GET['bid']),array('content_id'=>0),array('pid'=>0)),'AND')->select();
     	$this->getTopContentCate = $getTopContentCate;
     	// 显示所有分类及内容结构
-    	$getAllContentCate = M('content_category')->where(array('bid'=>intval($_GET['bid'])))->select();
+    	$getAllContentCate = M('content_category')->where(array('bid'=>intval($_GET['bid'])))->order("id ASC")->select();
     	$getAllContentCateResult = $this->cateArr($getAllContentCate);
     	$this->getAllContentCateResult = $getAllContentCateResult;
 
