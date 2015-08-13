@@ -135,7 +135,7 @@
 .book-content-center-header{
   height: 55px;
   width: 750px;
-  margin:0px auto;
+  margin:0 auto 20px auto;
   border-bottom:1px solid #E6E4D5;
 }
 .book-content-center-footer{
