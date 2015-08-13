@@ -7,8 +7,20 @@
 	<title>会员中心</title>
 	<link rel="stylesheet" href="/pctushu/Public/css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="/pctushu/Public/css/member.css" type="text/css">
+  <style>
+    .books-list-page{
+      width: 880px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .books-list-page .current{
+      background-color:red;
+      color:#fff;
+    }
+ </style>
 
 </head>
+
 <body>
 
 
@@ -150,9 +162,9 @@
         <div class="tool-right r">
             <span class="tool-item total-num">共<b></b>个课程</span>
             <span class="tool-item tool-pager">
-                <span class="pager-num"><b class="pager-cur">1</b>/<em class="pager-total">4</em>&nbsp;&nbsp;</span>
-                <a href="javascript:void(0)" class="glyphicon glyphicon-arrow-left"></a>&nbsp;&nbsp;
-                <a href="/space/index/page/2" class="glyphicon glyphicon-arrow-right"></a>
+                <span class="pager-num"><b class="pager-cur"><?php echo ((isset($_GET['p']) && ($_GET['p'] !== ""))?($_GET['p']):1); ?></b>/<em class="pager-total">4</em>&nbsp;&nbsp;</span>
+                <a href="<?php echo U('index',array('p'=>$_GET['p']-1));?>" class="glyphicon glyphicon-arrow-left"></a>&nbsp;&nbsp;
+                <a href="<?php echo U('index',array('p'=>$_GET['p']+1));?>" class="glyphicon glyphicon-arrow-right"></a>
             </span>
         </div>
     </div>
@@ -162,7 +174,7 @@
                   <div class="box-left l">
                     <a href="<?php echo U('Books/index',array('id'=>$v['id']));?>" title="<?php echo ($v["books_name"]); ?>" target="_blank">
                       <div class="course-list-img">
-                        <img src="../Uploads/middle/<?php echo ($v["books_face"]); ?>" width="220" height="123" alt="<?php echo ($v["books_name"]); ?>">
+                        <img src="/pctushu/Uploads/middle/<?php echo ($v["books_face"]); ?>" width="220" height="123" alt="<?php echo ($v["books_name"]); ?>">
                         <div class="pro-bg"></div>
                         <em class="dot-progress">10%</em>
                         <div class="progress-bar">
@@ -190,7 +202,7 @@
                   </div>
               </li><?php endforeach; endif; ?>
       </ul>
-        
+       <div class="books-list-page"><?php echo ($page); ?></div>
   </div>
 </div>
 

@@ -39,6 +39,19 @@ function regetArray ($arr, $cid) {
 
 }
 
+// 重组数组 获取树形结构
+function booksCateArr($array,$pid=0){
+   $tree = array();
+	    foreach($array as  $v){
+	    	if($v['pid']==$pid){
+	    		$tree[] = $v;
+	    		$tree = array_merge($tree,booksCateArr($array,$v['id']));
+	    	}
+	    }
+    return $tree;
+ }
+
+
 
 
 ?>

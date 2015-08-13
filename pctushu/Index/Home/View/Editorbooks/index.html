@@ -130,7 +130,9 @@
   border-radius: 5px;
 }
 
-
+/*.form-control{
+  width: 750px;
+}*/
 
 .btn-success{
   font-weight: bold;

@@ -112,18 +112,17 @@
     color: #444444;
     font-weight:normal;
   }
- .book-content-left ul li{margin: 0;padding: 0;}  
-    .book-content-left { color:#002446; margin: 0; }  
-     .book-content-left  ol.tree {padding: 0px;width: 170px;}  
-     .book-content-left  li {position: relative;margin-left: -15px;list-style: none;}  
-     .book-content-left  li.file{margin-left: -18px !important;}  
-     .book-content-left  li.file a{padding-left: 21px;display: block;}  
-      .book-content-left li input{position: absolute;left: 0;margin-left: 0;opacity: 0;z-index: 2;cursor: pointer;top: 0;}  
-     .book-content-left  input + ol{display: none;}  
-     .book-content-left  input + ol > li { height: 0; overflow: hidden; margin-left: -14px !important; padding-left: 1px; }  
-     .book-content-left  li label {cursor: pointer;display: block;padding-left: 17px;background: url(image/jia.png) no-repeat 0px 1px;}  
-     .book-content-left  input:checked + ol {background: url(image/jian.png) 44px -2px no-repeat;margin: -22px 0 0 -44px;padding:27px 0 0 80px;height: auto;display: block;}  
-      .book-content-left input:checked + ol > li { height: auto;}  
+.book-content-left{
+  width: 175px;
+}
+.book-content-left ul{
+  width: 175px;
+  margin-left: -40px;
+}
+.book-content-left ul li{
+  width: 175px;
+  list-style-type: none;
+}
 
   .book-content-center{
     float: left;
@@ -139,6 +138,12 @@
   margin:0px auto;
   border-bottom:1px solid #E6E4D5;
 }
+.book-content-center-footer{
+  height: 55px;
+  width: 750px;
+  margin:20px auto 0 auto;
+  border-top: 1px solid #E6E4D5;
+}
 
 .book-content-center-header-left span{
   float: left;
@@ -147,6 +152,12 @@
   font-weight: bold;
   line-height: 55px;
 }
+
+.book-content-center-content{
+  width: 750px;
+  margin:0px auto;
+}
+
 .glyphicon-circle-arrow-left{
   line-height: 55px;
   font-size: 25px;
@@ -271,108 +282,66 @@
   </div>
 </div>
 <div class="book-content-box">
-  <div class="book-content-left">
-      <h4>目 录</h4>
-      <ol class="tree">  
-        <li>  
-            <label for="folder1">水产养殖<p style="color:green;" class="glyphicon glyphicon-bookmark"></p></label> <input type="checkbox"  id="folder1" checked="checked" />   
-            <ol>  
-                <li class="file"><a href="#">实时数据</a></li>  
-                <li>  
-                    <label for="subfolder1">实时数据 <p style="color:red;" class="glyphicon glyphicon-bookmark"></p></label> <input type="checkbox" id="subfolder1" />   
-                    <ol>  
-                        <li class="file"><a href="">下级</a></li>  
-                        <li>  
-                            <label for="subsubfolder1">下级</label> <input type="checkbox" id="subsubfolder1" />   
-                            <ol>  
-  
-                                <li class="file"><a href="">下级</a></li>  
-                                <li>  
-                                    <label for="subsubfolder2">下级</label> <input type="checkbox" id="subsubfolder2" />   
-                                    <ol>  
-                                        <li class="file"><a href="">无限级</a></li>  
-                                        <li class="file"><a href="">无限级</a></li>  
-                                        <li class="file"><a href="">无限级</a></li>  
-  
-                                        <li class="file"><a href="">无限级</a></li>  
-                                        <li class="file"><a href="">无限级</a></li>  
-                                        <li class="file"><a href="">无限级</a></li>  
-                                    </ol>  
-                                </li>  
-                            </ol>  
-                        </li>  
-  
-                        <li class="file"><a href="">下级</a></li>  
-                        <li class="file"><a href="">下级</a></li>  
-                        <li class="file"><a href="">下级</a></li>  
-                        <li class="file"><a href="">下级</a></li>  
-                    </ol>  
-                </li>  
-            </ol>  
-        </li>  
-        <li>  
-            <label for="folder2">水产养殖</label> <input type="checkbox" id="folder2" />   
-            <ol>  
-                <li class="file"><a href="">实时数据</a></li>  
-                <li>  
-                    <label for="subfolder2">实时数据</label> <input type="checkbox" id="subfolder2" />   
-                    <ol>  
-  
-                        <li class="file"><a href="">下级</a></li>  
-                        <li class="file"><a href="">下级</a></li>  
-                        <li class="file"><a href="">下级</a></li>  
-                        <li class="file"><a href="">下级</a></li>  
-                        <li class="file"><a href="">下级</a></li>  
-                        <li class="file"><a href="">下级</a></li>  
-  
-                    </ol>  
-                </li>  
-            </ol>  
-        </li>  
-    </ol> 
-  </div>
+    <div class="book-content-left">
+        <h4>目 录</h4>
+          <ul>
+            <?php if(is_array($getAllContentCateResult)): foreach($getAllContentCateResult as $key=>$v): ?><li><a <?php if($v['content_id']): ?>style="color:blue"<?php endif; ?> href="<?php echo U('index',array('bid' => $booksInfo['id'],'cid'=>$v['id'],'content_id'=>$v['content_id']));?>">
+              <?php if($v['level'] == 2): ?>&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; if($v['level'] == 3): ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; echo ($v["content_category_name"]); ?></a></li><?php endforeach; endif; ?>
+          </ul>       
+    </div>
 
-  <div class="book-content-center">
-    <div class="book-content-center-header">
-       <div class="book-content-center-header-left"> 
-        <span><a class="glyphicon glyphicon-circle-arrow-left"></a></span>
-        <span><p>Git教程</p></span>
-        <span style="font-size:15px;font-weight:normal;">阅读: 15887 </span>
-       </div>
-       <div class="book-content-center-header-right">
-        <span><a class="glyphicon glyphicon-circle-arrow-right"></a></span>
-        <span><p>98.07%</p></span>
+    <div class="book-content-center">
+      <div class="book-content-center-header">
+         <div class="book-content-center-header-left"> 
+          <span><a class="glyphicon glyphicon-circle-arrow-left"></a></span>
+          <span><p><?php echo ($getContentList["acticle_name"]); ?></p></span>
+          <span style="font-size:15px;font-weight:normal;">阅读: 15887 </span>
+         </div>
+         <div class="book-content-center-header-right">
+          <span><a class="glyphicon glyphicon-circle-arrow-right"></a></span>
+          <span><p>98.07%</p></span>
+          </div>
+      </div>
+      <div class="book-content-center-content"><?php echo ($getContentList["acticle_content"]); ?></div>
+        <?php if($getContentList['acticle_content']): ?><div class="book-content-center-footer">
+              <div class="book-content-center-header-left"> 
+              <span><a class="glyphicon glyphicon-circle-arrow-left"></a></span>
+              <span><p><?php echo ($getContentList["acticle_name"]); ?></p></span>
+             </div>
+             <div class="book-content-center-header-right">
+              <span><a class="glyphicon glyphicon-circle-arrow-right"></a></span>
+              <span><p>98.07%</p></span>
+              </div>
+          </div><?php endif; ?> 
+    </div>
+
+    <div class="book-content-right">
+      <h5>猜你喜欢<p style="color:red;" class="glyphicon glyphicon-heart"></p><a class="glyphicon glyphicon-refresh"></a></h5>
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div  class="thumbnail" >
+              <img src="image/apic12099.jpg" alt="...">
+              <div class="caption">
+                <h3>Thumbnail label</h3>
+                <p>...</p>
+                <p><a href="#" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div  class="thumbnail" >
+              <img src="image/apic12099.jpg" alt="...">
+              <div class="caption">
+                <h3>Thumbnail label</h3>
+                <p>...</p>
+                <p><a href="#" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
-  </div>
-
-  <div class="book-content-right">
-    <h5>猜你喜欢<p style="color:red;" class="glyphicon glyphicon-heart"></p><a class="glyphicon glyphicon-refresh"></a></h5>
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
-          <div  class="thumbnail" >
-            <img src="image/apic12099.jpg" alt="...">
-            <div class="caption">
-              <h3>Thumbnail label</h3>
-              <p>...</p>
-              <p><a href="#" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
-          <div  class="thumbnail" >
-            <img src="image/apic12099.jpg" alt="...">
-            <div class="caption">
-              <h3>Thumbnail label</h3>
-              <p>...</p>
-              <p><a href="#" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
 </div>  
 
 <div id="footer" >
