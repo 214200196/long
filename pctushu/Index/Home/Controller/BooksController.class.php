@@ -7,6 +7,11 @@ class BooksController extends CommonController {
     	$this->getBooksInfo();
     	$this->getBooksCate();
     	$this->getContentList();
+        // 点击数及阅读数实现
+        p($_GET['content_id']);
+
+
+
     	$this->display();
     }
     // 获取目录

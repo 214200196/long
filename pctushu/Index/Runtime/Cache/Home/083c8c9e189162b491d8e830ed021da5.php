@@ -22,19 +22,22 @@
 </head>
 
 <body>
+<script type="text/javascript">
+  var menue = <?php echo ($_GET['menue']); ?>;
+</script>
 
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
 
-    <div class="navbar-header">
+    <div class="navbar-header" style="width:120px;">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo U('Index/index');?>">PC图书</a>
+      <a class="navbar-brand" href="<?php echo U('Index/index');?>" >PC图书&nbsp;<span class="glyphicon glyphicon-book"></span></a>
     </div>
 
 
@@ -88,10 +91,10 @@
                 <span class="user-name"><?php echo ($username); ?></span>
             </li>
             <li>
-                <span class="user-site"> 未填写 </span>
+                <span class="user-site"> <?php echo ($_SESSION['username']); ?> </span>
             </li>
-                        <li><a href="/user/userinfo" class="user-setup">设置</a></li>
-                                </ul>
+            <li><a href="/user/userinfo" class="user-setup">设置</a></li>
+       </ul>
     </div>
     <div class="user-desc">
         <div class="sign-wrap">
@@ -120,19 +123,19 @@
     </ul>
     <ul class="nav nav-pills">
         <li role="presentation" class="">
-            <a  href=""><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
-        </li>
-         <li role="presentation" class="active">
-            <a  href=""><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
+            <a  href="<?php echo U('index',array('menue'=>0));?>"><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
         </li>
          <li role="presentation" class="">
-            <a  href=""><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
+            <a  href="<?php echo U('index',array('menue'=>1));?>"><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
+        </li>
+         <li role="presentation" class="">
+            <a  href="<?php echo U('index',array('menue'=>2));?>"><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
         </li>
             <li role="presentation" class="">
-            <a  href=""><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
+            <a  href="<?php echo U('index',array('menue'=>3));?>"><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
         </li>
         <li role="presentation" class="">
-            <a  href=""><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
+            <a  href="<?php echo U('index',array('menue'=>4));?>"><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
         </li>
             </ul>
         <div class="recent-visitors">
@@ -156,8 +159,7 @@
     <div class="course-tool-bar clearfix">
         <div class="tool-left l">
             <a href="<?php echo U('Addbooks/index');?>" class="sort-item active"><span class="glyphicon glyphicon-plus"></span>&nbsp发布图书</a>
-            <a href="" class="sort-item ">更新中</a>
-            <a href="" class="sort-item ">已完成</a>
+
         </div>
         <div class="tool-right r">
             <span class="tool-item total-num">共<b></b>个课程</span>
@@ -244,5 +246,6 @@
 	<script src="/pctushu/Public/js/jquery-2.1.4.min.js"></script>
 	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 	<script src="/pctushu/Public/js/bootstrap.min.js"></script>
+  <script src="/pctushu/Public/js/member.js"></script>
 </body>
 </html>

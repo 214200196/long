@@ -22,6 +22,9 @@
 </head>
 
 <body>
+<script type="text/javascript">
+  var menue = {$Think.get.menue};
+</script>
 
 
 <include file="Common:nav"/>
@@ -40,10 +43,10 @@
                 <span class="user-name">{$username}</span>
             </li>
             <li>
-                <span class="user-site"> 未填写 </span>
+                <span class="user-site"> {$_SESSION['username']} </span>
             </li>
-                        <li><a href="/user/userinfo" class="user-setup">设置</a></li>
-                                </ul>
+            <li><a href="/user/userinfo" class="user-setup">设置</a></li>
+       </ul>
     </div>
     <div class="user-desc">
         <div class="sign-wrap">
@@ -72,19 +75,19 @@
     </ul>
     <ul class="nav nav-pills">
         <li role="presentation" class="">
-            <a  href=""><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
-        </li>
-         <li role="presentation" class="active">
-            <a  href=""><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
+            <a  href="{:U('index',array('menue'=>0))}"><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
         </li>
          <li role="presentation" class="">
-            <a  href=""><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
+            <a  href="{:U('index',array('menue'=>1))}"><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
+        </li>
+         <li role="presentation" class="">
+            <a  href="{:U('index',array('menue'=>2))}"><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
         </li>
             <li role="presentation" class="">
-            <a  href=""><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
+            <a  href="{:U('index',array('menue'=>3))}"><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
         </li>
         <li role="presentation" class="">
-            <a  href=""><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
+            <a  href="{:U('index',array('menue'=>4))}"><i class="icon-nav icon-tick"></i>我的图书<span class="badge">42</span></a>
         </li>
             </ul>
         <div class="recent-visitors">
@@ -108,8 +111,7 @@
     <div class="course-tool-bar clearfix">
         <div class="tool-left l">
             <a href="{:U('Addbooks/index')}" class="sort-item active"><span class="glyphicon glyphicon-plus"></span>&nbsp发布图书</a>
-            <a href="" class="sort-item ">更新中</a>
-            <a href="" class="sort-item ">已完成</a>
+
         </div>
         <div class="tool-right r">
             <span class="tool-item total-num">共<b></b>个课程</span>
@@ -182,5 +184,6 @@
 	<script src="__PUBLIC__/js/jquery-2.1.4.min.js"></script>
 	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 	<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+  <script src="__PUBLIC__/js/member.js"></script>
 </body>
 </html>

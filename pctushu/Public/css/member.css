@@ -671,10 +671,10 @@ body {
 	background-color: #F9F9F9;
 }
 .nav-pills li.active a{
-	  background-color: #777777;
+	  background-color: #999;
 }
 .nav-pills li.active a:hover{
-	  background-color: #777777;
+	  background-color: #999;
 }
 
 
@@ -700,7 +700,6 @@ body {
     }
     .copyright{
     	float: left;
-    	margin-left: 40px;
     	padding-top: 5px;
     	color: #Fff;
 

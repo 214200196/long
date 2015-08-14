@@ -29,8 +29,8 @@
         <h4>目 录</h4>
           <ul>
             <foreach name='getAllContentCateResult' item="v">
-              <li><a <if condition="$v['content_id']">style="color:blue" </if> href="{:U('index',array('bid' => $booksInfo['id'],'cid'=>$v['id'],'content_id'=>$v['content_id']))}">
-              <if condition="$v['level'] eq 2">&nbsp;&nbsp;&nbsp;&nbsp;</if><if condition="$v['level'] eq 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</if>{$v.content_category_name}</a></li>
+              <li><if condition="$v['content_id']"><a style="color:#337ab7"  href="{:U('index',array('bid' => $booksInfo['id'],'cid'=>$v['id'],'content_id'=>$v['content_id']))}"></if>
+              <if condition="$v['level'] eq 2">&nbsp;&nbsp;&nbsp;&nbsp;</if><if condition="$v['level'] eq 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</if>{$v.content_category_name}<if condition="$v['content_id']"></a></if></li>
             </foreach>
           </ul>       
     </div>

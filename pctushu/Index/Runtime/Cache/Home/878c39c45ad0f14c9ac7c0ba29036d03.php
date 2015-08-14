@@ -16,14 +16,14 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
 
-    <div class="navbar-header">
+    <div class="navbar-header" style="width:120px;">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo U('Index/index');?>">PC图书</a>
+      <a class="navbar-brand" href="<?php echo U('Index/index');?>" >PC图书&nbsp;<span class="glyphicon glyphicon-book"></span></a>
     </div>
 
 
@@ -74,8 +74,8 @@
     <div class="book-content-left">
         <h4>目 录</h4>
           <ul>
-            <?php if(is_array($getAllContentCateResult)): foreach($getAllContentCateResult as $key=>$v): ?><li><a <?php if($v['content_id']): ?>style="color:blue"<?php endif; ?> href="<?php echo U('index',array('bid' => $booksInfo['id'],'cid'=>$v['id'],'content_id'=>$v['content_id']));?>">
-              <?php if($v['level'] == 2): ?>&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; if($v['level'] == 3): ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; echo ($v["content_category_name"]); ?></a></li><?php endforeach; endif; ?>
+            <?php if(is_array($getAllContentCateResult)): foreach($getAllContentCateResult as $key=>$v): ?><li><?php if($v['content_id']): ?><a style="color:#337ab7"  href="<?php echo U('index',array('bid' => $booksInfo['id'],'cid'=>$v['id'],'content_id'=>$v['content_id']));?>"><?php endif; ?>
+              <?php if($v['level'] == 2): ?>&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; if($v['level'] == 3): ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; echo ($v["content_category_name"]); if($v['content_id']): ?></a><?php endif; ?></li><?php endforeach; endif; ?>
           </ul>       
     </div>
 
