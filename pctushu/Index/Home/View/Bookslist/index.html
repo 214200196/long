@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="pctushu,pc图书,在线图书,在线pdf图书,图书,图书馆,计算机书籍下载,计算机书籍,会计" />
+    <meta name="description" content="pc图书网—只为用户提供免费精品图书，计算机（为主）、财经、英语、数学、医学、陆续健全所有体系！感谢大家支持@_@!" />
+  <title>图书库</title>
+  <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="__PUBLIC__/css/bookslist.css" type="text/css">
+<script type="text/javascript">
+  var cid = {$cid};
+</script>
+
+</head>
+<body>
+
+<include file="Common:nav"/>
+
+    <div class="container">
+        <div class="course-content">
+            <div class="course-nav-box">
+                <div class="course-nav-hd">
+                    <span>全部图书</span>
+                </div>
+                <div class="course-nav-row clearfix">
+                    <span class="hd l">专业：</span>
+                    <div class="bd">
+                        <ul class="">
+                            <li class="course-nav-item on">
+                                <a href="">全部</a>
+                            </li>
+                            <foreach name="topCate" item="v">
+                             <li class="course-nav-item"><a href="{:U('index',array('cid'=>$v['id']))}" data-ct="fe">{$v.category_name}</a></li>
+                              </foreach>
+            
+                          </ul>
+                    </div>
+                </div>
+                <div class="course-nav-row clearfix">
+                    <span class="hd l">方向：</span>
+                    <div class="bd">
+                        <ul class="">
+                            <li class="course-nav-item on">
+                                <a href="">全部</a>
+                            </li>
+                            <foreach name="secendCate" item="v">
+                             <li class="course-nav-item"><a href="{:U('index',array('cid'=>$v['id']))}" data-ct="fe">{$v.category_name}</a></li>
+                             </foreach>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+                <div class="course-nav-row clearfix">
+                    <span class="hd l">分类：</span>
+                    <div class="bd">
+                        <ul class="">
+                             <li class="course-nav-item on">
+                                <a href="">全部</a>
+                            </li>
+                            <foreach name="thirdCate" item="v">
+                               <li class="course-nav-item ">
+                                   <a href="{:U('index',array('cid'=>$v['id']))}" data-id=7 data-ct="fe">{$v.category_name}</a>
+                              </li> 
+                            </foreach>    
+                        </ul>
+                    </div>
+                </div>
+
+         </div>
+     </div> 
+
+<div class="bookslist">
+  <ul class="nav nav-tabs" id="category-select">
+    <li role="presentation" class=""><a href="#">猜你喜欢<strong style="color:red;" class="glyphicon glyphicon-heart"></strong></a></li>
+    <foreach name="topCate" item="v">
+      <li role="presentation" class=""><a href="{:U('index',array('cid'=>$v['id']))}">{$v.category_name}</a></li>
+    </foreach>
+  </ul>
+    <div class="bookslist-list">
+      <foreach name="booksList" item="v">
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div  class="thumbnail" >
+                <img src="__APP__/Uploads/mini/{$v.books_face}" alt="{$v.books_name}">
+                <div class="caption">
+                  <h4>{$v.books_name}</h4>
+                  <p><a style="color:#2e6da4" href="{:U('Member/index',array('uid'=>$v['uid']))}">{$v.name}</a><span style="color:#888; font-size:10px;float:right;padding-top:3px;">{$v.add_time|date="Y-m-d",###}</span></p>
+                      <php>
+                        if(S('getMiniContentId')){
+                            $getMiniContentId = S('getMiniContentId');
+                        } else {
+                          $getMiniContentId = M('content_category')->where(array('bid'=>$v['id'],array('content_id'=>array('NEQ',0))),'AND')->order("content_id ASC")->field("content_id")->limit(1)->find();
+                          //echo M('content_category')->getLastSql();
+                          //dump($getMiniContentId);
+                          //$this->getMiniContentId = $getMiniContentId;
+                          S('getMiniContentId', $getMiniContentId,3600*24);
+                        }
+                      </php>
+                  <p><a href="{:U('Books/index',array('bid'=>$v['id'],'content_id'=>$getMiniContentId['content_id']))}" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </foreach>
+    </div>
+</div>
+
+<nav class="books-list-page">
+  <ul class="pagination">
+    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+    <li class=""><a href="#">2<span class="sr-only">(current)</span></a></li>
+    <li class=""><a href="#">3<span class="sr-only">(current)</span></a></li>
+    <li class=""><a href="#">4<span class="sr-only">(current)</span></a></li>
+    <li class=""><a href="#">...<span class="sr-only">(current)</span></a></li>
+    <li class=""><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+  </ul>
+</nav>
+
+<include file="Common:footer"/>
+
+  <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+  <script src="__PUBLIC__/js/jquery-2.1.4.min.js"></script>
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/js/index.js"></script>
+</body>
+</html>
