@@ -122,14 +122,14 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
 
-    <div class="navbar-header">
+    <div class="navbar-header" style="width:120px;">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo U('Index/index');?>">PC图书</a>
+      <a class="navbar-brand" href="<?php echo U('Index/index');?>" >PC图书&nbsp;<span class="glyphicon glyphicon-book"></span></a>
     </div>
 
 

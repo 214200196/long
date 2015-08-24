@@ -2,11 +2,11 @@
 namespace Home\Controller;
 use Think\Controller;
 class MemberController extends CommonController {
-	public function _initialize(){
-		if(empty($_SESSION['uid'])){
-			redirect(U('Login/index'), 3,'please login to visitor!');
-		}
-	}
+	// public function _initialize(){
+	// 	if(empty($_SESSION['uid'])){
+	// 		redirect(U('Login/index'), 3,'please login to visitor!');
+	// 	}
+	// }
     public function index(){
         //p($_SESSION);
         $db = M('books_list');                                                              // 实例化User对象
@@ -18,6 +18,28 @@ class MemberController extends CommonController {
         $this->booksinfo = $booksinfo;
         $this->assign('page',$show);// 赋值分页输出
     	$this->display();
+    }
+
+    public function addFollow() {
+        if(empty($_SESSION['uid'])) $this->error("请登入后关注吧！",U('Login/index'));
+        // 检测是否存在
+        $followCount=M('follow')->where(array('uid'=>$_SESSION['uid'],'books_id'=>intval($_GET['bid'])),'AND')->count();
+        
+        if(empty($followCount)) {
+            
+            if(M('follow')->data(array('uid'=>$_SESSION['uid'],'books_id'=>intval($_GET['bid'])))->add()){
+                    $this->success("关注成功!");
+            }
+
+        } else {
+            $this->error("已关注,请勿重复关注！");
+        }
+    }    
+                   
+    
+
+    public function follow(){
+        $this->display('follow');
     }
   
 }

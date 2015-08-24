@@ -8,9 +8,18 @@ class BooksController extends CommonController {
     	$this->getBooksCate();
     	$this->getContentList();
         // 点击数及阅读数实现
-        p($_GET['content_id']);
-
-
+        if (intval($_GET['content_id']) && intval($_GET['bid'])) {
+            M('books_content')->where(array('id'=>intval($_GET['content_id'])))->setInc('acticle_click');
+            M('books_list')->where(array('id'=>intval($_GET['bid'])))->setInc('books_counts');
+            // 阅读百分比
+            $booksTotalPage = M('books_content')->where(array('books_id'=>intval($_GET['bid'])))->count();
+            $booksFirstPage = M('books_content')->where(array('books_id'=>intval($_GET['bid'])))->order("id ASC")->field('id')->limit(1)->find();
+           
+            // 当前页-开始页+1/总页数
+            $booksPercent = (intval($_GET['content_id']) - $booksFirstPage['id'] + 1)/$booksTotalPage*100;
+            $this->booksPercent = round($booksPercent,2);
+            
+        }
 
     	$this->display();
     }

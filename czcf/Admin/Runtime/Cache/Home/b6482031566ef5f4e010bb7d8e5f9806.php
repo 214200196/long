@@ -60,8 +60,9 @@
                 HEAD
                         --> 
         <div id="head">
+            <a href="#" style="margin-left:15px;"><img src="/czcf/Public/img/icons/top/logo.png" alt="" /></a>
             <div class="left">
-                <a href="#" class="button profile"><img src="/czcf/Public/img/icons/top/huser.png" alt="" /></a>
+                <a href="#" class="button profile" style="top:10px;"><img src="/czcf/Public/img/icons/top/huser.png" alt="" /></a>
                 Hi, 
                 <a href="#">admin</a>
                 |
@@ -69,7 +70,7 @@
             </div>
             <div class="right">
                 <form action="#" id="search" class="search placeholder">
-                    <label>Looking for something ?</label>
+                    <label> 查找内容</label>
                     <input type="text" value="" name="q" class="text"/>
                     <input type="submit" value="rechercher" class="submit"/>
                 </form>
@@ -81,14 +82,14 @@
         <div id="sidebar">
             <ul>
                 <li>
-                    <a href="<?php echo U('index');?>">
-                        <img src="/czcf/Public/img/icons/menu/inbox.png" alt="" />
+                    <a href="<?php echo U('Index/index');?>">
+                        <img src="/czcf/Public/img/icons/menu/home.png" alt="" />
                         首 页
                     </a>
                 </li>
                 <li class="current"><a href="#"><img src="/czcf/Public/img/icons/menu/layout.png" alt="" /> 借款管理</a>
                     <ul>
-                                                <li class="current"><a href="<?php echo U('Borrow/index',array('p'=>'table'));?>">借款信息</a></li>
+                                                <li class="current"><a href="<?php echo U('Borrow/index');?>">借款信息</a></li>
                                                 <li><a href="forms.html?p=forms">Forms</a></li>
                                                 <li><a href="table.html?p=table">Table</a></li>
                                                 <li><a href="tabs.html?p=tabs">Tabs</a></li>
@@ -100,7 +101,77 @@
                                                 <li><a href="calendar.html?p=calendar">Calendar</a></li>
                                             </ul>
                 </li>
-                <li><a href="#"><img src="/czcf/Public/img/icons/menu/brush.png" alt="" /> Another submenu</a>
+                <li class="current"><a href="#"><img src="/czcf/Public/img/icons/menu/user.png" alt="" /> 会员管理</a>
+                    <ul>
+                                                <li class="current"><a href="<?php echo U('Borrow/index');?>">会员信息</a></li>
+                                                <li><a href="forms.html?p=forms">Forms</a></li>
+                                                <li><a href="table.html?p=table">Table</a></li>
+                                                <li><a href="tabs.html?p=tabs">Tabs</a></li>
+                                                <li><a href="gallery.html?p=gallery">Gallery</a></li>
+                                                <li><a href="notifications.html?p=notif">Notifications</a></li>
+                                                <li><a href="charts.html?p=charts">Charts</a></li>
+                                                <li><a href="typography.html?p=typo">Typography</a></li>
+                                                <li><a href="icons.html?p=icons">Icons</a></li>
+                                                <li><a href="calendar.html?p=calendar">Calendar</a></li>
+                                            </ul>
+                </li>
+                <li class="current"><a href="#"><img src="/czcf/Public/img/icons/menu/money.png" alt="" /> 资金管理</a>
+                    <ul>
+                                                <li class="current"><a href="<?php echo U('Borrow/index');?>">会员信息</a></li>
+                                                <li><a href="forms.html?p=forms">Forms</a></li>
+                                                <li><a href="table.html?p=table">Table</a></li>
+                                                <li><a href="tabs.html?p=tabs">Tabs</a></li>
+                                                <li><a href="gallery.html?p=gallery">Gallery</a></li>
+                                                <li><a href="notifications.html?p=notif">Notifications</a></li>
+                                                <li><a href="charts.html?p=charts">Charts</a></li>
+                                                <li><a href="typography.html?p=typo">Typography</a></li>
+                                                <li><a href="icons.html?p=icons">Icons</a></li>
+                                                <li><a href="calendar.html?p=calendar">Calendar</a></li>
+                                            </ul>
+                </li>
+                <li class="current"><a href="#"><img src="/czcf/Public/img/icons/menu/page.png" alt="" /> 新闻管理</a>
+                    <ul>
+                                                <li class="current"><a href="<?php echo U('Borrow/index');?>">发布新闻</a></li>
+                                                <li><a href="forms.html?p=forms">Forms</a></li>
+                                                <li><a href="table.html?p=table">Table</a></li>
+                                                <li><a href="tabs.html?p=tabs">Tabs</a></li>
+                                                <li><a href="gallery.html?p=gallery">Gallery</a></li>
+                                                <li><a href="notifications.html?p=notif">Notifications</a></li>
+                                                <li><a href="charts.html?p=charts">Charts</a></li>
+                                                <li><a href="typography.html?p=typo">Typography</a></li>
+                                                <li><a href="icons.html?p=icons">Icons</a></li>
+                                                <li><a href="calendar.html?p=calendar">Calendar</a></li>
+                                            </ul>
+                </li>
+                 <li class="current"><a href="#"><img src="/czcf/Public/img/icons/menu/chart.png" alt="" /> 数据统计</a>
+                    <ul>
+                                                <li class="current"><a href="<?php echo U('Borrow/index');?>">日报表</a></li>
+                                                <li><a href="forms.html?p=forms">Forms</a></li>
+                                                <li><a href="table.html?p=table">Table</a></li>
+                                                <li><a href="tabs.html?p=tabs">Tabs</a></li>
+                                                <li><a href="gallery.html?p=gallery">Gallery</a></li>
+                                                <li><a href="notifications.html?p=notif">Notifications</a></li>
+                                                <li><a href="charts.html?p=charts">Charts</a></li>
+                                                <li><a href="typography.html?p=typo">Typography</a></li>
+                                                <li><a href="icons.html?p=icons">Icons</a></li>
+                                                <li><a href="calendar.html?p=calendar">Calendar</a></li>
+                                            </ul>
+                </li>
+                <li class="current"><a href="#"><img src="/czcf/Public/img/icons/menu/settings.png" alt="" /> 系统设置s</a>
+                    <ul>
+                                                <li class="current"><a href="<?php echo U('Borrow/index');?>"> 数据库备份</a></li>
+                                                <li><a href="forms.html?p=forms">清除缓存</a></li>
+                                                <li><a href="table.html?p=table">Table</a></li>
+                                                <li><a href="tabs.html?p=tabs">Tabs</a></li>
+                                                <li><a href="gallery.html?p=gallery">Gallery</a></li>
+                                                <li><a href="notifications.html?p=notif">Notifications</a></li>
+                                                <li><a href="charts.html?p=charts">Charts</a></li>
+                                                <li><a href="typography.html?p=typo">Typography</a></li>
+                                                <li><a href="icons.html?p=icons">Icons</a></li>
+                                                <li><a href="calendar.html?p=calendar">Calendar</a></li>
+                                            </ul>
+                </li>
+<!--                 <li><a href="#"><img src="/czcf/Public/img/icons/menu/brush.png" alt="" /> Another submenu</a>
                     <ul>
                         <li><a href="#">Fake menu #1</a></li>
                         <li><a href="#">Fake menu #2</a></li>
@@ -127,7 +198,7 @@
                     </ul>
                 </li>
                 <li class="nosubmenu"><a href="#"><img src="/czcf/Public/img/icons/menu/lab.png" alt="" /> This button is useless</a></li>
-                <li class="nosubmenu"><a href="modal.html" class="zoombox w450 h700"><img src="/czcf/Public/img/icons/menu/comment.png" alt="" /> Modal box</a></li>
+                <li class="nosubmenu"><a href="modal.html" class="zoombox w450 h700"><img src="/czcf/Public/img/icons/menu/comment.png" alt="" /> Modal box</a></li> -->
             </ul>
 
 

@@ -43,12 +43,12 @@
   float: left;
   width: 550px;
 }
-.glyphicon{
+ .edit-main .glyphicon{
   font-size: 30px;
   color:red; 
   float: right;
 }
-.greencolor{
+.edit-main .greencolor{
   color:#5cb85c;
 }
 

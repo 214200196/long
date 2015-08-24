@@ -155,12 +155,11 @@
   <div class="r space-main">
     
     <div class="family">
-        <h1 class="family-hd">我发布的图书</h1>
+        <h1 class="family-hd">我关注的图书</h1>
     </div>
     <div class="course-tool-bar clearfix">
         <div class="tool-left l">
-            <a href="<?php echo U('Addbooks/index');?>" class="sort-item active"><span class="glyphicon glyphicon-plus"></span>&nbsp发布图书</a>
-
+            <a href="" class="sort-item active"><span class="glyphicon glyphicon-heart" style="color:red;"></span>&nbsp关注的图书</a>
         </div>
         <div class="tool-right r">
             <span class="tool-item total-num">共<b></b>个课程</span>

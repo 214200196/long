@@ -49,5 +49,13 @@ class CommonController extends Controller {
         $this->booksInfo = $booksInfo;
     }
 
+    // 关注状态获取
+    public function followStatus() {
+        if (isset($_SESSION['uid'])) {
+            $followStatus = M('follow')->where(array('uid'=>$_SESSION['uid']))->select();
+            $this->followStatus = foreach_arr($followStatus,'books_id');
+        }
+    }
+
 
 }

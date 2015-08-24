@@ -29,7 +29,7 @@
         <h4>目 录</h4>
           <ul>
             <foreach name='getAllContentCateResult' item="v">
-              <li><if condition="$v['content_id']"><a style="color:#337ab7"  href="{:U('index',array('bid' => $booksInfo['id'],'cid'=>$v['id'],'content_id'=>$v['content_id']))}"></if>
+              <li <if condition="$v['content_id'] eq $_GET['content_id']">class="cate-active"</if>><if condition="$v['content_id']"><a style="color:#337ab7"  href="{:U('index',array('bid' => $booksInfo['id'],'cid'=>$v['id'],'content_id'=>$v['content_id']))}"></if>
               <if condition="$v['level'] eq 2">&nbsp;&nbsp;&nbsp;&nbsp;</if><if condition="$v['level'] eq 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</if>{$v.content_category_name}<if condition="$v['content_id']"></a></if></li>
             </foreach>
           </ul>       
@@ -45,6 +45,7 @@
           </span>
           <span><p>{$getContentList.acticle_name}</p></span>
           <span style="font-size:15px;font-weight:normal;">阅读: {$getContentList.acticle_click} </span>
+          <span style="font-size:12px;font-weight:normal;margin-left:50px;color:#999;">该图书内容源于网络用户上传，如有侵权请联系我!</span>
          </div>
          <div class="book-content-center-header-right">
           <span>
@@ -52,7 +53,6 @@
             <a class="glyphicon glyphicon-circle-arrow-right" href="{:U('index',array('bid'=>$_GET['bid'],'content_id'=>$_GET['content_id']+1))}" title="下一页"></a>
             </if>
           </span>
-          <span><p>98.07%</p></span>
           </div>
       </div>
       <div class="book-content-center-content">{$getContentList.acticle_content}</div>
@@ -63,12 +63,13 @@
             <a class="glyphicon glyphicon-circle-arrow-left" href="{:U('index',array('bid'=>$_GET['bid'],'content_id'=>$_GET['content_id']-1))}" title="上一页"></a>
             </if></span>
               <span><p>{$getContentList.acticle_name}</p></span>
+              <span style="font-size:12px;font-weight:normal;margin-left:100px;color:#999;">该图书内容源于网络用户上传，如有侵权请联系我!</span>
              </div>
              <div class="book-content-center-header-right">
               <span><if condition="$_GET['content_id'] lt $getMaxContentId['content_id']">
             <a class="glyphicon glyphicon-circle-arrow-right" href="{:U('index',array('bid'=>$_GET['bid'],'content_id'=>$_GET['content_id']+1))}" title="下一页"></a>
             </if></span>
-              <span><p>98.07%</p></span>
+              <span><p>{$booksPercent}%</p></span>
               </div>
           </div>
          </if> 
@@ -109,5 +110,10 @@
   <script src="__PUBLIC__/js/jquery-2.1.4.min.js"></script>
   <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
   <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+    $(".cate-active").children().css('color','red');
+  });
+  </script>
 </body>
 </html>

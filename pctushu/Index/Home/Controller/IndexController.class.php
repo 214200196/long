@@ -86,6 +86,8 @@ class IndexController extends CommonController {
          $booksList = D('BooksView')->where($where)->select();
          
          $this->booksList = $booksList;
+
+         $this->followStatus();
    		
          //p($booksList);
     	$this->display();

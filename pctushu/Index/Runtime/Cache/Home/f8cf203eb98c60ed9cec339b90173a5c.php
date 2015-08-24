@@ -122,9 +122,13 @@
       		        <h4><?php echo ($v["books_name"]); ?></h4>
       		        <p><a style="color:#2e6da4" href="<?php echo U('Member/index',array('uid'=>$v['uid']));?>"><?php echo ($v["name"]); ?></a><span style="color:#888; font-size:10px;float:right;padding-top:3px;"><?php echo (date("Y-m-d",$v["add_time"])); ?></span></p>
                      
-                      <?php if(S('getMiniContentId')){ $getMiniContentId = S('getMiniContentId'); } else { $getMiniContentId = M('content_category')->where(array('bid'=>$v['id'],array('content_id'=>array('NEQ',0))),'AND')->order("content_id ASC")->field("content_id")->limit(1)->find(); S('getMiniContentId', $getMiniContentId,3600*24); } ?>
+                      <?php  $getMiniContentId = M('content_category')->where(array('bid'=>$v['id'],array('content_id'=>array('NEQ',0))),'AND')->order("content_id ASC")->field("content_id")->limit(1)->find(); $this->getMiniContentId = $getMiniContentId; ?>
 
-      		        <p><a href="<?php echo U('Books/index',array('bid'=>$v['id'],'content_id'=>$getMiniContentId['content_id']));?>" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
+      		        <p><a href="<?php echo U('Books/index',array('bid'=>$v['id'],'content_id'=>$getMiniContentId['content_id']));?>" class="btn btn-primary" role="button">在线阅读</a> 
+                    <?php if(in_array($v['id'],$followStatus)): ?><a class="btn btn-default" style="padding:6px 10px;" role="button">已关注<strong style="color:red;" class="glyphicon glyphicon-heart"></strong></a>
+                    <?php else: ?>
+                      <a href="<?php echo U('Member/addFollow',array('bid'=>$v['id']));?>" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a><?php endif; ?>
+                  </p>
       		      </div>
       		    </div>
       		  </div>

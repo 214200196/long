@@ -74,7 +74,7 @@
     <div class="book-content-left">
         <h4>目 录</h4>
           <ul>
-            <?php if(is_array($getAllContentCateResult)): foreach($getAllContentCateResult as $key=>$v): ?><li><?php if($v['content_id']): ?><a style="color:#337ab7"  href="<?php echo U('index',array('bid' => $booksInfo['id'],'cid'=>$v['id'],'content_id'=>$v['content_id']));?>"><?php endif; ?>
+            <?php if(is_array($getAllContentCateResult)): foreach($getAllContentCateResult as $key=>$v): ?><li <?php if($v['content_id'] == $_GET['content_id']): ?>class="cate-active"<?php endif; ?>><?php if($v['content_id']): ?><a style="color:#337ab7"  href="<?php echo U('index',array('bid' => $booksInfo['id'],'cid'=>$v['id'],'content_id'=>$v['content_id']));?>"><?php endif; ?>
               <?php if($v['level'] == 2): ?>&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; if($v['level'] == 3): ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php endif; echo ($v["content_category_name"]); if($v['content_id']): ?></a><?php endif; ?></li><?php endforeach; endif; ?>
           </ul>       
     </div>
@@ -87,12 +87,12 @@
           </span>
           <span><p><?php echo ($getContentList["acticle_name"]); ?></p></span>
           <span style="font-size:15px;font-weight:normal;">阅读: <?php echo ($getContentList["acticle_click"]); ?> </span>
+          <span style="font-size:12px;font-weight:normal;margin-left:50px;color:#999;">该图书内容源于网络用户上传，如有侵权请联系我!</span>
          </div>
          <div class="book-content-center-header-right">
           <span>
             <?php if($_GET['content_id'] < $getMaxContentId['content_id']): ?><a class="glyphicon glyphicon-circle-arrow-right" href="<?php echo U('index',array('bid'=>$_GET['bid'],'content_id'=>$_GET['content_id']+1));?>" title="下一页"></a><?php endif; ?>
           </span>
-          <span><p>98.07%</p></span>
           </div>
       </div>
       <div class="book-content-center-content"><?php echo ($getContentList["acticle_content"]); ?></div>
@@ -100,10 +100,11 @@
               <div class="book-content-center-header-left"> 
               <span><?php if($_GET['content_id'] != $getMiniContentId['content_id']): ?><a class="glyphicon glyphicon-circle-arrow-left" href="<?php echo U('index',array('bid'=>$_GET['bid'],'content_id'=>$_GET['content_id']-1));?>" title="上一页"></a><?php endif; ?></span>
               <span><p><?php echo ($getContentList["acticle_name"]); ?></p></span>
+              <span style="font-size:12px;font-weight:normal;margin-left:100px;color:#999;">该图书内容源于网络用户上传，如有侵权请联系我!</span>
              </div>
              <div class="book-content-center-header-right">
               <span><?php if($_GET['content_id'] < $getMaxContentId['content_id']): ?><a class="glyphicon glyphicon-circle-arrow-right" href="<?php echo U('index',array('bid'=>$_GET['bid'],'content_id'=>$_GET['content_id']+1));?>" title="下一页"></a><?php endif; ?></span>
-              <span><p>98.07%</p></span>
+              <span><p><?php echo ($booksPercent); ?>%</p></span>
               </div>
           </div><?php endif; ?> 
     </div>
@@ -169,5 +170,10 @@
   <script src="/pctushu/Public/js/jquery-2.1.4.min.js"></script>
   <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
   <script src="/pctushu/Public/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+    $(".cate-active").children().css('color','red');
+  });
+  </script>
 </body>
 </html>
