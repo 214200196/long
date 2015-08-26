@@ -1,0 +1,119 @@
+<include file="$header" />
+<ul class="nav3">
+  <li><a href="__SELF__ " id="c_so">推荐投资记录</a></li>
+</ul>
+<div class="module_add">
+  <div class="module_title"> <strong>投资列表</strong> </div>
+</div>
+<table border="0" cellspacing="1" width="100%">
+  <tr>
+  <tr class="ytit1">
+    <td>借款者</td>
+    <td>投资人</td>
+    <td>推荐人</td>
+    <td>标题</td>
+    <td>借款类型</td>
+    <td>借款者等级</td>
+    <td>年利率</td>
+    <td>期限</td>
+    <td>投资金额</td>
+    <td>进度</td>
+    <td>状态</td>
+  </tr>
+    </tr>
+  
+  <foreach name="list" item="item">
+    <tr>
+      <td><a href="javascript:void(0)"
+			onclick='tipsWindown("用户详细信息查看","{:U('Users/views?user_id='.$item['user_id'].'&type=scene')}",600,400);'> {$item.borrow_username}</a></td>
+      <td>{$item.tender_username}</td>
+      <td>{$item.recommon_name}</td>
+      <td title="{$item.name}"><a
+			href="{:U('Index/Index/index?site=full_success&nid='.$item['borrow_nid'])}" target="_blank">{$item.name}</a></td>
+      <td><if condition="$item.vouchstatus eq 1"> <font color="#FF0000">担保标借款</font>
+          <elseif condition="$item.is_flow eq 1" />
+          <font color="#FF0000">流转借款</font>
+          <elseif condition="$item.is_Seconds eq 1" />
+          <font color="#FF0000">秒标借款</font>
+          <elseif condition="$item.is_jin eq 1" />
+          <font color="#FF0000">净值借款</font>
+          <elseif condition="$item.fast_status eq 1" />
+          <font color="#FF0000">抵押借款</font>
+          <else />
+          普通标借款</if></td>
+      <td>{$item.credit.approve_credit|credit="credit",###}</td>
+      <td>{$item.borrow_apr}%</td>
+      <td>{$item.borrow_period|linkages="borrow_period",###}</td>
+      <td>￥{$item.tender_account}</td>
+      <td>{$item.borrow_account_scale}%</td>
+      <td><if condition="$item.spread eq 1">已奖励
+          <else /> 未奖励</if></td>
+    </tr>
+  </foreach>
+  <tr>
+    <td colspan="11" class="action"><div class="floatl"></div>
+      <div class="floatr"> 推荐人用户名：
+        <input type="text" name="username" id="username"
+					value="{$Think.request.username}" size="8" />
+        添加时间：<input type="text" name="dotime1" id="dotime1"  value="{$Think.request.dotime1}" size="15" onclick="laydate()"/> 到 <input type="text" name="dotime2" value="{$Think.request.dotime2}" id="dotime2" size="15" onclick="laydate()"/>
+        <select id="borrow_type" class="search_text">
+          <option value="">全部</option>
+          <option value="vouch"
+          <if condition="$Think.request.borrow_type eq 'vouch'"> selected="selected"</if> >担保标  </option>
+          <option value="fast"  <if condition="$Think.request.borrow_type eq 'fast'"> selected="selected"</if> >抵押标  </option>
+          <option value="flow"  <if condition="$Think.request.borrow_type eq 'flow'">selected="selected"</if>  >流转标  </option>
+          <option value="jin" <if condition="$Think.request.borrow_type eq 'jin'"> selected="selected"</if>  >净值标 </option>
+          <option value="credit"  <if condition="$Think.request.borrow_type eq 'credit'"> selected="selected"</if> >普通标 </option>
+        </select>
+        <input type="button" value="搜索" class="submit" onclick="sousuo('{:U('Borrow/recommon_tender','','')}')">
+      </div></td>
+</table>
+</div>
+<div style="padding: 10px 0; text-align: center">{$page}</div>
+</table>
+<script>
+
+function sousuo(url){
+	var sou = "";
+	var username = $("#username").val();
+	if (username!="" && username!=null){
+		sou += "/username/"+username;
+	}
+	var keywords = $("#keywords").val();
+	if (keywords!="" && keywords!=null){
+		sou += "/keywords/"+keywords;
+	}
+	var borrow_name = $("#borrow_name").val();
+	if (borrow_name!="" && borrow_name!=null){
+		sou += "/borrow_name/"+borrow_name;
+	}
+	var borrow_nid = $("#borrow_nid").val();
+	if (borrow_nid!="" && borrow_nid!=null){
+		sou += "/borrow_nid/"+borrow_nid;
+	}
+	var dotime1 = $("#dotime1").val();
+	if (dotime1!="" && dotime1!=null){
+		sou += "/dotime1/"+dotime1;
+	}
+	var dotime2 = $("#dotime2").val();
+	if (dotime2!="" && dotime2!=null){
+		sou += "/dotime2/"+dotime2;
+	}
+	var status = $("#status").val();
+	if (status!="" && status!=null){
+		sou += "/status/"+status;
+	}
+	var is_vouch = $("#is_vouch").val();
+	if (is_vouch!="" && is_vouch!=null){
+		sou += "/is_vouch/"+is_vouch;
+	}
+	var borrow_type = $("#borrow_type").val();
+	if (borrow_type!="" && borrow_type!=null){
+		sou += "/borrow_type/"+borrow_type;
+	}
+	
+	location.href=url+sou;
+	
+}
+</script> 
+<include file="$footer" />

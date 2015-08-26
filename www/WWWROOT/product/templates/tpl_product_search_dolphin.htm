@@ -1,0 +1,22 @@
+<link href="css/product_searchform_dolphin.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="{#CP#}js/selectbox.js"></script>
+<div class="productsearchformzone">
+<form id="productsearchform" method="get" action="{#CP#}class/index.php">
+  <div class="productsearchform">
+    <select name="catid" id="catid" class="box" style="display:none; background:#ffffff; width:146px; height:19px;">
+      <option value="0" >请选择分类</option>
+	  {#catlist#}
+    </select> 
+	<script>
+	makeSelectBox('catid','{#RP#}');
+	</script>
+  </div>
+
+    <div class="productsearchform">
+    <input name="key" type="text" id="productsearchform_key" value="{#key#}" style="width:144px;" class="inputproduct">
+  </div>
+  <div class="productsearchform2">
+  <input name="imageField" id="button" type="image" src="images/search5.gif" >
+  </div>
+</form>
+</div>

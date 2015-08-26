@@ -1,0 +1,48 @@
+<div class="m_change">
+	<ul>
+		<li><a href="{:U('borrow/debting')}">可以转让的债权</a></li>
+		<li><a href="{:U('borrow/debt_move')}" class="onn">正在转让的债权</a></li>
+		<li><a href="{:U('borrow/move_success')}">成功转让的债权</a></li>
+		<li><a href="{:U('borrow/buy_success')}"}>成功购买的债权</a></li>
+		<li><a href="{:U('borrow/wait?type=change')}">回收中的债权</a></li>
+	</ul>
+</div>
+<div class="us_r_bor1">
+	<div class="user_main_title1">
+		<strong style="color: #ff0000">温馨提示：</strong><br> 1、转让有效期均为7天。<br>
+		2、债权转让给网站，网站购买债权标准为：（待还本金+待还利息）*70%。
+	</div>
+	<div class="t20">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			class="tabyel">
+			<tr class="ytit1">
+				<td>投标标题</td>
+				<td>利率</td>
+				<td>待收期数/总期数</td>
+				<td>待收本金</td>
+				<td>待收利息</td>
+				<td>转让价格</td>
+				<td>发布时间</td>
+				<td>操作</td>
+			</tr>
+
+
+			<foreach name="list" item="item">
+			<tr>
+				<td><a href="{:U('Index/index?site=full_success&nid='.$item['borrow_nid'])}">{$item.borrow_name}</a></td>
+				<td>{$item.borrow_apr}%</td>
+				<td>{$item.wait_times}/{$item.borrow_period}</td>
+				<td>{$item.recover_account_capital_wait}</td>
+				<td>{$item.recover_account_interest_wait}</td>
+				<td>{$item.account}</td>
+				<td>{$item.addtime|date="Y-m-d H:i:s",###}</td>
+				<td><if condition="$item.status eq 3">待审核<elseif condition="$item.status eq 4" />转让网站待审核<else />
+					<a href="{:U('borrow/change?cancel_id='.$item['id'])}">撤销</a>/<a href="{:U('borrow/change?web_id='.$item['id'].'account='.$item['web_account'])}">转让给网站</a>
+					</a></if></td>
+			</tr>
+			</foreach>
+		</table>
+		<div style="padding: 10px 0; text-align: center">{$page}</div>
+
+	</div>
+</div>

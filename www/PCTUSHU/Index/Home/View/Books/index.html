@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="{$getContentList.key_word}" />
+    <meta name="description" content="pc图书网—只为用户提供免费精品图书，计算机（为主）、财经、英语、数学、医学、陆续健全所有体系！感谢大家支持@_@!" />
+  <title>{$booksInfo.books_name}-{$getContentList.acticle_name}</title>
+  <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="__PUBLIC__/css/books.css" type="text/css">
+
+</head>
+<body>
+
+<include file="Common:nav"/>
+
+<div class="book-content-top-box">
+  <div class="book-content-top">
+    <span><a href="{:U('Bookslist/index')}">图书库</a><p class="glyphicon glyphicon-menu-right"></p>
+    <foreach name="cateResult" item="v">
+       <a href="{:U('Bookslist/index',array('cid'=>$v['id']))}">{$v.category_name}</a><p class="glyphicon glyphicon-menu-right"></p>
+    </foreach>
+    <a>{$booksInfo.books_name}</a></span>
+  </div>
+</div>
+<div class="book-content-box">
+    <div class="book-content-left">
+        <h4>目 录</h4>
+          <ul>
+            <foreach name='getAllContentCateResult' item="v">
+              <li <if condition="$v['content_id'] eq $_GET['content_id']">class="cate-active"</if>><if condition="$v['content_id']"><a style="color:#337ab7"  href="{:U('index',array('bid' => $booksInfo['id'],'cid'=>$v['id'],'content_id'=>$v['content_id']))}"></if>
+              <if condition="$v['level'] eq 2">&nbsp;&nbsp;&nbsp;&nbsp;</if><if condition="$v['level'] eq 3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</if>{$v.content_category_name}<if condition="$v['content_id']"></a></if></li>
+            </foreach>
+          </ul>       
+    </div>
+
+    <div class="book-content-center">
+      <div class="book-content-center-header">
+         <div class="book-content-center-header-left"> 
+          <span>
+            <if condition="$_GET['content_id'] neq $getMiniContentId['content_id']">
+            <a class="glyphicon glyphicon-circle-arrow-left" href="{:U('index',array('bid'=>$_GET['bid'],'content_id'=>$_GET['content_id']-1))}" title="上一页"></a>
+            </if>
+          </span>
+          <span><p>{$getContentList.acticle_name}</p></span>
+          <span style="font-size:15px;font-weight:normal;">阅读: {$getContentList.acticle_click} </span>
+          <span style="font-size:12px;font-weight:normal;margin-left:50px;color:#999;">该图书内容源于网络用户上传，如有侵权请联系我!</span>
+         </div>
+         <div class="book-content-center-header-right">
+          <span>
+            <if condition="$_GET['content_id'] lt $getMaxContentId['content_id']">
+            <a class="glyphicon glyphicon-circle-arrow-right" href="{:U('index',array('bid'=>$_GET['bid'],'content_id'=>$_GET['content_id']+1))}" title="下一页"></a>
+            </if>
+          </span>
+            <span><p>{$booksPercent}%</p></span> 
+         </div>
+      </div>
+      <div class="book-content-center-content">{$getContentList.acticle_content}</div>
+        <if condition="$getContentList['acticle_content']">
+          <div class="book-content-center-footer">
+              <div class="book-content-center-header-left"> 
+              <span><if condition="$_GET['content_id'] neq $getMiniContentId['content_id']">
+            <a class="glyphicon glyphicon-circle-arrow-left" href="{:U('index',array('bid'=>$_GET['bid'],'content_id'=>$_GET['content_id']-1))}" title="上一页"></a>
+            </if></span>
+              <span><p>{$getContentList.acticle_name}</p></span>
+              <span style="font-size:12px;font-weight:normal;margin-left:100px;color:#999;">该图书内容源于网络用户上传，如有侵权请联系我!</span>
+             </div>
+             <div class="book-content-center-header-right">
+              <span><if condition="$_GET['content_id'] lt $getMaxContentId['content_id']">
+            <a class="glyphicon glyphicon-circle-arrow-right" href="{:U('index',array('bid'=>$_GET['bid'],'content_id'=>$_GET['content_id']+1))}" title="下一页"></a>
+            </if></span>
+              <span><p>{$booksPercent}%</p></span>
+              </div>
+          </div>
+         </if> 
+    </div>
+
+    <div class="book-content-right">
+      <h5>猜你喜欢<p style="color:red;" class="glyphicon glyphicon-heart"></p><a class="glyphicon glyphicon-refresh"></a></h5>
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div  class="thumbnail" >
+              <img src="image/apic12099.jpg" alt="...">
+              <div class="caption">
+                <h3>Thumbnail label</h3>
+                <p>...</p>
+                <p><a href="#" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div  class="thumbnail" >
+              <img src="image/apic12099.jpg" alt="...">
+              <div class="caption">
+                <h3>Thumbnail label</h3>
+                <p>...</p>
+                <p><a href="#" class="btn btn-primary" role="button">在线阅读</a> <a href="#" class="btn btn-default" role="button">关注<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>  
+
+<include file="Common:footer"/>
+
+  <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+  <script src="__PUBLIC__/js/jquery-2.1.4.min.js"></script>
+  <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+  <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+    $(".cate-active").children().css('color','red');
+  });
+  </script>
+</body>
+</html>

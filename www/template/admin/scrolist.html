@@ -1,0 +1,36 @@
+<include file="$header" />
+<table border="0" cellspacing="1" width="100%">
+	<tbody>
+		<tr>
+			<td width="" class="main_td">ID</td>
+			<td width="*" class="main_td">标题</td>
+			<td width="" class="main_td">类型</td>
+			<td width="" class="main_td">状态</td>
+			<td width="" class="main_td">排序</td>
+			<td width="" class="main_td">添加时间</td>
+			<td width="" class="main_td">图片</td>
+			<td width="" class="main_td">操作</td>
+		</tr>
+		<foreach name="lists['list']" item="item">
+		<tr>
+			<td class="main_td1" align="center">{$item.id}</td>
+			<td class="main_td1" align="center">{$item.name}</td>
+			<td class="main_td1" align="center" width="60">{$item.typename }</td>
+			<td class="main_td1" align="center" width="50"><if condition=" $item.status eq 1"> 显示<else />隐藏</if></td>
+			<td class="main_td1" align="center" width="50"><input type="text" value="{$item.order|default=10}" name="order[]" size="5" /><input type="hidden" name="id[]" value="{$item.id}" /></td>
+			<td class="main_td1" align="center" width="90">{$item.addtime|date="Y-m-d",###}</td>
+			<td class="main_td1" align="center" width="80"><if condition=" $item.status neq ''">
+				<a href="{$item.pic}" target="_blank"><img height="20" src="{$item.pic}" border="0" /></a>
+				<else />无图片</if></td>
+			<td class="main_td1" align="center" width="130"><a href="{:U('scrollpic/edit?id='.$item['id'])}">修改</a> / <a href="#" onClick="javascript:if(confirm('确定要删除吗?删除后将不可恢复')) location.href='{:U('scrollpic/lists?action=del&id='.$item['id'])}'">删除</a>
+			</div>
+		</tr>
+		</foreach>
+
+
+		<tr>
+			<td colspan="8" class="page">{$lists.page}</td>
+		</tr>
+	</tbody>
+</table>
+<include file="$footer" />

@@ -1,0 +1,204 @@
+<include file="$header" />
+<ul class="nav3">
+	<li><a href="{:U('account/web')}" id="c_so">网站费用</a></li>
+	<li><a href="{:U('account/web?action=account')}">网站垫付</a></li>
+	<li><a href="{:U('account/web?action=repay')}">网站应收明细账</a></li>
+</ul>
+<if condition="$Think.request.action eq ''">
+
+<div class="module_add">
+	<div class="module_title">
+		<strong>{$MsgInfo.account_name_balances}</strong>
+	</div>
+</div>
+<table border="0" cellspacing="1" width="100%">
+	<form action="" method="post">
+		<tr>
+			<td class="main_td">{$MsgInfo.account_name_id}</td>
+			<td class="main_td">类型</td>
+			<td class="main_td">{$MsgInfo.account_name_money}</td>
+			<td class="main_td">{$MsgInfo.account_name_income}</td>
+			<td class="main_td">{$MsgInfo.account_name_expend}</td>
+			<td class="main_td">{$MsgInfo.account_name_remark}</td>
+			<td class="main_td">{$MsgInfo.account_name_addtime}</td>
+			<td class="main_td">{$MsgInfo.account_name_addip}</td>
+		</tr>
+		<foreach name="list" item="item">
+
+		<tr>
+			<td>{$item.id}</td>
+			<td>{$item.type|linkages="account_web_fee",###}</td>
+			<td>￥{$item.money}</td>
+			<if condition="$item.type eq 'recharge'">
+			<td>￥{$item.income}</td>
+			<td>￥{$item.expend}</td>
+			<else />
+			<td>￥{$item.expend}</td>
+			<td>￥{$item.income}</td>
+			</if>
+			<td>{$item.remark}{$item.username}</td>
+			<td>{$item.addtime|date='Y-m-d H:i:s',###}</td>
+			<td>{$item.addip}</td>
+		</tr>
+		</foreach>
+		<tr>
+			<td colspan="9" class="action">
+				<div class="floatl"><!--公益基金总计：{$gongyijin}元-->
+					总计：{$chengjiaofei|default=0}元</div>
+				<div class="floatr">
+
+					用户名：<input type="text" name="username" id="username" value="{$Think.request.username|urldecode}" /> 操作时间：<input type="text" name="dotime1" id="dotime1" value="{$Think.request.dotime1}" size="15" onclick="laydate()" /> 到 <input type="text" name="dotime2" value="{$Think.request.dotime2}" id="dotime2" size="15" onclick="laydate()" /> <input type="button" value="搜索"  onclick="sousuo('')">
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="9" class="page">{$page}</td>
+		</tr>
+
+	</form>
+</table>
+
+<elseif condition="$Think.request.action eq 'repay'" />
+<div class="module_add">
+	<div class="module_title">
+		<strong>网站应收明细账</strong>
+	</div>
+</div>
+<table border="0" cellspacing="1" width="100%">
+	<form action="" method="post">
+		<tr class="ytit1">
+			<td>借款标题</td>
+			<td>应收日期</td>
+			<td>借款者</td>
+			<td>第几期/总期数</td>
+			<td>垫付金额</td>
+			<td>应收本金</td>
+			<td>应收利息</td>
+			<td>逾期罚息</td>
+			<td>逾期天数</td>
+			<td>状态</td>
+		</tr>
+
+		<foreach name="list" item="item">
+		<tr>
+			<td><a href="U('Index/index?site=full_success&nid='.$item['borrow_nid'])" target="_blank" title="{$item.borrow_name}">{$item.borrow_name}</a></td>
+			<td>{$item.recover_time|date="Y-m-d",###}</td>
+			<td>{$item.borrow_username}</td>
+			<td>{$item.recover_period+1}/{$item.borrow_period}</td>
+			<td>￥{$item.recover_recover_account_yes}</td>
+			<td>￥{$item.recover_capital}</td>
+			<td>￥{$item.recover_interest}</td>
+			<td>￥{$item.late_interest|default=0 }</td>
+			<td>{$item.late_days|default=0}天</td>
+			<td><if condition="$item.recover_status eq 1"> <font color="#666666">已还</font> <else /> <font color="#FF0000">未还</font></if></td>
+		</tr>
+		</foreach>
+		<tr>
+			<td colspan="14" class="action">
+				<div class="floatl">应收总额：{$all_capita|default=0.00}元</div>
+				<div class="floatr">
+					应收时间：<input type="text" name="dotime1" id="dotime1"
+						value="{$Think.request.dotime1}" size="15"
+						onclick="laydate()" /> 到 <input type="text" name="dotime2"
+						value="{$Think.request.dotime2}" id="dotime2"
+						size="15" onclick="laydate()" /> 状态：<select name="recover_status" id="recover_status">
+                        <option value="" <empty name="Think.request.recover_status">selected="selected"</empty>>不限</option>
+						<option value="1" <eq name="Think.request.recover_status" value="1">selected="selected"</eq>>已还</option>
+						<option value="2" <eq name="Think.request.recover_status" value="2">selected="selected"</eq>>未还</option></select>
+					<input type="hidden" id="action" name="action" value="repay" /> <input
+						type="button" value="搜索" onclick="sousuo('{:U('Account/web?action=repay','','')}')">
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="14" class="page">{$page}</td>
+		</tr>
+
+	</form>
+</table>
+<elseif condition="$Think.request.action eq 'account'" />
+
+
+<div class="module_add">
+	<div class="module_title">
+		<strong>网站垫付费用</strong>
+	</div>
+</div>
+<table border="0" cellspacing="1" width="100%">
+	<form action="" method="post">
+		<tr>
+			<td class="main_td">ID</td>
+			<td class="main_td">用户名</td>
+			<td class="main_td">类型</td>
+			<td class="main_td">网站垫付金额</td>
+			<td class="main_td">备注</td>
+			<td class="main_td">添加时间</td>
+			<td class="main_td">添加IP</td>
+		</tr>
+
+		<foreach name="list" item="item">
+		<tr>
+			<td>{$item.id}</td>
+			<td>{$item.username|default="网站"}</td>
+			<td>{$item.type|linkages="account_web_type",###}</td>
+			<td>￥{$item.money}</td>
+			<td>{$item.remark}</td>
+			<td>{$item.addtime|date='Y=m-d H:i:s',###}</td>
+			<td>{$item.addip}</td>
+		</tr>
+		</foreach>
+		<tr>
+			<td colspan="7" class="action">
+				<div class="floatl">垫付总计：{$all_money}元</div>
+				<div class="floatr">
+
+					操作时间：<input type="text" name="dotime1" id="dotime1" value="{$Think.request.dotime1}" size="15" onclick="laydate()" /> 到 <input type="text" name="dotime2" value="{$Think.request.dotime2}" id="dotime2" size="15" onclick="laydate()" /> <input type="hidden" id="action" name="action" value="account" /> <input type="button" value="搜索" onclick="sousuo('{:U('Account/web?action=account','','')}')">
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="7" class="page">{$page}</td>
+		</tr>
+
+	</form>
+</table>
+
+</if>
+<script>
+var url = '{:U(CONTROLLER_NAME.'/'.ACTION_NAME,'','')}';
+
+function sousuo(_url){
+	var sou = "";
+	var dotime1 = $("#dotime1").val();
+	var keywords = $("#keywords").val();
+	var username = $("#username").val();
+	var dotime2 = $("#dotime2").val();
+	var type = $("#type").val();
+	if (username!=null&&username!=''){
+		 sou += "/username/"+username;
+	}
+	if (keywords!=null&&keywords!=''){
+		 sou += "/keywords/"+keywords;
+	}
+	if (dotime1!=null&&dotime1!=''){
+		 sou += "/dotime1/"+dotime1;
+	}
+	if (dotime2!=null&&dotime2!=''){
+		 sou += "/dotime2/"+dotime2;
+	}
+	if (type!=null&&type!=""){
+		 sou += "/type/"+type;
+	}
+if (_url!=""){
+	url = _url;		
+	}
+	if (sou!=""){
+	location.href=url+sou;
+	
+	}
+}
+
+</script>
+
+
+<include file="$footer" />

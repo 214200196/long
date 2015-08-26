@@ -1,0 +1,101 @@
+<div>
+	<div class="m_change">
+		<ul>
+			<li><a href="/?user&amp;q=code/approve/recommend">推荐申请</a></li>
+		</ul>
+	</div>
+	<div class="us_r_bor1">
+		<if condition="$_G['user_info']['invite_status'] eq '1'">
+
+		申请通过,您的推荐码是：{$_G.user_info.invite_code}
+		<div class="user_main_title1">
+			温馨提示：请不要发送邀请信给不熟悉的人士,避免给别人带来不必要的困扰。<br />
+			请把下边的链接地址发给您的好友，好友投资成功后您可获得好友投资金额的{$_G.system.con_recommed_invest_incent}%作为奖励。<br />
+		</div>
+		<br />
+		<div class="user_right_border">
+			<div class="l">邀请链接：</div>
+			<div class="c">
+				<textarea cols="40" rows="3" id="invite">{:U('Index/reg','reginvite_code='.$_G['user_info']['invite_code'],'',true)}</textarea>
+				<input class="xinbuton" onclick="doCopy('invite')" type="button"
+					value="复制" style="top: 12px; position: relative;" />
+			</div>
+		</div>
+		<br />
+		<br />
+
+		<script>
+
+
+		
+
+
+		function doCopy(id) { 
+
+
+		  var codeid;
+
+
+		  codeid=id;
+
+
+		 if (document.all){
+
+
+		   var obj;
+
+
+		   obj=document.getElementById(codeid);
+
+
+		   window.clipboardData.setData("text",obj.innerText)
+
+
+		   alert("邀请链接地址复制成功，你可以直接复制发给你的好友");
+
+
+		 }
+
+
+		 else{
+
+
+		   alert("此功能只能在IE上有效\n\n请在文本域中用Ctrl+A选择再复制");
+
+
+		 }
+
+
+		}
+
+
+
+
+
+		</script> <elseif condition="$_G['user_info']['invite_status'] eq 2" />
+
+		申请中、请耐心等待，客服会在1-3个工作日处理 <elseif
+			condition="$_G['user_info']['invite_status'] eq 3" /> 申请失败、联系客服或者重新申请
+		<div class="user_main_title1">
+			提交申请后 ，1-3个工作日，客服会审核分配推荐码。
+			<div>
+				<form action="" method="post">
+					<input type="submit" class="xinbuton" value="提交申请" name="submit" />
+					<br />
+				</form>
+			</div>
+		</div>
+		<else />
+		<div class="user_main_title1">
+			提交申请后 ，1-3个工作日，客服会审核分配推荐码。
+			<div>
+				<form action="" method="post">
+					<input type="submit" class="xinbuton" value="提交申请" name="submit" />
+					<br />
+				</form>
+			</div>
+		</div>
+		</if>
+		<!-- 推荐申请开始 -->
+	</div>
+</div>

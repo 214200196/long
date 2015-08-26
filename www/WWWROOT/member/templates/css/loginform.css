@@ -1,0 +1,54 @@
+/*=============µÇÂ¼±íµ¥===========*/
+
+div.loginform {
+display:none;
+margin:0;
+padding:0;
+}
+
+div.loginform .col{
+height:28px;
+line-height:28px;
+float:left;
+white-space:nowrap;
+color:#a86d23;
+}
+
+div.loginform .con{
+height:28px;
+}
+
+div.loginform .input{
+border:1px #a86d23 solid;
+background-color:#f4d99c;
+}
+
+div.loginform .inputcheck{
+border:1px #a86d23 solid;
+background-color:#f4d99c;
+margin:0px 1px 0px 3px;
+height:16px;
+}
+
+div.loginform .yanzheng{
+height:28px;
+white-space:nowrap;
+float:left;
+margin-left:0px;
+}
+
+
+div.loginform_islogin{
+display:none;
+clear:both;
+text-align:center;
+line-height:32px;
+padding:12px;
+color:#a86d23;
+}
+
+div.loginform_islogin span.islogintext{
+color:#a86d23;
+}
+
+#loginform_logout{cursor:pointer}

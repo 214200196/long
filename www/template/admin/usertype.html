@@ -1,0 +1,132 @@
+<include file="$header" />
+<div class="module_add">
+	<div class="module_title">
+		<strong>用户类型</strong>
+		<if condition="$Think.request.edit neq ''"> <span> <a
+			href="{:U('Users/type')}" style="color: #45a7df; font-size: 16px;">(添加用户类型)</a>
+		</span> <else /> &nbsp;&nbsp;<strong class="dogo_js_click cursor_pointer">(添加用户类型)</strong>
+            </if>
+
+	</div>
+	<div style="margin-top: 10px;">
+		<script>
+                var edit = '{$Think.request.edit}';
+                $(function(){
+                    $('.dogo_js_click').click(function(){
+                        $('.dogo_section').toggle("slow");
+                    });
+                    if(edit!=''){
+                        $('.dogo_section').css('display','block');
+                    }
+                });
+               
+                </script>
+
+		<div class="dogo_section" style="display: none;">
+
+			<div style="border: 1px solid #CCCCCC;">
+
+				<form action="" method="post">
+					<div class="module_title">
+						<strong><if condition="$Think.request.edit neq ''">
+							<input type="hidden" name="id" value="{$_A.users_type_result.id}" />修改用户类型
+							<else />添加用户类型</if></strong>
+					</div>
+
+
+					<div class="module_border">
+						<div class="l">类型名称：</div>
+						<div class="c">
+							<input type="text" name="name"
+								value="{$_A.users_type_result.name}" />
+						</div>
+					</div>
+
+					<div class="module_border">
+						<div class="l">标识名：</div>
+						<div class="c">
+							<input type="text" name="nid" value="{$_A.users_type_result.nid}"
+								onkeyup="value=value.replace(/[^a-z0-9_]/g,'')" />
+						</div>
+					</div>
+					<div class="module_border">
+						<div class="l">默&nbsp;&nbsp;认：</div>
+						<div class="c">
+							<tagLib name="zi" />
+							<zi:input type="radio" name="checked" value="0|否,1|是" checked="_A.users_type_result.checked" />
+							（注册的时候用户默认的类型）
+						</div>
+					</div>
+					<div class="module_border">
+						<div class="l">描述：</div>
+						<div class="c">
+							<textarea name="remark" rows="5" cols="30">{$_A.users_type_result.remark}</textarea>
+						</div>
+					</div>
+
+					<div class="module_border">
+						<div class="l">排序：</div>
+						<div class="c">
+							<input type="text" name="order"
+								value="{$_A.users_type_result.order|default=10}" size="8" />
+						</div>
+					</div>
+
+					<div class="module_border">
+						<div class="l">验证码：</div>
+						<div class="c">
+							<input name="valicode" type="text" size="11" maxlength="4" /> <img src="{:U('admin/index/verify')}" id="valicode" alt="点击刷新" onClick="this.src='{:U('Index/verify','','')}/' + Math.random();" align="absmiddle" style="cursor: pointer" />
+						</div>
+					</div>
+
+
+					<div class="module_border">
+						<input type="submit" value="确认提交" class="submit_button" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div style="text-align: left">
+		<div class="module_add">
+
+
+
+			<div class="module_title">
+				<strong>用户类型列表</strong>
+			</div>
+		</div>
+		<table border="0" cellspacing="1" width="100%">
+			<tr>
+				<td width="" class="main_td">ID</td>
+				<td width="" class="main_td">名称</td>
+				<td width="" class="main_td">标识名</td>
+				<td width="*" class="main_td">添加时间</td>
+				<td width="*" class="main_td">是否默认</td>
+				<td width="*" class="main_td">排序</td>
+				<td width="*" class="main_td">操作</td>
+			</tr>
+			<foreach name="list" item="item">
+			<tr>
+				<td class="main_td1" align="center">{$item.id}</td>
+				<td class="main_td1" align="center">{$item.name}</td>
+				<td class="main_td1" align="center">{$item.nid}</td>
+				<td class="main_td1" align="center">{$item.addtime|date='Y-m-d H:i:s',###}</td>
+				<td class="main_td1" align="center"><if condition="$item.checked eq 1">是<else />
+					<a href="{:U('Users/type?checked='.$item['id'])}" title="设为默认">否</a></if></td>
+				<td class="main_td1" align="center">{$item.order}</td>
+				<td class="main_td1" align="center"><a href="{:U('Users/type?edit='.$item['id'])}">修改</a>/<a href="#" onClick="javascript:if(confirm('确定要删除吗?删除后将不可恢复')) location.href='{:U('Users/type?del='.$item['id'])}'">删除</a></td>
+			</tr>
+			</foreach>
+
+			<tr align="center">
+				<td colspan="10" align="center"><div align="center">{$page}</div></td>
+			</tr>
+
+
+		</table>
+
+		<!--菜单列表 结束-->
+	</div>
+</div>
+<include file="$footer" />

@@ -1,0 +1,60 @@
+.phototwoclass{
+width: 100%; 
+}
+
+.phototwoclass .phototwoclass_top{ 
+clear:both;
+height:30px;
+color: #999999;
+font:12px/30px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+cursor: pointer;
+}
+
+.phototwoclass .phototwoclass_top a{
+color: #505050;
+font:14px/23px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+background:url(../images/li.gif) left no-repeat;  
+padding-left:15px;
+text-decoration: none;
+}
+
+.phototwoclass .phototwoclass_top a:visited{
+color: #505050;
+}
+
+.phototwoclass .phototwoclass_top a:hover{ 
+color: #ff6600;
+}
+
+
+.phototwoclass ul{ 
+margin:0px 0px 5px 8px;
+padding:0px;
+}
+
+.phototwoclass ul li{
+list-style-type: none;
+float:left;
+height:18px;
+font:11px/18px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+margin:0px; 
+padding:0px;
+color: #999999;
+white-space:nowrap;
+}
+
+.phototwoclass ul li a{
+color: #505050;
+font:12px/18px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+text-decoration: none;
+margin:0px 6px 0px 6px
+}
+
+.phototwoclass ul li a:visited{
+color: #505050;
+}
+
+.phototwoclass ul li a:hover{ 
+color: #ff6600;
+}
+

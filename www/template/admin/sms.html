@@ -1,0 +1,118 @@
+<include file="$header" />
+<div
+	style="background-color: #ffffff; line-height: 30px; margin-bottom: 10px;">
+	<span style="margin: 5px" class="ding_note"><a
+		href="{:U('sms/set')}">短信管理</a></span> <span style="margin: 5px"
+		class="ding_note"><a href="{:U('sms/settemplate')}">设置短信模板</a></span>
+</div>
+<if condition="ACTION_NAME eq 'settemplate'">
+<div style="width: 100%; text-align: left">
+	<div class="module_add">
+		<div class="module_title">
+			<strong>短信模板设置</strong>
+		</div>
+	</div>
+	<form action="{:U('sms/settemplate')}" method="post" id="form1">
+		<div style="color: red">
+			注意事项：{$tempaledata.notice}<input type="hidden"
+				value="{$tempaledata.notice}" name="info[notice]" />
+		</div>
+		<div style="color: red">
+			模板参数的意义：{$tempaledata.paramdesc}<input type="hidden"
+				value="{$tempaledata.paramdesc}" name="info[paramdesc]" />
+		</div>
+		<div style="color: red">
+			是否自动追加结尾网<input type="radio" value="1" name="info[isauto]" <eq name="tempaledata.isauto" value="1">checked </eq>/>开<input type="radio" value="0" name="info[isauto]" <eq name="tempaledata.isauto" value="0">checked </eq> />关
+		</div>
+		<table border="0" cellspacing="1">
+			<foreach name="tempaledata.data" key="key" item="item">
+
+			<tr style="height: 75px;">
+				<td width="150px" align="right" style="text-align: right; padding-right: 5px;">{$item.name}:<input type="hidden" value="{$item.name}" name="info[data][{$key}][name]" /></td>
+				<td><textarea name="info[data][{$key}][content]" cols="80">{$item.content}</textarea></td>
+				<td><input type="radio" value="1" name="info[data][{$key}][isopen]" <eq name="item.isopen" value="1"> checked </eq>/>开<input type="radio" value="0" name="info[data][{$key}][isopen]" <eq name="item.isopen" value="0"> checked </eq>/>关</td>
+			</tr>
+			</foreach>
+
+			<tr>
+				<td class="action" colspan="3">
+					<div class="floatr">
+						<input type="submit" name="templateSubmit" value="提交">
+					</div>
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+
+<else />
+<div style="width: 100%; text-align: left">
+	<div class="module_add">
+		<div class="module_title">
+			<strong>手机短信发送记录列</strong><span style="float: right"> 用户名：<input type="text" name="username" id="username" value="{$Think.request.username|urldecode}" /> 手机号：<input type="text" name="phone" id="phone" value="{$Think.request.phone}" />
+				状态：<tagLib name="zi" /> <zi:linkages nid="approve_sms_status" name="status" checked="Think.request.status" default="查看全部" type="value" /> <input type="button" value="{$MsgInfo.users_name_sousuo}" click="sousuo()"></span>
+		</div>
+	</div>
+	<form action="" method="post" id="form1">
+		<table border="0" cellspacing="1" width="100%">
+			<tr>
+
+
+				<td width="" class="main_td">ID</td>
+				<td width="" class="main_td">用户</td>
+				<td width="*" class="main_td">手机号码</td>
+				<td width="*" class="main_td">短信类型</td>
+
+				<td width="*" class="main_td">发送内</td>
+				<td width="*" class="main_td">发送时</td>
+
+				<td width="*" class="main_td">操作</td>
+			</tr>
+			<foreach name="list" item="item">
+			<tr>
+
+
+				<td class="main_td1" align="center">{$item.id}</td>
+				<td class="main_td1" align="center">{$item.username|default="-"}</td>
+				<td class="main_td1" align="center">{$item.phone}</td>
+				<td class="main_td1" align="center">{$item.type}</td>
+
+				<td class="main_td1" align="center">{$item.contents}</td>
+				<td class="main_td1" align="center">{$item.addtime|date="Y-m-d H:i:s",###}</td>
+
+				<td class="main_td1" align="center"><a href="javascript:void(0)" onclick='tipsWindown("短信记录查看","{:U('approve/sms_log?view='.$item['id'])}",500,300)'/>查看</a></td>
+			</tr>
+			</foreach>
+			<tr>
+				<td colspan="11" class="action">
+					<div class="floatl">
+
+
+						<script>
+        	  var url = "{:U('sms/set','','')}";
+        	    
+        	  	function sousuo(){
+        			var username = $("#username").val();
+        			var phone = $("#phone").val();
+        			var status = $("#status").val();
+                    var nstatus=1;
+                    var sms_type = $("#sms_type").val();
+        			location.href=url+"/username/"+username+"/phone/"+phone+"/status/"+status+"/sms_type/"+sms_type+"/nstatus/"+nstatus;
+        		}
+        	  
+        	  </script>
+
+					</div>
+					<div class="floatr"></div>
+				</td>
+			</tr>
+			<tr align="center">
+				<td colspan="10" align="center"><div align="center">{$page}</div></td>
+			</tr>
+
+
+		</table>
+	</form>
+</div>
+</if>
+<include file="$footer" />

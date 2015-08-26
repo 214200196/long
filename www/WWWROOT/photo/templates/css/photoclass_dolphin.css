@@ -1,0 +1,28 @@
+/* ============分类列表============== */
+
+ul.photoclass_dolphin{
+margin:0px;
+padding:11px 0px 13px 53px;
+}
+
+li.photoclass_dolphin {
+list-style-type: none;
+white-space: nowrap;
+}
+
+a.photoclass_dolphin:link,a.photoclass_dolphin:visited,a.photoclass_dolphin:active{
+display:block;
+text-decoration: none;
+font:12px/22px Verdana, Arial, Helvetica, sans-serif;
+height:28px;
+text-align:left;
+background:url(../images/dot2.jpg) 0px 0px no-repeat;
+padding-left:24px;
+color:#505050;
+}
+
+a.photoclass_dolphin:hover{
+display:block;
+color: #e10000; 
+text-decoration: none;
+}

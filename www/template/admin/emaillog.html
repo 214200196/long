@@ -1,0 +1,63 @@
+<include file="$header" />
+<ul class="nav3">
+	<li><a href="{:U('system/email')}" id="c_so">{$MsgInfo.admin_email_name}</a></li>
+	<li><a href="{:U('system/emaillog')}">{$MsgInfo.admin_email_log_name}</a></li>
+	<li><a href="{:U('system/emailactive')}">{$MsgInfo.admin_email_active_name}</a></li>
+</ul>
+
+<div class="module_add">
+	<div class="module_title">
+		<strong>{$MsgInfo.admin_email_log_name}</strong>
+	</div>
+	<table border="0" cellspacing="1" width="100%">
+		<tr>
+			<td width="" class="main_td">{$MsgInfo.admin_email_name_id}</td>
+			<td width="*" class="main_td">{$MsgInfo.admin_email_name_username}</td>
+			<td width="*" class="main_td">{$MsgInfo.admin_email_name_email}</td>
+			<td width="*" class="main_td">{$MsgInfo.admin_email_name_sendemail}</td>
+			<td width="*" class="main_td">{$MsgInfo.admin_email_name_title}</td>
+			<td width="*" class="main_td">{$MsgInfo.admin_email_name_status}</td>
+			<td width="*" class="main_td">{$MsgInfo.admin_email_name_msg}</td>
+			<td width="*" class="main_td">{$MsgInfo.admin_email_name_addtime}</td>
+			<th width="" class="main_td">{$MsgInfo.admin_email_name_addip}</th>
+		</tr>
+
+		<foreach name="list" item="item">
+		<tr>
+			<td class="main_td1" align="center">{$item.id}</td>
+			<td class="main_td1" align="center">{$item.username|default='-'}</td>
+			<td class="main_td1" align="center">{$item.email}</td>
+			<td class="main_td1" align="center">{$item.send_email}</td>
+			<td class="main_td1" align="center">{$item.title}</td>
+			<td class="main_td1" align="center"><if condition="$item.status eq 0"> {$MsgInfo.admin_name_wait}<elseif condition="$item.status eq 1" />
+				<font color="#009900">{$MsgInfo.admin_name_success}</font>
+				<else />
+				<font color="#FF0000">{$MsgInfo.admin_name_false}</font></if></td>
+			<td class="main_td1" align="center"><a href="javascript:void(0)" onclick='tipsWindown("邮箱信息查看","{:U('system/emaillog?id='.$item['id'])}",610,400);'>查看</a></td>
+			<td class="main_td1" align="center">{$item.addtime|date="Y-m-d H:i:s",###}</td>
+			<td class="main_td1" align="center">{$item.addip}</td>
+		</tr>
+		</foreach>
+
+		<tr>
+			<td colspan="11" class="action">
+				<div class="floatr">
+					<form action="" method="get">
+						{$MsgInfo.users_name_username}：<input type="text" name="username" id="username" value="{$Think.request.username|urldecode}" />
+						{$MsgInfo.users_name_email}：<input type="text" name="email" id="email" value="{$Think.request.email}" /> <input type="submit" value="{$MsgInfo.users_name_sousuo}"/ >
+					</form>
+				</div>
+			</td>
+		</tr>
+		<tr align="center">
+			<td colspan="10" align="center" class="page">{$page}</td>
+		</tr>
+	</table>
+
+
+
+</div>
+
+
+
+<include file="$footer" />

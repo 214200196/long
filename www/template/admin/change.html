@@ -1,0 +1,188 @@
+<include file="$header" />
+<if condition="$Think.request.change_check eq ''">
+<ul class="nav3">
+	<li><a href="{:U('borrow/change')}">所有转让</a></li>
+	<li><a href="{:U('borrow/change?status=4')}">转让网站</a></li>
+	<li><a href="{:U('borrow/change?status=2')}">正在转让</a></li>
+	<li><a href="{:U('borrow/change?status=5')}">撤销</a></li>
+	<li><a href="{:U('borrow/change?status=1')}">转让成功</a></li>
+	<li><a href="{:U('borrow/change?status=1&web=1')}">转让网站统计</a></li>
+	<li><a href="{:U('borrow/web_repay_no')}">网站应收明细账</a></li>
+</ul>
+<div class="module_add">
+	<div class="module_title">
+		<strong>转让列表</strong>
+	</div>
+</div>
+<table border="0" cellspacing="1" width="100%">
+	<form action="" method="post">
+		<tr>
+		<tr class="ytit1">
+			<td>转让者</td>
+			<td>投标标题</td>
+			<td>利率</td>
+			<td>待收期数/总期数</td>
+			<td>待收本金</td>
+			<td>待收利息</td>
+			<td>转让价格</td>
+			<if condition="($Think.request.status eq 1) AND ($Think.request.web eq 1)">
+			<td>转让收益</td>
+			<td>垫付金额</td>
+			</if>
+			<td>发布时间</td>
+			<if condition="$Think.request.status eq 1">
+			<td>购买者</td>
+			<td>购买时间</td>
+			<elseif condition="$Think.request.status eq 4" />
+			<td>提交审核时间</td>
+			<elseif condition="$Think.request.status eq 5" />
+			<td>撤销时间</td>
+			</if>
+			<td>操作</td>
+		</tr>
+
+		</tr>
+		<foreach name="list" item="item">
+		<tr>
+			<td>{$item.username}</td>
+			<td>{$item.borrow_name}</td>
+			<td>{$item.borrow_apr}%</td>
+			<td>{$item.wait_times}/{$item.borrow_period}</td>
+			<td>{$item.recover_account_capital_wait}</td>
+			<td><if condition="$item.interest_no gt 0">{$item.interest_no}<else />{$item.recover_account_interest_wait}</if></td>
+			<td><if condition="($item['web_status'] eq 2) AND ($item['status'] eq 1)">
+
+				{$item.web_buy} <elseif condition="($item['status'] eq 1) AND ($item['web_status'] neq 2)" />
+
+				{$item.account} <elseif condition="$item.status eq 4" />
+
+				{$item.web_account} </if></td>
+			<if condition="($Think.request.status eq 1) AND ($Think.request.web eq 1)">
+			<td>{$item.jingzhuan}</td>
+			<td>{$item.recover_web_account|default=0.00}元</td>
+			</if>
+			<td>{$item.addtime|date="Y-m-d H:i:s",###}</td>
+			<if condition="$Think.request.status eq 1">
+			<td>{$item.buy_username|default='网站'}</td>
+			<td>{$item.buy_time|date='Y-m-d H:i:s',###}</td>
+			<elseif condition="$Think.request.status eq 4" />
+
+			<td>{$item.web_time|date='Y-m-d H:i:s',###}</td>
+			<elseif condition="$Think.request.status eq 5" />
+
+			<td>{$item.cancel_time|date='Y-m-d H:i:s',###}</td>
+			</if>
+			<td><if condition="$item.status eq 3">待审核
+            <elseif condition="$item.status eq 2" />
+            正在转让
+            <elseif condition="$item.status eq 5" />撤销
+            <elseif condition="$item.status eq 6" />审核不通过
+            <elseif condition="$item.status eq 1" />转让成功
+            <else />
+              <if condition="$item.recover_account_capital_wait gt 0"> 
+              <a href="javascript:void(0)" onclick='tipsWindown("审核","{:U('borrow/change?change_check='.$item['id'])}",500,230);'>审核</a>
+              <else /> 该转让已还清 </if>
+               </if></td>
+
+		</tr>
+		</foreach>
+		<tr>
+			<td colspan="14" class="action">
+				<div class="floatl">
+					<if condition="$Think.request.status eq ''">
+					转让总计：{$change_account|default=0.00}元 </if>
+					<if condition="($Think.request.status eq 1) AND ($Think.request.web eq 1)">
+
+					收益总计：{$shouyi|default=0.00}元 </if>
+				</div>
+				<div class="floatr">
+					<if condition="($Think.request.status eq 1) AND ($Think.request.web eq 1)">
+					操作时间：<input type="text" name="dotime1" id="dotime1" <empty name="Think.request.dotime1"> value=''<else /> value="{$Think.request.dotime1|date="Y-m-d",###}"</empty>  size="15" onclick="laydate()" /> 到 <input type="text" name="dotime2" <empty name="Think.request.dotime2"> value=''<else /> value="{$Think.request.dotime2|date="Y-m-d",###}"</empty> id="dotime2" size="15" onclick="laydate()" /> <input type="button" value="搜索"  onclick="changesousuo('{:U(CONTROLLER_NAME.'/'.ACTION_NAME,'','')}')"> </if>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="14" class="page">{$page}</td>
+		</tr>
+	</form>
+</table>
+
+
+<script>
+function changesousuo(url){
+	var sou = "";
+	var username = $("#username").val();
+	if (username!="" && username!=null){
+		sou += "/username/"+username;
+	}
+	var keywords = $("#keywords").val();
+	if (keywords!="" && keywords!=null){
+		sou += "/keywords/"+keywords;
+	}
+	var borrow_name = $("#borrow_name").val();
+	if (borrow_name!="" && borrow_name!=null){
+		sou += "/borrow_name/"+borrow_name;
+	}
+	var borrow_nid = $("#borrow_nid").val();
+	if (borrow_nid!="" && borrow_nid!=null){
+		sou += "/borrow_nid/"+borrow_nid;
+	}
+	var dotime1 = $("#dotime1").val();
+	if (dotime1!="" && dotime1!=null){
+		sou += "/dotime1/"+dotime1;
+	}
+	var dotime2 = $("#dotime2").val();
+	if (dotime2!="" && dotime2!=null){
+		sou += "/dotime2/"+dotime2;
+	}
+	var status = $("#status").val();
+	if (status!="" && status!=null){
+		sou += "/status/"+status;
+	}
+	var is_vouch = $("#is_vouch").val();
+	if (is_vouch!="" && is_vouch!=null){
+		sou += "/is_vouch/"+is_vouch;
+	}
+	
+		location.href=url+sou;
+	
+}
+</script> 
+<else />
+<div class="module_add">
+	<form name="form1" method="post"
+		action="{:U(CONTROLLER_NAME.'/'.ACTION_NAME.'?change_check='.$_REQUEST['change_check'])}">
+		<div class="module_border">
+			<div class="l">状态:</div>
+			<div class="c">
+				<input type="radio" name="status" value="1" />审核通过 <input
+					type="radio" name="status" value="0" checked="checked" />审核不通过
+			</div>
+		</div>
+
+		<div class="module_border">
+			<div class="l">审核备注:</div>
+			<div class="c">
+				<textarea name="remark" cols="45" rows="5">{$remark}</textarea>
+			</div>
+		</div>
+		<div class="module_border">
+			<div class="l">验证码:</div>
+			<div class="c">
+				<input name="valicode" type="text" size="5" maxlength="4"
+					tabindex="3" /> <img id="valicode" src="{:U('admin/index/verify')}"
+					alt="点击刷新"
+					onClick="this.src='{:U('Index/verify','','')}/' + Math.random();"
+					align="absmiddle" style="cursor: pointer" />
+			</div>
+		</div>
+
+		<div class="module_submit">
+			<input type="submit" name="reset" value="审核" class="submit" />
+		</div>
+
+	</form>
+</div>
+</if>
+
+<include file="$footer" />

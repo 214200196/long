@@ -1,0 +1,28 @@
+/* ============Í¼Æ¬ÁÐ±í============== */
+ul.photopic_title{
+margin:0;
+padding:0px 0px 0px 2px;
+}
+
+li.photopic_title{
+list-style-type: none;
+margin:0px;
+text-align:left;
+float:left;
+width:42%;
+height:22px;
+padding-left:14px;
+background: url(../images/arrow.gif) 0px 2px no-repeat;
+}
+
+a.photopic_title:link,a.photopic_title:visited,a.photopic_title:active{
+font:12px/14px simsun;
+text-decoration: none;
+color:#000;
+}
+
+a.photopic_title:hover{
+color:#e10000;
+text-decoration: underline;
+font:12px/14px simsun;
+}

@@ -1,0 +1,219 @@
+<include file="$header" />
+<notempty name="_G.user_id">
+  <lists  module="users" function="GetEmailActiveOne" user_id="$_G.user_id" item="Evar"/>
+  <if condition="$Evar.status neq 1"> 
+    <script>
+	window.onload=function()
+	{
+	 
+      $('#element_to_pop_up').bPopup({
+            speed: 650,
+            transition: 'slideIn',
+	    transitionClose: 'slideBack'
+        });   
+        
+	setTimeout("location.href='{:U('index/reg?type=email')}'",2000);
+	}
+	</script> 
+  </if>
+</notempty>
+<div id="element_to_pop_up"> <span class="b-close">x</span>
+  <div class="b_content">您还没有激活邮箱，不能进行投资</div>
+  <span class="b_button"><a href="#">确定</a></span> </div>
+<div class="bodyer clearfix">
+  <div class="form-container box980 info-list">
+    <div class="ui-filter">
+      <div class="ui-filter-header clearfix">
+        <h4>筛选投资项目</h4>
+        <div class="clear"></div>
+      </div>
+      <script type="text/javascript">
+  function seachform_submit(borrowtype,borrowperiod,accountstatus,borrowstyle){
+  document.getElementById('borrowtype').value=borrowtype;
+  document.getElementById('borrowperiod').value=borrowperiod;
+  document.getElementById('accountstatus').value=accountstatus;
+   document.getElementById('borrowstyle').value=borrowstyle;
+  document.forms.seachform.submit();
+  }
+  </script>
+      <form action="" method="post" name="seachform">
+        <input name="borrow_type" id="borrowtype" value="all" type="hidden" />
+        <input name="borrow_period" id="borrowperiod" value="all" type="hidden" />
+        <input name="account_status" id="accountstatus" value="all" type="hidden" />
+        <input name="borrow_style" id="borrowstyle" value="all" type="hidden" />
+        <ul>
+          <li>
+          <ul class="fn-clear">
+            <li class="ui-filter-title"> 标的类型 </li>
+            <li class="ui-filter-tag <if condition="($Think.request.borrow_type eq 'all') OR ($Think.request.borrow_type eq '')">active </if>"><span onclick="seachform_submit('all','{$Think.request.borrow_period}','{$Think.request.account_status}','{$Think.request.borrow_style}');">不限</span>
+            </li>
+            <li class="ui-filter-tag <if condition="$Think.request.borrow_type eq 'credit'">active
+              </if>
+              "> <span onclick="seachform_submit('credit','{$Think.request.borrow_period}','{$Think.request.account_status}','{$Think.request.borrow_style}');">信用标</span> </li>
+            <li class="ui-filter-tag <if condition="$Think.request.borrow_type eq 'fast'">active
+              </if>
+              "> <span onclick="seachform_submit('fast','{$Think.request.borrow_period}','{$Think.request.account_status}','{$Think.request.borrow_style}');">抵押标</span> </li>
+            <li class="ui-filter-tag <if condition="$Think.request.borrow_type eq 'vouch'">active
+              </if>
+              "> <span onclick="seachform_submit('vouch','{$Think.request.borrow_period}','{$Think.request.account_status}','{$Think.request.borrow_style}');">担保标</span> </li>
+            <li class="ui-filter-tag <if condition="$Think.request.borrow_type eq 'flow'">active
+              </if>
+              "> <span onclick="seachform_submit('flow','{$Think.request.borrow_period}','{$Think.request.account_status}','{$Think.request.borrow_style}');">流转标</span> </li>
+            <li class="ui-filter-tag <if condition="$Think.request.borrow_type eq 'jin'">active
+              </if>
+              "> <span onclick="seachform_submit('jin','{$Think.request.borrow_period}','{$Think.request.account_status}','{$Think.request.borrow_style}');">净值标</span> </li>
+          </ul>
+          <div class="clear"></div>
+          </li>
+          <li>
+            <ul class="fn-clear">
+              <li class="ui-filter-title"> 借款期限 </li>
+             <li class="ui-filter-tag <if condition="($Think.request.borrow_period eq 'all') OR ($Think.request.borrow_period eq '')">active</if>">
+								<span onclick="seachform_submit('{$Think.request.borrow_type}','all','{$Think.request.account_status}','{$Think.request.borrow_style}');">不限</span></li>
+							
+							<li class="ui-filter-tag <if condition="$Think.request.borrow_period eq '1'">active</if>"> <span onclick="seachform_submit('{$Think.request.borrow_type}','1','{$Think.request.account_status}','{$Think.request.borrow_style}');">3个月以下</span></li>
+							
+							<li class="ui-filter-tag <if condition="$Think.request.borrow_period eq '2'">active</if>"> <span onclick="seachform_submit('{$Think.request.borrow_type}','2','{$Think.request.account_status}','{$Think.request.borrow_style}');">3-6个月</span></li>
+							
+							<li class="ui-filter-tag <if condition="$Think.request.borrow_period eq '3'">active</if>"> <span onclick="seachform_submit('{$Think.request.borrow_type}','3','{$Think.request.account_status}','{$Think.request.borrow_style}');">6-12个月</span></li>
+							
+							<li class="ui-filter-tag <if condition="$Think.request.borrow_period eq '4'">active</if>"> <span onclick="seachform_submit('{$Think.request.borrow_type}','4','{$Think.request.account_status}','{$Think.request.borrow_style}');">12个月以上</span></li>
+							
+            </ul>
+            <div class="clear"></div>
+          </li>
+          <li>
+            <ul class="fn-clear" >
+              <li class="ui-filter-title"> 借款金额 </li>
+             <li class="ui-filter-tag <if condition="($Think.request.account_status eq 'all') OR ($Think.request.account_status eq '')">active</if>">
+								<span onclick="seachform_submit('{$Think.request.borrow_type}','{$Think.request.borrow_period}','all','{$Think.request.borrow_style}');">不限</span></li>
+							
+							<li class="ui-filter-tag  <if condition="$Think.request.account_status eq '1'">active</if>"> <span onclick="seachform_submit('{$Think.request.borrow_type}','{$Think.request.borrow_period}','1','{$Think.request.borrow_style}');">5万元以下</span></li>
+							
+							<li class="ui-filter-tag <if condition="$Think.request.account_status eq '2'">active</if>" > <span onclick="seachform_submit('{$Think.request.borrow_type}','{$Think.request.borrow_period}','2','{$Think.request.borrow_style}');">5-10万元</span></li>
+							
+							<li class="ui-filter-tag <if condition="$Think.request.account_status eq '3'">active</if>"> <span onclick="seachform_submit('{$Think.request.borrow_type}','{$Think.request.borrow_period}','3','{$Think.request.borrow_style}');">10-50万元</span></li>
+							
+							<li class="ui-filter-tag <if condition="$Think.request.account_status eq '4'">active</if>"> <span onclick="seachform_submit('{$Think.request.borrow_type}','{$Think.request.borrow_period}','4','{$Think.request.borrow_style}');">50万元以上</span></li>
+							
+            </ul>
+            <div class="clear"></div>
+          </li>
+          <li>
+            <ul class="fn-clear">
+              <li class="ui-filter-title"> 还款方式 </li>
+             <li class="ui-filter-tag <if condition="($Think.request.borrow_style eq 'all') OR ($Think.request.borrow_style eq '')">active</if>"><span onclick="seachform_submit('{$Think.request.borrow_type}','{$Think.request.borrow_period}','{$Think.request.account_status}','all');">不限</span></li>
+			<li class="ui-filter-tag <if condition="$Think.request.borrow_style eq '0'">active</if>"> <span onclick="seachform_submit('{$Think.request.borrow_type}','{$Think.request.borrow_period}','{$Think.request.account_status}','0');">按月等额</span></li>
+							<li class="ui-filter-tag <if condition="$Think.request.borrow_style eq '1'">active</if>"> <span onclick="seachform_submit('{$Think.request.borrow_type}','{$Think.request.borrow_period}','{$Think.request.account_status}','1');">按季还款</span></li>
+							
+							<li class="ui-filter-tag <if condition="$Think.request.borrow_style eq '2'">active</if>"> <span onclick="seachform_submit('{$Think.request.borrow_type}','{$Think.request.borrow_period}','{$Think.request.account_status}','2');">到期还本还息</span></li>
+							
+							<li class="ui-filter-tag <if condition="$Think.request.borrow_style eq '3'">active</if>"> <span onclick="seachform_submit('{$Think.request.borrow_type}','{$Think.request.borrow_period}','{$Think.request.account_status}','3');">月还息到期还本</span></li>
+							
+            </ul>
+            <div class="clear"></div>
+          </li>
+        </ul>
+      </form>
+    </div>
+    <div class="guide-box">
+      <h4>新手引导</h4>
+      <ul>
+       <lists module="articles" function="GetList" item="arlist" limit="5"  status="1"  type_id="12" flag="index" />
+
+       <foreach name="arlist" item="var">
+				<li><a href="{:U('Index/index?site=xssl&id='.$var['id'])}" target="_blank" title="{$var.name}">{$var.name}</a></li>
+				</foreach>
+       
+      </ul>
+    </div>
+  </div>
+  <lists  module="borrow" function="GetList" item="blist" borrow_name="request" type="request" flag="request" account_status="request" borrow_period="request" award_status="request" province="request" city="request" borrow_use="request" epage="5" order="$Think.request.order" vouchstatus="request"  jine="request" borrow_style="request" is_flow="1" borrow_type="request" query_type="$_G.site_result.nid" />
+ 
+  
+  <dl class="index-title">
+    <dt class="index-titleBgf active1" ><a href="{:U('Index/index?site=invest')}" <eq name="_G.site_result.nid" value="invest">class="hover"</eq>>进行中的借款</a></dt>
+    <dt class="index-titleBgf active2" style="margin-left:20px;"><a href="{:U('Index/index?site=flow')}"  <eq name="_G.site_result.nid" value="flow">class="hover"</eq>>流转借款标</a></dt>
+    <dt class="index-titleBgf active3" style="margin-left:20px;"><a href="{:U('Index/index?site=full_check')}"  <eq name="_G.site_result.nid" value="full_check">class="hover"</eq>>复审中借款</a></dt>
+    <dt class="index-titleBgf active4" style="margin-left:20px;"><a href="{:U('Index/index?site=full_success')}"  <eq name="_G.site_result.nid" value="full_success">class="hover"</eq>>成功借款</a></dt>
+    <notempty name="_G.user_id">
+    <dt class="index-titleBgf active5" style="margin-left:20px;"><a href="{:U('Index/index?site=watchlist')}"  <eq name="_G.site_result.nid" value="watchlist">class="hover"</eq>>我关注的标</a></dt>
+   </notempty>
+  </dl>
+  <ul class="invest_title">
+    <li style="width:100px;" class="title_line">图片</li>
+    <li style="width:210px;" class="title_line">标题/借款者/等级</li>
+    <li style="width:160px;" class="title_line">借款金额/年利率</li>
+    <li style="width:174px;" class="title_line">进度/剩余时间</li>
+    <li style="width:174px;" class="title_line">期限/还款方式</li>
+    <li style="width:160px;">状态</li>
+  </ul>
+  <div class="invest_list"> 
+ <empty name="blist.list">
+ <div style="height:50px; font-size:24px; text-align:center; padding-top:30px;">暂无投资项目</div>
+   
+    <else/>
+        <ul>
+     <foreach name="blist.list" item="var">
+      <li>
+        <table width="100%" border="0">
+          <tr>
+            <td rowspan="3" width="100"><div class="Recommend_mg2"><img src="{$var.user_id|avatar}" width="75" height="75" /></div></td>
+            <td colspan="3"><div class="user_title"><a href="{:U('Index/index?site=full_success&nid='.$var['borrow_nid'])}" title="{$var.name}" >{$var.name}</a> <if condition="($var.is_jin neq 1) AND ($var.is_flow neq 1) AND ($var.is_Seconds neq 1) AND ($var.vouchstatus neq 1) AND ($var.fast_status neq 1)">
+								<img src="{$tpldir}/images/xin.jpg" /></if>
+								<if condition="$var.is_jin eq 1">
+								<img src="{$tpldir}/images/jin.gif" /></if>
+								<if condition="$var.is_flow eq 1"><img
+									src="{$tpldir}/images/flow.gif" /></if>
+								<if condition="$var.is_Seconds eq 1"> <img
+									src="{$tpldir}/images/mb.gif" /></if>
+								<if condition="$var.isDXB eq 1">&nbsp;<img
+									src="{$tpldir}/images/lock.gif" /></if>
+								<if condition="$var.vouchstatus eq 1"> &nbsp;<img
+									src="{$tpldir}/images/ico_dbao.gif"></if>
+								<if condition="$var.fast_status eq 1">&nbsp;<img
+									src="{$tpldir}/images/ico_ks.gif"></if>
+								<if condition="$var.award_status gt 0">&nbsp;<img
+									src="{$tpldir}/images/jiangli.gif" /></if>
+								<if condition="$var.recommend eq 1"> &nbsp;<img
+									src="{$tpldir}/images/tuijian.jpg" /></if></div></td>
+          </tr>
+          <tr>
+            <td width="210">发布者：<strong>{$var.nikename}</strong></td>
+            <td width="180">借款金额：<strong>￥{$var.account}</strong>元</td>
+            <td width="180">剩余时间：
+             <lists module="users" function="GetCareList" is_flow="2" item="blist" keywords="request" type="request" flag="request" account_status="request" borrow_period="request" award_status="request" province="request" city="request" borrow_use="request" epage="10" order="$Think.request.order" vouch_status="request" borrow_style="request" borrow_type="request" user_id="$_G.user_id"/>
+           
+            <if condition="$var_borrow['borrow']['status'] eq 0">审核中<elseif condition="$var_borrow['borrow']['status'] eq 1" />
+							<span name="endtime">{$var_borrow.borrow.borrow_other_time}</span>
+							<elseif condition="$var_borrow['borrow']['status'] eq 2" />审核失败<elseif condition="($var_borrow['borrow']['status'] eq 3) AND ($var_borrow['borrow']['repay_account_wait'] eq 0)" />已还完<elseif condition="($var_borrow['borrow']['status'] eq 3) AND ($var_borrow['borrow']['repay_account_wait'] neq 0)" />还款中<elseif condition="$var_borrow['borrow']['status'] eq 5" />流标<else />未知状态</if>
+             </td>
+            <td width="190">借款期限：{$var.borrow_period|linkages="borrow_period",###}</td>
+            <td rowspan="2"><a href="{:U('Index/index?site=full_success&nid='.$var['borrow_nid'])}"> <if condition="$var.status eq 1"> <eq name="var.borrow_account_wait" value="0"> <img
+									src="{$tpldir}/images/list_094.jpg" /> <else /> <img
+									src="{$tpldir}/images/list_091.jpg" /> </eq> <elseif
+									condition="$var.status eq 3" /> <eq name="var.repay_account_wai" value="0"> <img
+									src="{$tpldir}/images/list_092.jpg" /> <else /> <img
+									src="{$tpldir}/images/list_09.jpg" /> </eq> <else />
+								<eq name="var.status" value="5"> <img
+									src="{$tpldir}/images/list_095.jpg" /> <else /> <img
+									src="{$tpldir}/images/list_093.jpg" /> </eq> </if></a></td>
+          </tr>
+          <tr>
+            <td width="200">信用等级：{$var.credit.approve_credit|credit="credit",###}</td>
+            <td>年利率：<strong>{$var.borrow_apr}%</strong></td>
+            <td><span class="jdt"><i  style="width:{$var.borrow_account_scale}%;"></i></span> {$var.borrow_account_scale}%</td>
+            <td>赎回方式： {$var.borrow_style|linkages="borrow_style",###}</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>投标奖励：<if condition="$var.award_status eq 1">{$var.award_account}<elseif condition="$var.award_status eq 2" />{$var.award_scale}%<else />0</if></td>
+          </tr>
+        </table>
+      </li>
+      </foreach>
+      <div class="page">{$page}</div>
+    </ul>
+    </empty> </div>
+ </div>
+<include file="$footer" />

@@ -1,0 +1,50 @@
+
+<div class="m_change">
+	<ul>
+		<li><a href="{:U('borrow/debting')}">可以转让的债权</a></li>
+		<li><a href="{:U('borrow/debt_move')}">正在转让的债权</a></li>
+		<li><a href="{:U('borrow/move_success')}">成功转让的债权</a></li>
+		<li><a href="{:U('borrow/buy_success')}">成功购买的债权</a></li>
+		<li><a href="{:U('borrow/wait?type=change')}" class="onn">回收中的债权</a></li>
+	</ul>
+</div>
+<div class="us_r_bor1">
+	<div class="t20">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			class="tabyel">
+			<form action="" method="post">
+				<tr class="ytit">
+					<td colspan="9">回收中的债权</td>
+				</tr>
+				<tr class="ytit1">
+					<td>借款者</td>
+					<td>标题</td>
+					<td>借款类型</td>
+					<td>借款者等级</td>
+					<td>年利率</td>
+					<td>期限</td>
+					<td>投资金额</td>
+					<td>已收金额</td>
+					<td>协议书</td>
+				</tr>
+
+				<foreach name="list" item="item">
+
+				<tr>
+					<td>{$item.nikename}</td>
+					<td title="{$item.name}"><a href="{:U('Index/index?site=full_success&nid='.$item['borrow_nid'])}" target="_blank">{$item.name}</a></td>
+					<td>{$item.borrow_style|linkages="borrow_style",###}</td>
+					<td>{$item.credit.approve_credit|credit="credit"}</td>
+					<td>{$item.borrow_apr}%</td>
+					<td>{$item.wait_times}个月</td>
+					<td>￥{$item.change_account}</td>
+					<td>￥{$item.recover_account_yes_all|default=0.00}</td>
+					<td><a href="{:U('Index/index?site=debt_protocol&nid='.$item['change_id'])}" target="_blank">转让协议书</a></td>
+				</tr>
+				</foreach>
+			</form>
+		</table>
+	</div>
+	<div style="padding: 10px 0; text-align: center">{$page}</div>
+
+</div>

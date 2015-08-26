@@ -1,0 +1,176 @@
+<include file="$header" />
+<if condition="ACTION_NAME  eq 'lists'">
+<ul class="nav3">
+	<li><a href="{:U('Users/lists')}" id="c_so">{$MsgInfo.users_name_order_default}</a></li>
+	<li><a href="{:U('Users/lists?order=last_time')}">{$MsgInfo.users_name_order_last_time}</a></li>
+	<li><a href="{:U('Users/lists?order=reg_time')}">{$MsgInfo.users_name_order_reg_time}</a></li>
+</ul>
+<div class="module_add">
+	<div class="module_title">
+		<strong>用户列表</strong>
+	</div>
+</div>
+<table border="0" cellspacing="1" width="100%">
+	<tr>
+		<td width="" class="main_td">{$MsgInfo.users_name_id}</td>
+		<td width="*" class="main_td">{$MsgInfo.users_name_username}</td>
+		<td width="*" class="main_td">{$MsgInfo.users_name_email}</td>
+		<td width="*" class="main_td" nowrap="nowrap">{$MsgInfo.users_name_logintime}</td>
+		<td width="*" class="main_td">{$MsgInfo.users_name_reg_time}</td>
+		<td width="*" class="main_td">{$MsgInfo.users_name_reg_ip}</td>
+		<td width="*" class="main_td">{$MsgInfo.users_name_up_time}</td>
+		<td width="*" class="main_td">{$MsgInfo.users_name_up_ip}</td>
+		<th width="" class="main_td">{$MsgInfo.users_name_last_time}</th>
+		<th width="" class="main_td">{$MsgInfo.users_name_last_ip}</th>
+		<th width="" class="main_td" nowrap="nowrap">修改</th>
+	</tr>
+	<foreach name="list" item="item">
+	<tr>
+		<td class="main_td1" align="center">{$item.user_id}</td>
+		<td class="main_td1" align="center">{$item.username}</td>
+		<td class="main_td1" align="center">{$item.email}</td>
+		<td class="main_td1" align="center">{$item.logintime|default=0}</td>
+		<td class="main_td1" align="center">{$item.reg_time|date="Y-m-d H:i:s",###}</td>
+		<td class="main_td1" align="center">{$item.reg_ip}</td>
+		<td class="main_td1" align="center">{$item.up_time|date="Y-m-d H:i:s",###}</td>
+		<td class="main_td1" align="center">{$item.up_ip}</td>
+		<td class="main_td1" align="center">{$item.last_time|date="Y-m-d H:i:s",###}</td>
+		<td class="main_td1" align="center">{$item.last_ip}</td>
+		<td class="main_td1" align="center"><a href="{:U('Users/edit?user_id='.$item['user_id'])}">修改</a></td>
+	</tr>
+	</foreach>
+	<tr>
+		<td colspan="11" class="action">
+			<div class="floatl">
+				<script>
+	  var url = '{:U(CONTROLLER_NAME ."/".ACTION_NAME,"","")}';
+	  
+	  	function sousuo(){
+			var username = $("#username").val();
+			var email = $("#email").val();
+			location.href=url+"/username/"+username+"/email/"+email;
+		}
+	  
+	  </script>
+
+			</div>
+			<div class="floatr">
+				{$MsgInfo.users_name_username}：<input type="text" name="username" id="username" value="{$magic.request.username|urldecode}" />
+				{$MsgInfo.users_name_email}：<input type="text" name="email" id="email" value="{$magic.request.email}" /> <input type="button" value="{$MsgInfo.users_name_sousuo}" / onclick="sousuo()">
+			</div>
+		</td>
+	</tr>
+	<tr align="center">
+		<td colspan="10" align="center"><div align="center">{$page}</div></td>
+	</tr>
+</table>
+<!--用户列表 结束--> <else />
+<div class="module_add">
+
+	<form name="form_user" method="post" action="" <if condition="ACTION_NAME  eq 'news'">onsubmit="return check_user();"</if> >
+		<div class="module_title">
+			<strong><if condition="ACTION_NAME  eq 'edit'">{$MsgInfo.users_name_edit}<else />{$MsgInfo.users_name_new}</if></strong>
+		</div>
+
+		<div class="module_border">
+			<div class="l">{$MsgInfo.users_name_username}：</div>
+			<div class="c">
+				<if condition="ACTION_NAME  neq 'edit'">
+				<input name="username" type="text" class="input_border" />
+				<else />{$_A.users_result.username}<input name="username" type="hidden" class="input_border" value="{$_A.users_result.username}" /></if>
+				<font color="#FF0000">*</font>
+			</div>
+		</div>
+		<div class="module_border">
+			<div class="l">邮箱：</div>
+			<div class="c">
+				<if condition="ACTION_NAME  neq 'edit'">
+				<input name="email" type="text" class="input_border" />
+				<else />{$_A.users_result.email}<input name="email" type="hidden" class="input_border" value="{$_A.users_result.email}" /></if>
+				<font color="#FF0000">*</font>
+			</div>
+		</div>
+		<div class="module_border">
+			<div class="l">{$MsgInfo.users_name_password}：</div>
+			<div class="c">
+				<input name="password" type="password" class="input_border" />
+				<if condition="ACTION_NAME  eq 'edit'">
+				{$MsgInfo.users_name_edit_not_empty}</if>
+				<font color="#FF0000">*</font>
+			</div>
+		</div>
+
+		<div class="module_border">
+			<div class="l">{$MsgInfo.users_name_password1}：</div>
+			<div class="c">
+				<input name="password1" type="password" class="input_border" />
+				<if condition="ACTION_NAME  eq 'edit'">
+				{$MsgInfo.users_name_edit_not_empty}</if>
+				<font color="#FF0000">*</font>
+			</div>
+		</div>
+		<div class="module_border">
+			<div class="l">支付密码：</div>
+			<div class="c">
+				<input name="paypassword" type="password" class="input_border" />
+				<if condition="ACTION_NAME  eq 'edit'">
+				{$MsgInfo.users_name_edit_not_empty}</if>
+				<font color="#FF0000">*</font>
+			</div>
+		</div>
+
+		<div class="module_border">
+			<div class="l">确认支付密码：</div>
+			<div class="c">
+				<input name="paypassword1" type="password" class="input_border" />
+				<if condition="ACTION_NAME  eq 'edit'">
+				{$MsgInfo.users_name_edit_not_empty}</if>
+				<font color="#FF0000">*</font>
+			</div>
+		</div>
+
+
+		<div class="module_submit border_b">
+			<if condition="ACTION_NAME  eq 'edit'">
+			<input type="hidden" name="user_id"
+				value="{$_A.users_result.user_id }" /></if>
+			<input type="submit" value="{$MsgInfo.users_name_submit}" /><input
+				type="hidden" name="status" value="1" /> <input type="reset"
+				name="reset" value="{$MsgInfo.users_name_reset}" />
+		</div>
+	</form>
+</div>
+<script>
+function check_user(){
+	 var frm = document.forms['form_user'];
+	 var username = frm.elements['username'].value;
+	 var password = frm.elements['password'].value;
+	  var password1 = frm.elements['password1'].value;
+	   var email = frm.elements['email'].value;
+	 var errorMsg = '';
+	  if (username.length == 0 ) {
+		errorMsg += '{$MsgInfo.users_username_empty}\n';
+	  }
+	   if (username.length<4) {
+		errorMsg += '{$MsgInfo.users_username_long4}\n';
+	  }
+	  if (password.length==0) {
+		errorMsg += '{$MsgInfo.users_password_empty}\n';
+	  }
+	  if (password.length<6) {
+		errorMsg += '{$MsgInfo.users_password_long6}\n';
+	  }
+	   if (password.length!=password1.length) {
+		errorMsg += '{$MsgInfo.users_password_error}\n';
+	  }
+	   if (email.length==0) {
+		errorMsg += '{$MsgInfo.users_email_empty}\n';
+	  }
+	  if (errorMsg.length > 0){
+		alert(errorMsg); return false;
+	  } else{  
+		return true;
+	  }
+}
+</script> </if>
+<include file="$footer" />

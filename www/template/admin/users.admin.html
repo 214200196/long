@@ -1,0 +1,157 @@
+<include file="$header" />
+<if condition="$Think.get.user_id neq ''">
+<div style="margin-top: 10px;">
+	<div style="">
+
+		<div style="border: 1px solid #CCCCCC;">
+			<!--添加管理员开始-->
+
+
+			<form action="{:U('users/admin?user_id='.$info['id'])}" method="post">
+				<div class="module_title">
+					<strong>管理员设置</strong>
+				</div>
+
+
+				<div class="module_border">
+					<div class="l">用户名：</div>
+					<div class="c">{$info.username}</div>
+				</div>
+
+				<div class="module_border">
+					<div class="l">用户别名：</div>
+					<div class="c">
+						<input type="text" name="adminname" value="{$info.adminname}">
+					</div>
+				</div>
+
+
+				<div class="module_border">
+					<div class="l">管理密码：</div>
+					<div class="c">
+						<input type="password" name="password" value="">
+					</div>
+				</div>
+
+
+
+				<div class="module_border">
+					<div class="l">管理QQ：</div>
+					<div class="c">
+						<input type="text" name="qq" value="{$info.qq}">
+					</div>
+				</div>
+
+				<div class="module_border">
+					<div class="l">管理电话：</div>
+					<div class="c">
+						<input type="text" name="phone" value="{$info.phone}">
+					</div>
+				</div>
+
+				<div class="module_border">
+					<div class="l">所在地：</div>
+					<div class="c">
+                    <empty name="info.city">
+                    <script src="{:U('plugins/index/areas?type=p,c')}"></script>
+                    <else /> 
+						<script src="{:U('plugins/index/areas?type=p,c&area='.$info['city'])}"></script>
+                        </empty>
+					</div>
+				</div>
+
+
+				<div class="module_border">
+					<div class="l">类型：</div>
+					<div class="c">
+						<tagLib name="zi" />
+						<zi:select table="admin_type" name="name" value="id"
+							select_name="type_id" selected="info['type_id']" />
+					</div>
+
+					<div class="module_border">
+						<div class="l">管理员备注：</div>
+						<div class="c">
+							<textarea name="remark" cols="30" rows="4"></textarea>
+						</div>
+					</div>
+
+					<div class="module_border">
+						<div class="l"></div>
+						<div class="c">
+							<input type="hidden" name="action" value="update"> <input
+								type="hidden" name="user_id" value="{$info.id}"> <input
+								type="submit" value="确认提交" class="submit_button">
+						</div>
+					</div>
+			</form>
+		</div>
+
+
+		<!--add_admin结束-->
+	</div>
+</div>
+</if>
+<div class="module_add">
+	<div class="module_title">
+		<strong>管理员信息</strong>&nbsp;
+	</div>
+	<div style="margin-top: 10px;">
+		<div style="">
+			<div style="border: 1px solid #CCCCCC;">
+				<!--添加管理员开始-->
+
+				<form action="" method="post">
+					<div class="module_title">
+						<strong>查找用户</strong>(将按顺序进行搜索) <input type="hidden" name="type"
+							value="user_id">
+					</div>
+					<div class="module_border">
+						用户名： <input type="text" name="username" value="admin"> <input
+							type="submit" value="搜索" class="submit_button">
+					</div>
+				</form>
+			</div>
+
+			<!--add_admin结束-->
+		</div>
+	</div>
+	<div style="text-align: left">
+		<div class="module_add">
+			<div class="module_title">
+				<strong>管理员列表</strong>
+			</div>
+		</div>
+		<table border="0" cellspacing="1" width="100%">
+
+
+			<tbody>
+				<tr>
+					<td class="main_td">ID</td>
+					<td class="main_td">用户名</td>
+					<td class="main_td">管理别名</td>
+					<td class="main_td">管理类型</td>
+					<td class="main_td">操作</td>
+				</tr>
+				<foreach name="lists['list']" item="vo">
+				<tr>
+					<td>{$vo.id}</td>
+					<td>{$vo.username}</td>
+					<td>{$vo.adminname}</td>
+					<td>{$vo.type_name}</td>
+					<td><a href="{:U('users/admin?user_id='.$vo['id'])}">修改</a> |
+						<a href="{:U('users/admin?action=del&user_id='.$vo['id'])}"
+						onclick="return confirm('是否将此留言信息删除?')">删除</a></td>
+				</tr>
+				</foreach>
+				<tr>
+					<td colspan="9" class="page">{$page}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<!--管理类型列表 开始-->
+
+</div>
+<include file="$footer" />

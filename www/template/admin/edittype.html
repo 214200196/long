@@ -1,0 +1,70 @@
+<include file="$header" />
+<div class="module_add">
+	<div style="margin-top: 10px;">
+		<form action="" method="post">
+			<div class="module_title">
+				<strong> <input type="hidden" name="id"
+					value="{$_A.admin_type_result.id}" /> 修改管理员类型
+				</strong>
+			</div>
+			<div class="module_border">
+				<div class="l">类型名称：</div>
+				<div class="c">
+					<input type="text" name="name" value="{$_A.admin_type_result.name}" />
+				</div>
+			</div>
+			<div class="module_border">
+				<div class="l">标识名：</div>
+				<div class="c">
+					<input type="text" name="nid" value="{$_A.admin_type_result.nid}" />
+				</div>
+			</div>
+			<div class="module_border">
+				<div class="l">描述：</div>
+				<div class="c">
+					<textarea name="remark" rows="5" cols="30">{$_A.admin_type_result.remark}</textarea>
+				</div>
+			</div>
+			<div class="module_border">
+				<div class="l">排序：</div>
+				<div class="c">
+					<input type="text" name="order"
+						value="{$_A.admin_type_result.order|default=10}" size="8" />
+				</div>
+			</div>
+			<div class="module_border">
+				<div class="l">权限:</div>
+				<div class="c" style="overflow: hidden">
+					<foreach name="purview" item="item">
+					<div style="height: auto; clear: both">
+						<div
+							style="border-top: 1px solid #CCCCCC; height: 28px; padding-top: 5px">
+							<strong>{$item.name}</strong> <input type="checkbox"
+								value="{$key}" name="module[]"
+								{$_A.admin_type_result.module|checked=$key,###} />
+						</div>
+						<div style="border-top: 1px dashed #CCCCCC; padding-top: 5px">
+							<foreach name="item['result']" item="_item" key="_key">
+
+							<div
+								style="float: left; width: 140px; height: 28px; padding-top: 3px"
+								title="{$__key}">
+								<input type="checkbox" value="{$_key}" name="purview[]"
+									id="{$key}" {$_A.admin_type_result.purview|checked=$_key} />
+								{$_item.name}
+							</div>
+							</foreach>
+						</div>
+					</div>
+					</foreach>
+				</div>
+			</div>
+			<div class="module_submit">
+				<input type="hidden" name="action" value="edit" /> <input
+					type="submit" value="确认提交" class="submit_button" />
+			</div>
+		</form>
+	</div>
+</div>
+</div>
+<include file="$footer" />

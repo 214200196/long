@@ -1,0 +1,106 @@
+
+<div class="m_change">
+
+	<ul>
+		<li><a href="{:U('borrow/amount')}" class="onn">额度申请</a></li>
+		<li><a href="{:U('borrow/amountlist')}">申请记录</a></li>
+		<li><a href="{:U('borrow/amountlog')}">额度记录</a></li>
+	</ul>
+
+</div>
+<div class="user_main_title1">额度一个月只能申请一次</div>
+
+
+<div style="line-height: 50px; border-bottom: 1px dashed #999999">
+	您目前的可用额度：<strong>{$_amount.borrow_amount_use|default='0'}</strong>元
+</div>
+
+
+
+<form action="{:U('Borrow/amount')}" method="post"
+	id="borrow_amount_form">
+
+	<div class="user_right_border">
+		<div class="e">申请者：</div>
+		<div class="c ss">{$_G.user_result.username}</div>
+	</div>
+	<if condition="($svar.status eq 0) AND ($svar neq null)">
+
+	<div class="user_right_border">
+		<div class="e">状态：</div>
+		<div class="c">正在审核中</div>
+	</div>
+
+	<div class="user_right_border">
+		<div class="e">申请类型：</div>
+		<div class="c ss">
+			<if condition="$svar.type eq 'vouch'">投资担保额度<elseif condition="$svar.type eq 'borrowvouch'" />借款担保额度 <else />借款信用额</if>
+		</div>
+	</div>
+
+	<div class="user_right_border">
+		<div class="e">申请金额：</div>
+		<div class="c ss">{$svar.amount_account}</div>
+	</div>
+	<div class="user_right_border">
+		<div class="e">详细说明：</div>
+		<div class="c ss">{$svar.content}</div>
+	</div>
+
+	<div class="user_right_border">
+		<div class="e">其它地方借款说明：</div>
+		<div class="c ss">{$svar.remark}</div>
+	</div>
+
+	<else /> 
+	<literal> <script>
+	function num_only(field) {
+var result = new String();
+var numbers = "0123456789";
+var chars = field.value.split(""); // create array 
+for (i = 0; i < chars.length; i++) {
+if (numbers.indexOf(chars[i]) != -1) result += chars[i];
+}
+if (field.value != result) field.value = result;
+}
+	</script> </literal>
+	<div class="user_right_border">
+		<div class="e">申请类型：</div>
+		<div class="c ss">
+			<select name="amount_type">
+				<option value="borrow" selected="selected">借款信用额度</option>
+			</select>
+		</div>
+	</div>
+	<div class="user_right_border">
+		<div class="e">申请金额：</div>
+		<div class="c ss">
+			<input type="text" name="amount_account" value=""
+				onblur="num_only(this)" />
+		</div>
+	</div>
+
+	<div class="user_right_border">
+		<div class="e">详细说明：</div>
+		<div class="c ss">
+			<textarea rows="5" cols="40" name="content"></textarea>
+		</div>
+	</div>
+
+	<div class="user_right_border">
+		<div class="e">其它地方借款详细说明：</div>
+		<div class="c ss">
+			<textarea rows="5" cols="40" name="remark"></textarea>
+		</div>
+	</div>
+
+	<div class="user_right_border">
+		<div class="e"></div>
+		<div class="c">
+			<input type="submit" name="name" value="确认提交" class="xinbuton"
+				size="30" /><input type="hidden" name="ajax" value="1" />
+		</div>
+	</div>
+	</if>
+</form>
+

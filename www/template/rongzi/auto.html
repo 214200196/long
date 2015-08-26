@@ -1,0 +1,57 @@
+<div class="m_change">
+	<ul>
+		<li><a href="{:U('borrow/auto')}" class="onn">自动投标</a></li>
+		<li><a href="{:U('borrow/auto_new')}">添加自动投标</a></li>
+	</ul>
+</div>
+<div class="t20">
+	1、自动投标最多允许添加3个规则，系统会根据排序从大到小，并跳过未启用的<br />
+	2、我们允许您添加3个自动投标规则，但系统会根据序号从小到大进行判断，并跳过状态为停用的规则。 <br />
+	3、当判断到有符合条件的规则时即为您自动投标，而后续的规则则不予采用。
+</div>
+<div class="t20">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"
+		class="tabyel">
+		<tr class="ytit">
+			<td colspan="13">自动投标</td>
+		</tr>
+		<form action="" method="post">
+			<tr class="ytit1">
+
+				<td>是否启用</td>
+				<td>投标类型</td>
+				<td>投标金额</td>
+				<td>投标比例</td>
+				<td>利率范围</td>
+				<td>借款期限</td>
+				<td>信用积分</td>
+				<td>逾期</td>
+				<td>垫付</td>
+				<td>快速标</td>
+				<td>担保标</td>
+				<td>操作</td>
+			</tr>
+
+			<foreach name="list" item="var">
+			<tr>
+				<td><eq name="var.status" value="1">启用<else />未启用</eq></td>
+				<td><eq name="var.tender_type" value="1">按金额投标<else />按比例投标</eq></td>
+				<td>￥{$var.tender_account}</td>
+				<td>{$var.tender_scale|default="-"}%</td>
+				<td><eq name="var.apr_status" value="1">{$var.apr_first}%~{$var.apr_last}%<else />未启用</eq></td>
+				<td><eq name="var.timelimit_status" value="1">{{$var.timelimit_month_first}~{$var.timelimit_month_last}<else />不启用</eq></td>
+				<td><eq name="var.borrow_credit_status" value="1">{$var.borrow_credit_first}~{$var.borrow_credit_last}<else />不启用</eq></td>
+				<td><eq name="var.late_status" value="1">{$var.late_times}<else />不启用</eq></td>
+				<td><eq name="var.dianfu_status" value="1">{$var.dianfu_times}<else />不启用</eq></td>
+				<td><eq name="var.tuijian_status" value="1">是<else />不启用</eq></td>
+				<td><eq name="var.vouch_status" value="1">是<else />不启用</eq></td>
+				<td><a href="{:U('borrow/auto_new?id='.$var['id'])}">修改</a> <a
+					href="#"
+					onclick="javascript:if(confirm('你确定要删除此自动投标吗？')) location.href='{:U('borrow/auto_del?id='.$var['id'])}'">删除</a></td>
+			</tr>
+			</foreach>
+		</form>
+	</table>
+</div>
+
+<!--自动投标 结束-->

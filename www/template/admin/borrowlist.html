@@ -1,0 +1,94 @@
+<include file="$header" />
+<div class="module_add">
+	<div class="module_title">
+		<strong>所有借款</strong>
+	</div>
+</div>
+<table border="0" cellspacing="1" width="100%">
+	<form action="" method="post"></form>
+	<tbody>
+		<tr>
+			<td width="" class="main_td">ID</td>
+			<td width="*" class="main_td">用户名称</td>
+			<td width="*" class="main_td">贷款号</td>
+			<td width="" class="main_td">借款标题</td>
+			<td width="" class="main_td">借款金额</td>
+			<td width="" class="main_td">利率</td>
+			<td width="" class="main_td">借款期限</td>
+			<td width="" class="main_td">还款方式</td>
+			<td width="" class="main_td">借款类型</td>
+			<td width="" class="main_td">状态</td>
+			<td width="" class="main_td">查看</td>
+		</tr>
+		<foreach name="list" item="item">
+		<tr>
+			<td>{$item.id}</td>
+			<td class="main_td1" align="center"><a href="javascript:void(0)" onclick="tipsWindown('用户详细信息查看','{:U('Users/views?user_id='.$item['user_id'].'&type=scene')}',600,400);">{$item.username}</a></td>
+			<td>{$item.borrow_nid}</td>
+			<td title="{$item.name}"><a href="{:U('Borrow/views?nid='.$item['borrow_nid'])}">{$item.name}</a></td>
+			<td>{$item.account}元</td>
+			<td>{$item.borrow_apr}%</td>
+			<td>{$item.borrow_period|linkages="borrow_period",###}</td>
+			<td>{$item.borrow_style|linkages="borrow_style",###}</td>
+			<td><if condition="$item.vouchstatus eq 1">
+				<font color="#FF0000">担保标借款</font> <elseif condition="$item.is_flow eq 1" /> <font color="#FF0000">流转借款</font>
+				<elseif condition="$item.is_Seconds eq 1" /> <font color="#FF0000">秒标借款</font>
+				<elseif condition="$item.is_jin eq 1" /> <font color="#FF0000">净值借款</font>
+				<elseif condition="$item.fast_status eq 1" /> <font color="#FF0000">抵押借款</font>
+				<else /> 普通标借款</if></td>
+			<td>{$item.status|linkages="borrow_status",###}</td>
+			<td title="{$item.name}"><a href="{:U('Borrow/views?nid='.$item['borrow_nid'])}">查看</a></td>
+		</tr>
+		</foreach>
+		<tr>
+			<td colspan="14" class="action"><div class="floatr">
+					标题： <input type="text" name="borrow_name" id="borrow_name" value="" size="8"> 用户名： <input type="text" name="username" id="username" value="" size="8"> 贷款号： <input type="text" name="borrow_nid" id="borrow_nid" value="" size="8"> 状态 <select class="search_text" id="status">
+						<option value="">全部</option>
+						<option value="1">已通过</option>
+						<option value="0">未通过</option>
+					</select> <select id="borrow_type" class="search_text">
+						<option value="">全部</option>
+						<option value="vouch">担保标</option>
+						<option value="fast">抵押标</option>
+						<option value="flow">流转标</option>
+						<option value="jin">净值标</option>
+						<option value="credit">普通标</option>
+					</select> <input type="button" value="搜索" class="submit" onclick="sousuo('{:U('Borrow/lists','','')}')">
+				</div></td>
+		</tr>
+		<tr>
+			<td colspan="14" class="page">{$page}</td>
+		</tr>
+		<script>
+function sousuo(url){
+	var sou = "";
+	var username = $("#username").val();
+	if (username!="" && username!=null){
+		sou += "/username/"+username;
+	}
+
+	var borrow_name = $("#borrow_name").val();
+	if (borrow_name!="" && borrow_name!=null){
+		sou += "/borrow_name/"+borrow_name;
+	}
+	var borrow_nid = $("#borrow_nid").val();
+	if (borrow_nid!="" && borrow_nid!=null){
+		sou += "/borrow_nid/"+borrow_nid;
+	}
+	
+	var status = $("#status").val();
+	if (status!="" && status!=null){
+		sou += "/status/"+status;
+	}
+	var borrow_type = $("#borrow_type").val();
+	if (borrow_type!="" && borrow_type!=null){
+		sou += "/borrow_type/"+borrow_type;
+	}
+	
+		location.href=url+sou;
+	
+}
+</script>
+	</tbody>
+</table>
+<include file="$footer" />

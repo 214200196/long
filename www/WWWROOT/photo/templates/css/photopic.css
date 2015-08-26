@@ -1,0 +1,45 @@
+/* ============Í¼Æ¬ÁÐ±í============== */
+ul.photopic{
+margin:0;
+padding:0px 0px 0px 7px;
+}
+
+ul.photopic li{
+list-style-type: none;
+margin:0px 5px 5px 0px;
+text-align:center;
+float:left;
+}
+
+ul.photopic div.fang{
+border:1px #ddd solid;
+background: #fff;
+padding:3px;
+text-align:center;
+}
+
+ul.photopic div.picFit{
+overflow: hidden;
+}
+
+ul.photopic div.picFit img{
+}
+
+
+ul.photopic div.title{
+text-align:center;
+overflow: hidden;
+white-space:nowrap;
+}
+
+ul.photopic a.title:link,ul.photopic a.title:visited,ul.photopic a.title:active{
+font:12px/25px simsun;
+text-decoration: none;
+color:#fff;
+}
+
+ul.photopic a.title:hover{
+color:#ff0000;
+text-decoration: underline;
+font:12px/25px simsun;
+}

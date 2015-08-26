@@ -1,0 +1,70 @@
+<include file="$header" />
+<div class="module_add">
+	<div class="module_title">
+		<strong>管理员记录</strong>
+	</div>
+</div>
+<table border="0" cellspacing="1" width="100%">
+	<tbody>
+		<tr>
+			<td width="" class="main_td">ID</td>
+			<td width="*" class="main_td">操作人</td>
+			<td width="*" class="main_td">模块</td>
+			<td width="*" class="main_td">类型</td>
+			<td width="*" class="main_td">操作</td>
+			<td width="*" class="main_td">操作id</td>
+			<td width="*" class="main_td">结果</td>
+			<th width="" class="main_td">内容</th>
+			<th width="" class="main_td">添加时间</th>
+			<th width="" class="main_td">添加ip</th>
+		</tr>
+		<foreach name="list['list']" item="vo">
+		<tr>
+			<td class="main_td1" align="center">{$vo.id}</td>
+			<td class="main_td1" align="center">{$vo.username|default='-'}</td>
+			<td class="main_td1" align="center">{$vo.code}</td>
+			<td class="main_td1" align="center">{$vo.type}</td>
+			<td class="main_td1" align="center">{$vo.operating}</td>
+			<td class="main_td1" align="center">{$vo.article_id}</td>
+			<td class="main_td1" align="center"><if
+					condition="$vo.result eq 1"> <font color="#006600">成功</font>
+				<else />
+				<font color="#FF0000">失败</font></if></td>
+			<td class="main_td1" align="center" width="200">{$vo.content}</td>
+			<td class="main_td1" align="center">{$vo.addtime|date="Y-m-d
+				H:s:i",###}</td>
+			<td class="main_td1" align="center">{$vo.addip}</td>
+		</tr>
+		</foreach>
+
+
+
+		<tr>
+			<td colspan="11" class="action">
+				<div class="floatl">
+					<script>
+	  var url = '?admin&q=code/users/admin_log';
+	    
+	  	function sousuo(){
+			var username = $("#username").val();
+			var email = $("#email").val();
+			location.href=url+"&username="+username+"&email="+email;
+		}
+	  
+	  </script>
+
+				</div>
+				<div class="floatr">
+					<form action="" method="get">
+						用户名：<input type="text" name="username" id="username" value="">
+						<input type="button" value="搜索" onclick="sousuo()">
+					</form>
+				</div>
+			</td>
+		</tr>
+		<tr align="center">
+			<td colspan="10" class="page">{$list.page}</td>
+		</tr>
+	</tbody>
+</table>
+<include file="$footer" />

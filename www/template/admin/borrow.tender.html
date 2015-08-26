@@ -1,0 +1,284 @@
+<include file="$header" />
+<if condition="$Think.request.cancel neq ''">
+<div  style="height:205px; overflow:hidden">
+	<form name="form1" method="post" action="{:U(CONTROLLER_NAME.'/'.ACTION_NAME.'?cancel='.$_REQUEST['cancel'])}" >
+	
+	
+	<div class="module_border_ajax" >
+		<div class="l">撤销理由:</div>
+		<div class="c">
+			<textarea name="remark" cols="45" rows="7">{$_A.borrow_result.reverify_remark}</textarea><br />请将撤回的理由写清楚
+		</div>
+	</div>
+	<div class="module_border_ajax" >
+		<div class="l">验证码:</div>
+		<div class="c">
+			<input name="valicode" type="text" size="11" maxlength="4"  tabindex="3"/>
+		</div>
+		<div class="c">
+			<img src="{:U('admin/index/verify')}" id="valicode" alt="点击刷新" onClick="this.src='{:U('Index/verify','','')}/' + Math.random();" align="absmiddle" style="cursor:pointer" />
+		</div>
+	</div>
+
+	<div class="module_submit_ajax" >
+		<input type="hidden" name="tender_nid" value="{$Think.request.cancel}" />
+		<input type="submit"  name="reset" class="submit_button" value="审核此标" />
+	</div>
+	
+</form>
+</div>
+
+<elseif condition="$Think.request.id neq ''"/>
+<div class="module_add" >
+	
+	<div class="module_title"><strong>投资详细信息</strong></div>
+
+
+	<div class="module_border">
+		<div class="l">投资人：</div>
+		<div class="r">
+		<a href="javascript:void(0)" onclick='tipsWindown("用户详细信息查看","{:U('Users/views?user_id='.$_A['borrow_tender_result']['user_id'].'&type=scene')}",700,400);'>	{$_A.borrow_tender_result.username}</a>
+		</div>
+		<div class="s"></div>
+		<div class="c">
+			
+		</div>
+	</div>
+	
+
+	<div class="module_border">
+		<div class="l">投资状态：</div>
+		<div class="r">
+        <eq name="_A.borrow_tender_result.status" value="0">等待满标<else/>{$_A.borrow_tender_result.status|linkages="borrow_tender_status",###}</eq>
+			
+		</div>
+		<div class="s">审核状态：</div>
+		<div class="c">
+			{$_A.borrow_tender_result.tender_status|linkages="borrow_tender_verify_status",###} 
+		</div>
+	</div>
+    <eq name="_A.borrow_tender_result.tender_status" value="1">
+	<div class="module_title"><strong>投资成功信息</strong></div>
+	<div class="module_border">
+		<div class="l">投资金额：</div>
+		<div class="r">
+		￥{$_A.borrow_tender_result.account_tender}
+		</div>
+		<div class="s">收款总额：</div>
+		<div class="c">
+			<strong>￥{$_A.borrow_tender_result.account}</strong>
+		</div>
+	</div>
+	
+	<div class="module_border">
+		<div class="l">已收总额：</div>
+		<div class="r">
+		￥{$_A.borrow_tender_result.account_tender}
+		</div>
+		<div class="s">未收总额：</div>
+		<div class="c">
+			<strong>￥{$_A.borrow_tender_result.account}</strong>
+		</div>
+	</div>
+	
+	<div class="module_border">
+		<div class="l">已收本金：</div>
+		<div class="r">
+		￥{$_A.borrow_tender_result.account_tender}
+		</div>
+		<div class="s">未收本金：</div>
+		<div class="c">
+			<strong>￥{$_A.borrow_tender_result.account}</strong>
+		</div>
+	</div>
+	
+	<div class="module_border">
+		<div class="l">已收利息：</div>
+		<div class="r">
+		￥{$_A.borrow_tender_result.account_tender}
+		</div>
+		<div class="s">未收利息：</div>
+		<div class="c">
+			<strong>￥{$_A.borrow_tender_result.account}</strong>
+		</div>
+	</div>
+	</eq>
+	<div class="module_border">
+		<div class="l">投资金额：</div>
+		<div class="r">
+		￥{$_A.borrow_tender_result.account_tender}
+		</div>
+		<div class="s">实投金额：</div>
+		<div class="c">
+			<font color="#FF0000"><strong>￥{$_A.borrow_tender_result.account}</strong></font>
+		</div>
+	</div>
+	
+	
+
+	<div class="module_border">
+		<div class="l">是否自动投标：</div>
+		<div class="r">
+		{$_A.borrow_tender_result.auto_status|linkages="borrow_tender_auto_status",###}
+		</div>
+		<div class="s">投资理由：</div>
+		<div class="c">
+			{$_A.borrow_tender_result.contents}
+		</div>
+	</div>
+	
+	
+
+	<div class="module_border">
+		<div class="l">投资时间：</div>
+		<div class="r">
+		{$_A.borrow_tender_result.addtime|date="Y-m-d H:i:s",###}
+		</div>
+		<div class="s">投资IP：</div>
+		<div class="c">
+			{$_A.borrow_tender_result.addip}
+		</div>
+	</div>
+	
+	
+	<div class="module_title"><strong>借款详细信息</strong></div>
+	<div class="module_border">
+		
+		<div class="l">标题：</div>
+		<div class="r">
+			<strong><a href="{:U('Borrow/views?nid='.$_A['borrow_tender_result']['borrow_nid'])}">{$_A.borrow_tender_result.borrow_name}</a></strong>
+		</div>
+		
+		<div class="s">贷款号：</div>
+		<div class="c">
+			{$_A.borrow_tender_result.borrow_nid}
+		</div>
+	</div>
+	
+	
+	<div class="module_border">
+		<div class="l">借贷总金额：</div>
+		<div class="r">
+			￥{$_A.borrow_tender_result.borrow_account}
+		</div>
+		<div class="s">借款用途：</div>
+		<div class="c">
+			{$_A.borrow_tender_result.borrow_use|linkages="borrow_use",###}
+		</div>
+	</div>
+	
+	<div class="module_border">
+		<div class="l">借款类型：</div>
+		<div class="r">
+			<if condition="$_A['borrow_tender_result']['vouchstatus'] eq 1">
+				<font color="#FF0000">担保标借款</font> <elseif condition="$_A['borrow_tender_result']['is_flow'] eq 1" /> <font color="#FF0000">流转借款</font>
+				<elseif condition="$_A['borrow_tender_result']['is_Seconds'] eq 1" /> <font color="#FF0000">秒标借款</font>
+				<elseif condition="$_A['borrow_tender_result']['is_jin'] eq 1" /> <font color="#FF0000">净值借款</font>
+				<elseif condition="$_A['borrow_tender_result']['fast_status'] eq 1" /> <font color="#FF0000">抵押借款</font>
+				<else /> 普通标借款</if>
+		</div>
+		
+		<div class="s">还款方式：</div>
+		<div class="c">
+			{$_A.borrow_tender_result.borrow_style|linkages="borrow_style",###}
+		</div>
+	</div>
+	
+	<div class="module_border">
+		<div class="l">借款期限：</div>
+		<div class="r">
+				{$_A.borrow_tender_result.borrow_period|linkages="borrow_period",###}
+		</div>
+		
+		<div class="s">年利率：</div>
+		<div class="c">
+			{$_A.borrow_tender_result.borrow_apr} %
+		</div>
+
+	</div>
+</div>
+
+<div class="module_add">
+	<div class="module_title"><strong>{$_A.borrow_tender_result.borrow_name}</strong> 投资列表</div>
+</div>
+<table  border="0"  cellspacing="1"   width="100%">
+	  <form action="" method="post">
+		<tr >
+			<td width="*" class="main_td">投资人</td>
+			<td width="*" class="main_td">投资金额</td>
+			<td width="" class="main_td">投资时间</td>
+			<td width="" class="main_td">审核状态</td>
+			<td width="" class="main_td">投资状态</td>
+			
+			<td width="" class="main_td">自动投标</td>
+			<td width="" class="main_td">查看</td>
+		</tr>
+		<foreach name="list" item="item" >
+		<tr>
+			<td class="main_td1" align="center"><a href="javascript:void(0)" onclick='tipsWindown("用户详细信息查看","{:U('Users/views?user_id='.$item['user_id'].'&type=scene')}",700,400);'>	{$item.username}</a></td>
+			<td>￥{$item.account}</td>
+			<td>{$item.addtime|date="Y-m-d H:i:s",###}</td>
+			<td><eq name="item.status" value="0">等待满标<else/>{$item.status|linkages="borrow_tender_status",###}</eq></td>
+			<td>{$item.tender_status|linkages="borrow_tender_verify_status",###}</td>
+			<td>{$item.auto_status|linkages="borrow_tender_auto_status",###}</td>
+			<td title="{$item.name}"><a href="{:U(CONTROLLER_NAME.'/'.ACTION_NAME.'?id='.$item['id'])}">查看</a></td>
+			
+		</tr>
+		</foreach>
+	</form>	
+</table>
+
+<else/>
+<div class="module_add">
+	<div class="module_title"><strong>投资管理</strong></div>
+</div>
+<table  border="0"  cellspacing="1"   width="100%">
+	  <form action="" method="post">
+		<tr >
+			<td width="" class="main_td">投资ID</td>
+			<td width="*" class="main_td">投资人</td>
+			<td width="*" class="main_td">投资金额</td>
+			<td width="" class="main_td">投资时间</td>
+			<td width="" class="main_td">投资状态</td>
+			<td width="" class="main_td">审核状态</td>
+			<td width="" class="main_td">投资理由</td>
+			<td width="*" class="main_td">借款标</td>
+			<td width="" class="main_td">借款标识名</td>
+			<td width="" class="main_td">借款总额</td>
+			<td width="" class="main_td">自动投标</td>
+			<td width="" class="main_td">查看</td>
+		</tr>
+		
+		<foreach name="list" item="item" >
+		<tr>
+			<td>{$item.id}<input type="hidden" name="id[]" value="{$item.id}" /></td>
+			<td class="main_td1" align="center"><a href="javascript:void(0)" onclick='tipsWindown("用户详细信息查看","{:U('Users/views?user_id='.$item['user_id'].'&type=scene')}",700,400);'>	{$item.username}</a></td>
+			<td>￥{$item.account}</td>
+			<td>{$item.addtime|date="Y-m-d H:i:s",###}</td>
+			<td>{$item.status|linkages="borrow_tender_status",###}</td>
+			<td>{$item.status|linkages="borrow_tender_verify_status",###}</td>
+			<td>{$item.contents|default="-"}</td>
+			<td><a href="{:U('Borrow/views?nid='.$item['borrow_nid'])}">{$item.borrow_name}</a></td>
+			<td>{$item.borrow_nid}</td>
+			<td>￥{$item.borrow_account}</td>
+			<td>{$item.auto_status|linkages="borrow_tender_auto_status",###}</td>
+			<td title="{$item.name}"><a href="{:U(CONTROLLER_NAME.'/'.ACTION_NAME.'?id='.$item['id'])}">查看</a></td>
+		</tr>
+		</foreach>
+		<tr>
+		<td colspan="14" class="action">
+		<div class="floatl">
+			<input type="submit" value="确定提交" class="submit"/>
+		</div>
+		
+		</td>
+	</tr>
+		<tr>
+			<td colspan="14" class="page">
+			{$page} 
+			</td>
+		</tr>
+		
+	</form>	
+</table>
+</if><include file="$footer" />

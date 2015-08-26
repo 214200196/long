@@ -1,0 +1,17 @@
+
+<div class="m_change">
+	<ul>
+		<li><a href="{:U('users/avatar')}" class="onn">上传头像</a></li>
+	</ul>
+</div>
+<div class="us_r_bor1">
+	<div class="user_main_title1">请上传你网站的头像</div>
+	<div style="width: 700px; overflow: hidden">
+		<div style="float: left; width: 250px; margin-top: 20px;">
+			<img src="{$_G.user_id|avatar}" />
+		</div>
+		<div style="float: right; width: 450px;">{:show_avatar()}</div>
+	</div>
+	<div class="user_right_foot">*
+		温馨提示：头像现在有三种，大，中，小。请尽量截取正方形，避免头像变形！</div>
+</div>

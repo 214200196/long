@@ -1,0 +1,215 @@
+<include file="$header" />
+<div class="con_box">
+	<div>
+		<div class="con_bor">
+			<div class="pos_bor">
+				<span><a href="#">我要借款</a> > 认证资料上传</span>
+			</div>
+			<div class="con2">
+				<div style="width: 897px; margin: 20px auto">
+					<div style="margin: 20px 0">
+						<div style="width: 897px; margin: 0px auto">
+							<div class="warning1">
+								<span>温馨提示：</span>对于用户上传的所有信息，都将进行加密处理。您可以在此放心上传个人材料，您的个人信用将不会被以任何形式外泄。上传图片格式要求为.jpg或.gif,大小为500K以内。
+							</div>
+							<div class="t20">
+								<div class="sm_tit">
+									必要信用认证(<strong>以下六项必要村料均需上传并认证通过，缺失其中一项均无法发起借款。</strong>)
+								</div>
+								<div class="xy_list">
+									<ul>
+										<li>
+											<table width="100%" border="0" cellspacing="0"
+												cellpadding="0">
+												<tr>
+													<td width="32%"><img src="{$tpldir}/images/icon1.gif" /></td>
+													<td width="68%"><b style="font-size: 14px">户口本认证</b> <a
+														href="javascript:void(0);" onClick="tipsWindown('户口认证','{:U("Attestations/addatt?nid=hukou")}','700','400');"><img src="{$tpldir}/images/upload.gif" border="0" /></a><br>
+														<if condition="$user_att['hukou']['status'] eq ''"> <font color="#ff0000">待上传</font>
+														<elseif condition="$user_att['hukou']['status'] eq 0" />
+														<font color="#ff0000">待审核</font>
+														<elseif condition="$user_att['hukou']['num'] gt 0" />审核通过<elseif condition="$user_att['hukou']['status'] eq 2" />
+														<font color="#ff0000">未通过，请重新上传</font></if></td>
+												</tr>
+											</table>
+										</li>
+										<li>
+											<table width="100%" border="0" cellspacing="0"
+												cellpadding="0">
+												<tr>
+													<td width="32%"><img src="{$tpldir}/images/icon2.gif" /></td>
+													<td width="68%"><b style="font-size: 14px">工作认证</b> <a
+														href="javascript:void(0);" onClick="tipsWindown('工作认证','{:U("Attestations/addatt?nid=work")}','700','400','true','','true','text');"><img src="{$tpldir}/images/upload.gif" border="0" /></a><br>
+														<if condition="$user_att['work']['status'] eq ''">
+														<font color="#ff0000">待上传</font>
+														<elseif condition="$user_att['work']['status'] eq 0" />
+														<font color="#ff0000">待审核</font>
+														<elseif condition="$user_att['work']['num'] gt 0" />审核通过<elseif condition="$user_att['work']['status'] eq 2" />
+														<font color="#ff0000">未通过，请重新上传</font></if></td>
+												</tr>
+											</table>
+										</li>
+										<li>
+											<table width="100%" border="0" cellspacing="0"
+												cellpadding="0">
+												<tr>
+													<td width="32%"><img src="{$tpldir}/images/icon3.gif" /></td>
+													<td width="68%"><b style="font-size: 14px">收入证明</b> <a
+														href="javascript:void(0);" onClick="tipsWindown('收入证明','{:U("Attestations/addatt?nid=income")}','700','400','true','','true','text');"><img src="{$tpldir}/images/upload.gif" border="0" /></a><br>
+														<if condition="$user_att['income']['status'] eq ''">
+														<font color="#ff0000">待上传</font>
+														<elseif condition="$user_att['income']['status'] eq 0" />
+														<font color="#ff0000">待审核</font>
+														<elseif condition="$user_att['income']['num'] gt 0" />审核通过<elseif condition="$user_att['income']['status'] eq 2" />
+														<font color="#ff0000">未通过，请重新上传</font></if></td>
+												</tr>
+											</table>
+										</li>
+										<li>
+											<table width="100%" border="0" cellspacing="0"
+												cellpadding="0">
+												<tr>
+													<td width="32%"><img src="{$tpldir}/images/icon4.gif" /></td>
+													<td width="68%"><b style="font-size: 14px">近6个月银行资金流水</b>
+														<a href="javascript:void(0);" onClick="tipsWindown('近6个月银行资金流水','{:U("Attestations/addatt?nid=bank_six")}','700','400','true','','true','text');"><img src="{$tpldir}/images/upload.gif" border="0" /></a><br>
+														<if condition="$user_att['bank_six']['status'] eq ''">
+														<font color="#ff0000">待上传</font>
+														<elseif condition="$user_att['bank_six']['status'] eq 0" />
+														<font color="#ff0000">待审核</font>
+														<elseif condition="$user_att['bank_six']['num'] gt 0" />审核通过<elseif condition="$user_att['bank_six']['status'] eq 2" />
+														<font color="#ff0000">未通过，请重新上传</font></if></td>
+												</tr>
+											</table>
+										</li>
+										<li>
+											<table width="100%" border="0" cellspacing="0"
+												cellpadding="0">
+												<tr>
+													<td width="32%"><img src="{$tpldir}/images/icon5.gif" /></td>
+													<td width="68%"><b style="font-size: 14px">央行信用报告</b>
+														<a href="javascript:void(0);" onClick="tipsWindown('央行信用报告','{:U("Attestations/addatt?nid=bank_report")}','700','400','true','','true','text');"><img src="{$tpldir}/images/upload.gif" border="0" /></a> <br>
+														<if condition="$user_att['bank_report']['status'] eq ''">
+														<font color="#ff0000">待上传</font>
+														<elseif condition="$user_att['bank_report']['status'] eq 0" />
+														<font color="#ff0000">待审核</font>
+														<elseif condition="$user_att['bank_report']['num'] gt 0" />审核通过<elseif condition="$user_att['bank_report']['status'] eq 2" />
+														<font color="#ff0000">未通过，请重新上传</font></if></td>
+												</tr>
+											</table>
+										</li>
+										<li>
+											<table width="100%" border="0" cellspacing="0"
+												cellpadding="0">
+												<tr>
+													<td width="32%"><img
+														src="{$tpldir}/images/ico_zzi.gif" /></td>
+													<td width="68%"><b style="font-size: 14px">住址认证</b> <a
+														href="javascript:void(0);" onClick="tipsWindown('住址认证','{:U("Attestations/addatt?nid=live")}','700','400','true','','true','text');"><img src="{$tpldir}/images/upload.gif" border="0" /></a><br>
+														<if condition="$user_att['live']['status'] eq ''"> <font color="#ff0000">待上传</font>
+														<elseif condition="$user_att['live']['status'] eq 0" />
+														<font color="#ff0000">待审核</font>
+														<elseif condition="$user_att['live']['num'] gt 0" />审核通过<elseif condition="$user_att['live']['status'] eq 2" />
+														<font color="#ff0000">未通过，请重新上传</font></if></td>
+												</tr>
+											</table>
+										</li>
+									</ul>
+									<div class="cle"></div>
+								</div>
+							</div>
+							<div class="t20">
+								<div class="sm_tit">
+									可选信用认证(<strong>你可选择上传以下认证项目，通过可选认证，将会提高您的信用等级和借款额度。</strong>)
+								</div>
+								<div class="rz_list">
+									<ul>
+										<li>·<a href="javascript:void(0);"onClick="tipsWindown('技术职称认证','{:U("Attestations/addatt?nid=professional")}','700','400','true','','true','text');">技术职称认证</a>(<if condition="$user_att['professional']['status'] eq ''">
+											<font color="#ff0000">待上传</font>
+											<elseif condition="$user_att['professional']['status'] eq 0" />
+											<font color="#ff0000">待审核</font>
+											<elseif condition="$user_att['professional']['num'] gt 0" />审核通过<elseif condition="$user_att['professional']['status'] eq 2" />
+											<font color="#ff0000">未通过</font></if>)
+										</li>
+										<li>·<a href="javascript:void(0);"onClick="tipsWindown('自有房产证明','{:U("Attestations/addatt?nid=house")}','700','400','true','','true','text');">自有房产证明</a>(<if condition="$user_att['house']['status'] eq ''">
+											<font color="#ff0000">待上传</font>
+											<elseif condition="$user_att['house']['status'] eq 0" />
+											<font color="#ff0000">待审核</font>
+											<elseif condition="$user_att['house']['num'] gt 0" />审核通过<elseif condition="$user_att['house']['status'] eq 2" />
+											<font color="#ff0000">未通过</font></if>)
+										</li>
+										<li>·<a href="javascript:void(0);"onClick="tipsWindown('购车证明','{:U("Attestations/addatt?nid=car")}','700','400','true','','true','text');">购车证明</a>(<if condition="$user_att['car']['status'] eq ''">
+											<font color="#ff0000">待上传</font>
+											<elseif condition="$user_att['car']['status'] eq 0" />
+											<font color="#ff0000">待审核</font>
+											<elseif condition="$user_att['car']['num'] gt 0" />审核通过<elseif condition="$user_att['car']['status'] eq 2" />
+											<font color="#ff0000">未通过</font></if>)
+										</li>
+										<li>·<a href="javascript:void(0);"onClick="tipsWindown('结婚证明','{:U("Attestations/addatt?nid=marry")}','700','400','true','','true','text');">结婚证明</a>(<if condition="$user_att['marry']['status'] eq ''">
+											<font color="#ff0000">待上传</font>
+											<elseif condition="$user_att['marry']['status'] eq 0" />
+											<font color="#ff0000">待审核</font>
+											<elseif condition="$user_att['marry']['num'] gt 0" />审核通过<elseif condition="$user_att['marry']['status'] eq 2" />
+											<font color="#ff0000">未通过</font></if>)
+										</li>
+										<li>·<a href="javascript:void(0);"onClick="tipsWindown('直系亲属认证','{:U("Attestations/addatt?nid=kinsfolk")}','700','400','true','','true','text');">直系亲属认证</a>(<if condition="$user_att['kinsfolk']['status'] eq ''">
+											<font color="#ff0000">待上传</font>
+											<elseif condition="$user_att['kinsfolk']['status'] eq 0" />
+											<font color="#ff0000">待审核</font>
+											<elseif condition="$user_att['kinsfolk']['num'] gt 0" />审核通过<elseif condition="$user_att['kinsfolk']['status'] eq 2" />
+											<font color="#ff0000">未通过</font></if>)
+										</li>
+										<li>·<a href="javascript:void(0);"onClick="tipsWindown('其他借款记录','{:U("Attestations/addatt?nid=linkman")}','700','400','true','','true','text');">其他借款记录</a>(<if condition="$user_att['linkman']['status'] eq ''">
+											<font color="#ff0000">待上传</font>
+											<elseif condition="$user_att['linkman']['status'] eq 0" />
+											<font color="#ff0000">待审核</font>
+											<elseif condition="$user_att['linkman']['num'] gt 0" />审核通过<elseif condition="$user_att['linkman']['status'] eq 2" />
+											<font color="#ff0000">未通过</font></if>)
+										</li>
+										<li>·<a href="javascript:void(0);"onClick="tipsWindown('现场认证','{:U("Attestations/addatt?nid=spot")}','700','400','true','','true','text');">现场认证</a>(<if condition="$user_att['spot']['status'] eq ''">
+											<font color="#ff0000">待上传</font>
+											<elseif condition="$user_att['spot']['status'] eq 0" />
+											<font color="#ff0000">待审核</font>
+											<elseif condition="$user_att['spot']['num'] gt 0" />审核通过<elseif condition="$user_att['spot']['status'] eq 2" />
+											<font color="#ff0000">未通过</font></if>)
+										</li>
+										<li>·<span style="color: blue"><a
+												href="javascript:void(0);"
+												onClick="tipsWindown('微博/QQ认证','{:U("Attestations/addatt?nid=weibo")}','700','320','true','','true','text');">微博/QQ认证</a>(<if condition="$user_att['weibo']['status'] eq ''">
+												<font color="#ff0000">待上传</font>
+												<elseif condition="$user_att['weibo']['status'] eq 0" />
+												<font color="#ff0000">待审核</font>
+												<elseif condition="$user_att.weibo.num gt 0" />审核通过<elseif condition="$user_att['weibo']['status'] eq 2" />
+												<font color="#ff0000">未通过</font></if>)</span></li>
+										<li>·<a href="javascript:void(0);"onClick="tipsWindown('其他有价值认证','{:U("Attestations/addatt?nid=other")}','700','400','true','','true','text');">其他有价值认证</a>(<if condition="$user_att['other']['status'] eq ''">
+											<font color="#ff0000">待上传</font>
+											<elseif condition="$user_att['other']['status'] eq 0" />
+											<font color="#ff0000">待审核</font>
+											<elseif condition="$user_att['other']['num'] gt 0" />审核通过<elseif condition="$user_att['other']['status'] eq 2" />
+											<font color="#ff0000">未通过</font></if>)
+										</li>
+										<li>·<a href="javascript:void(0);"onClick="tipsWindown('还款承诺书','{:U("Attestations/addatt?nid=hkxys")}','700','400','true','','true','text');">还款承诺书</a>(<if condition="$user_att['hkxys']['status'] eq ''">
+											<font color="#ff0000">待上传</font>
+											<elseif condition="$user_att['hkxys']['status'] eq 0" />
+											<font color="#ff0000">待审核</font>
+											<elseif condition="$user_att['hkxys']['num'] gt 0" />审核通过<elseif condition="$user_att['hkxys']['status'] eq 2" />
+											<font color="#ff0000">未通过</font></if>)
+										</li>
+									</ul>
+									<div class="cle"></div>
+								</div>
+							</div>
+							<div class="t20">
+								<span style="color: #FF0000">注意：</span>如果文件较大或数量较多
+								您可以通过邮件发送到{$_G.site_result.name}客服<span style="float: right;"><a
+									href="{:U('approve/myapp')}" style="color: #0000ff">&gt;&gt;返回认证中心</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<include file="$footer" />

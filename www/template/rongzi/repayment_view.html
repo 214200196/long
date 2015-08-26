@@ -1,0 +1,71 @@
+
+<div class="user_right_border">
+	<div class="l">标题：</div>
+	<div class="c">{$_U.borrow_result.name}</div>
+</div>
+<div class="user_right_border">
+	<div class="l">借款金额：</div>
+	<div class="rb" style="line-height:65px">
+		<font color="#FF0000"><strong>￥{$_U.borrow_result.account}</strong></font>
+	</div>
+	<div class="l">借款利率：</div>
+	<div class="rb" style="line-height:65px">{$_U.borrow_result.borrow_apr}%</div>
+</div>
+<div class="user_right_border">
+	<div class="l">借款期限：</div>
+	<div class="rb"style="line-height:65px">
+		{$_U.borrow_result.borrow_period|linkages="borrow_period",###}</div>
+	<div class="l">还款方式：</div>
+	<div class="rb" style="line-height:65px">
+		{$_U.borrow_result.borrow_style|linkages="borrow_style",###}</div>
+</div>
+<div class="user_right_border">
+	<div class="l">发布时间：</div>
+	<div class="rb" style="line-height:65px">{$_U.borrow_result.addtime|date="Y-m-d H:i:s",###}</div>
+	<div class="l">借款时间:</div>
+	<div class="rb" style="line-height:65px">
+		{$_U.borrow_result.verify_time|date="Y-m-d H:i:s",###}</div>
+</div>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0"
+	class="tabyel">
+	<form action="" method="post">
+		<tr class="ytit1">
+			<td>序号</td>
+			<td>计划还款日</td>
+			<td>计划还款本息</td>
+			<td>实还日期</td>
+			<td>逾期天数</td>
+			<td>实还本息</td>
+			<td>逾期罚息</td>
+			<td>总还款金额</td>
+			<td>状态</td>
+			<td>当期还款</td>
+			<td>提前全额还款</td>
+		</tr>
+		<foreach name="list" item="var">
+		<tr>
+			<td>{$var['repay_period']+1}</td>
+			<td>{$var.repay_time|date="Y-m-d",###}</td>
+			<td>￥{$var.repay_account}</td>
+			<td>{$var.repay_yestime|date="Y-m-d H:i",###}</td>
+			<td>{$var.late_days|default=0}天</td>
+			<td>￥{$var.repay_account_yes}</td>
+			<td>￥{$var.late_interest|default=0.00}</td>
+
+
+			<td>￥{$var['late_interest']+$var['repay_account']}</td>
+			<td><if condition="$var.repay_web eq 1">网站垫付<elseif condition="$var.repay_vouch eq 1" />担保者垫付<elseif
+					condition="$var.repay_status eq 1" />已还款<else />未还款</if></td>
+			<td><eq name="var.repay_status" value="1">-<else /> <if condition="$_U['borrow_resul']['is_flow'] eq 1"> 自动还款 <else /> <a href="#" onClick="javascript:if(confirm('你确定要偿还此借款吗？')) location.href='{:U('borrow/repay?id='.$var['id'].'&borrow_nid='.$var['borrow_nid'])}'">还款</a>
+				</if> </eq></td>
+			<td><if condition="($item.repay_status neq 1) AND ($item.advance_status eq 1) AND ($item.late_days eq 0) AND ($Vvar.vip_type eq 2) AND ($item.borrow_period gt 11) AND ($_U['borrow_result']['is_flow'] neq 1)">
+				<a href="#"
+					onClick="javascript:if(confirm('提前还款将一次性偿还剩余本金，且按剩余本金*1%计算违约金')) location.href='{$_U.query_url}/repay&borrow_nid={$item.borrow_nid}'">提前全额还款</a>
+				<else /> - </if></td>
+		</tr>
+		</foreach>
+	</form>
+</table>
+

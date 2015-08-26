@@ -1,0 +1,50 @@
+
+<div class="m_change">
+	<ul>
+		<li><a href="{:U('borrow/repayment')}">还款中的借款</a></li>
+		<li><a href="{:U('borrow/repaymentplan')}">还款明细账</a></li>
+		<li><a href="{:U('borrow/loandetail')}" class="onn">借款明细账</a></li>
+		<li><a href="{:U('borrow/repaymentyes')}">已还清的借款</a></li>
+	</ul>
+</div>
+<div class="us_r_bor1">
+	<!--借款明细 开始-->
+	<div class="t20">
+	</div>
+	<div class="t20">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			class="tabyel">
+			<form action="" method="post">
+				<tr class="ytit">
+					<td colspan="7">借款明细账</td>
+				</tr>
+				<tr class="ytit1">
+					<td>投资者</td>
+					<td>借入总额</td>
+					<td>还款总额</td>
+					<td>已还利息</td>
+					<td>已还罚息</td>
+					<td>待还总额</td>
+					<td>待还利息</td>
+				</tr>
+
+				<foreach name="list" item="item">
+
+				<tr>
+					<td>{$item.tnikename}</td>
+					<td><font color="#FF0000">￥{$item.account}</font></td>
+					<td>￥{$item.recover_account_yes|default=0.00}</td>
+					<td>￥{$item.recover_account_interest_yes|default=0.00}</td>
+					<td>￥{$item.late_interest|default=0.00}</td>
+					<td>￥{$item.recover_account_wait|default=0.00 }</td>
+					<td>￥{$item.recover_account_interest_wait|default=0.00}</td>
+				</tr>
+				</foreach>
+			</form>
+		</table>
+	</div>
+	<div style="padding: 10px 0; text-align: center">{$page}</div>
+
+
+	<!--借款明细 结束-->
+</div>

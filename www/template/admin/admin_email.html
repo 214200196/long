@@ -1,0 +1,99 @@
+<include file="$header" />
+<ul class="nav3">
+	<li><a href="{:U('system/email')}" id="c_so">{$MsgInfo.admin_email_name}</a></li>
+	<li><a href="{:U('system/emaillog')}">{$MsgInfo.admin_email_log_name}</a></li>
+	<li><a href="{:U('system/emailactive')}">{$MsgInfo.admin_email_active_name}</a></li>
+</ul>
+
+<div class="module_add">
+	<form action="" method="post" enctype="multipart/form-data">
+		<div class="module_title">
+			<strong>{$MsgInfo.admin_email_name}</strong>
+		</div>
+
+
+		<div class="module_border">
+			<div class="d">{$MsgInfo.admin_email_con_host}：</div>
+			<div class="c">
+				<input type="text" name="con_email_host"
+					value="{$_A.system_result.con_email_host}" />
+			</div>
+		</div>
+		<div class="module_border">
+			<div class="d">端口号：</div>
+			<div class="c">
+				<input type="text" name="con_email_port"
+					value="{$_A.system_result.con_email_port}" />
+			</div>
+		</div>
+
+		<div class="module_border">
+			<div class="d">{$MsgInfo.admin_email_con_auth}：</div>
+			<div class="c">
+				<tagLib name="zi" />
+				<zi:input type="radio" name="con_email_auth" value="1|是,0|否"
+					checked="_A.system_result.con_email_auth" />
+			</div>
+		</div>
+
+		<div class="module_border">
+			<div class="d">是否启用立即发送：</div>
+			<div class="c">
+				<tagLib name="zi" />
+				<zi:input type="radio" name="con_email_now" value="1|是,0|否"
+					checked="_A.system_result.con_email_now" />
+				(启用的话将会很占服务器)
+			</div>
+		</div>
+
+		<div class="module_border">
+			<div class="d">{$MsgInfo.admin_email_con_url}：</div>
+			<div class="c">
+				<input type="text" name="con_email_url"
+					value="{$_A.system_result.con_email_url}" />
+			</div>
+		</div>
+
+
+		<div class="module_border">
+			<div class="d">{$MsgInfo.admin_email_con_password}：</div>
+			<div class="c">
+				<input type="password" name="con_email_password"
+					value="{$_A.system_result.con_email_password}" />
+			</div>
+		</div>
+
+		<div class="module_border">
+			<div class="d">{$MsgInfo.admin_email_con_from}：</div>
+			<div class="c">
+				<input type="text" name="con_email_from"
+					value="{$_A.system_result.con_email_from}" />
+			</div>
+		</div>
+
+		<div class="module_border">
+			<div class="d">{$MsgInfo.admin_email_con_from_name}：</div>
+			<div class="c">
+				<input type="text" name="con_email_from_name"
+					value="{$_A.system_result.con_email_from_name}" />
+			</div>
+		</div>
+
+		<div class="module_border">
+			<div class="d">{$MsgInfo.admin_email_con_check}：</div>
+			<div class="c">
+				<zi:input type="radio" name="con_email_check" value="0|否,1|是"
+					checked="1" />
+
+			</div>
+		</div>
+
+		<div class="module_submit">
+			<input type="submit" value="{$MsgInfo.admin_name_submit}" />
+		</div>
+	</form>
+</div>
+
+
+
+<include file="$footer" />

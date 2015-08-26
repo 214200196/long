@@ -1,0 +1,32 @@
+/* ============ндубап╠М============== */
+
+ul.photohot{
+margin:0px;
+padding:0px;
+}
+
+li.photohot {
+margin:0;
+padding-left:16px;
+list-style-type: none;
+color:#505050;
+background: transparent url(../images/articleitems.gif) left no-repeat;
+}
+
+li.photohot .cl{
+float:right;
+font:12px/22px Verdana, Arial, Helvetica, sans-serif;
+color:#777;
+}
+
+a.photohot:link,a.photohot:visited,a.photohot:active{
+color:#505050;
+text-decoration: none;
+font:12px/22px Verdana, Arial, Helvetica, sans-serif;
+}
+
+a.photohot:hover{
+color:#ff0000;
+text-decoration: underline;
+font:12px/22px Verdana, Arial, Helvetica, sans-serif;
+}

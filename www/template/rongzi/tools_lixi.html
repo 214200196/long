@@ -1,0 +1,95 @@
+<include file="$header" />
+<div class="bodyer clearfix">
+<div class="form-container box1000 mian">
+
+  <php> $account = isset($_REQUEST['account'])?$_REQUEST['account']:"";
+    $lilv = isset($_REQUEST['lilv'])?$_REQUEST['lilv']:"";
+    $times = isset($_REQUEST['times'])?$_REQUEST['times']:"";
+    $type = isset($_REQUEST['type'])?$_REQUEST['type']:"";
+    $style = isset($_REQUEST['style'])?$_REQUEST['style']:""; </php>
+<div>
+<div>
+<div class="con_bor">
+<div class="pos_bor"><span>利息计算器</span></div>
+<div class="con1">
+<div class="con">
+<div style="padding:20px 0">
+<div style="padding:0px 10px 20px">
+<div class="cy_list1">
+<form action="__SELF__ " method="post">
+<div id="jisuan_box">
+  <div>
+    <div class="input_wd"> <span>借款金额</span>
+      <input type="text" name="account" size="10"  value="{$Think.request.account}"/>
+      <p>元</p>
+    </div>
+    <div  class="input_wd"> <span>年利率</span>
+      <input type="text" name="lilv"  size="10"  value="{$Think.request.lilv}"/>
+      <p>%</p>
+    </div>
+  </div>
+  <div>
+    <div  class="input_wd"> <span>借款期限</span>
+      <input type="text" name="times"  size="10"  value="{$Think.request.times}" />
+      <p>个月</p>
+    </div>
+    <div  class="input_wd"> <span>还款方式</span>
+      <select name="style">
+        <option value="0" <eq name="Think.request.style" value="0"> selected="selected" </eq> >按月还款</option>
+        <option value="1" <eq name="Think.request.style" value="1"> selected="selected" </eq>>按季还款</option>
+        <option value="2" <eq name="Think.request.style" value="2"> selected="selected" </eq>>到期还本还息</option>
+        <option value="3" <eq name="Think.request.style" value="3"> selected="selected" </eq>>按月还息到期还本</option>
+      </select>
+    </div>
+  </div>
+  <input type="submit" value="开始计算" class="xinbuton" />
+</div>
+<php>
+$b=new borrowClass();
+$data['account'] = $account;
+$data['apr'] = $lilv;
+$data['period'] = $times;
+$data['time'] = time();
+$data['style'] = $style;
+$list = EqualInterest($data);
+$data['type'] = "all";
+$result = EqualInterest($data);
+</php>
+<h5 style="line-height:50px;">每个月将偿还：{$result.repay_month}元 &nbsp; &nbsp; 月利率：{$result.month_apr}% &nbsp; &nbsp; 还款本息总额：{$result.account_total}元</h5>
+<table width="100%"  class="form-contentier" >
+  <tr>
+    <td  bgcolor="#f9f9f9" style="text-align:center"><strong>期数</strong></td>
+    <td  bgcolor="#f9f9f9" style="text-align:center"><strong>月还款本息</strong></td>
+    <td  bgcolor="#f9f9f9" style="text-align:center"><strong>月还款本金</strong></td>
+    <td  bgcolor="#f9f9f9" style="text-align:center"><strong>利息</strong></td>
+    <td  bgcolor="#f9f9f9" style="text-align:center"><strong>余额</strong></td>
+  </tr>
+ <foreach name="list" item="vo" key="key">
+  <tr>
+    <td bgcolor="#fdf4df"  align="center" style="text-align:center">{$key+1}</td>
+    <td bgcolor="#fdf4df" style="text-align:center">{$vo.account_all}</td>
+    <td bgcolor="#fdf4df" style="text-align:center">{$vo.account_capital}</td>
+    <td bgcolor="#fdf4df" style="text-align:center">{$vo.account_interest}</td>
+    <td bgcolor="#fdf4df" style="text-align:center">
+    <eq name="key+1" value="$_REQUEST['times']">
+   0.00
+					<else/>
+						{$vo.account_other}
+					</eq></td>
+  </tr>
+ </foreach>
+</table>
+<div class="cle"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</P>
+</div>
+</div>
+</div>
+<include file="$footer" />

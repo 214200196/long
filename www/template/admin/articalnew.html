@@ -1,0 +1,144 @@
+<include file="$header" />
+<div class="module_add">
+	<form action="{:U('Articles/news')}" method="post" id="frm"
+		enctype="multipart/form-data">
+
+		<div class="module_title">
+			<strong><if condition="ACTION_NAME  eq 'edit'">
+				<input type="hidden" name="id" value="{$Think.request.id}" />修改文章<else />添加文章</if></strong><input
+				type="hidden" name="user_id"
+				value="{$_A.articles_result.user_id|default=$_G['user_id']}" />
+		</div>
+		<div style="margin-top: 10px;">
+			<div style="width: 100%;">
+				<div style="border: 1px solid #CCCCCC;">
+					<div class="module_title">
+						<strong>分类栏目</strong>
+					</div>
+					<div class="module_border">
+						<ul id="arect">
+							<select class="main_td1" align="center" name="type_id[]">
+								<foreach name="menus" item="item">
+								<option value="{$item.id}" <eq name="_A.articles_result.type_id" value="$item['id']">selected="selected"</eq>>{$item.name}</option>
+								</foreach>
+							</select>
+						</ul>
+					</div>
+				</div>
+
+
+				<div style="border: 1px solid #CCCCCC; margin-top: 10px;">
+					<div class="module_title">
+						<strong>缩略图</strong>
+					</div>
+					<div class="module_border" style="padding: 10px;">
+						<if condition="$_A['articles_result']['litpic'] neq ''">
+						<img src="{$_A.articles_result.fileurl}" width="50" height="50"
+							align="absmiddle" />
+						<input type="checkbox" name="clearlitpic" value="1"
+							title="选中则会删除掉缩略图" />
+						<input type="hidden" name="oldlitpic"
+							value="{$_A.articles_result.litpic}" />取消</if>
+						<input type="file" name="litpic" style="width: 150px" />
+					</div>
+				</div>
+
+
+				<div style="border: 1px solid #CCCCCC; margin-top: 10px;">
+					<div class="module_title">
+						<strong>副标题</strong>
+					</div>
+					<div class="module_border" style="padding: 10px;">
+						<input type="text" name="title" class="input_border"
+							value="{$_A.articles_result.title}" size="30" />
+					</div>
+				</div>
+
+
+				<div style="text-align: left">
+					<div class="module_add">
+						<div class="module_title">
+							<strong>撰写新文章</strong>
+						</div>
+
+						<div class="module_border">
+							<div class="c" style="padding: 10px 0">
+								标&nbsp;&nbsp;题：<input type="text" name="name"
+									value="{$_A.articles_result.name}"
+									style="height: 25px; width: 400px" />
+							</div>
+						</div>
+
+
+
+						<div class="module_border" style="padding-top: 10px;">
+
+							<textarea id="ue_container" name="contents" rows="28"
+								style="width: 99%; height: 500px">{$_A.articles_result.contents}</textarea>
+							<script>
+		function submitForm(){
+		$("#bcontents").val();
+		$('#frm').submit();
+		return false;}
+		</script>
+
+							<!-- 实例化编辑器 -->
+							<script type="text/javascript">
+        var ue = UE.getEditor('ue_container');
+    </script>
+						</div>
+					</div>
+				</div>
+				<div style="border: 1px solid #CCCCCC; margin-bottom: 10px">
+					<div class="module_title">
+						<strong>撰写新文章</strong>
+					</div>
+					<div class="module_border">
+						<div class="c">
+							状态：<select name='status'>
+								<option value="1"<if
+										condition="$_A['articles_result']['status'] eq 1">selected="selected"</if>>发布
+								</option>
+								<option value="2"<if
+										condition="$_A['articles_result']['status'] eq 2">selected="selected"</if>>草稿
+								</option>
+								<option value="3"<if
+										condition="$_A['articles_result']['status'] eq 3">selected="selected"</if>>等待审核
+								</option>
+							</select>
+						</div>
+
+						<div class="c">
+							排序：<input type="text" name="order"
+								value="{$_A.articles_result.order|default=10}" size="5"
+								onkeyup="value=value.replace(/[^0-9]/g,'')" />
+						</div>
+
+						<div class="c">
+							分类：<input type="checkbox" name="flag[]" value="index"
+								align="absmiddle" {$_A.articles_result.flag|checked="index" ,###}/>首页
+							<input type="checkbox" name="flag[]" value="tuijian"
+								align="absmiddle" {$_A.articles_result.flag|checked="tuijian" ,###}/>推荐
+							<input type="checkbox" name="flag[]" value="ding"
+								align="absmiddle" {$_A.articles_result.flag|checked="ding" ,###}/>置顶
+						</div>
+						<div class="c">
+							发布时间：<input type="text" name="publish" class="input_border"
+								value="{$_A.articles_result.publish}" size="30"
+								onclick="laydate()" readonly="" />
+						</div>
+						<if condition="ACTION_NAME  eq 'edit'">
+						<input type="hidden" name="actions" value="edit" /></if>
+						<div class="module_submit">
+							<input type="button" value="确认提交" class="submit_button"
+								name="save" onclick="submitForm()" />
+						</div>
+
+					</div>
+
+				</div>
+				<!--菜单列表 结束-->
+			</div>
+	</form>
+</div>
+<include file="$footer" />

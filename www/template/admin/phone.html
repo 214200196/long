@@ -1,0 +1,49 @@
+<include file="$header" />
+<div class="module_add">
+	<div class="module_title">
+		<strong>短信参数设置</strong>
+	</div>
+	<div class="module_border">
+		短信使用沃动科技公司短信发送服务、申请用户名密码等信息地址为：http://www.sms.cn/</div>
+	<form action="" method="post" enctype="multipart/form-data">
+
+
+
+		<div class="module_border">
+			<div class="d">用户名：</div>
+			<div class="c">
+				<input type="text" name="con_phone_user"
+					value="{$_G.system.con_phone_user}" />
+			</div>
+		</div>
+		<div class="module_border">
+			<div class="d">密码：</div>
+			<div class="c">
+				<input type="text" name="con_phone_userpwd"
+					value="{$_G.system.con_phone_userpwd}" />
+			</div>
+		</div>
+
+		<div class="module_border">
+			<div class="d">是否发送测试短信：</div>
+			<div class="c">
+				<input type="radio" value="1" name="con_phone_check" /> 是<input type="radio" value="0" name="con_phone_check" checked="checked" />
+				否
+			</div>
+		</div>
+
+		<div class="module_border">
+			<div class="d">测试短信接收手机号码：</div>
+			<div class="c">
+				<input type="text" name="con_phone_checkphone" value="" />
+			</div>
+		</div>
+
+
+
+		<div class="module_submit">
+			<input type="submit" value="{$MsgInfo.admin_name_submit}" />
+		</div>
+	</form>
+</div>
+<include file="$footer" />

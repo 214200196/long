@@ -1,0 +1,24 @@
+<link href="css/photo_search_dolphin.css" rel="stylesheet" type="text/css" />
+<SCRIPT language="javascript" src="{#CP#}js/selectbox.js"></SCRIPT>
+<div class="photosearchformzone">
+<form id="photosearchform" method="get" action="{#RP#}photo/class/">
+  <div class="photosearchform">
+    <select name="catid" id="catid" class="box" style="display:none; background:#ffffff; width:136px; height:19px;">
+      <option value="0" >请选择分类</option>
+      
+	  {#catlist#}
+    
+    </select> 
+	<script>
+	makeSelectBox('catid','{#RP#}');
+	</script>
+  </div>
+
+    <div class="photosearchform">
+    <input name="key" type="text" id="photosearchform_key" value="{#key#}" style="width:134px;" class="inputtext">
+  </div>
+  <div class="photosearchform2">
+  <input name="imageField" id="button" type="image" src="images/search5.gif" >
+  </div>
+</form>
+</div>

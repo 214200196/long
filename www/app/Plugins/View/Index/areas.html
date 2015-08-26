@@ -1,0 +1,19 @@
+$(document).ready(function (){ 
+$("#{$name}province").change(function(){
+var province = $(this).val();
+ var count = 0; 
+ $.ajax({
+url:"/Plugins/Index/areas/", 
+dataType:'json',
+data:"area_id="+province,
+success:function(json){ $("#{$name}city option").each(function(){
+$(this).remove(); }); $("#{$name}area option").each(function(){
+$(this).remove(); 
+$("<option value=''>请选择</option>").appendTo("#{$name}area");});
+ $(json).each(function(){ $("<option value='"+json[count].id+"'>"+json[count].name+"</option>").appendTo("#{$name}city"); count++; }); } }); });
+$("#{$name}city").change(function(){ var province = $(this).val(); var
+count = 0; $.ajax({ url:"/Plugins/Index/areas/", dataType:'json',data:"area_id="+province, success:function(json){ $("#{$name}areaoption").each(function(){ $(this).remove(); }); $(json).each(function(){
+$("<option value='"+json[count].id+"'>"+json[count].name+"</option>").appendTo("#{$name}area"); count++; }); if(count>0) {
+$("#{$name}area").show(); }else { $("#{$name}area").hide(); } } }); });
+$("#{$name}area").change(function(){ }); });
+document.write("{$display}"); 

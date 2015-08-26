@@ -1,0 +1,80 @@
+<include file="$header" />
+<div class="module_add">
+
+	<form name="form_user" method="post" action="">
+		<div class="module_title">
+			<strong>修改用户信息</strong>
+		</div>
+
+		<div class="module_border">
+			<div class="l">用户名：</div>
+			<div class="c">{$_A._user_result.username}</div>
+		</div>
+		<div class="module_border">
+			<div class="l">昵称：</div>
+			<div class="c">
+				<input name="niname" type="text" class="input_border"
+					value="{$_A._user_result.niname}" /> <font color="#FF0000">*</font>
+			</div>
+		</div>
+		<div class="module_border">
+			<div class="l">状态：</div>
+			<div class="c">
+				<select name="status">
+					<option value="0"<eq name="_A._user_result.status" value="0">selected="selected"</eq>>申请 </option>
+					<option value="1"<eq name="_A._user_result.status" value="1">selected="selected"</eq>>正常 </option>
+					<option value="2"<eq name="_A._user_result.status" value="2">selected="selected"</eq>>关闭 </option>
+				</select>
+			</div>
+		</div>
+       <div class="module_border">
+			<div class="l">邀请人：</div>
+			<div class="c">
+             <lists module='users' function='GetUsers' item='invite'  user_id='$_A._user_result.invite_userid'/>
+				<input name="invite_name" type="text" class="input_border" <neq name="_A._user_result.invite_userid" value="0">value="{$invite.username}"</neq> />
+			</div>
+		</div>
+		<div class="module_border">
+			<div class="l">生日：</div>
+			<div class="c">
+				<input name="birthday" type="text" class="input_border"
+					value="{$_A._user_result.birthday}" />
+			</div>
+		</div>
+		<div class="module_border">
+			<div class="l">性别：</div>
+			<div class="c">
+				<input name="sex" type="radio" class="input_border" value="男" <if condition=" $_A._user_result.sex eq '男'">checked="checked"</if> /> 男 <input name="sex" type="radio" class="input_border" value="女" <if condition=" $_A._user_result.sex eq '女'">checked="checked"</if> /> 女
+			</div>
+		</div>
+		<div class="module_border">
+			<div class="l">安全问题：</div>
+			<div class="c">
+				<input name="question" type="text" class="input_border"
+					value="{$_A._user_result.question}" />
+			</div>
+		</div>
+		<div class="module_border">
+			<div class="l">安全答案：</div>
+			<div class="c">
+				<input name="answer" type="text" class="input_border"
+					value="{$_A._user_result.answer}" />
+			</div>
+		</div>
+		<div class="module_border">
+			<div class="l">所在地：</div>
+			<div class="c">
+				<script
+					src="{:U('plugins/index/areas?type=p,c,a&area='.$_A['_user_result']['area'])}"></script>
+			</div>
+		</div>
+
+
+		<div class="module_submit border_b">
+			<input type="hidden" name="user_id"
+				value="{$_A._user_result.user_id }" /> <input type="submit"
+				name="submit" value="提交" />
+		</div>
+	</form>
+</div>
+<include file="$footer" />

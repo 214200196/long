@@ -1,0 +1,70 @@
+<div>
+      <div class="m_change"> 
+     
+        <ul>
+          <li><a href="{:U('Approve/email_status')}" <if condition="ACTION_NAME eq 'email_status'"> class="onn"</if>>邮箱认证</a></li>
+          <!--流转标 2-->
+          <li><a href="{:U('Approve/flow_status')}"  <if condition="ACTION_NAME eq 'flow_status'">class="onn"</if>>流转认证</a></li>
+        </ul>
+       </div>
+      <div class="us_r_bor1"> 
+        
+        <if condition="ACTION_NAME eq 'email_status'">
+        
+        <!--邮箱认证 开始--> 
+        <eq name="_G.user_info.email_status" value="1">
+        <div class="user_main_title1">您的邮箱已经通过认证：<b>{$_G.user_result.email}</b> </div>
+        <div class="user_right_border">
+          <div class="c">
+            <form action="" method="post" onsubmit="this.elements['submit'].disabled='disabled';return true;">
+              重设邮箱：
+              <input type="text" name="email" value="{$_G.user_result.email}" />
+              <input type="submit" class="xinbuton"  name="submit" value="重新激活"  />
+            </form>
+          </div>
+        </div>
+        <else/>
+        <div class="user_main_title1">您的邮箱还没通过认证：<b>{$_U.user_result.email}</b></div>
+        <div class="user_right_border">
+          <div class="c">
+            <form action="" method="post" onsubmit="this.elements['submit'].disabled='disabled';return true;">
+              重设邮箱：
+              <input type="text" name="email" value="{$_G.user_result.email}" />
+              <input  class="xinbuton"  type="submit" name="submit" value="重新激活"  />
+            </form>
+          </div>
+        </div>
+       </eq>
+        
+        <!--邮箱认证 结束--> 
+        
+      
+        <elseif condition="ACTION_NAME eq 'flow_status'"/>
+        <!--流转标 2--> 
+      
+        <!--流转认证 开始--> 
+        <eq name="_U.flow_result.status" value="1">
+      
+        <div class="user_help">您已经通过了流转认证</div>
+        <else/>
+        <div class="user_help"> <if condition="$_U['flow_result']['id'] gt 0">您的流转认证已经提交，客服人员会及时的跟你联系。</font>。<else/>欢迎进行流转认证。
+          <div class="user_right_border">
+            <div class="c">
+              <form action="" method="post">
+                如果你需要流转认证，请点按钮提交。
+                <input type="submit" class="xinbuton" value="提交申请" name="submit" />
+              </form>
+            </div>
+          </div>
+          </if>
+         </eq></div>
+       
+        <!--流转认证 结束--> 
+        
+  
+        
+       
+  
+        </if> </div>
+    </div>
+ 

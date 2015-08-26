@@ -1,0 +1,108 @@
+<include file="$header" />
+<div class="module_add">
+
+	<div class="module_title">
+		<strong>内容查看</strong>
+	</div>
+
+	<div class="module_border">
+		<div class="l">标题：</div>
+		<div class="c">{$_A.articles_result.name}</div>
+	</div>
+	<if condition="$_A['articles_result']['jumpurl'] neq ''">
+	<div class="module_border">
+		<div class="l">跳转网址：</div>
+		<div class="c">{$_A.articles_result.jumpurl}</div>
+	</div>
+	</if>
+	<div class="module_border">
+		<div class="l">所属栏目：</div>
+		<div class="c">
+			{$_A.articles_result.type_id }</select>
+		</div>
+	</div>
+	<if condition="$_A['articles_result']['flag'] neq ''">
+	<div class="module_border">
+		<div class="l">属性：</div>
+		<div class="c">
+			{$_A.articles_result.flag|amounttye=$_A['articles_flag'],###}</div>
+	</div>
+	</if>
+	<if condition="$_A['articles_result']['is_jump'] neq 1"> <if
+		condition="$_A['articles_result']['litpic'] neq ''">
+
+	<div class="module_border">
+		<div class="l">缩略图：</div>
+		<div class="c">
+			<a href="{$_A.articles_result.fileurl}" target="_blank"
+				title="点击查看大图"><img src="{$_A.articles_result.fileurl}"
+				border="0" width="100" alt="点击查看大图" title="点击查看大图" /></a>
+		</div>
+	</div>
+
+	</if>
+	<div class="module_border">
+		<div class="l">状态：</div>
+		<div class="c">
+			<if condition="$_A['articles_result']['status'] eq 0">隐藏<else />显示</if>
+		</div>
+	</div>
+
+	<div class="module_border">
+		<div class="l">排序:</div>
+		<div class="c">{$_A.articles_result.order|default=10}</div>
+	</div>
+	<if condition="$_A['articles_result']['source'] neq ''">
+	<div class="module_border">
+		<div class="l">文章来源:</div>
+		<div class="c">{$_A.articles_result.source}</div>
+	</div>
+	</if> <if condition="$_A['articles_result']['author'] neq ''">
+	<div class="module_border">
+		<div class="l">作者:</div>
+		<div class="c">{$_A.articles_result.author}</div>
+	</div>
+	</if> <if condition="$_A['articles_result']['summary'] neq ''">
+	<div class="module_border">
+		<div class="l">内容简介:</div>
+		<div class="c">{$_A.articles_result.summary}</div>
+	</div>
+	</if>
+	<div class="module_border">
+		<div class="l">内容:</div>
+		<div class="c">
+			<table>
+				<tr>
+					<td align="left">{$_A.articles_result.contents}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+
+	<div class="module_border">
+		<div class="l">点击次数:</div>
+		<div class="c">{$_A.articles_result.hits}</div>
+	</div>
+
+	</if>
+	<div class="module_border">
+		<div class="l">添加时间/IP:</div>
+		<div class="c">
+			{$_A.articles_result.addtime|date='Y-m-d',###}/{$_A.articles_result.addip}</div>
+	</div>
+
+	<div class="module_border">
+		<div class="l">添加人:</div>
+		<div class="c">{$_A.articles_result.username}</div>
+	</div>
+
+	<div class="module_submit">
+		<input type="button" name="submit" value="返回上一页"
+			onclick="javascript:history.go(-1)" /> <input type="button"
+			name="reset" value="修改内容"
+			onclick="javascript:location.href('{$_A.query_url}/edit{$_A.site_url}&id={ $_A.articles_result.id}')" />
+	</div>
+	</form>
+</div>
+<include file="$footer" />

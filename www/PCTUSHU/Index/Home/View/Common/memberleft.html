@@ -1,0 +1,73 @@
+<div class="main-body container clearfix">
+  <div class="l">
+                  <div class="sider">
+    <div class="user-info">
+        <span class="user-pic">
+            <img src="http://img.mukewang.com/5528887b0001db3e01000100-100-100.jpg" title=""/>
+        </span>
+        <ul class="user-lay">
+            <li class="mynick-name">
+                 <span class="user-name">{$visitor.name}</span> 
+            </li>
+            <li>
+                <!-- <span class="user-site"> {$_SESSION['username']} </span> -->
+            </li>
+            <li><a href="" class="user-setup">设置</a></li>
+       </ul>
+    </div>
+    <div class="user-desc">
+        <div class="sign-wrap">
+                        <p id="signed" class="signed">
+                <strong>&nbsp;&nbsp;&nbsp;&nbsp;本网站暂时只支持图书发布, 及图书关注和阅读, 对该网站建议或发布图书时遇到问题请联系QQ:214200196</strong>
+                <em class="publish-sign" id="publishsign"></em>
+            </p>
+            <textarea class="sign-editor" id="js-sign-editor">这位童鞋很懒，什么也没有留下～～！</textarea>
+            <p id="rlf-tip-wrap" class="rlf-tip-wrap"></p>
+                    </div>
+    </div>
+<!--     <ul class="mp clearfix">
+        <li class="l mp-item">
+          <span class="mp-atag">
+            <p class="mp-num">231小时32分</p>
+            <p class="mp-title">学习</p>
+          </span>
+        </li>
+        <li class="mp-item">
+          <a class="mp-atag" href="/space/experience">
+                        <span class="mp-num mp-hover">
+                11797 </span>
+                        <span class="mp-title mp-hover">经验</span>
+          </a>
+        </li>
+    </ul> -->
+    <ul class="nav nav-pills">
+        <li role="presentation" class="">
+            <a  href="{:U('index',array('menue'=>0))}"><i class="glyphicon glyphicon-book" style="margin-right:10px;"></i>我发布的图书</a>
+         <li role="presentation" class="">
+            <a  href="{:U('follow',array('menue'=>1))}"><i class="glyphicon glyphicon-heart" style="margin-right:10px;"></i>我关注的图书</a>
+        </li>
+    </ul>
+        <div class="recent-visitors">
+
+        <ul class="mp clearfix" style="margin-bottom:10px;">
+            <li class="l mp-item">
+              <span class="mp-atag">
+                <b class="mp-title">今日访问<span>{$visitor.today_visitor|default=0}</span></b>
+              </span>
+            </li>
+            <li class="l mp-item">
+              <span class="mp-atag">
+                <b class="mp-title">总访问<span>{$visitor.count_visitor|default=0}</span></b>
+              </span>
+            </li>
+        </ul>
+
+        <h4>最近访客</h4>
+        <div class="visitors-box clearfix">
+            <a href="" class="visitor-pic" target="_blank">
+                <img src="http://img.mukewang.com/5528887b0001db3e01000100-100-100.jpg" title="" />
+            </a>
+        </div>
+    </div>
+    </div><!--sider end-->
+  </div>

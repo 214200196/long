@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>会员中心-{$user.name}</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="__PUBLIC__/css/member.css" type="text/css">
+  <style>
+    .books-list-page{
+      width: 880px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .books-list-page .current{
+      background-color:red;
+      color:#fff;
+    }
+ </style>
+
+</head>
+
+<body>
+<script type="text/javascript">
+  var menue = {$Think.get.menue};
+</script>
+
+
+<include file="Common:nav"/>
+
+<div id="main">
+<!-- ===================会员左侧菜单===================== -->
+<div class="main-body container clearfix">
+  <div class="l">
+                  <div class="sider">
+    <div class="user-info">
+        <span class="user-pic">
+            <img src="http://img.mukewang.com/5528887b0001db3e01000100-100-100.jpg" title=""/>
+        </span>
+        <ul class="user-lay">
+            <li class="mynick-name">
+                 <span class="user-name">{$user.name}</span> 
+            </li>
+            <li>
+                <!-- <span class="user-site"> {$_SESSION['username']} </span> -->
+            </li>
+            <!-- <li><a href="" class="user-setup">设置</a></li> -->
+       </ul>
+    </div>
+    <div class="user-desc">
+        <div class="sign-wrap">
+                        <p id="signed" class="signed">
+                <strong>&nbsp;&nbsp;&nbsp;&nbsp;本网站暂时只支持图书发布, 及图书关注和阅读, 对该网站建议或发布图书时遇到问题请联系QQ:214200196</strong>
+                <em class="publish-sign" id="publishsign"></em>
+            </p>
+            <textarea class="sign-editor" id="js-sign-editor">这位童鞋很懒，什么也没有留下～～！</textarea>
+            <p id="rlf-tip-wrap" class="rlf-tip-wrap"></p>
+                    </div>
+    </div>
+<!--     <ul class="mp clearfix">
+        <li class="l mp-item">
+          <span class="mp-atag">
+            <p class="mp-num">231小时32分</p>
+            <p class="mp-title">学习</p>
+          </span>
+        </li>
+        <li class="mp-item">
+          <a class="mp-atag" href="/space/experience">
+                        <span class="mp-num mp-hover">
+                11797 </span>
+                        <span class="mp-title mp-hover">经验</span>
+          </a>
+        </li>
+    </ul> -->
+    <ul class="nav nav-pills">
+        <li role="presentation" class="">
+            <a  href="{:U('visitor',array('uid'=>$_GET['uid'],'menue'=>0))}"><i class="glyphicon glyphicon-book" style="margin-right:10px;"></i>Ta发布的图书</a>
+         <li role="presentation" class="">
+            <a  href="{:U('visitorFollow',array('uid'=>$_GET['uid'],'menue'=>1))}"><i class="glyphicon glyphicon-heart" style="margin-right:10px;"></i>Ta关注的图书</a>
+        </li>
+    </ul>
+        <div class="recent-visitors">
+
+        <ul class="mp clearfix" style="margin-bottom:10px;">
+            <li class="l mp-item">
+              <span class="mp-atag">
+                <b class="mp-title">今日访问<span>{$user.today_visitor}</span></b>
+              </span>
+            </li>
+            <li class="l mp-item">
+              <span class="mp-atag">
+                <b class="mp-title">总访问<span>{$user.count_visitor}</span></b>
+              </span>
+            </li>
+        </ul>
+
+        <h4>最近访客</h4>
+        <div class="visitors-box clearfix">
+            <a href="" class="visitor-pic" target="_blank">
+                <img src="http://img.mukewang.com/5528887b0001db3e01000100-100-100.jpg" title="" />
+            </a>
+        </div>
+    </div>
+    </div><!--sider end-->
+  </div>
+  <div class="r space-main">
+    
+    <div class="family">
+        <h1 class="family-hd">Ta发布的图书</h1>
+    </div>
+    <div class="course-tool-bar clearfix">
+        <div class="tool-left l">
+            <a class="sort-item active"><span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;图书列表</a>
+        </div>
+        <div class="tool-right r">
+            <span class="tool-item total-num">共<b></b>个课程</span>
+            <span class="tool-item tool-pager">
+                <span class="pager-num"><b class="pager-cur">{$Think.get.p|default=1}</b>/<em class="pager-total">{$totalPage|default=1}</em>&nbsp;&nbsp;</span>
+                <if condition="$_GET['p'] neq 1">
+                <a href="{:U('visitor',array('uid'=>$_GET['uid'],'p'=>$_GET['p']-1))}" class="glyphicon glyphicon-arrow-left"></a>&nbsp;&nbsp;
+                </if>
+                <if condition="$_GET['p'] lt $totalPage">
+                  <a href="{:U('visitor',array('uid'=>$_GET['uid'],'p'=>$_GET['p']+1))}" class="glyphicon glyphicon-arrow-right"></a>
+                </if>
+            </span>
+        </div>
+    </div>
+
+      <ul class="follow-list">
+        <foreach name="booksinfo" item="v">
+              <li data-id="{$v.id}" >
+                  <div class="box-left l">
+                    <a href="{:U('Books/index',array('id'=>$v['id']))}" title="{$v.books_name}" target="_blank">
+                      <div class="course-list-img">
+                        <img src="__APP__/Uploads/middle/{$v.books_face}" width="220" height="123" alt="{$v.books_name}">
+                        <div class="pro-bg"></div>
+                        <em class="dot-progress">10%</em>
+                        <div class="progress-bar">
+                        <i class="studyrate bar" value="10" data-finishval="10" style="width: 10%"></i>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="box-right">
+                      <h3 class="box-hd">
+                        <span>{$v.books_name}</span>
+                        <span class="span-new ">阅读: {$v.books_counts}</span>
+                        <span class="span-new ">发布: {$v.add_time|date="Y-m-d H:i:s",###}</span>
+                      </h3>
+                      <div class="study-points">
+                        <!-- <span class="span-left span-common">已学习至：1-1 MySQL&#20248;&#21270;&#31616;&#20171;</span>
+                        <span class="span-mid span-common">学习耗时： 7分</span>
+                        <span class="span-right span-common">最后学习：2015-05-04</span> -->
+                      </div>
+                      <div class="study-btm">
+                      <php>
+                        //if(S('getMiniContentId')){
+                            //$getMiniContentId = S('getMiniContentId');
+                        //} else {
+                          $getMiniContentId = M('content_category')->where(array('bid'=>$v['id'],array('content_id'=>array('NEQ',0))),'AND')->order("content_id ASC")->field("content_id")->limit(1)->find();
+                          //echo M('content_category')->getLastSql();
+                          //dump($getMiniContentId);
+                          $this->getMiniContentId = $getMiniContentId;
+                          //S('getMiniContentId', $getMiniContentId,3600*24);
+                        //}
+                      </php>
+                          <a href="{:U('Books/index',array('bid'=>$v['id'],'content_id'=>$getMiniContentId['content_id']))}" class="beginstudy" data-title="1-1 内容简介" target="_blank">查看</a>
+
+                          <if condition="in_array($v['id'],$followStatus)">
+                            <a class="btn btn-default" style="padding:6px 20px;" role="button">已关注&nbsp;<strong style="color:red;" class="glyphicon glyphicon-heart"></strong></a>
+                          <else/>
+                            <a href="{:U('addFollow',array('bid'=>$v['id']))}" class="btn btn-default" style="padding:6px 20px;" role="button">关注&nbsp;<strong style="color:red;" class="glyphicon glyphicon-heart-empty"></strong></a>
+                          </if>
+
+                          <!-- <a href="" class="beginstudy" data-title="1-1 内容简介">删除</a> -->
+                      </div>
+                  </div>
+              </li>
+          </foreach>
+      </ul>
+       <div class="books-list-page">{$page}</div>
+  </div>
+</div>
+
+</div>
+
+
+
+<include file="Common:footer"/>
+
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="__PUBLIC__/js/jquery-2.1.4.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+  <script src="__PUBLIC__/js/member.js"></script>
+</body>
+</html>

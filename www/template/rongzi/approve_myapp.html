@@ -1,0 +1,320 @@
+
+<div class="t20">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"
+		class="tabyel">
+
+		<tr class="ytit1">
+			<td width="21%">&nbsp;</td>
+			<td width="51%">项目</td>
+			<td width="15%">状态</td>
+			<td width="13%">信用分数</td>
+
+		</tr>
+		<tr>
+
+			<td rowspan="9">会员信用认证状态</td>
+
+			<td><a href="{:U('Approve/realname')}">①实名认证</a></td>
+			<td><eq name="_G.user_info.realname_status" value="1">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></eq></td>
+
+			<td><eq name="_G.user_info.realname_status" value="1">
+				<strong style="color: #ff0000">5分</strong>
+				<else />0分</eq></td>
+
+
+		</tr>
+		<tr>
+			<td><a href="{:U('Approve/phone_status')}">②手机认证</a></td>
+			<td><eq name="_G.user_info.phone_status" value="1">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></eq></td>
+
+			<td><eq name="_G.user_info.phone_status" value="1">
+				<strong style="color: #ff0000">2分</strong>
+				<else />0分</eq></td>
+
+		</tr>
+		<tr>
+
+			<td><a href="{:U('Approve/video_status')}">③视频认证</a></td>
+
+			<td><eq name="_G.user_info.video_status" value="1">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></eq></td>
+
+			<td><eq name="_G.user_info.video_status" value="1">
+				<strong style="color: #ff0000">3分</strong>
+				<else />0分</eq></td>
+
+		</tr>
+
+
+		<tr>
+			<td><a href="{:U('Approve/email_status')}">④邮箱认证</a></td>
+			<td><eq name="_G.user_info.email_status" value="1">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></eq></td>
+
+			<td><eq name="_G.user_info.email_status" value="1">
+				<strong style="color: #ff0000">2分</strong>
+				<else />0分</eq></td>
+
+		</tr>
+
+		<tr>
+			<td><a href="{:U('Approve/flow_status')}">★流转认证</a></td>
+			<td><eq name="_G.user_info.flow_status" value="1">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></eq></td>
+
+			<td><eq name="_G.user_info.flow_status" value="1">
+				<strong style="color: #ff0000">-</strong>
+				<else />-</eq></td>
+
+		</tr>
+
+
+
+
+
+		<tr>
+			<td><a href="{:U('rating/basic')}">完善个人信息（2分）</a></td>
+			<td><gt name="credit.info_credit.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="credit.info_credit.num" value="0">
+				<strong style="color: #ff0000">{$credit.info_credit.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td><a href="{:U('rating/job')}">工作信息(或企业信息)（3分）</a></td>
+			<td><gt name="credit.work_credit.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="credit.work_credit.num" value="0">
+				<strong style="color: #ff0000">{$credit.work_credit.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td><a href="{:U('rating/finance')}">财产状况（5分）</a></td>
+			<td><gt name="credit.finance_credit.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="credit.finance_credit.num" value="0">
+				<strong style="color: #ff0000">{$credit.finance_credit.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td><a href="{:U('rating/contact')}">联系人信息（5分）</a></td>
+			<td><gt name="credit.contact_credit.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="credit.contact_credit.num" value="0">
+				<strong style="color: #ff0000">{$credit.contact_credit.num}分</strong>
+				<else />0分</gt>}</td>
+		</tr>
+
+
+		<tr>
+			<td rowspan="6" height="114">必要信用审核</td>
+			<td>户口本认证（{$attestations.hukou.num}分）</td>
+			<td><gt name="attestations.hukou.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="attestations.hukou.num" value="0">
+				<strong style="color: #ff0000">{$attestations.hukou.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td>工作认证（{$attestations.work.num}分）</td>
+			<td><gt name="attestations.work.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="attestations.work.num" value="0">
+				<strong style="color: #ff0000">{$attestations.work.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td>收入认证（{$attestations.income.num}分）</td>
+			<td><gt name="attestations.income.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="attestations.income.num" value="0">
+				<strong style="color: #ff0000">{$attestations.income.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td>近6个月的银行资金流水（10分）</td>
+			<td><gt name="attestations.bank_six.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="attestations.bank_six.num" value="0">
+				<strong style="color: #ff0000">{$attestations.bank_six.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td>住址证明（5分）</td>
+			<td><gt name="attestations.live.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="attestations.live.num" value="0">
+				<strong style="color: #ff0000">{$attestations.live.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td>央行信用报告认证（15分）</td>
+			<td><gt name="attestations.bank_report.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="attestations.bank_report.num" value="0">
+				<strong style="color: #ff0000">{$attestations.bank_report.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td rowspan="10" height="190">可选信用审核</td>
+			<td>技术职称认证（5分）</td>
+			<td><gt name="attestations.professional.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="attestations.professional.num" value="0">
+				<strong style="color: #ff0000">{$attestations.professional.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td>自有房产证明（15分）</td>
+			<td><gt name="attestations.house.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="attestations.house.num" value="0">
+				<strong style="color: #ff0000">{$attestations.house.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td>购车证明（5分）</td>
+			<td><gt name="attestations.car.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="attestations.car.num" value="0">
+				<strong style="color: #ff0000">{$attestations.car.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td>结婚证明（5分）</td>
+			<td><gt name="attestations.marry.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="attestations.marry.num" value="0">
+				<strong style="color: #ff0000">{$attestations.marry.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td>直系亲属认证（每个5分，最高10分）</td>
+			<td><gt name="attestations.kinsfolk.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="attestations.kinsfolk.num" value="0">
+				<strong style="color: #ff0000">{$attestations.kinsfolk.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td>其他借款记录（5分）</td>
+			<td><gt name="attestations.linkman.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="attestations.linkman.num" value="0">
+				<strong style="color: #ff0000">{$attestations.linkman.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td>社区网、微博、QQ认证（每个1分，最高5分）</td>
+			<td><gt name="attestations.weibo.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="attestations.weibo.num" value="0">
+				<strong style="color: #ff0000">{$attestations.weibo.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td>现场认证（10分）</td>
+			<td><gt name="attestations.spot.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="attestations.spot.num" value="0">
+				<strong style="color: #ff0000">{$attestations.spot.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td>其他有价值的认证（每个2分）</td>
+			<td><gt name="attestations.other.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="attestations.other.num" value="0">
+				<strong style="color: #ff0000">{$attestations.other.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+		<tr>
+			<td>还款承诺书（10分）</td>
+			<td><gt name="attestations.hkxys.num" value="0">
+				<strong style="color: #ff0000">已通过</strong>
+				<else />
+				<img width="32px" height="32px" title="待完成" alt="待完成"
+					src="{$tpldir}/images/credit_warning.png" /></gt></td>
+			<td><gt name="attestations.hkxys.num" value="0">
+				<strong style="color: #ff0000">{$attestations.hkxys.num}分</strong>
+				<else />0分</gt></td>
+		</tr>
+
+
+	</table>
+
+</div>

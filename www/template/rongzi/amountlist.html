@@ -1,0 +1,160 @@
+
+<div class="m_change">
+	<ul>
+		<li><a href="{:U('borrow/amount')}">额度申请</a></li>
+		<li><a href="{:U('borrow/amountlist')}" class="onn">申请记录</a></li>
+		<li><a href="{:U('borrow/amountlog')}">额度记录</a></li>
+	</ul>
+</div>
+<div class="us_r_bor1">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0"
+		class="tabyel">
+		<form action="" method="post"></form>
+		<tbody>
+			<tr class="ytit1">
+				<td>申请时间</td>
+				<td>申请类型</td>
+				<td>申请金额(元)</td>
+				<td>通过金额(元)</td>
+				<td>备注说明</td>
+				<td>状态</td>
+				<td>审核时间</td>
+				<td>审核备注</td>
+			</tr>
+			<foreach name="list" item="item">
+			<tr>
+				<td>{$item.addtime|date='m-d H:i',###}</td>
+				<td><if condition="$item.type eq 'vouch'">投资担保额度 <elseif
+						condition="$item.type eq 'borrowvouch'" /> 借款担保额度 <else /> 借款信用额</if></td>
+				<td>{$item.amount_account}</td>
+				<td>{$item.account|default='-'}</td>
+				<td>{$item.content}</td>
+				<td><if condition="$$item.status eq 0">正在审核 <elseif
+						condition="$item.status eq 1" /> 审核通过 <else /> 审核不通过</if></td>
+				<td>{$item.verify_time|date='m-d H:i',###}</td>
+				<td>{$item.verify_remark|default='-'}</td>
+			</tr>
+			</foreach>
+			<tr>
+				<td colspan="8" class="page">{$page}</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="user_right_foot">* 温馨提示：额度申请后 无论申请是否批准
+		必须隔一个月后才能再次申请，每个月只能申请一次如有问题,请与我们联系</div>
+	<!--额度申请 结束-->
+
+	<script>deayou.use("borrow",function(e){e.amount();});</script>
+	<script>
+
+
+var url = "{:U('borrow/amountlist','','')}";
+
+
+
+
+
+function sousuo(urla){
+
+
+	if (urla!="") url = urla;
+
+
+	var _url = "";
+
+
+	var dotime1 = $("#dotime1").val();
+
+
+	var keywords = $("#keywords").val();
+
+
+	var username = $("#username").val();
+
+
+	var status = $("#status").val();
+
+
+	var reply_status = $("#reply_status").val();
+
+
+	var tender_username = $("#tender_username").val();
+
+
+	var dotime2 = $("#dotime2").val();
+
+
+	if (username!=null){
+
+
+		 _url += "/username/"+username;
+
+
+	}
+
+
+	if (tender_username!=null){
+
+
+		 _url += "/tender_username/"+tender_username;
+
+
+	}
+
+
+	if (status!=null){
+
+
+		 _url += "/status/"+status;
+
+
+	}
+
+
+	if (reply_status!=null){
+
+
+		 _url += "/reply_status/"+reply_status;
+
+
+	}
+
+
+	if (keywords!=null){
+
+
+		 _url += "/keywords/"+keywords;
+
+
+	}
+
+
+	if (dotime1!=null){
+
+
+		 _url += "/dotime1/"+dotime1;
+
+
+	}
+
+
+	if (dotime2!=null){
+
+
+		 _url += "/dotime2/"+dotime2;
+
+
+	}
+
+
+	location.href=url+_url;
+
+
+}
+
+
+
+
+
+</script>
+</div>

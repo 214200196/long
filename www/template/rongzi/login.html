@@ -1,0 +1,89 @@
+
+<include file="$header" />
+<literal> <script>
+
+ function check_login(obj){
+					  
+					  if(obj.placeholder=='请输入用户名' || obj.placeholder=='请输入密码' ){
+						  obj.placeholder='';
+					  }
+					  
+					  } 
+function login_in_form_h(){
+
+					 var frm = document.forms['login_in_form'];
+
+					 var login_keywords = frm.elements['keywords'].value;
+
+                     var login_password = frm.elements['password'].value;
+					 
+					 var errorMsg = '';
+
+					  if (login_keywords.length == 0 ) {
+
+						errorMsg += '* 用户名不能为空' + '\n';
+
+					  }
+                     if (login_password.length == 0 ) {
+
+						errorMsg += '* 密码不能为空' + '\n';
+
+					  }
+					
+
+					  if (errorMsg.length > 0){
+
+						alert(errorMsg); 
+						return false;
+
+					  } else{  
+
+						return true;
+
+					  }
+					   
+					}
+</script> </literal>
+
+<div class="bodyer clearfix login_box">
+	<div class="login-left">
+		<img src="{$tpldir}longbao/images/login_03.jpg" width="653"
+			height="390" />
+	</div>
+	<form action="{:U('index/login')}" method="post" name="login_in_form">
+
+		<div class="login-right">
+			<div class="control_group mb20">
+
+				<div class="controls">
+					<input type="text" name="keywords" id="keywords" class="inputBox"
+						placeholder="请输入用户名">
+				</div>
+			</div>
+			<div class="control_group mb10">
+
+				<div class="controls">
+					<input type="password" code="ie_psw1" class="inputBox password_new"
+						placeholder="请输入密码" name="password" id="password" value="">
+				</div>
+			</div>
+			<div class="control_group mb20 mt20"></div>
+			<div class="control_group mb20">
+
+
+				<button class="btn_xlarge btn" type="submit" id="submitButton">立即登录</button>
+
+			</div>
+			<div class="control_group">
+
+				<div>
+					<p class="lable-text">
+						<a href="{:U('index/reg')}">免费注册</a> <a href="{:U('index/getpwd')}">忘记密码</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</form>
+</div>
+<include file="$footer" />

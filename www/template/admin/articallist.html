@@ -1,0 +1,119 @@
+<include file="$header" />
+<if condition="$Think.request.check neq ''">
+<div style="height: 205px; overflow: hidden">
+	
+</div>
+
+<else />
+<div class="module_add">
+	<div class="module_title" style="overflow: hidden">
+		<div style="float: left">
+			<strong>文章列表</strong> (<a href="{:U('Articles/news')}">添加文章</a>)
+		</div>
+		<div style="float: right">
+			用户名：<input type="text" name="username" id="username"
+				value="{$Think.request.username|urldecode}" /> 标题：<input type="text"
+				name="name" id="name" value="{$Think.request.name|urldecode}" /> 类型：
+			<select name="type_id" id="type_id">
+				<option value="">显示全部</option>
+				<foreach name="_A['articles_type_result']" item="vo" key="k">
+				<option value="{$k}"<if
+						condition="$k eq $_REQUEST['type_id']">selected="selected"</if>>{$vo}
+				</option>
+				</foreach>
+			</select> <input type="button" value="{$MsgInfo.users_name_sousuo}"onclick="sousuo()">
+		</div>
+	</div>
+
+</div>
+
+<table border="0" cellspacing="1" width="100%">
+	<form action="__SELF__ " method="post">
+		<tr>
+			<td width="" class="main_td"><input type="checkbox"
+				name="allcheck" onclick="checkFormAll(this.form)" /></td>
+			<td width="" class="main_td"><if
+					condition="$Think.request.order eq 'id_desc'">
+				<a href="{:U('Articles/lists?order=id_asc')}">ID↓</a>
+				<elseif condition="$Think.request.order eq 'id_asc'" />
+				<a href="{:U('Articles/lists?order=id_desc')}">ID↑</a>
+				<else />
+				<a href="{:U('Articles/lists?order=id_desc')}">ID</a></if></td>
+			<td width="*" class="main_td">标题</td>
+			<td width="*" class="main_td">作者</td>
+			<td width="" class="main_td">分类栏目</td>
+			<td width="" class="main_td">状态</td>
+			<td width="" class="main_td"><if
+					condition="$Think.request.order eq 'order_desc'">
+				<a href="{:U('Articles/lists?order=order_asc')}">排序↓</a>
+				<elseif condition="$Think.request.order eq 'order_asc'" />
+				<a href="{:U('Articles/lists?order=order_desc')}">排序↑</a>
+				<else />
+				<a href="{:U('Articles/lists?order=order_desc')}">排序</a></if></td>
+			<td width="" class="main_td">属性</td>
+			<!--<td width="" class="main_td">评论</td>-->
+			<td width="" class="main_td">添加时间</td>
+			<td width="" class="main_td">操作</td>
+		</tr>
+		<foreach name="list" item="item">
+		<tr>
+			<td class="main_td1" align="center"><input type="checkbox"
+				name="aid[]" id="aid[]" value="{$item.id}" /></td>
+			<td class="main_td1" align="center">{$item.id}</td>
+			<td class="main_td1" align="center"><a
+				href="{$_A.query_url}&view={$item.id}">{$item.name}</a></td>
+			<td class="main_td1" align="center">{$item.username}</td>
+			<td class="main_td1" align="center">{$item.type_id|amounttye=$_A['articles_type_result'],###}</td>
+			<td class="main_td1" align="center"><if
+					condition="$item.status eq 1">已发布<elseif
+					condition="$item.status eq 3" />
+				<a href="javascript:void(0)"
+					onclick='tipsWindown("审核文章","url:get?{$_A.query_url}&check={$item.id}",500,230,"true","","false","text");'>待审核</a>
+				<elseif condition="$item.status eq 2" />草稿<else />审核失败</if></td>
+			<td class="main_td1" align="center"><input type="text"
+				name="order[]" value="{$item.order}" size="2" /><input
+				type="hidden" name="id[]" value="{$item.id}" /></td>
+			<td class="main_td1" align="center">{$item.flag|amounttye=$_A['articles_flag'],###}</td>
+			<!--<td class="main_td1" align="center">{$item.comment_times}</td>-->
+			<td class="main_td1" align="center">{$item.addtime|date="y/m/d",###}</td>
+			<td class="main_td1" align="center"><a
+				href="{:U('Articles/lists?view='.$item['id'])}">查看</a> <a
+				href="{:U('Articles/edit?id='.$item['id'])}">修改</a> <a href="#"
+				onClick="javascript:if(confirm('确定要删除吗?删除后将不可恢复')) location.href='{:U('Articles/lists?del='.$item['id'])}'">删除</a></td>
+		</tr>
+		</foreach>
+		<tr>
+			<td colspan="11" class="action">
+				<div class="floatl">
+					<select name="type">
+						<option value="order">排序</option>
+						<option value="del">删除</option>
+					</select>&nbsp;&nbsp;&nbsp; <input type="submit" value="确认操作" /> 排序不用全选
+				</div> <script>
+	  var url = '{:U('Articles/lists','','')}';
+	  	function sousuo(){
+			var sou='';
+			var username = $("#username").val();
+			var name = $("#name").val();
+			var type_id = $("#type_id").val();
+			if (username!="" && username!=null){
+		sou += "/username/"+username;
+	}if (name!="" && name!=null){
+		sou += "/name/"+name;
+	}if (type_id!="" && type_id!=null){
+		sou += "/type_id/"+type_id;
+	}
+			location.href=url+sou;
+		}
+	  
+	  </script>
+
+			</td>
+		</tr>
+		<tr>
+			<td colspan="8" class="page">{$page}</td>
+		</tr>
+	</form>
+</table>
+</if>
+<include file="$footer" />

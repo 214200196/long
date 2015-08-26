@@ -1,0 +1,25 @@
+/* ============ндубап╠М============== */
+
+ul.newslist{
+margin:0px;
+padding:18px 14px 0px 20px;
+}
+
+li.newslist {
+margin:0px;
+padding-left:14px;
+list-style-type: none;
+height:26px;
+background: transparent url(../images/list.gif) 0px 0px no-repeat;
+}
+
+a.newslist:link,a.newslist:visited,a.newslist:active{
+color:#333;
+text-decoration: none;
+font:12px/23px Verdana, Arial, Helvetica, sans-serif;
+}
+
+a.newslist:hover{
+color:#ff0000;
+font:12px/23px Verdana, Arial, Helvetica, sans-serif;
+}

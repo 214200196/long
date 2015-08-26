@@ -1,0 +1,153 @@
+
+<div class="m_change">
+	<ul>
+		<li><a href="{:U('borrow/amount')}">额度申请</a></li>
+		<li><a href="{:U('borrow/amountlist')}">申请记录</a></li>
+		<li><a href="{:U('borrow/amountlog')}" class="onn">额度记录</a></li>
+	</ul>
+</div>
+<div class="us_r_bor1">
+	<div class="user_main_title1">你目前的总借款信用额度为：￥{$_amount.borrow_amount|default=0}，可用额度为：￥{$_amount.borrow_amount_use|default=0}</div>
+	<div class="t20">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			class="tabyel">
+			<tbody>
+				<tr class="ytit1">
+					<td>额度类型</td>
+					<td>增加</td>
+					<td>减少</td>
+					<td>冻结</td>
+					<td>返回</td>
+					<td>备注</td>
+				</tr>
+				<foreach name="list" item="var">
+				<tr>
+					<td><if condition="$var.type eq 'vouch'">投资担保额度 <elseif
+							condition="$var.type eq 'borrowvouch'" /> 借款担保额度 <else /> 借款信用额</if></td>
+					<td><if condition="$var.oprate eq 'add'">￥{$var.account}</if></td>
+					<td><if condition="$var.oprate eq 'reduce'">￥{$var.account}</if></td>
+					<td><if condition="$var.oprate eq 'frost'">￥{$var.account}</if></td>
+					<td><if condition="$var.oprate eq 'return'">￥{$var.account}</if></td>
+
+					<td>{$var.remark}</td>
+				</tr>
+				</foreach>
+				<tr>
+					<td colspan="8" class="page">{$page}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<script>
+
+
+var url = "{:U('borrow/amountlog','','')}";
+
+
+
+
+
+function sousuo(urla){
+
+
+	if (urla!="") url = urla;
+
+
+	var _url = "";
+
+
+	var dotime1 = $("#dotime1").val();
+
+
+	var keywords = $("#keywords").val();
+
+
+	var username = $("#username").val();
+
+
+	var status = $("#status").val();
+
+
+	var reply_status = $("#reply_status").val();
+
+
+	var tender_username = $("#tender_username").val();
+
+
+	var dotime2 = $("#dotime2").val();
+
+
+	if (username!=null){
+
+
+		 _url += "/username/"+username;
+
+
+	}
+
+
+	if (tender_username!=null){
+
+
+		 _url += "/tender_username/"+tender_username;
+
+
+	}
+
+
+	if (status!=null){
+
+
+		 _url += "/status/"+status;
+
+
+	}
+
+
+	if (reply_status!=null){
+
+
+		 _url += "/reply_status/"+reply_status;
+
+
+	}
+
+
+	if (keywords!=null){
+
+
+		 _url += "/keywords/"+keywords;
+
+
+	}
+
+
+	if (dotime1!=null){
+
+
+		 _url += "/dotime1/"+dotime1;
+
+
+	}
+
+
+	if (dotime2!=null){
+
+
+		 _url += "/dotime2/"+dotime2;
+
+
+	}
+
+
+	location.href=url+_url;
+
+
+}
+
+
+
+
+
+</script>

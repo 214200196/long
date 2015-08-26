@@ -1,0 +1,53 @@
+<include file="$header" />
+<div class="admsg_box">
+
+	<table border="0" cellspacing="1" width="100%">
+
+		<tr>
+			<td colspan="2" class="main_td2">
+				<div class="main_title title_color">系统提醒：系统基本运行环境概括</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="main_td1" align="right" width="15%">环境要求:</td>
+			<td class="main_td1" align="left">php5.3+mysql5.0</td>
+		</tr>
+		<tr>
+			<td class="main_td1" align="right" width="15%">内存:</td>
+			<td class="main_td1" align="left">2G及以上</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="main_td2">
+				<div class="main_title">网站系统信息</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="main_td1" align="right" width="15%">是否安全模式:</td>
+			<td class="main_td1" align="left">{$_A.php_info.sp_safe_mode}</td>
+		</tr>
+		<tr>
+			<td class="main_td1" align="right" width="15%">服务器操作系统:</td>
+			<td class="main_td1" align="left">{$_A.php_info.sp_os}</td>
+		</tr>
+		<tr>
+			<td class="main_td1" align="right" width="15%">服务器IP:</td>
+			<td class="main_td1" align="left">{$_A.php_info.sp_host}</td>
+		</tr>
+
+	</table>
+</div>
+
+<div class="admsg_box">
+	<div class="title_color">个人信息</div>
+	<div class="content">
+		您好，{$_A.admin_result.adminname} <br> 所属角色：{$_A.admin_result.name}
+		<br> 本次登录时间：{$_A.admin_result.login_time|date="Y-m-d H:i:s",###}
+		<br> 本次登录IP：{$_A.admin_result.login_ip}
+	</div>
+</div>
+
+
+
+<include file="$footer" />
+
+

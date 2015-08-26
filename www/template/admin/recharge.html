@@ -1,0 +1,111 @@
+<include file="$header" />
+<ul class="nav3">
+	<li><a href="{:U('Account/recharge')}" id="c_so">{$MsgInfo.account_name_recharge}</a></li>
+	<li><a href="{:U('Account/recharge?status=0')}">{$MsgInfo.account_name_recharge_verify}</a></li>
+	<li><a href="{:U('Account/recharge?status=1')}">{$MsgInfo.account_name_recharge_success}</a></li>
+	<li><a href="{:U('Account/recharge?status=2')}">{$MsgInfo.account_name_recharge_false}</a></li>
+</ul>
+<div class="module_add">
+	<div class="module_title">
+		<strong><font color="#FF0000">{$Think.request.username}
+		</font>充值记录</strong>
+		
+	</div>
+</div>
+<table border="0" cellspacing="1" width="100%">
+	<form action="" method="post">
+		<tr>
+			<td class="main_td">ID</td>
+			<td class="main_td">用户名</td>
+			<td class="main_td">交易号</td>
+			<td class="main_td">类型</td>
+			<td class="main_td">充值银行</td>
+			<td class="main_td">充值金额</td>
+			<td class="main_td">充值手续费<br /> /充值奖励
+			</td>
+			<td class="main_td">实际到账金额</td>
+			<td class="main_td">状态</td>
+			<td class="main_td">操作时间</td>
+			<td class="main_td">操作IP</td>
+			<td class="main_td">管理</td>
+		</tr>
+		<foreach name="list" item="item">
+
+		<tr>
+			<td>{$item.id}</td>
+			<td><a href="javascript:void(0)"
+				onclick='tipsWindown("用户详细信息查看","{:U('Users/views?user_id='.$item['user_id'].'&type=scene')}",700,400);'>{$item.username}</a></td>
+			<td>{$item.nid}</td>
+			<td nowrap="nowrap">{$item.type|linkages="account_recharge_type",###}</td>
+			<td>{$item.payment_name|default="手动充值"}</td>
+			<td>￥{$item.money}</td>
+			<td nowrap="nowrap"><if condition="$item.type eq 2">
+				<font color="#FF0000">奖 </font></if>￥{$item.fee}</td>
+			<td><font color="#FF0000">￥{$item.balance}</font></td>
+			<td nowrap="nowrap">{$item.status|linkages="account_recharge_status",###}</td>
+			<td nowrap="nowrap">{$item.addtime|date="Y-m-d H:i",###}</td>
+			<td nowrap="nowrap">{$item.addip}</td>
+			<td nowrap="nowrap"><if condition="$item.status eq 0">
+				<a href="{:U('Account/recharge?view='.$item['id'])}"><font color="#FF0000">审核</font></a>
+				<else />
+				<a href="{:U('Account/recharge?view='.$item['id'])}">查看</a></if></td>
+		</tr>
+		</foreach>
+		<tr>
+			<td colspan="13" class="action">
+				<div class="floatl">充值总金额：{$all_balance|default=0.00}元
+					充值总手续费：{$all_fee|default=0.00}元</div>
+				<div class="floatr">
+					用户名：<input type="text" name="username" id="username"
+						value="{$Think.request.username|urldecode}" /> 类型:
+					<tagLib name="zi" />
+					<zi:linkages name="type" nid="account_recharge_type" type="value" default="不限" checked='Think.request.type' />
+					状态<select id="status"><option value="">全部</option> <option value="1" <eq name="Think.request.status" value="1">selected="selected"</eq>>成功</option> <option value="0"<eq name="Think.request.status" value="0">selected="selected"</eq>>审核</option>
+						<option value="2" <eq name="Think.request.status" value="2">selected="selected"</eq>>失败</option></select> 操作时间：<input type="text"
+						name="dotime1" id="dotime1" value="{$Think.request.dotime1}" size="15" onclick="laydate()()" /> 到 <input type="text"
+						name="dotime2" value="{$Think.request.dotime2}" id="dotime2" size="15" onclick="laydate()()" /> <input type="button" value="搜索"
+						 onclick="sousuo()">
+				</div>
+			</td>
+		</tr>
+		<tr align="center">
+			<td colspan="13" align="center"><div align="center">{$page}</div></td>
+		</tr>
+	</form>
+</table>
+<script>
+var url="{:U('account/recharge','','')}";
+function sousuo(){
+	var sou = "";
+	var username = $("#username").val();
+	if (username!="" && username!=null){
+		sou += "/username/"+username;
+	}
+
+	var type = $("#type").val();
+	if (type!="" && type!=null){
+		sou += "/type/"+type;
+	}
+	var status= $("#status").val();
+	if (status!="" && status!=null){
+		sou += "/status/"+status;
+	}
+	
+	var status = $("#status").val();
+	if (status!="" && status!=null){
+		sou += "/status/"+status;
+	}
+	var dotime1 = $("#dotime1").val();
+	if (dotime1!="" && dotime1!=null){
+		sou += "/dotime1/"+dotime1;
+	}var dotime2 = $("#dotime2").val();
+	if (dotime2!="" && dotime2!=null){
+		sou += "/dotime2/"+dotime2;
+	}
+	
+	location.href=url+sou;
+	
+}
+</script>
+
+<include file="$footer" />

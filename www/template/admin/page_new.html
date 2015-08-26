@@ -1,0 +1,121 @@
+<include file="$header" />
+<form action="{:U('Articles/page_new')}" method="post" id="frm">
+	<div class="module_add">
+		<div class="module_title">
+			<strong><if condition="ACTION_NAME eq 'page_edit'">
+				<input type="hidden" name="id" value="{$Think.request.id}" />
+				<input type="hidden" name="actions" value="page_edit" />修改页面<else />添加页面</if></strong>
+		</div>
+		<div style="margin-top: 10px;">
+			<div style="">
+
+				<div style="border: 1px solid #CCCCCC; margin-bottom: 10px">
+					<div class="module_title">
+						<strong>页面基本信息</strong>
+					</div>
+					<div class="module_border">
+						<div class="c">
+							<font color="#FF0000">标识名：</font><input type="text" name="nid"
+								size="12" value="{$_A.page_result.nid}" /><font color="#FF0000">*</font>
+						</div>
+					</div>
+
+
+					<div class="module_border">
+						<div class="c">
+							父&nbsp;&nbsp;级 ：<select name="pid">
+								<option>根目录</option>
+								<foreach name="list" item="item">
+								<option value="{$item.id}"<if condition="$_A['page_result']['pid'] eq $item['id']"> selected="selected"</if>>{$item._name}
+								</option>
+
+								</foreach>
+							</select>
+						</div>
+					</div>
+
+					<div class="module_border">
+						<div class="c">
+							状&nbsp;&nbsp;态 ：<select name='status'>
+								<option value="1"<if condition="$_A['page_result']['status'] eq 1">selected="selected"</if>>发布
+								</option>
+								<option value="2"<if condition="$_A['page_result']['status'] eq 2">selected="selected"</if>>草稿
+								</option>
+								<option value="3"<if condition="$_A['page_result']['status'] eq 3">selected="selected"</if>>等待审核
+								</option>
+							</select>
+						</div>
+					</div>
+					<div class="module_border">
+						<div class="c">
+							排&nbsp;&nbsp;序 ：<input type="text" name="order"
+								value="{$_A.page_result.order|default='10'}" size="5" />
+						</div>
+					</div>
+
+					<div class="module_border">
+						<div class="c">
+							分&nbsp;&nbsp;类 ：<input type="checkbox" name="flag[]" value="index" align="absmiddle" {$_A.page_result.flag|checked="index" }/>首页 <input
+								type="checkbox" name="flag[]" value="tuijian" align="absmiddle" {$_A.page_result.flag|checked="tuijian" }/>推荐 <input type="checkbox" name="flag[]" value="ding" align="absmiddle" {$_A.page_result.flag|checked="ding" }/>置顶
+						</div>
+					</div>
+
+					<div class="module_border">
+						<div class="c">
+							发布时间：<input type="text" name="publish" class="input_border" value="{$_A.page_result.publish}" size="30" onclick=" laydate()" readonly="" />
+						</div>
+					</div>
+
+					<div class="module_border">
+						<input type="button" value="确认提交" class="submit_button" name="save" onclick="submitForm()" />
+					</div>
+
+				</div>
+
+				<div style="border: 1px solid #CCCCCC; margin-bottom: 10px;">
+					<div class="module_title">
+						<strong>页面标签</strong>
+					</div>
+					<div class="module_border" style="padding: 10px;">
+						标签：<input type="text" name="tags" class="input_border" value="{$_A.page_result.tags}" size="30" />
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div style="text-align: left">
+			<div class="module_add">
+				<div class="module_title">
+					<strong>页面标题内容</strong>
+				</div>
+
+				<div class="module_border">
+					<div class="c" style="padding: 10px 0">
+						标&nbsp;&nbsp;题：<input type="text" name="name" value="{$_A.page_result.name}" style="height: 25px; width: 400px" /><font
+							color="#FF0000">*</font>
+					</div>
+				</div>
+
+				<div class="module_border" style="padding-top: 10px;">
+					<textarea id="ue_container" name="contents" style="width: 100%; height: 400px">{$_A.page_result.contents}</textarea>
+					<script src="/plugins/ueditor1.4.3/ueditor.config.js" type="text/javascript"></script>
+					<script src="/plugins/ueditor1.4.3/ueditor.all.min.js" type="text/javascript"></script>
+					<script type="text/javascript">
+        var ue = UE.getEditor('ue_container');
+    </script>
+					<script>
+		
+		function submitForm(){
+		$("#bcontents").val();
+		$('#frm').submit();}
+		</script>
+
+
+				</div>
+
+			</div>
+			<!--菜单列表 结束-->
+		</div>
+	</div>
+</form>
+<include file="$footer" />

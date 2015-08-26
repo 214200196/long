@@ -1,0 +1,128 @@
+<include file="$header" />
+<empty name="_G.user_id">
+<script>
+alert("请登录后再查看");
+location.href='{:U("Index/login")}';
+</script>
+
+	<script>
+	window.onload=function()
+	{
+	 
+      $('#element_to_pop_up').bPopup({
+            speed: 650,
+            transition: 'slideIn',
+	    transitionClose: 'slideBack'
+        });   
+        
+	setTimeout("{:U('Index/login')}'",1000);
+	}
+	</script>
+	
+  
+</empty>
+  
+
+    
+        <div id="element_to_pop_up">
+    <span class="b-close">x</span>
+    <div class="b_content">请登录后再查看</div>
+    <span class="b_button"><a href="{:U('Index/login')}">确定</a></span>
+</div>
+    
+  <div class="bodyer clearfix">
+                <dl class="list-mian box1000">
+                   	  <dt>
+                          <ul>
+                               <li><a href="{:U('Index/index?site=debt')}" >转让中债权</a></li>
+                              <li><a href="{:U('Index/index?site=debt_success')}" class="hover">转让成功债权</a></li>
+                          </ul>
+                      </dt>
+                      <dd>
+               <lists  module="borrow" function="GetChangeList" item="loop" epage="10" status="1" borrow_type="request" account_status="request"  order="request" borrow_name="request" apr="request"/>
+                    	<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin:20px;">
+					<tbody><tr>
+						<th width="4%" style="text-align:center">债权人</th>
+						<th width="8%" style="text-align:center">信用等级</th>
+						<th width="13%" style="text-align:center">投标标题</th>
+						<th width="5%" style="text-align:left">利率</th>
+						<th width="8%" style="text-align:left">待收本金/利息</th>
+						<th width="8%" style="text-align:left">转让价格</th>
+                     
+					</tr>
+				</tbody></table>
+                    
+    <script>
+
+function borrowChange(url){
+	var api=$.dialog({
+		id: 'LHG1976D',
+		lock:true
+	});
+
+	/* jQuery ajax */
+	$.ajax({
+		url:url,
+		success:function(data){
+			api.content(data);
+		},
+		cache:false
+	});
+}
+  
+  </script>
+
+  
+    <empty name="loop.list">
+   <div style="height:50px; font-size:24px; text-align:center; padding-top:30px;">暂无投资项目</div>
+  <else /> 
+                <ul>
+                 <foreach name="loop.list" item="item">
+					<li style="height:55px;padding:10px 0 0 0;">
+					<!-- BOF product list -->
+				
+					<div class="index-list-iteam">
+						 <table width="100%" border="0" >
+          
+  <tr>
+    <td width="7%"  style="text-align:center">{$item.b_nikename}</td>
+    <td  width="7%" style="text-align:center">{$item.credit.approve_credit|credit="credit",###}</td>
+    <td  width="15%" style="text-align:center"><a href="{:U('Index/index?site=full_success&nid='.$item['borrow_nid'])}">{$item.borrow_name}</a></td>
+    <td  width="5%" style="text-align:center">{$item.borrow_apr}%</td>
+    <td width="10%" style="text-align:center">￥{$item.recover_account_capital_wait}/￥{$item.recover_account_interest_wait}</td>
+    <td width="8%" style="text-align:center"><em>￥{$item.recover_account_all}</em></td>
+  </tr>
+  </table>
+					</div>
+				</li>	
+                 </foreach>
+                    <li><div class="page">
+                    
+                   {$loop.page}
+          
+          </div></li>						
+				</ul>
+            </empty>     
+                    </dd>
+                  </dl>
+
+            </div>
+
+<script>
+function JqueryAjaxs(url){
+var api = $.dialog({id:'L360'});
+
+$.ajax({
+
+    url:url,
+    success:function(data){
+        api.content(data);
+
+    }
+
+});
+
+}
+</script>
+
+<include file="$footer" />

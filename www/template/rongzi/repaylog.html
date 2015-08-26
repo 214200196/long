@@ -1,0 +1,76 @@
+<div class="m_change">
+	<ul>
+		<li><a href="/?user&amp;q=code/borrow/repaylog" class="onn">借款统计</a></li>
+	</ul>
+</div>
+<div class="us_r_bor1">
+	<div class="t20">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			class="tabyel">
+			<tr class="ytit">
+				<td colspan="4">个人借款统计</td>
+			</tr>
+			<tr>
+				<td width="25%">总借入金额</td>
+				<td width="25%">{$item.borrow_account|default=0.00}元</td>
+				<td width="25%">发布借款笔数</td>
+				<td width="25%">{$item.borrow_times|default=0}笔</td>
+			</tr>
+			<tr>
+				<td>已还本息</td>
+				<td>{$item.borrow_repay_yes|default=0.00}元</td>
+				<td>成功借款笔数</td>
+				<td>{$item.borrow_success_times|default=0}笔</td>
+			</tr>
+			<tr>
+				<td>待还本息</td>
+				<td>{$item.borrow_repay_wait|default=0.00}元</td>
+				<td>正常还清期数</td>
+				<td>{$item.borrow_repay_yes_times|default=0}期</td>
+			</tr>
+			<tr>
+				<td>待还期数</td>
+				<td>{$item.borrow_repay_wait_times|default=0}期</td>
+				<td>加权平均利率</td>
+				<td>{$item.borrow_interest_scale|default=0}%</td>
+			</tr>
+			<tr>
+				<td>借款奖励支出</td>
+				<td>{$item.award_lower|default=0.00}元</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+	<div class="t20">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			class="tabyel">
+			<tr class="ytit">
+				<td colspan="4">借款逾期统计</td>
+			</tr>
+			<tr>
+				<td width="25%">逾期次数</td>
+				<td width="25%">{$item.late_nums|default=0}次</td>
+				<td width="25%">逾期罚息</td>
+				<td width="25%">{$item.latemoney|default=0.00}元</td>
+			</tr>
+		</table>
+	</div>
+	<div class="t20">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0"
+			class="tabyel">
+			<tr class="ytit">
+				<td colspan="4">提前还款统计</td>
+			</tr>
+			<tr>
+				<td width="25%">提前还款期数</td>
+				<td width="25%">{$item.advance_repay_times|default=0}期</td>
+				<td width="25%">提前还款违约金</td>
+				<td width="25%">{$item.borrow_weiyue|default=0.00}元</td>
+			</tr>
+		</table>
+	</div>
+
+	<!--尚未发布 开始-->
+
+</div>

@@ -1,0 +1,140 @@
+<include file="$header" />
+<empty name="_G.user_id"> <script>
+	window.onload=function()
+	{
+	 
+      $('#element_to_pop_up').bPopup({
+            speed: 650,
+            transition: 'slideIn',
+	    transitionClose: 'slideBack'
+        });   
+        
+	setTimeout("location.href='{:U('Index/login')}'",2000);
+	}
+	</script> </empty>
+<div class="con_box">
+	<div>
+		<div class="con_bor">
+			<div class="pos_bor">
+				<span><a href="{:U('borrow/index')}">我要借款</a> > 借款认证</span>
+			</div>
+			<div class="con2">
+				<div style="width: 897px; margin: 20px auto">
+					<div style="margin: 20px 0">
+						<div class="m_change">
+							<ul>
+								<li><a href="{:U('Approve/realname')}"<eq
+											name="ACTION_NAME" value="realname">class="onn"</eq>>实名认证</a></li>
+								<li><a href="{:U('Approve/phone_status')}"<eq
+											name="ACTION_NAME" value="phone_status">class="onn"</eq>>手机认证</a></li>
+								<li><a href="{:U('Approve/video_status')}"<eq
+											name="ACTION_NAME" value="video_status">class="onn"</eq>>视频认证</a></li>
+							</ul>
+						</div>
+						<div style="padding: 20px 80px">
+							<if condition="$_G['user_info']['realname_status'] eq 1">
+
+							<div class="user_main_title1">
+								<font color="#FF0000">*</font>您已通过身份认证！
+							</div>
+							<else />
+
+							<form action="" method="post"
+								enctype="multipart/form-data" onsubmit="return formck();"
+								name="formx" id="formx">
+								<table width="100%" border="0" cellpadding="0" cellspacing="0"
+									class="jk_tab">
+									<tr>
+										<td width="24%" align="right">&nbsp;</td>
+										<td width="76%" align="left"><gt
+												name="_G.system.con_id5_realname_fee" value="0">第一次无需扣费，若错误，第二次扣费{$_G.system.con_id5_realname_fee}元</gt>
+											<if
+												condition="($_G.userinfo.realname_times gt $_G['system']['con_id5_realname_times']) AND ($_G.system.con_id5_realname_fee gt 0)">
+											<br />
+											<font color="#FF0000">你已提交过{$_G.userinfo.realname_times}次，如果再次提交将扣除{$_G.system.con_id5_realname_fee}元手续费</font>
+											</if></td>
+									</tr>
+									<tr>
+										<td width="24%" align="right"><span>*</span>真实姓名：</td>
+										<td width="76%" align="left"><input type="text"
+											name="realname" value="{$Rvar.realname}"
+											style="width: 150px; border: #BFBFBF solid 1px; height: 18px;" /></td>
+									</tr>
+									<tr>
+										<td width="24%" align="right"><span>*</span>性 别 ：</td>
+										<td width="76%" align="left"><input type="radio"
+											name="sex" value="男" {if $Rvar.sex== "男"}checked="checked" {/if}/>
+											男 <input type="radio" name="sex" value="女" {if $Rvar.sex!="男"
+											}checked="checked" {/if}/> 女</td>
+									</tr>
+									<tr>
+										<td width="24%" align="right"><span>*</span>证件号码：</td>
+										<td width="76%" align="left"><input type="text"
+											name="card_id" value="{$Rvar.card_id}"
+											style="width: 150px; border: #BFBFBF solid 1px; height: 18px;" /></td>
+									</tr>
+									<tr>
+										<td width="24%" align="right">身份证正面上传：</td>
+										<td width="76%" align="left"><input type="file"
+											name="card_pic1" size="14" /> <notempty name="Rvar.card_pic1">
+											<font color="#FF0000"><a href="/{$Rvar.card_pic1_url}"
+												target="_blank">已上传图片</a></font></notempty></td>
+									</tr>
+									<tr>
+										<td width="24%" align="right">身份证背面上传：</td>
+										<td width="76%" align="left"><input type="file"
+											name="card_pic2" size="14" /> <notempty name="Rvar.card_pic2">
+											<font color="#FF0000"><a href="/{$Rvar.card_pic1_url}"
+												target="_blank">已上传图片</a></font></notempty></td>
+									</tr>
+
+									<if
+										condition="($account.balance lt $_G['system']['con_id5_realname_fee']) AND ($_G.userinfo.realname_times gt $_G['system']['con_id5_realname_times']) ">
+
+									余额不足{$_G.system.con_id5_realname_fee}元，无法认证。请先<a
+										href="{:U('account/recharge_new')}">充值</a>。 <else />
+									<tr>
+										<td>&nbsp;</td>
+										<td><input type="submit" name="Submit" value="提交并继续"
+											class="btn1" /></td>
+									</tr>
+									</if>
+								</table>
+							</form>
+							</if>
+							<script>
+function formck(){
+	var frm = document.forms['formx'];
+	var realname = frm.elements['realname'].value;
+	var card_id = frm.elements['card_id'].value;
+	var card_pic1 = frm.elements['card_pic1'].value;
+		var card_pic2 = frm.elements['card_pic2'].value;
+	var errorMsg = '';
+	if (realname.length == 0 ) {
+		errorMsg += '* 真实姓名不能为空' + '\n';
+	}
+	if (card_id.length == 0 ) {
+		errorMsg += '* 身份证号不能为空' + '\n';
+	}
+	//if (card_pic1.length == 0 ) {
+//		errorMsg += '* 请上传身份证正面！' + '\n';
+//	}
+//	if (card_pic2.length == 0 ) {
+//		errorMsg += '* 请上传身份证反面！' + '\n';
+//	}
+	if (errorMsg.length > 0){
+		alert(errorMsg); return false;
+	}else{  
+		return true;
+	}
+}
+</script>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<include file="$footer" />
