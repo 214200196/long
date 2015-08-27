@@ -48,8 +48,7 @@ var guides = {'common' : {'common' : {
                     
 		}}
 
-		<?php echo ($_A["admin_module_left"]); ?>				
-		
+		<?php echo ($_A["admin_module_left"]); ?>
 	,
 	'other' : {'other' : {
 			

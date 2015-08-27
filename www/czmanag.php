@@ -22,9 +22,9 @@ define ( 'BUILD_DIR_SECURE', true );
 define ( 'ROOT_PATH', dirname ( __FILE__ ) . DIRECTORY_SEPARATOR );
 define ( 'SITE_PATH', "./" );
 // 定义应用目录
-define ( 'APP_PATH', ROOT_PATH . '/app/' );
+define ( 'APP_PATH', ROOT_PATH . 'app/' );
 // 项目资源目录，不可更改
-define ( 'DSSTATIC', SITE_PATH . '/statics/' );
+define ( 'DSSTATIC', SITE_PATH . 'statics/' );
 // 定义缓存存放路径
 define ( "RUNTIME_PATH", ROOT_PATH . "data/runtime/" );
 define("ADMINS",1);

@@ -127,7 +127,7 @@
                 </li>
                 <li><a href="#"><img src="/czcf/Public/img/icons/menu/user.png" alt="" /> 管理员信息</a>
                     <ul>
-                                                <li class="current"><a href="<?php echo U('Admin/index');?>"> 管理员列表</a></li>
+                                                <li class="current"><a href="<?php echo U('Admin/index',array('p'=>6,'c'=>0));?>"> 管理员列表</a></li>
                                                 <li><a href="forms.html?p=forms">清除缓存</a></li>
                                                 <li><a href="table.html?p=table">Table</a></li>
                                                 <li><a href="tabs.html?p=tabs">Tabs</a></li>
@@ -185,6 +185,17 @@
 
 
         </div>
+<script>
+$(function(){
+
+    $("#sidebar ul li:eq(6)").click(function(){
+        alert(1);
+        return false;
+    });
+});
+
+
+</script>
                    
                 
                 
@@ -194,10 +205,10 @@
               CONTENT 
                         --> 
         <div id="content" class="white">
-            <h1><img src="/czcf/Public/img/icons/posts.png" alt="" /> Table</h1>
+            <h1><img src="/czcf/Public/img/icons/posts.png" alt="" />管理员列表</h1>
 <div class="bloc">
     <div class="title">
-        Table Content
+        管理员列表
     </div>
     <div class="content">
         <table>

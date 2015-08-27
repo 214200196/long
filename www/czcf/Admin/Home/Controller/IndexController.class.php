@@ -8,6 +8,7 @@ class IndexController extends CommonController {
     	mysql_connect('localhost','root','root');
     	$this->myql_version = mysql_get_server_info();
     	//die;
+    	//p($this->admininfo());die();
         $this->display();
     }
 }

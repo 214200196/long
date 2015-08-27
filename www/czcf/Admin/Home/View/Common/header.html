@@ -31,10 +31,10 @@
             <a href="#" style="margin-left:15px;"><img src="__PUBLIC__/img/icons/top/logo.png" alt="" /></a>
             <div class="left">
                 <a href="#" class="button profile" style="top:10px;"><img src="__PUBLIC__/img/icons/top/huser.png" alt="" /></a>
-                Hi, 
-                <a href="#">admin</a>
+                你好, 
+                <a href="#">{$getAdminInfo.username}&nbsp;({$getAdminInfo.name})&nbsp;</a>
                 |
-                <a href="#">退出</a>
+                <a href="{:U('Login/loginOut')}">退出</a>
             </div>
             <div class="right">
                 <form action="#" id="search" class="search placeholder">

@@ -32,10 +32,10 @@
             <a href="#" style="margin-left:15px;"><img src="/czcf/Public/img/icons/top/logo.png" alt="" /></a>
             <div class="left">
                 <a href="#" class="button profile" style="top:10px;"><img src="/czcf/Public/img/icons/top/huser.png" alt="" /></a>
-                Hi, 
-                <a href="#">admin</a>
+                你好, 
+                <a href="#"><?php echo ($getAdminInfo["username"]); ?>&nbsp;(<?php echo ($getAdminInfo["name"]); ?>)&nbsp;</a>
                 |
-                <a href="#">退出</a>
+                <a href="<?php echo U('Login/loginOut');?>">退出</a>
             </div>
             <div class="right">
                 <form action="#" id="search" class="search placeholder">
@@ -56,9 +56,9 @@
                         首 页
                     </a>
                 </li>
-                <li class="current"><a href="#"><img src="/czcf/Public/img/icons/menu/layout.png" alt="" /> 借款管理</a>
+                <li><a href="#"><img src="/czcf/Public/img/icons/menu/layout.png" alt="" /> 借款管理</a>
                     <ul>
-                                                <li class="current"><a href="<?php echo U('Borrow/index');?>">借款信息</a></li>
+                                                <li class="current"><a href="<?php echo U('Borrow/index',array('p'=>1,'c'=>0));?>">借款信息</a></li>
                                                 <li><a href="forms.html?p=forms">Forms</a></li>
                                                 <li><a href="table.html?p=table">Table</a></li>
                                                 <li><a href="tabs.html?p=tabs">Tabs</a></li>
@@ -70,21 +70,7 @@
                                                 <li><a href="calendar.html?p=calendar">Calendar</a></li>
                                             </ul>
                 </li>
-                <li class="current"><a href="#"><img src="/czcf/Public/img/icons/menu/user.png" alt="" /> 会员管理</a>
-                    <ul>
-                                                <li class="current"><a href="<?php echo U('Borrow/index');?>">会员信息</a></li>
-                                                <li><a href="forms.html?p=forms">Forms</a></li>
-                                                <li><a href="table.html?p=table">Table</a></li>
-                                                <li><a href="tabs.html?p=tabs">Tabs</a></li>
-                                                <li><a href="gallery.html?p=gallery">Gallery</a></li>
-                                                <li><a href="notifications.html?p=notif">Notifications</a></li>
-                                                <li><a href="charts.html?p=charts">Charts</a></li>
-                                                <li><a href="typography.html?p=typo">Typography</a></li>
-                                                <li><a href="icons.html?p=icons">Icons</a></li>
-                                                <li><a href="calendar.html?p=calendar">Calendar</a></li>
-                                            </ul>
-                </li>
-                <li class="current"><a href="#"><img src="/czcf/Public/img/icons/menu/money.png" alt="" /> 资金管理</a>
+                <li><a href="#"><img src="/czcf/Public/img/icons/menu/users.png" alt="" /> 会员管理</a>
                     <ul>
                                                 <li class="current"><a href="<?php echo U('Borrow/index');?>">会员信息</a></li>
                                                 <li><a href="forms.html?p=forms">Forms</a></li>
@@ -98,7 +84,21 @@
                                                 <li><a href="calendar.html?p=calendar">Calendar</a></li>
                                             </ul>
                 </li>
-                <li class="current"><a href="#"><img src="/czcf/Public/img/icons/menu/page.png" alt="" /> 新闻管理</a>
+                <li><a href="#"><img src="/czcf/Public/img/icons/menu/money.png" alt="" /> 资金管理</a>
+                    <ul>
+                                                <li class="current"><a href="<?php echo U('Borrow/index');?>">会员信息</a></li>
+                                                <li><a href="forms.html?p=forms">Forms</a></li>
+                                                <li><a href="table.html?p=table">Table</a></li>
+                                                <li><a href="tabs.html?p=tabs">Tabs</a></li>
+                                                <li><a href="gallery.html?p=gallery">Gallery</a></li>
+                                                <li><a href="notifications.html?p=notif">Notifications</a></li>
+                                                <li><a href="charts.html?p=charts">Charts</a></li>
+                                                <li><a href="typography.html?p=typo">Typography</a></li>
+                                                <li><a href="icons.html?p=icons">Icons</a></li>
+                                                <li><a href="calendar.html?p=calendar">Calendar</a></li>
+                                            </ul>
+                </li>
+                <li ><a href="#"><img src="/czcf/Public/img/icons/menu/page.png" alt="" /> 新闻管理</a>
                     <ul>
                                                 <li class="current"><a href="<?php echo U('Borrow/index');?>">发布新闻</a></li>
                                                 <li><a href="forms.html?p=forms">Forms</a></li>
@@ -112,7 +112,7 @@
                                                 <li><a href="calendar.html?p=calendar">Calendar</a></li>
                                             </ul>
                 </li>
-                 <li class="current"><a href="#"><img src="/czcf/Public/img/icons/menu/chart.png" alt="" /> 数据统计</a>
+                 <li><a href="#"><img src="/czcf/Public/img/icons/menu/chart.png" alt="" /> 数据统计</a>
                     <ul>
                                                 <li class="current"><a href="<?php echo U('Borrow/index');?>">日报表</a></li>
                                                 <li><a href="forms.html?p=forms">Forms</a></li>
@@ -126,9 +126,23 @@
                                                 <li><a href="calendar.html?p=calendar">Calendar</a></li>
                                             </ul>
                 </li>
-                <li class="current"><a href="#"><img src="/czcf/Public/img/icons/menu/settings.png" alt="" /> 系统设置s</a>
+                <li><a href="#"><img src="/czcf/Public/img/icons/menu/user.png" alt="" /> 管理员信息</a>
                     <ul>
-                                                <li class="current"><a href="<?php echo U('Borrow/index');?>"> 数据库备份</a></li>
+                                                <li class="current"><a href="<?php echo U('Admin/index',array('p'=>6,'c'=>0));?>"> 管理员列表</a></li>
+                                                <li><a href="forms.html?p=forms">清除缓存</a></li>
+                                                <li><a href="table.html?p=table">Table</a></li>
+                                                <li><a href="tabs.html?p=tabs">Tabs</a></li>
+                                                <li><a href="gallery.html?p=gallery">Gallery</a></li>
+                                                <li><a href="notifications.html?p=notif">Notifications</a></li>
+                                                <li><a href="charts.html?p=charts">Charts</a></li>
+                                                <li><a href="typography.html?p=typo">Typography</a></li>
+                                                <li><a href="icons.html?p=icons">Icons</a></li>
+                                                <li><a href="calendar.html?p=calendar">Calendar</a></li>
+                                            </ul>
+                </li>
+                <li><a href="#"><img src="/czcf/Public/img/icons/menu/settings.png" alt="" /> 系统设置</a>
+                    <ul>
+                                                <li><a href="<?php echo U('Borrow/index');?>"> 数据库备份</a></li>
                                                 <li><a href="forms.html?p=forms">清除缓存</a></li>
                                                 <li><a href="table.html?p=table">Table</a></li>
                                                 <li><a href="tabs.html?p=tabs">Tabs</a></li>
@@ -172,6 +186,17 @@
 
 
         </div>
+<script>
+$(function(){
+
+    $("#sidebar ul:eq(0) li:eq(6)").click(function(){
+        alert(1);
+        return false;
+    });
+});
+
+
+</script>
                             
   
   
@@ -214,12 +239,12 @@
               CONTENT 
                         --> 
         <div id="content" class="white">
-            <h1><img src="/czcf/Public/img/icons/dashboard.png" alt="" /> Dashboard
+            <h1><img src="/czcf/Public/img/icons/dashboard.png" alt="" /> 首页
 </h1>
                 
 <div class="bloc left">
     <div class="title">
-        Dashboard
+        常访问模块
     </div>
     <div class="content dashboard">
         <div class="center">
@@ -238,10 +263,25 @@
             <a href="#" class="shortcut last">
                 <img src="/czcf/Public/img/event.png" alt="" width="48" height="48" />
                 Manage events
+            </a>            <a href="#" class="shortcut">
+                <img src="/czcf/Public/img/page.png" alt="" width="48" height="48"/>
+                Write an Article
+            </a>
+            <a href="#" class="shortcut">
+                <img src="/czcf/Public/img/picture.png" alt="" width="48" height="48" />
+                Write an Article
+            </a>
+            <a href="#" class="shortcut">
+                <img src="/czcf/Public/img/contact.png" alt="" width="48" height="48" />
+                Manage contacts
+            </a>
+            <a href="#" class="shortcut last">
+                <img src="/czcf/Public/img/event.png" alt="" width="48" height="48" />
+                Manage events
             </a>
             <div class="cb"></div>
         </div>
-        <p>Icons by <a href="http://icondrawer.com/">icondrawer.com</a></p>
+       
     </div>
 </div>
 
@@ -249,7 +289,7 @@
                 
 <div class="bloc right">
     <div class="title">
-        Today
+        今日概要统计
     </div>
     <div class="content">
         <div class="left">
@@ -273,6 +313,10 @@
                         <td>Categories</td>
                     </tr>
                     <tr>
+                        <td><h4>20 000</h4></td>
+                        <td>Contacts</td>
+                    </tr>
+                     <tr>
                         <td><h4>20 000</h4></td>
                         <td>Contacts</td>
                     </tr>
@@ -308,7 +352,7 @@
 
 
 <div class="cb"></div>
-<div class="bloc left">
+<div class="bloc">
     <div class="title">
         待审核及认证工作
     </div>
@@ -350,7 +394,45 @@
     </div>
 </div> 
 
-           
+<div class="bloc left">
+    <div class="title">
+        管理员信息
+    </div>
+    <div class="content dashboard">
+            <table class="noalt">
+                
+                    <tr>
+                        <td style="color:#4F94CD;">&nbsp;&nbsp;&nbsp;&nbsp;管理员名称:</td><td><?php echo ($getAdminInfo["adminname"]); ?></td>
+                    </tr>
+                    <tr>
+                        <td style="color:#4F94CD;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;所属部门:</td><td><?php echo ($getAdminInfo["name"]); ?></td>
+                    </tr>                    
+                    <tr>
+                        <td style="color:#4F94CD;">本次登入时间:</td><td><?php echo (date("Y-m-d H:i:s",$getAdminInfo["login_time"])); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="color:#4F94CD;">&nbsp;&nbsp;&nbsp;&nbsp;本次登入IP:</td><td>
+                        <?php if($getAdminInfo["update_ip"] != $getAdminInfo.login_ip): echo ($getAdminInfo["login_ip"]); ?>&nbsp;&nbsp;( <a style="color:red;">上次非本台电脑登入!</a> ) 
+                            <?php else: ?>
+                            <?php echo ($getAdminInfo["login_ip"]); endif; ?>
+                        </td>
+                    </tr>                    
+                    <tr>
+                        <td style="color:#4F94CD;">上次登入时间:</td><td><?php echo (date("Y-m-d H:i:s",$getAdminInfo["update_time"])); ?></td>
+                    </tr>
+                    <tr>
+                        <td style="color:#4F94CD;">&nbsp;&nbsp;&nbsp;&nbsp;上次登入IP:</td><td>
+                        <?php echo ($getAdminInfo["update_ip"]); ?>
+                        </td>
+                    </tr>
+                
+            </table>
+                 
+            
+            <div class="cb"></div>
+        </div>
+        
+</div>           
 
 <div class="bloc right">
     <div class="title">
@@ -384,9 +466,10 @@
             <div class="cb"></div>
         </div>
         
-</div>  
+</div> 
 
-<div class="bloc left">
+<div class="cb"></div>
+<div class="bloc">
     <div class="title">
         Shortcuts
     </div>
