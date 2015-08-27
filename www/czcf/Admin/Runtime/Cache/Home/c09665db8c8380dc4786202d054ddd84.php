@@ -23,6 +23,8 @@
 <link rel="stylesheet" href="/czcf/Public/content/settings/style.css" />
 
 
+
+
       
         <!--              
                 HEAD
@@ -44,9 +46,23 @@
                 </form>
             </div>
         </div>     
-            <!--            
-                SIDEBAR
-                         --> 
+            <!--左侧菜单选中菜单定义20150827-->
+        <script type="text/javascript">
+        // $(function(){
+            // 左侧拦js效果修改20150827
+            //$("#sidebar ul:first li:eq(2)").addClass("current");
+         //});
+                var pli = <?php echo ((isset($_GET['pli']) && ($_GET['pli'] !== ""))?($_GET['pli']):0); ?>;
+                var cli = <?php echo ((isset($_GET['cli']) && ($_GET['cli'] !== ""))?($_GET['cli']):0); ?>;
+        </script>
+
+        <!--<script type="text/javascript">
+            $ (function() {
+                $("#sidebar ul:first li:eq(1)").addClass("current");
+                $("#sidebar ul:first li:eq(1)").children().find("li:eq(1)").addClass("current");
+            });
+        </script>-->
+
         <div id="sidebar">
             <ul>
                 <li>
@@ -57,7 +73,7 @@
                 </li>
                 <li><a href="#"><img src="/czcf/Public/img/icons/menu/layout.png" alt="" /> 借款管理</a>
                     <ul>
-                                                <li class="current"><a href="<?php echo U('Borrow/index',array('p'=>1,'c'=>0));?>">借款信息</a></li>
+                                                <li class="current"><a href="<?php echo U('Borrow/index',array('pli'=>1,'cli'=>0));?>">借款信息</a></li>
                                                 <li><a href="forms.html?p=forms">Forms</a></li>
                                                 <li><a href="table.html?p=table">Table</a></li>
                                                 <li><a href="tabs.html?p=tabs">Tabs</a></li>
@@ -127,7 +143,7 @@
                 </li>
                 <li><a href="#"><img src="/czcf/Public/img/icons/menu/user.png" alt="" /> 管理员信息</a>
                     <ul>
-                                                <li class="current"><a href="<?php echo U('Admin/index',array('p'=>6,'c'=>0));?>"> 管理员列表</a></li>
+                                                <li class="current"><a href="<?php echo U('Admin/index',array('pli'=>6,'cli'=>0));?>"> 管理员列表</a></li>
                                                 <li><a href="forms.html?p=forms">清除缓存</a></li>
                                                 <li><a href="table.html?p=table">Table</a></li>
                                                 <li><a href="tabs.html?p=tabs">Tabs</a></li>
@@ -185,17 +201,9 @@
 
 
         </div>
-<script>
-$(function(){
-
-    $("#sidebar ul li:eq(6)").click(function(){
-        alert(1);
-        return false;
-    });
-});
 
 
-</script>
+
                    
                 
                 

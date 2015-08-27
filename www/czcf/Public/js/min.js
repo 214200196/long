@@ -339,10 +339,48 @@ if(matches[i]=='min'){options.min=matches[i+1]*1}}
 options.slide=function(event,ui){elem.find('span:first').empty().append(ui.value);elem.find('input:first').val(ui.value);}
 elem.find('span:first').empty().append(elem.find('input:first').val());options.range='min';options.value=elem.find('input:first').val();elem.find('.uirange').slider(options);$(this).hide();});$('.input.error input').focus(function(){$(this).parent().removeClass('error');$(this).parent().find('.error-message').fadeTo(500,0).slideUp();$(this).unbind('focus');});$('.notif .close').click(function(){$(this).parent().fadeTo(500,0).slideUp();return false;});var anchor=window.location.hash;$('.tabs').each(function(){var current=null;var id=$(this).attr('id');if(anchor!=''&&$(this).find('a[href="'+anchor+'"]').length>0){current=anchor;}else if($.cookie('tab'+id)&&$(this).find('a[href="'+$.cookie('tab'+id)+'"]').length>0){current=$.cookie('tab'+id);}else{current=$(this).find('a:first').attr('href');}
 $(this).find('a[href="'+current+'"]').addClass('active');$(current).siblings().hide();$(this).find('a').click(function(){var link=$(this).attr('href');if(link==current){return false;}else{$(this).addClass('active').siblings().removeClass('active');$(link).show().siblings().hide();current=link;$.cookie('tab'+id,current);}});});$('#content .checkall').change(function(){$(this).parents('table:first').find('input').attr('checked',$(this).is(':checked'));});var currentMenu=null;$('#sidebar>ul>li').each(function(){if($(this).find('li').length==0){$(this).addClass('nosubmenu');}})
-$('#sidebar>ul>li[class!="nosubmenu"]>a').each(function(){if(!$(this).parent().hasClass('current')){$(this).parent().find('ul:first').hide();}else{currentMenu=$(this);}
-$(this).click(function(){$('#sidebar>ul>li.current').removeClass('current');if(currentMenu!=null&&currentMenu.text()!=$(this).text()){currentMenu.parent().find('ul:first').slideUp();}
-if(currentMenu!=null&&currentMenu.text()==$(this).text()){currentMenu.parent().find('ul:first').slideUp();currentMenu=null;}else{currentMenu=$(this);currentMenu.parent().addClass('current');currentMenu.parent().find('ul:first').slideDown();}
-return false;});});$('.placeholder,#content.login .input').each(function(){var label=$(this).find('label:first');var input=$(this).find('input:first,textarea:first');if(input.val()!=''){label.stop().hide();}
+
+
+//指定显示栏目20150827
+if(pli) { 
+	$("#sidebar>ul:first>li:eq("+pli+")").addClass("current");
+	//$("#sidebar>ul:first>li:eq(3)").children().find("li:eq(1)").addClass("current");
+}
+
+
+$('#sidebar>ul>li[class!="nosubmenu"]>a').each(function(){
+
+	if(!$(this).parent().hasClass('current')){
+		$(this).parent().find('ul:first').hide();
+	}else{currentMenu=$(this);}
+
+	$(this).click(function(){
+		$('#sidebar>ul>li.current').removeClass('current');
+		if(currentMenu!=null&&currentMenu.text()!=$(this).text()){
+			currentMenu.parent().find('ul:first').slideUp();
+		}
+	if(currentMenu!=null&&currentMenu.text()==$(this).text()){
+		currentMenu.parent().find('ul:first').slideUp();currentMenu=null;
+	}else{
+
+		currentMenu=$(this);currentMenu.parent().addClass('current');
+		currentMenu.parent().find('ul:first').slideDown();
+	}
+
+	//return false;
+
+	});
+});
+
+// $("#sidebar>ul:first>li:eq(3)>a").click(function(){
+// 	alert(1);
+// });
+
+
+
+
+
+$('.placeholder,#content.login .input').each(function(){var label=$(this).find('label:first');var input=$(this).find('input:first,textarea:first');if(input.val()!=''){label.stop().hide();}
 input.focus(function(){if($(this).val()==''){label.stop().fadeTo(500,0.5);}
 $(this).parent().removeClass('error').find('.error-message').fadeOut();});input.blur(function(){if($(this).val()==''){label.stop().fadeTo(500,1);}});input.keypress(function(){label.stop().hide();});input.keyup(function(){if($(this).val()==''){label.stop().fadeTo(500,0.5);}});input.bind('cut copy paste',function(e){label.stop().hide();});});$('.close').click(function(){$(this).parent().fadeTo(500,0).slideUp();});$(window).resize(function(){$('.center').each(function(){$(this).css('display','inline');var width=$(this).width();if(parseInt($(this).height())<100){$(this).css({width:'auto'});}else{$(this).css({width:width});}
 $(this).css('display','block');});$('.calendar td').height($('.calendar td[class!="padding"]').width());});$(window).trigger('resize');function scrollTo(cible){if($(cible).length>=1){hauteur=$(cible).offset().top;}
