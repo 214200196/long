@@ -98,6 +98,15 @@
                  <li><a href="#"><img src="/czcf/Public/img/icons/menu/chart.png" alt="" /> 数据统计</a>
                     <ul>
                                                 <li><a href="<?php echo U('Borrow/index');?>">日报表</a></li>
+                                                <li><a href="">Forms</a></li>
+                                                <li><a href="">Table</a></li>
+                                                <li><a href="">Tabs</a></li>
+                                                <li><a href="">Gallery</a></li>
+                                                <li><a href="">Notifications</a></li>
+                                                <li><a href="">Charts</a></li>
+                                                <li><a href="">Typography</a></li>
+                                                <li><a href="">Icons</a></li>
+                                                <li><a href="">Calendar</a></li>
                                             </ul>
                 </li>
                 <li><a href="#"><img src="/czcf/Public/img/icons/menu/user.png" alt="" /> 管理员信息</a>
@@ -156,129 +165,107 @@
               CONTENT 
                         --> 
         <div id="content" class="white">
-            <h1><img src="/czcf/Public/img/icons/posts.png" alt="" />管理员列表</h1>
+            <h1><img src="/czcf/Public/img/icons/posts.png" alt="" /> 添加管理员</h1>
+
 <div class="bloc">
-    <div class="title">
-        管理员列表
-    </div>
+    <div class="title">添加管理员</div>
     <div class="content">
-        <table>
-            <thead>
-                <tr>
-                    <th><input type="checkbox" class="checkall"/></th>
-                    <th>ID</th>
-                    <th>管理员账号</th>
-                    <th>管理员姓名</th>
-                    <th>管理员类型</th>
-                    <th>最后登入时间</th>
-                    <th>最后登入IP</th>
-                    <!-- <th><img src="/czcf/Public/img/th-comment.png" alt="" /></th> -->
-                    <th>操作</th>
-                </tr>
-            </thead>
-            <tbody>
-            <?php if(is_array($getAdminList)): foreach($getAdminList as $key=>$v): ?><tr>
-                    <td><input type="checkbox" /></td>
-                    <td><?php echo ($v["id"]); ?></td>
-                    <td><?php echo ($v["username"]); ?></td>
-                    <td><?php echo ($v["adminname"]); ?></td>
-                    <td><?php echo ($v["name"]); ?></td>
-                    <td><?php echo (date("Y-m-d H:i:s",$v["login_time"])); ?></td>
-                    <td><?php echo ($v["login_ip"]); ?>&nbsp;(<?php echo ($v["location"]); ?>)</td>
-                    <td class="actions"><a href="#" title="编 辑"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="删 除"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr><?php endforeach; endif; ?>
-                                
-                            </tbody>
-        </table>
-        <div class="left input">
-            <select name="action" id="tableaction">
-                <option value="">选 择</option>
-                <option value="delete">删 除</option>
-            </select>
+        <div class="input">
+            <label for="input1">Text input</label>
+            <input type="text" id="input1" />
+            Some informations on how to use this field
         </div>
-        <div class="pagination">
-            <a href="#" class="prev">«</a>
-            <a href="#">1</a>
-            <a href="#" class="current">2</a>
-            ...
-            <a href="#">21</a>
-            <a href="#">22</a>
-            <a href="#" class="next">»</a>
+        <div class="input medium error">
+            <label for="input2">Medium input with error</label>
+            <input type="text" id="input2" />
+            <span class="error-message">This field can't be empty !</span>
+        </div>
+        <div class="input long">
+            <label for="input3">Loooooooooong input</label>
+            <input type="text" id="input3" />
+        </div>
+        <div class="input">
+            <label for="file">Upload a file</label>
+            <input type="file" id="file" />
+        </div>
+
+        <div class="input">
+            <label class="label">Checkboxes</label>
+            <input type="checkbox" id="check1" checked="checked"/><label for="check1" class="inline">This is a checkbox</label> <br/>
+            <input type="checkbox" id="check2" /><label for="check2" class="inline">Another one !</label> <br/>
+        </div>
+        <div class="input">
+            <label class="label">Radio</label>
+            <input type="radio" id="radio1" name="radiobutton"  checked="checked"/><label for="radio1" class="inline">This is a radio input</label> <br/>
+            <input type="radio" id="radio2"  name="radiobutton"/><label for="radio2" class="inline">And this is another radio input</label>
+        </div>
+        <div class="input">
+            <label for="select">This is a "select" input</label>
+            <select name="select" id="select">
+                <option value="1">First value</option>
+                <option value="2">Second value</option>
+                <option value="3">Third value</option>
+            </select>
+            Some informations on how to use this field
+        </div>
+        <div class="input textarea">
+            <label for="textarea1">Textarea</label>
+            <textarea name="text" id="textarea1" rows="7" cols="4"></textarea>
+        </div>
+        <div class="submit">
+            <input type="submit" value="Enregistrer" />
+            <input type="reset" value="Black button" class="black"/>
+            <input type="reset" value="White button" class="white"/>
         </div>
     </div>
 </div>
 
-
-
-
-
-
-<!-- <div class="bloc">
-    <div class="title">
-        Last comments
-    </div>
+<div class="bloc">
+    <div class="title">Advanced inputs</div>
     <div class="content">
-        <table class="noalt">
-            <tbody>
-                                <tr>
-                    <td class="picture" style="width:80px;"><img src="/czcf/Public/img/anonymous.png" alt="" /></td>
-                    <td>
-                        <p>
-                            <strong><a href="#">John Doe</a></strong><br/>
-                            <em>December 24, at 22:13 - <a href="#">Reply</a></em><br/>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt.
-                        </p>
-                    </td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td class="picture" style="width:80px;"><img src="/czcf/Public/img/anonymous.png" alt="" /></td>
-                    <td>
-                        <p>
-                            <strong><a href="#">John Doe</a></strong><br/>
-                            <em>December 24, at 22:13 - <a href="#">Reply</a></em><br/>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt.
-                        </p>
-                    </td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td class="picture" style="width:80px;"><img src="/czcf/Public/img/anonymous.png" alt="" /></td>
-                    <td>
-                        <p>
-                            <strong><a href="#">John Doe</a></strong><br/>
-                            <em>December 24, at 22:13 - <a href="#">Reply</a></em><br/>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt.
-                        </p>
-                    </td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td class="picture" style="width:80px;"><img src="/czcf/Public/img/anonymous.png" alt="" /></td>
-                    <td>
-                        <p>
-                            <strong><a href="#">John Doe</a></strong><br/>
-                            <em>December 24, at 22:13 - <a href="#">Reply</a></em><br/>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt.
-                        </p>
-                    </td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td class="picture" style="width:80px;"><img src="/czcf/Public/img/anonymous.png" alt="" /></td>
-                    <td>
-                        <p>
-                            <strong><a href="#">John Doe</a></strong><br/>
-                            <em>December 24, at 22:13 - <a href="#">Reply</a></em><br/>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt.
-                        </p>
-                    </td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                            </tbody>
-        </table>
+        <script type="text/javascript"><!--
+google_ad_client = "ca-pub-3413404722490728";
+/* postscript728+90postscript.html */
+google_ad_slot = "9238639693";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+        
     </div>
-</div>   -->      </div>
+</div>        
+
+<div class="bloc">
+    <div class="title">Advanced inputs</div>
+    <div class="content">
+        <div class="input">
+            <label for="input4">Datepicker using jQuery UI</label>
+            <input type="text" class="datepicker" id="input4"/>
+        </div>
+        <div class="input textarea">
+            <label for="textarea2">Autogrow WYSIWYG Textarea (<a href="https://github.com/akzhan/jwysiwyg">jwysiwyg</a>)</label>
+            <textarea name="text" id="textarea2" rows="7" class="wysiwyg" cols="4">
+                Here you <em>can have</em> some <strong>HTML Content</strong>
+            </textarea>
+        </div>
+        <div class="input">
+            <label>Range : $<span></span></label>
+            <input type="text" class="range min-10 max-60" value="35" />
+        </div>
+        
+        <div class="input">
+            <label for="iphonecheck" class="label">Iphone checkbox</label>
+            <input type="checkbox" id="iphonecheck" class="iphone"/>
+        </div>
+        
+        
+    </div>
+</div>        
+
+</div>
         
         
     </body>

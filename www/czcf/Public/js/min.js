@@ -344,7 +344,7 @@ $(this).find('a[href="'+current+'"]').addClass('active');$(current).siblings().h
 //指定显示栏目20150827
 if(pli) { 
 	$("#sidebar>ul:first>li:eq("+pli+")").addClass("current");
-	//$("#sidebar>ul:first>li:eq(3)").children().find("li:eq(1)").addClass("current");
+	$("#sidebar>ul:first>li:eq("+pli+")").children().find("li:eq("+cli+")").addClass("current");
 }
 
 
@@ -367,7 +367,7 @@ $('#sidebar>ul>li[class!="nosubmenu"]>a').each(function(){
 		currentMenu.parent().find('ul:first').slideDown();
 	}
 
-	//return false;
+	return false;
 
 	});
 });
