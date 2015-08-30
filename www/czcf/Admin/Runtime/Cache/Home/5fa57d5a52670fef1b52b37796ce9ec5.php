@@ -157,129 +157,53 @@
               CONTENT 
                         --> 
         <div id="content" class="white">
-            <h1><img src="/czcf/Public/img/icons/posts.png" alt="" />管理员列表</h1>
+            <h1><img src="/czcf/Public/img/icons/posts.png" alt="" /> 修改个人资料</h1>
+
 <div class="bloc">
-    <div class="title">
-        管理员列表
-    </div>
+    <div class="title">个人资料</div>
     <div class="content">
-        <table>
-            <thead>
-                <tr>
-                    <th><input type="checkbox" class="checkall"/></th>
-                    <th>ID</th>
-                    <th>管理员账号</th>
-                    <th>管理员姓名</th>
-                    <th>管理员类型</th>
-                    <th>最后登入时间</th>
-                    <th>最后登入IP</th>
-                    <!-- <th><img src="/czcf/Public/img/th-comment.png" alt="" /></th> -->
-                    <th>操作</th>
-                </tr>
-            </thead>
-            <tbody>
-            <?php if(is_array($getAdminList)): foreach($getAdminList as $key=>$v): ?><tr>
-                    <td><input type="checkbox" /></td>
-                    <td><?php echo ($v["id"]); ?></td>
-                    <td><?php echo ($v["username"]); ?></td>
-                    <td><?php echo ($v["adminname"]); ?></td>
-                    <td><?php echo ($v["name"]); ?></td>
-                    <td><?php echo (date("Y-m-d H:i:s",$v["login_time"])); ?></td>
-                    <td><?php echo ($v["login_ip"]); ?>&nbsp;(<?php echo ($v["location"]); ?>)</td>
-                    <td class="actions"><a href="#" title="编 辑"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="删 除"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr><?php endforeach; endif; ?>
-                                
-                            </tbody>
-        </table>
-        <div class="left input">
-            <select name="action" id="tableaction">
-                <option value="">选 择</option>
-                <option value="delete">删 除</option>
+    <form action = "<?php echo U('updateModify');?>" method="POST">
+        <div class="input">
+            <label >登入账号</label>
+            <label><?php echo ($getAdminInfo["username"]); ?></label>
+        </div>
+        <div class="input">
+            <label >修改登入密码</label>
+            <input type="text" name="pwd"/>
+            长度6以上位字母或数字组合 (若不修改请保留空)
+        </div>
+        <div class="input">
+            <label >管理员名称</label>
+            <input type="text" name="adminname" value="<?php echo ($getAdminInfo["adminname"]); ?>"/>
+        </div>
+
+        <div class="input">
+            <label for="select">管理员类型</label>
+            <select>
+                <option value="<?php echo ($v["id"]); ?>"><?php echo ($getAdminInfo["name"]); ?></option>
             </select>
+
         </div>
-        <div class="pagination">
-            <a href="#" class="prev">«</a>
-            <a href="#">1</a>
-            <a href="#" class="current">2</a>
-            ...
-            <a href="#">21</a>
-            <a href="#">22</a>
-            <a href="#" class="next">»</a>
+        <div class="input">
+            <label >QQ</label>
+            <input type="text" name="qq" value="<?php echo ($getAdminInfo["qq"]); ?>"/>
         </div>
+                <div class="input">
+            <label >手机号</label>
+            <input type="text" name="phone" value="<?php echo ($getAdminInfo["phone"]); ?>"/>
+        </div>
+
+            <input type="hidden" name="id" value="<?php echo ($getAdminInfo["id"]); ?>">
+
+        <div class="submit">
+            <input type="submit" value="提交" />
+        </div>
+    </form>
     </div>
 </div>
 
 
 
-
-
-
-<!-- <div class="bloc">
-    <div class="title">
-        Last comments
-    </div>
-    <div class="content">
-        <table class="noalt">
-            <tbody>
-                                <tr>
-                    <td class="picture" style="width:80px;"><img src="/czcf/Public/img/anonymous.png" alt="" /></td>
-                    <td>
-                        <p>
-                            <strong><a href="#">John Doe</a></strong><br/>
-                            <em>December 24, at 22:13 - <a href="#">Reply</a></em><br/>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt.
-                        </p>
-                    </td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td class="picture" style="width:80px;"><img src="/czcf/Public/img/anonymous.png" alt="" /></td>
-                    <td>
-                        <p>
-                            <strong><a href="#">John Doe</a></strong><br/>
-                            <em>December 24, at 22:13 - <a href="#">Reply</a></em><br/>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt.
-                        </p>
-                    </td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td class="picture" style="width:80px;"><img src="/czcf/Public/img/anonymous.png" alt="" /></td>
-                    <td>
-                        <p>
-                            <strong><a href="#">John Doe</a></strong><br/>
-                            <em>December 24, at 22:13 - <a href="#">Reply</a></em><br/>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt.
-                        </p>
-                    </td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td class="picture" style="width:80px;"><img src="/czcf/Public/img/anonymous.png" alt="" /></td>
-                    <td>
-                        <p>
-                            <strong><a href="#">John Doe</a></strong><br/>
-                            <em>December 24, at 22:13 - <a href="#">Reply</a></em><br/>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt.
-                        </p>
-                    </td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td class="picture" style="width:80px;"><img src="/czcf/Public/img/anonymous.png" alt="" /></td>
-                    <td>
-                        <p>
-                            <strong><a href="#">John Doe</a></strong><br/>
-                            <em>December 24, at 22:13 - <a href="#">Reply</a></em><br/>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt.
-                        </p>
-                    </td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                            </tbody>
-        </table>
-    </div>
-</div>   -->      </div>
         
         
     </body>

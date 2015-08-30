@@ -104,6 +104,7 @@
                     <ul>
                                                 <li><a href="<?php echo U('Admin/index',array('pli'=>6,'cli'=>0));?>"> 管理员列表</a></li>
                                                 <li><a href="<?php echo U('Admin/addAdmin',array('pli'=>6,'cli'=>1));?>">添加管理员</a></li>
+                                                <li><a href="<?php echo U('Admin/modifyAdmin',array('pli'=>6,'cli'=>2));?>">修改个人资料</a></li>
                                             </ul>
                 </li>
                 <li><a href="#"><img src="/czcf/Public/img/icons/menu/settings.png" alt="" /> 系统设置</a>
