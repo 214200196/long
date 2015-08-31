@@ -9191,3 +9191,1770 @@ SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0120s ]
 SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0130s ]
 SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'longjianwei1' LIMIT 1   [ RunTime:0.0010s ]
 
+[ 2015-08-31T20:16:21+08:00 ] ::1 /czcf/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000761s ]
+
+[ 2015-08-31T20:16:24+08:00 ] ::1 /czcf/home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001441s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001644s ]
+
+[ 2015-08-31T20:16:24+08:00 ] ::1 /czcf/home/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001866s ]
+
+[ 2015-08-31T20:16:30+08:00 ] ::1 /czcf/home/login/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0189s ]
+SQL: SELECT * FROM `yyd_admin` WHERE `username` = 'longjianwei' AND `password` = '29fd06e62faa920cbe4b9c62018aa064' LIMIT 1   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001917s ]
+
+[ 2015-08-31T20:16:33+08:00 ] ::1 /czcf/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0148s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0183s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '10' LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Use of undefined constant login_ip - assumed 'login_ip' C:\php\www\czcf\Admin\Runtime\Cache\Home\55843b8195cd32862e5dfa640df6e51d.php 第 367 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\55843b8195cd32862e5dfa640df6e51d.php 第 373 行.
+NOTIC: [8] Undefined index: SYSTEMROOT C:\php\www\czcf\Admin\Runtime\Cache\Home\55843b8195cd32862e5dfa640df6e51d.php 第 397 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001283s ]
+
+[ 2015-08-31T20:16:37+08:00 ] ::1 /czcf/home/admin/modifyadmin/pli/6/cli/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0167s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0158s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '10' LIMIT 1   [ RunTime:0.0022s ]
+NOTIC: [8] unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 0 of 280 bytes C:\php\www\czcf\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0094s ]
+SQL: SELECT `id`,`name` FROM `yyd_admin_type`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Undefined variable: v C:\php\www\czcf\Admin\Runtime\Cache\Home\5fa57d5a52670fef1b52b37796ce9ec5.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002282s ]
+
+[ 2015-08-31T20:16:40+08:00 ] ::1 /czcf/home/admin/index/pli/6/cli/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0159s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0108s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '10' LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001408s ]
+
+[ 2015-08-31T20:16:49+08:00 ] ::1 /czcf/home/admin/deladmin/id/19
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0065s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '10' LIMIT 1   [ RunTime:0.0010s ]
+SQL: DELETE FROM `yyd_admin` WHERE `id` = 19 LIMIT 1  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001102s ]
+
+[ 2015-08-31T20:16:52+08:00 ] ::1 /czcf/home/admin/index/pli/6/cli/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0052s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '10' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001588s ]
+
+[ 2015-08-31T20:16:56+08:00 ] ::1 /czcf/home/admin/deladmin/id/18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002035s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0157s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0131s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '10' LIMIT 1   [ RunTime:0.0020s ]
+SQL: DELETE FROM `yyd_admin` WHERE `id` = 18 LIMIT 1  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001644s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001275s ]
+
+[ 2015-08-31T20:16:59+08:00 ] ::1 /czcf/home/admin/index/pli/6/cli/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0176s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0172s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '10' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001428s ]
+
+[ 2015-08-31T20:17:04+08:00 ] ::1 /czcf/home/admin/deladmin/id/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001406s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0060s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '10' LIMIT 1   [ RunTime:0.0012s ]
+SQL: DELETE FROM `yyd_admin` WHERE `id` = 15 LIMIT 1  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000898s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001095s ]
+
+[ 2015-08-31T20:17:07+08:00 ] ::1 /czcf/home/admin/index/pli/6/cli/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001330s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0079s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '10' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 187 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' C:\php\www\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 189 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002248s ]
+
+[ 2015-08-31T20:17:19+08:00 ] ::1 /czcf/home/api/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+NOTIC: [8] Undefined index: smmkey C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000760s ]
+
+[ 2015-08-31T20:17:44+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001353s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+
+[ 2015-08-31T20:17:55+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+
+[ 2015-08-31T20:18:02+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+
+[ 2015-08-31T20:18:26+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/password/123123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001466s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+
+[ 2015-08-31T20:18:30+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/password/123123/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+
+[ 2015-08-31T20:18:33+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/password/12312dd3/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+
+[ 2015-08-31T20:18:37+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/password/12312dd3/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+
+[ 2015-08-31T20:19:46+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/?password=12312dd3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001693s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+
+[ 2015-08-31T20:20:32+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/?password=12312dd1111113
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001851s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+
+[ 2015-08-31T20:20:39+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/password/=12312dd1111113
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001243s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+
+[ 2015-08-31T20:20:42+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/password/=12312dd1111113
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+
+[ 2015-08-31T20:20:59+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/123123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0070s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '123123' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2015-08-31T20:21:03+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/123123/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0083s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '123123' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2015-08-31T20:21:08+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/longjianwei/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001437s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0071s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'longjianwei' LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2015-08-31T20:21:16+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/longjianwei1/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0084s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'longjianwei1' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2015-08-31T20:21:19+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username//
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+
+[ 2015-08-31T20:22:00+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/''
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001618s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0076s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '\'\'' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2015-08-31T20:22:05+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/''/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001444s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0063s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '\'\'' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2015-08-31T20:22:19+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/longjianwei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0065s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'longjianwei' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2015-08-31T20:22:24+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/lo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001561s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0104s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'lo' LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2015-08-31T20:23:01+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/lodfjljkdlf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0067s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'lodfjljkdlf' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2015-08-31T20:23:09+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/lodfjljkdlf/password
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001724s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0068s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'lodfjljkdlf' LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2015-08-31T20:23:14+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/lodfjljkdlf/password/dljklfjdlf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0074s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'lodfjljkdlf' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2015-08-31T20:24:34+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/lodfjljkdlf/password/dljklfjdlf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0073s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'lodfjljkdlf' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2015-08-31T20:24:36+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/lodfjljkdlf/password/dljklfjdlf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0066s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'lodfjljkdlf' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2015-08-31T20:24:40+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/lodfjljkdlf/password/dljklfjdlf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0060s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'lodfjljkdlf' LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2015-08-31T20:24:43+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/lodfjljkdlf/password/dljklfjdlf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0061s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'lodfjljkdlf' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2015-08-31T20:25:26+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/lodfjljkdlf/password/dljklfjdlf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0157s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0093s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'lodfjljkdlf' LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2015-08-31T20:25:39+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/lodfjljkdlf/password/dljklfjdlf0000
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0095s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'lodfjljkdlf' LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2015-08-31T20:26:03+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username//password/dljklfjdlf0000
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001490s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0171s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0115s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'password' LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2015-08-31T20:26:09+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username//password/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0157s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0190s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'password' LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2015-08-31T20:26:13+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/1/password/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0086s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '1' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2015-08-31T20:26:18+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/1/password/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001371s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0059s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '1' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2015-08-31T20:26:23+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/111111/password/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0147s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0153s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '111111' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2015-08-31T20:27:12+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/111111/password/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0087s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '111111' LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2015-08-31T20:27:17+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/111111/password/1111111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0181s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0124s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '111111' LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2015-08-31T20:27:20+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/111111/password/11111111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0060s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '111111' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2015-08-31T20:28:04+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/111111/password/11111111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0073s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '111111' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2015-08-31T20:28:13+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/111111/password/hkjhkljhklhjkl
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0145s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0173s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '111111' LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2015-08-31T20:28:42+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/111111/password/hkjhkljhklhjkl/email/23333333333
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0101s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '111111' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2015-08-31T20:28:51+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/111111/email/23333333333/password/hkjhkljhklhjkl/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0157s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0182s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '111111' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2015-08-31T20:29:00+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/111111/email/23333333333/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001651s ]
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0158s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0137s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '111111' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2015-08-31T20:29:06+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/111111/email/23333333333/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0169s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0166s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '111111' LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2015-08-31T20:36:25+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/111111/email/23333333333/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001656s ]
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+NOTIC: [8] Undefined index: niname C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 44 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0061s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '111111' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2015-08-31T20:36:29+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+NOTIC: [8] Undefined index: niname C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 44 行.
+
+[ 2015-08-31T20:36:41+08:00 ] ::1 /czcf/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0158s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0151s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '10' LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000642s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000966s ]
+NOTIC: [8] Use of undefined constant login_ip - assumed 'login_ip' C:\php\www\czcf\Admin\Runtime\Cache\Home\55843b8195cd32862e5dfa640df6e51d.php 第 367 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given C:\php\www\czcf\Admin\Runtime\Cache\Home\55843b8195cd32862e5dfa640df6e51d.php 第 373 行.
+NOTIC: [8] Undefined index: SYSTEMROOT C:\php\www\czcf\Admin\Runtime\Cache\Home\55843b8195cd32862e5dfa640df6e51d.php 第 397 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001286s ]
+
+[ 2015-08-31T20:38:23+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001574s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+NOTIC: [8] Undefined index: niname C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 44 行.
+
+[ 2015-08-31T20:38:39+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+NOTIC: [8] Undefined index: niname C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 44 行.
+
+[ 2015-08-31T20:39:40+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+NOTIC: [8] Undefined index: niname C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 44 行.
+
+[ 2015-08-31T20:39:44+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+NOTIC: [8] Undefined index: niname C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 44 行.
+
+[ 2015-08-31T20:39:50+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+NOTIC: [8] Undefined index: niname C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 44 行.
+
+[ 2015-08-31T20:40:03+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001215s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+NOTIC: [8] Undefined index: niname C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 44 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+
+[ 2015-08-31T20:40:07+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+NOTIC: [8] Undefined index: niname C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 44 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+
+[ 2015-08-31T20:40:11+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+NOTIC: [8] Undefined index: niname C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 44 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+
+[ 2015-08-31T20:40:28+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 40 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 41 行.
+NOTIC: [8] Undefined index: niname C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 44 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+
+[ 2015-08-31T20:40:57+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0174s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0089s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2015-08-31T20:41:13+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0067s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2015-08-31T20:41:22+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0168s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0114s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2015-08-31T20:41:28+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0171s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin1' LIMIT 1   [ RunTime:0.0018s ]
+
+[ 2015-08-31T20:41:32+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0155s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0181s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin' LIMIT 1   [ RunTime:0.0019s ]
+
+[ 2015-08-31T20:42:14+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+NOTIC: [8] Undefined variable: data C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0170s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin' LIMIT 1   [ RunTime:0.0027s ]
+
+[ 2015-08-31T20:42:19+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+NOTIC: [8] Undefined variable: data C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0128s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin1' LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2015-08-31T20:42:26+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+NOTIC: [8] Undefined variable: data C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0149s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0164s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2015-08-31T20:43:51+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0119s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin' LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2015-08-31T20:44:34+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0059s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2015-08-31T20:44:38+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0154s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin1' LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2015-08-31T20:44:42+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0088s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin' LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2015-08-31T20:44:47+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001646s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0090s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin11' LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2015-08-31T20:44:52+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0062s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin11' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2015-08-31T20:44:57+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000967s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0064s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2015-08-31T20:45:06+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0088s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin111111' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2015-08-31T20:51:12+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0084s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2015-08-31T20:51:20+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0059s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin11' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2015-08-31T20:51:30+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0059s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin11' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2015-08-31T20:51:42+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0071s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin11' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+
+[ 2015-08-31T20:53:09+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0091s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2015-08-31T20:53:18+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001487s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0073s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin111' LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2015-08-31T20:54:45+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0149s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0160s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'admin111' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2015-08-31T20:58:45+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0061s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'longjianwei1' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2015-08-31T20:59:11+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0179s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'longjianwei1' LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+
+[ 2015-08-31T21:00:27+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001480s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0168s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0140s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'longjianwei1' LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+
+[ 2015-08-31T21:01:15+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0194s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'longjianwei1' LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2015-08-31T21:01:26+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001515s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0147s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0182s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = 'longjianwei1' LIMIT 1   [ RunTime:0.0021s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+
+[ 2015-08-31T21:42:53+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001433s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0175s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0197s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '13568946' LIMIT 1   [ RunTime:0.0021s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+
+[ 2015-08-31T21:44:11+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0073s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '13568946' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2015-08-31T21:44:25+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001476s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0168s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0162s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '13568946' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2015-08-31T21:44:40+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001816s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0173s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.username = '13568946' LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2015-08-31T21:45:45+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001486s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+
+[ 2015-08-31T21:45:51+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, boolean given C:\php\www\czcf\ThinkPHP\Library\Think\Model.class.php 第 1054 行.
+
+[ 2015-08-31T21:46:38+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0148s ]
+
+[ 2015-08-31T21:47:12+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001547s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0105s ]
+
+[ 2015-08-31T21:47:19+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0090s ]
+
+[ 2015-08-31T21:47:33+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0073s ]
+
+[ 2015-08-31T21:48:21+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `yyd_users` WHERE `username` = '13568946' LIMIT 1   [ RunTime:0.0024s ]
+SQL: INSERT INTO `yyd_users` (`email`,`username`,`password`,`reg_ip`,`reg_time`) VALUES ('13568946@qq.com','13568946','7ce8636c076f5f42316676f7ca5ccfbe','0.0.0.0','1441028900') [ RunTime:0.0038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002572s ]
+
+[ 2015-08-31T21:50:13+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/username/111111/email/23333333333/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 37 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 38 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0153s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'email' cannot be null
+
+[ 2015-08-31T21:50:16+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001702s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 37 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 38 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0176s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'email' cannot be null
+
+[ 2015-08-31T21:50:20+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+NOTIC: [8] Undefined index: email C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 37 行.
+NOTIC: [8] Undefined index: username C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 38 行.
+NOTIC: [8] Undefined index: password C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0162s ]
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'email' cannot be null
+
+[ 2015-08-31T21:50:30+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001411s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `yyd_users` WHERE `username` = '13568946' LIMIT 1   [ RunTime:0.0014s ]
+SQL: INSERT INTO `yyd_users` (`email`,`username`,`password`,`reg_ip`,`reg_time`) VALUES ('13131','13568946','7ce8636c076f5f42316676f7ca5ccfbe','0.0.0.0','1441029029') [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001853s ]
+
+[ 2015-08-31T21:52:30+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `yyd_users` WHERE `username` = '13568946' LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: db C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 56 行.
+
+[ 2015-08-31T21:52:35+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `yyd_users` WHERE `username` = '13568946' LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [8] Undefined variable: db C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 56 行.
+
+[ 2015-08-31T21:52:40+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001160s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `yyd_users` WHERE `username` = '13568946' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: db C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 56 行.
+
+[ 2015-08-31T21:53:05+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `yyd_users` WHERE `username` = '13568946' LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [8] Undefined variable: db C:\php\www\czcf\Admin\Home\Controller\ApiController.class.php 第 56 行.
+
+[ 2015-08-31T21:55:54+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0154s ]
+SQL: SELECT * FROM `yyd_users` WHERE `username` = '13568946' LIMIT 1   [ RunTime:0.0023s ]
+
+[ 2015-08-31T21:56:04+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `yyd_users` WHERE `username` = '13568946' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2015-08-31T21:56:08+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `yyd_users` WHERE `username` = '13568946' LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2015-08-31T21:56:16+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001697s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `yyd_users` WHERE `username` = '13568946' LIMIT 1   [ RunTime:0.0021s ]
+SQL: INSERT INTO `yyd_users` (`email`,`username`,`password`,`reg_ip`,`reg_time`) VALUES ('11111@qq.com','13568946','cd35464587d00ced0678ce89aa2d59bd','0.0.0.0','1441029375') [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002695s ]
+
+[ 2015-08-31T21:58:04+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0182s ]
+SQL: SELECT * FROM `yyd_users` WHERE `username` = '13568946' LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2015-08-31T21:58:33+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002175s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `yyd_users` WHERE `username` = 'longjianwei2' LIMIT 1   [ RunTime:0.0013s ]
+SQL: INSERT INTO `yyd_users` (`email`,`username`,`password`,`reg_ip`,`reg_time`) VALUES ('214200196@qq.com','longjianwei2','29fd06e62faa920cbe4b9c62018aa064','0.0.0.0','1441029512') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001609s ]
+
+[ 2015-08-31T22:01:32+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001908s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `yyd_users` WHERE `username` = 'longjianwei3' LIMIT 1   [ RunTime:0.0012s ]
+SQL: INSERT INTO `yyd_users` (`email`,`username`,`password`,`reg_ip`,`reg_time`) VALUES ('123123@qq.com','longjianwei3','4297f44b13955235245b2497399d7a93','0.0.0.0','1441029691') [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0063s ]
+SQL: INSERT INTO `yyd_users_info` (`user_id`,`niname`) VALUES ('42','123123') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002253s ]
+
+[ 2015-08-31T22:12:38+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `yyd_users` WHERE `username` = 'longjianwei5' LIMIT 1   [ RunTime:0.0009s ]
+SQL: INSERT INTO `yyd_users` (`email`,`username`,`password`,`reg_ip`,`reg_time`) VALUES ('214200196@qq.com','longjianwei5','29fd06e62faa920cbe4b9c62018aa064','0.0.0.0','1441030357') [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0058s ]
+SQL: INSERT INTO `yyd_users_info` (`user_id`,`niname`,`type_id`,`status`) VALUES ('43','long','1','1') [ RunTime:0.0006s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname,users_info.type_id AS type_id,users_info.status AS status FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.user_id = '43' LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001184s ]
+
+[ 2015-08-31T22:17:45+08:00 ] ::1 /czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `yyd_users` WHERE `username` = 'longjianwei6' LIMIT 1   [ RunTime:0.0009s ]
+SQL: INSERT INTO `yyd_users` (`email`,`username`,`password`,`reg_ip`,`reg_time`) VALUES ('214200196@qq.com','longjianwei6','29fd06e62faa920cbe4b9c62018aa064','0.0.0.0','1441030664') [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0071s ]
+SQL: INSERT INTO `yyd_users_info` (`user_id`,`niname`,`type_id`,`status`) VALUES ('44','longlong','1','1') [ RunTime:0.0007s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.password AS password,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users_info.niname AS niname,users_info.type_id AS type_id,users_info.status AS status FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id WHERE users.user_id = '44' LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001579s ]
+

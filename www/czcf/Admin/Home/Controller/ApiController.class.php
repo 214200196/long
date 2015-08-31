@@ -33,29 +33,41 @@ class ApiController extends Controller {
 
     // 注册接口
     public function register () {
-        $db = D('UserView');
 
         $data = array(
-            'email'    => $_GET['email'],
-            'username' => $_GET['username'],
-            'password' => md5($_GET['password']),
+            'email'    => $_POST['email'],
+            'username' => $_POST['username'],
+            'password' => md5($_POST['password']),
             'reg_ip'   => get_client_ip(),
-            'reg_time' => time()
+            'reg_time' => time(),
         );
-        
+
         // 验证规则
         $rules = array(
              array('username','require','账号不能为空'), //默认情况下用正则进行验证
              array('username','require','账号已存在',0,'unique'),
              array('username','/^[\S]{6,15}$/','账号格式不正确字母或数字长度6~15位',0,'regex'), //默认情况下用正则进行验证
-             array('password','/^[\w]{6,15}$/','密码格式不正确字母或数字长度6~15位',0,'regex'), // 自定义函数验证密码格式
+             array('password','/^[\S]{6,15}$/','密码格式不正确字母或数字长度6~15位',0,'regex'), // 自定义函数验证密码格式
              array('email','require','邮箱不能为空'), 
-             array('email','email','邮箱格式错误')
+             array('email','email','邮箱格式错误'),
 
        );
-
-        if ( ! $db->validate($rules)->create($data) ) {
-            echo ($db->getError()); exit;
+        // 另一种验证规则 ! $db->validate($rules)->create($data) 
+        if ( ! M('users')->validate($rules)->create() ) {
+            echo json_encode(array('validate'=>'注册失败！','validateStatus'=>0));
+            echo json_encode( M('users')->getError()); exit;
         }
+
+        $usersDb = M('users')->add($data);
+
+        if( $usersDb ) {
+            M('users_info')->add(array('user_id'=>$usersDb,'niname'=>$_POST['niname'],'type_id'=>1,'status'=>1));
+            echo json_encode(array('validate'=>'注册成功！','validateStatus'=>1));
+            // 注册完成后获取该用户信息
+            $memberInfo = D('UserView')->where(array('user_id'=>$usersDb))->find();
+            echo json_encode($memberInfo);
+        }
+
+
     }
 }
