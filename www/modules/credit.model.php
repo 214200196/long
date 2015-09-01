@@ -1,3 +1,33 @@
-<?php // This file is protected by copyright dongshan
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=3012;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMTgxKTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ1pDSHhEbDlCT3k3bVM2Ri9YSlJHSXZyak10ZXFkWWlzd1E0VEVwTDAxdWs1V24zZ1ZQb2FLek5jaDhmMlVBK2I9JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+
+<?php
+$MsgInfo ["credit_class_id_empty"] = "积分分类id不能为空";
+$MsgInfo ["credit_class_del_type_exiest"] = "积分类型有存在，不能删除此分类";
+$MsgInfo ["credit_class_update_type_exiest"] = "积分类型有存在，不能修改此分类";
+$MsgInfo ["credit_class_name_empty"] = "积分分类名称不能为空";
+$MsgInfo ["credit_class_nid_empty"] = "积分分类标识名不能为空";
+$MsgInfo ["credit_class_nid_exiest"] = "积分分类标识名已经存在";
+$MsgInfo ["credit_class_add_success"] = "积分分类添加成功";
+$MsgInfo ["credit_class_update_success"] = "积分分类修改成功";
+$MsgInfo ["credit_class_del_success"] = "积分分类删除成功";
+$MsgInfo ["credit_class_not_exiest"] = "积分分类不存在";
+$MsgInfo ["credit_class_del_rank_exiest"] = "积分分类有等级存在，不能删除";
+$MsgInfo ["credit_type_name_empty"] = "积分类型名称不能为空";
+$MsgInfo ["credit_type_nid_empty"] = "积分类型标识名不能为空";
+$MsgInfo ["credit_type_value_empty"] = "积分类型积分值不能为空";
+$MsgInfo ["credit_type_nid_exiest"] = "积分类型标识名已经存在";
+$MsgInfo ["credit_type_interval_empty"] = "积分类型时间不能为空";
+$MsgInfo ["credit_type_award_times_empty"] = "积分类型次数不能为空";
+$MsgInfo ["credit_type_class_id_empty"] = "积分类型分类不能为空";
+$MsgInfo ["credit_type_add_success"] = "积分类型添加成功";
+$MsgInfo ["credit_type_update_success"] = "积分类型修改成功";
+$MsgInfo ["credit_type_del_credit_exiest"] = "积分类型有积分存在，不能删除";
+$MsgInfo ["credit_type_update_credit_exiest"] = "积分类型有积分存在，不能修改";
+$MsgInfo ["credit_type_del_success"] = "积分类型删除成功";
+$MsgInfo ["credit_rank_id_empty"] = "积分等级id不能为空";
+$MsgInfo ["credit_rank_add_success"] = "积分等级添加成功";
+$MsgInfo ["credit_rank_update_success"] = "积分等级修改成功";
+$MsgInfo ["credit_rank_del_success"] = "积分等级删除成功";
+$MsgInfo ["credit_rank_name_empty"] = "积分等级名称不能为空";
+$MsgInfo ["credit_log_id_empty"] = "积分记录id不能为空";
+$MsgInfo ["credit_log_not_exiest"] = "积分记录不存在";
+?>

@@ -26,6 +26,15 @@ class LoginController extends Controller {
 			//dump($admin);
 			if($admin) {
 				session('uid',$admin['id']);
+				// 修改上次登入时间ip和本次登入时间ip
+				$data = array (
+					'update_time'=> $admin['login_time'],
+					'update_ip'  => $admin['login_ip'],
+					'login_time' => time(),
+					'login_ip'   => get_client_ip()    
+				);
+				M('admin')->where(array('id'=>$admin['id']))->save($data);
+
 				$this->success('登入成功正在为你跳转....',U('Index/index'));
 			} else {
 				$this->error('账号或密码错误！','',1);

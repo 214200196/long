@@ -23,7 +23,16 @@ class ApiController extends Controller {
                echo json_encode(array('validate'=>'登入成功！','validateStatus'=>1));
                echo json_encode($userInfo);
                // 更新登入时间及登入次数待完成
+               // 上次时间等于最后时间  最后时间等于当前时间
+               $data = array(
+                    'logintime' => ( $userInfo['logintime'] + 1 ),
+                    'up_ip'     => $userInfo['last_ip'],
+                    'up_time'   => $userInfo['last_time'],
+                    'last_ip'   => get_client_ip(),
+                    'last_time' => time() 
+                );
 
+               M('users')->where(array('user_id'=>$userInfo['user_id']))->save($data);
 
             } else {
                echo json_encode(array('validate'=>'账号或密码错误！','validateStatus'=>0)); 
@@ -68,6 +77,14 @@ class ApiController extends Controller {
             echo json_encode($memberInfo);
         }
 
-
+    }
+    // 账号金额接口
+    public function accountInfo() { 
+        if( ! empty($_GET['user_id'])) {
+            $accountInfo = M('account')->where(array('user_id'=>intval($_GET['user_id'])))->find();
+            echo json_encode($accountInfo);
+        } else {
+            echo json_encode("账号不存在");
+        }
     }
 }

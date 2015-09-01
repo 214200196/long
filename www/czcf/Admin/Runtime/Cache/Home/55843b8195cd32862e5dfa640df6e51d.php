@@ -16,6 +16,27 @@
         -->
         <link rel="stylesheet" href="/czcf/Public/css/min.css" />
         <script type="text/javascript" src="/czcf/Public/js/min.js"></script>
+        <!--分页选中样式控制-->
+        <style>
+            .pagination .current{
+                display: inline-block;
+                height: 20px;
+                width: 20px;
+                line-height: 20px;
+                margin: 0 1px 0 0;
+                border-radius: 3px 3px 3px 3px;
+                text-align: center;
+                background: url(/czcf/Public/css/img/buttons.png) left -68px;
+                border: 1px solid #3580A9;
+                /*+text-shadow:0px -1px 0px #2C6AA3;*/
+                -moz-text-shadow: 0px -1px 0px #2C6AA3;
+                -webkit-text-shadow: 0px -1px 0px #2C6AA3;
+                -o-text-shadow: 0px -1px 0px #2C6AA3;
+                text-shadow: 0px -1px 0px #2C6AA3;
+                color: #D4E6EF;
+                font-weight: bold;
+            }
+        </style>
         
     </head>
     <body>
@@ -80,7 +101,7 @@
                 </li>
                 <li><a href="#"><img src="/czcf/Public/img/icons/menu/users.png" alt="" /> 会员管理</a>
                     <ul>
-                                                <li><a href="<?php echo U('Borrow/index');?>">会员信息</a></li>
+                                                <li><a href="<?php echo U('Member/index',array('pli'=>2,'cli'=>0));?>">会员信息</a></li>
 
                                             </ul>
                 </li>

@@ -1,0 +1,137 @@
+    <include file="Common:header"/>     
+    <include file="Common:left"/>   
+                
+                
+                
+                
+        <!--            
+              CONTENT 
+                        --> 
+        <div id="content" class="white">
+            <h1><img src="__PUBLIC__/img/icons/posts.png" alt="" />会员信息列表</h1>
+<div class="bloc">
+    <div class="title">
+        会员列表
+    </div>
+    <div class="content">
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" class="checkall"/></th>
+                    <th>ID&nbsp;&nbsp;</th>
+                    <th>账号</th>
+                    <th>邮箱</th>
+                    <th>昵称</th>
+                    <th>登入次数</th>
+                    <th>注册IP</th>
+                    <th>注册时间</th>
+                    <th>最后登入IP</th>
+                    <th>最后登入时间</th>
+                    <!-- <th><img src="__PUBLIC__/img/th-comment.png" alt="" /></th> -->
+                    <th>&nbsp;&nbsp;&nbsp;&nbsp;操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            <foreach name="members" item="v">
+                <tr>
+                    <td><input type="checkbox" /></td>
+                    <td>{$v.user_id}</td>
+                    <td>{$v.username}</td>
+                    <td>{$v.email}</td>
+                    <td>{$v.niname}</td>
+                    <td>{$v.logintime}</td>
+                    <td>{$v.reg_ip}</td>
+                    <td>{$v.reg_time|date="Y-m-d H:i:s",###}</td>
+                    <td>{$v.last_ip}</td>
+                    <td>{$v.last_time|date="Y-m-d H:i:s",###}</td>
+                    
+                    <td class="actions"><a href="">详情</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a>修改</a></td>
+                </tr>
+            </foreach>
+                                
+                            </tbody>
+        </table>
+        <div class="left input" style="margin-top:5px;">
+            <input name="memberSearch" placeholder="输入ID或用户名或邮箱查找"/>
+        </div>
+        <div class="pagination">
+            {$show}
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- <div class="bloc">
+    <div class="title">
+        Last comments
+    </div>
+    <div class="content">
+        <table class="noalt">
+            <tbody>
+                                <tr>
+                    <td class="picture" style="width:80px;"><img src="__PUBLIC__/img/anonymous.png" alt="" /></td>
+                    <td>
+                        <p>
+                            <strong><a href="#">John Doe</a></strong><br/>
+                            <em>December 24, at 22:13 - <a href="#">Reply</a></em><br/>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt.
+                        </p>
+                    </td>
+                    <td class="actions"><a href="#" title="Edit this content"><img src="__PUBLIC__/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="__PUBLIC__/img/icons/actions/delete.png" alt="" /></a></td>
+                </tr>
+                                <tr>
+                    <td class="picture" style="width:80px;"><img src="__PUBLIC__/img/anonymous.png" alt="" /></td>
+                    <td>
+                        <p>
+                            <strong><a href="#">John Doe</a></strong><br/>
+                            <em>December 24, at 22:13 - <a href="#">Reply</a></em><br/>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt.
+                        </p>
+                    </td>
+                    <td class="actions"><a href="#" title="Edit this content"><img src="__PUBLIC__/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="__PUBLIC__/img/icons/actions/delete.png" alt="" /></a></td>
+                </tr>
+                                <tr>
+                    <td class="picture" style="width:80px;"><img src="__PUBLIC__/img/anonymous.png" alt="" /></td>
+                    <td>
+                        <p>
+                            <strong><a href="#">John Doe</a></strong><br/>
+                            <em>December 24, at 22:13 - <a href="#">Reply</a></em><br/>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt.
+                        </p>
+                    </td>
+                    <td class="actions"><a href="#" title="Edit this content"><img src="__PUBLIC__/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="__PUBLIC__/img/icons/actions/delete.png" alt="" /></a></td>
+                </tr>
+                                <tr>
+                    <td class="picture" style="width:80px;"><img src="__PUBLIC__/img/anonymous.png" alt="" /></td>
+                    <td>
+                        <p>
+                            <strong><a href="#">John Doe</a></strong><br/>
+                            <em>December 24, at 22:13 - <a href="#">Reply</a></em><br/>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt.
+                        </p>
+                    </td>
+                    <td class="actions"><a href="#" title="Edit this content"><img src="__PUBLIC__/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="__PUBLIC__/img/icons/actions/delete.png" alt="" /></a></td>
+                </tr>
+                                <tr>
+                    <td class="picture" style="width:80px;"><img src="__PUBLIC__/img/anonymous.png" alt="" /></td>
+                    <td>
+                        <p>
+                            <strong><a href="#">John Doe</a></strong><br/>
+                            <em>December 24, at 22:13 - <a href="#">Reply</a></em><br/>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non nulla sapien, quis luctus felis. Fusce sodales tempus tincidunt.
+                        </p>
+                    </td>
+                    <td class="actions"><a href="#" title="Edit this content"><img src="__PUBLIC__/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="__PUBLIC__/img/icons/actions/delete.png" alt="" /></a></td>
+                </tr>
+                            </tbody>
+        </table>
+    </div>
+</div>   -->      </div>
+        
+        
+    </body>
+</html>

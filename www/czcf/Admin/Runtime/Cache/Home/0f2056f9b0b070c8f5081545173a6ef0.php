@@ -178,200 +178,62 @@
               CONTENT 
                         --> 
         <div id="content" class="white">
-            <h1><img src="/czcf/Public/img/icons/posts.png" alt="" /> Table</h1>
+            <h1><img src="/czcf/Public/img/icons/posts.png" alt="" />会员信息列表</h1>
 <div class="bloc">
     <div class="title">
-        Table Content
+        会员列表
     </div>
     <div class="content">
         <table>
             <thead>
                 <tr>
                     <th><input type="checkbox" class="checkall"/></th>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>Catégories</th>
-                    <th>Tags</th>
-                    <th><img src="/czcf/Public/img/th-comment.png" alt="" /></th>
-                    <th>Actions</th>
+                    <th>ID&nbsp;&nbsp;</th>
+                    <th>账号</th>
+                    <th>邮箱</th>
+                    <th>昵称</th>
+                    <th>登入次数</th>
+                    <th>注册IP</th>
+                    <th>注册时间</th>
+                    <th>最后登入IP</th>
+                    <th>最后登入时间</th>
+                    <!-- <th><img src="/czcf/Public/img/th-comment.png" alt="" /></th> -->
+                    <th>&nbsp;&nbsp;&nbsp;&nbsp;操作</th>
                 </tr>
             </thead>
             <tbody>
-                                <tr>
+            <?php if(is_array($members)): foreach($members as $key=>$v): ?><tr>
                     <td><input type="checkbox" /></td>
-                    <td><a href="#">Lorem ipsum</a></td>
-                    <td><a href="#">Grafikart</a></td>
-                    <td><a href="#">Dolor</a> , <a href="#">Amet</a></td>
-                    <td><a href="#">Consecte</a> , <a href="#">Adipiscin</a>, <a href="#">Elit</a></td>
-                    <td>35</td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td><input type="checkbox" /></td>
-                    <td><a href="#">Lorem ipsum</a></td>
-                    <td><a href="#">Grafikart</a></td>
-                    <td><a href="#">Dolor</a> , <a href="#">Amet</a></td>
-                    <td><a href="#">Consecte</a> , <a href="#">Adipiscin</a>, <a href="#">Elit</a></td>
-                    <td>35</td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td><input type="checkbox" /></td>
-                    <td><a href="#">Lorem ipsum</a></td>
-                    <td><a href="#">Grafikart</a></td>
-                    <td><a href="#">Dolor</a> , <a href="#">Amet</a></td>
-                    <td><a href="#">Consecte</a> , <a href="#">Adipiscin</a>, <a href="#">Elit</a></td>
-                    <td>35</td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td><input type="checkbox" /></td>
-                    <td><a href="#">Lorem ipsum</a></td>
-                    <td><a href="#">Grafikart</a></td>
-                    <td><a href="#">Dolor</a> , <a href="#">Amet</a></td>
-                    <td><a href="#">Consecte</a> , <a href="#">Adipiscin</a>, <a href="#">Elit</a></td>
-                    <td>35</td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td><input type="checkbox" /></td>
-                    <td><a href="#">Lorem ipsum</a></td>
-                    <td><a href="#">Grafikart</a></td>
-                    <td><a href="#">Dolor</a> , <a href="#">Amet</a></td>
-                    <td><a href="#">Consecte</a> , <a href="#">Adipiscin</a>, <a href="#">Elit</a></td>
-                    <td>35</td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td><input type="checkbox" /></td>
-                    <td><a href="#">Lorem ipsum</a></td>
-                    <td><a href="#">Grafikart</a></td>
-                    <td><a href="#">Dolor</a> , <a href="#">Amet</a></td>
-                    <td><a href="#">Consecte</a> , <a href="#">Adipiscin</a>, <a href="#">Elit</a></td>
-                    <td>35</td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td><input type="checkbox" /></td>
-                    <td><a href="#">Lorem ipsum</a></td>
-                    <td><a href="#">Grafikart</a></td>
-                    <td><a href="#">Dolor</a> , <a href="#">Amet</a></td>
-                    <td><a href="#">Consecte</a> , <a href="#">Adipiscin</a>, <a href="#">Elit</a></td>
-                    <td>35</td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td><input type="checkbox" /></td>
-                    <td><a href="#">Lorem ipsum</a></td>
-                    <td><a href="#">Grafikart</a></td>
-                    <td><a href="#">Dolor</a> , <a href="#">Amet</a></td>
-                    <td><a href="#">Consecte</a> , <a href="#">Adipiscin</a>, <a href="#">Elit</a></td>
-                    <td>35</td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td><input type="checkbox" /></td>
-                    <td><a href="#">Lorem ipsum</a></td>
-                    <td><a href="#">Grafikart</a></td>
-                    <td><a href="#">Dolor</a> , <a href="#">Amet</a></td>
-                    <td><a href="#">Consecte</a> , <a href="#">Adipiscin</a>, <a href="#">Elit</a></td>
-                    <td>35</td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td><input type="checkbox" /></td>
-                    <td><a href="#">Lorem ipsum</a></td>
-                    <td><a href="#">Grafikart</a></td>
-                    <td><a href="#">Dolor</a> , <a href="#">Amet</a></td>
-                    <td><a href="#">Consecte</a> , <a href="#">Adipiscin</a>, <a href="#">Elit</a></td>
-                    <td>35</td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
+                    <td><?php echo ($v["user_id"]); ?></td>
+                    <td><?php echo ($v["username"]); ?></td>
+                    <td><?php echo ($v["email"]); ?></td>
+                    <td><?php echo ($v["niname"]); ?></td>
+                    <td><?php echo ($v["logintime"]); ?></td>
+                    <td><?php echo ($v["reg_ip"]); ?></td>
+                    <td><?php echo (date("Y-m-d H:i:s",$v["reg_time"])); ?></td>
+                    <td><?php echo ($v["last_ip"]); ?></td>
+                    <td><?php echo (date("Y-m-d H:i:s",$v["last_time"])); ?></td>
+                    
+                    <td class="actions"><a href="">详情</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a>修改</a></td>
+                </tr><?php endforeach; endif; ?>
+                                
                             </tbody>
         </table>
-        <div class="left input">
-            <select name="action" id="tableaction">
-                <option value="">Action</option>
-                <option value="delete">Delete</option>
-            </select>
+        <div class="left input" style="margin-top:5px;">
+            <input name="memberSearch" placeholder="输入ID或用户名或邮箱查找"/>
         </div>
         <div class="pagination">
-            <a href="#" class="prev">«</a>
-            <a href="#">1</a>
-            <a href="#" class="current">2</a>
-            ...
-            <a href="#">21</a>
-            <a href="#">22</a>
-            <a href="#" class="next">»</a>
+            <?php echo ($show); ?>
         </div>
     </div>
 </div>
 
 
 
-<div class="bloc">
-    <div class="title">
-        Table Content with pictures
-    </div>
-    <div class="content">
-        <table>
-            <thead>
-                <tr>
-                    <th>Picture</th>
-                    <th>Title</th>
-                    <th>Link</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                                <tr>
-                    <td class="picture" style="width:140px;"><a href="../../../lorempixum.com/800/600/food/0/index25b2.html?.jpg" class="zoombox"><img src="http://lorempixum.com/100/100/food/0" alt="" /></a></td>
-                    <td><a href="#">Lorem ipsum</a></td>
-                    <td><script type="text/javascript"><!--
-google_ad_client = "ca-pub-3413404722490728";
-/* postscript728+90postscript.html */
-google_ad_slot = "9238639693";
-google_ad_width = 728;
-google_ad_height = 90;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script></td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td class="picture" style="width:140px;"><a href="../../../lorempixum.com/800/600/food/1/index25b2.html?.jpg" class="zoombox"><img src="http://lorempixum.com/100/100/food/1" alt="" /></a></td>
-                    <td><a href="#">Lorem ipsum</a></td>
-                    <td>http://lorempixum.com/800/600/food/1</td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td class="picture" style="width:140px;"><a href="../../../lorempixum.com/800/600/food/2/index25b2.html?.jpg" class="zoombox"><img src="http://lorempixum.com/100/100/food/2" alt="" /></a></td>
-                    <td><a href="#">Lorem ipsum</a></td>
-                    <td>http://lorempixum.com/800/600/food/2</td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td class="picture" style="width:140px;"><a href="../../../lorempixum.com/800/600/food/3/index25b2.html?.jpg" class="zoombox"><img src="http://lorempixum.com/100/100/food/3" alt="" /></a></td>
-                    <td><a href="#">Lorem ipsum</a></td>
-                    <td>http://lorempixum.com/800/600/food/3</td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                                <tr>
-                    <td class="picture" style="width:140px;"><a href="../../../lorempixum.com/800/600/food/4/index25b2.html?.jpg" class="zoombox"><img src="http://lorempixum.com/100/100/food/4" alt="" /></a></td>
-                    <td><a href="#">Lorem ipsum</a></td>
-                    <td>http://lorempixum.com/800/600/food/4</td>
-                    <td class="actions"><a href="#" title="Edit this content"><img src="/czcf/Public/img/icons/actions/edit.png" alt="" /></a><a href="#" title="Delete this content"><img src="/czcf/Public/img/icons/actions/delete.png" alt="" /></a></td>
-                </tr>
-                            </tbody>
-        </table>
-    </div>
-</div>
 
 
 
-<div class="bloc">
+<!-- <div class="bloc">
     <div class="title">
         Last comments
     </div>
@@ -436,7 +298,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
                             </tbody>
         </table>
     </div>
-</div>        </div>
+</div>   -->      </div>
         
         
     </body>

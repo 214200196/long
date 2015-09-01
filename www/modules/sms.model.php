@@ -1,3 +1,32 @@
-<?php // This file is protected by copyright dongshan
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=1728;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMTgxKTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ1pDSHhEbDlCT3k3bVM2Ri9YSlJHSXZyak10ZXFkWWlzd1E0VEVwTDAxdWs1V24zZ1ZQb2FLek5jaDhmMlVBK2I9JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+
+<?php
+if (!defined ( 'ROOT_PATH')) 
+{
+	echo "<script>window.location.href='/404.htm';</script>";
+	exit ();
+}
+$MsgInfo ['sms_id'] = "ID";
+$MsgInfo ['sms_type'] = "短信类型";
+$MsgInfo ['sms_nid'] = "标示名";
+$MsgInfo ['sms_content'] = "短信模板";
+$MsgInfo ['sms_action'] = "操作";
+$MsgInfo ['sms_open'] = "开启";
+$MsgInfo ['sms_close'] = "关闭";
+$MsgInfo ['sms_update'] = "修改";
+$MsgInfo ['sms_submit'] = "确认";
+$MsgInfo ['sms_reset'] = "重置";
+$MsgInfo ['sms_pre'] = "后缀";
+$MsgInfo ['sms_status'] = "状态";
+$MsgInfo ['sms_advance'] = "提前发送时间";
+$MsgInfo ['sms_action_success'] = "操作成功";
+$MsgInfo ['sms_id_empty'] = "操作ID不能为空";
+$MsgInfo ['sms_error_pre_empty'] = '后缀不能为空';
+$MsgInfo ['sms_error_content_empty'] = '模板内容不能为空';
+$MsgInfo ['sms_error_id_empty'] = "操作有误，请不要乱操作。";
+$MsgInfo ['sms_error_nid_empty'] = "标识名不能为空。";
+$MsgInfo ['sms_error_name_empty'] = "短信类型不能为空。";
+$MsgInfo ['sms_option_fail'] = '操作失败';
+$MsgInfo ['sms_error_advance_time_empty'] = '提前时间不能为空';
+$MsgInfo ['sms_type_content_error'] = '短信模板字数超过限制';
+$MsgInfo ['sms_type_content_empty'] = '短信模板不可为空';
+?>

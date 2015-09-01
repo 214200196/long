@@ -1,0 +1,29 @@
+[ 2015-09-01T09:24:34+08:00 ] ::1 /plugins/index/areas/type/p%2Cc/area/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\app\Plugins\Controller\IndexController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0050s ]
+SQL: SELECT `pid` FROM `yyd_areas` WHERE ( id=4 ) ORDER BY `order` desc,id asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pid` FROM `yyd_areas` WHERE ( id=2 ) ORDER BY `order` desc,id asc LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `yyd_areas` WHERE ( pid=2 ) ORDER BY `order` desc,id asc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `yyd_areas` WHERE ( pid=4 ) ORDER BY `order` desc,id asc  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Plugins\Controller\IndexController.class.php 第 81 行.
+NOTIC: [8] Undefined variable: order D:\phpStudy\WWW\app\Plugins\Controller\IndexController.class.php 第 90 行.
+SQL: SELECT * FROM `yyd_areas` WHERE ( pid=0 ) ORDER BY `order` desc,id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
