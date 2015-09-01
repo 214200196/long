@@ -13,7 +13,7 @@ class ApiController extends Controller {
 
     // 登入接口
     public function Login() {
-        
+
     	$username = $_POST['username'];
         $password = $_POST['password'];
         if ( ! empty($username) && ! empty($password)) {

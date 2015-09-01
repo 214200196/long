@@ -1,0 +1,244 @@
+[ 2015-08-27T20:58:36+08:00 ] ::1 /pctushu/books/index/bid/16/cid/17/content_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001576s ]
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0174s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('','1')  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `book_content_category` [ RunTime:0.0105s ]
+SQL: SELECT `content_id` FROM `book_content_category` WHERE `bid` = null AND (  `content_id` <> 0 ) ORDER BY content_id ASC LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `content_id` FROM `book_content_category` WHERE `bid` = null AND (  `content_id` <> 0 ) ORDER BY content_id DESC LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `book_content_category` WHERE `bid` = 16 ORDER BY id ASC  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 7 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 9 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 88 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 89 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 98 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001722s ]
+
+[ 2015-08-27T20:58:37+08:00 ] ::1 /pctushu/books/index/bid/16/cid/17/content_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001388s ]
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0048s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('','1')  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `book_content_category` [ RunTime:0.0048s ]
+SQL: SELECT `content_id` FROM `book_content_category` WHERE `bid` = null AND (  `content_id` <> 0 ) ORDER BY content_id ASC LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `content_id` FROM `book_content_category` WHERE `bid` = null AND (  `content_id` <> 0 ) ORDER BY content_id DESC LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `book_content_category` WHERE `bid` = 16 ORDER BY id ASC  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 7 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 9 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 88 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 89 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 98 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001856s ]
+
+[ 2015-08-27T20:58:38+08:00 ] ::1 /pctushu/books/index/bid/16/cid/23/content_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0087s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('','1')  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `book_content_category` [ RunTime:0.0098s ]
+SQL: SELECT `content_id` FROM `book_content_category` WHERE `bid` = null AND (  `content_id` <> 0 ) ORDER BY content_id ASC LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `content_id` FROM `book_content_category` WHERE `bid` = null AND (  `content_id` <> 0 ) ORDER BY content_id DESC LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `book_content_category` WHERE `bid` = 16 ORDER BY id ASC  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 7 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 9 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 88 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 89 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 98 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001926s ]
+
+[ 2015-08-27T20:58:38+08:00 ] ::1 /pctushu/books/index/bid/16/cid/23/content_id/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001033s ]
+
+[ 2015-08-27T20:58:46+08:00 ] ::1 /pctushu/books/index/bid/16/cid/17/content_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001275s ]
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0127s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('','1')  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `book_content_category` [ RunTime:0.0062s ]
+SQL: SELECT `content_id` FROM `book_content_category` WHERE `bid` = null AND (  `content_id` <> 0 ) ORDER BY content_id ASC LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `content_id` FROM `book_content_category` WHERE `bid` = null AND (  `content_id` <> 0 ) ORDER BY content_id DESC LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `book_content_category` WHERE `bid` = 16 ORDER BY id ASC  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 7 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 9 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 88 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 89 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 98 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001221s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001334s ]
+
+[ 2015-08-27T20:58:46+08:00 ] ::1 /pctushu/books/index/bid/16/cid/17/content_id/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+
+[ 2015-08-27T20:59:00+08:00 ] ::1 /pctushu/books/index/bid/16/cid/23/content_id/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0057s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('','1')  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `book_content_category` [ RunTime:0.0067s ]
+SQL: SELECT `content_id` FROM `book_content_category` WHERE `bid` = null AND (  `content_id` <> 0 ) ORDER BY content_id ASC LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `content_id` FROM `book_content_category` WHERE `bid` = null AND (  `content_id` <> 0 ) ORDER BY content_id DESC LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `book_content_category` WHERE `bid` = 16 ORDER BY id ASC  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 7 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 9 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 88 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 89 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 98 行.
+NOTIC: [8] Undefined variable: getContentList C:\php\www\pctushu\Index\Runtime\Cache\Home\878c39c45ad0f14c9ac7c0ba29036d03.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001799s ]
+
+[ 2015-08-27T20:59:00+08:00 ] ::1 /pctushu/books/index/bid/16/cid/23/content_id/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001156s ]
+
+[ 2015-08-27T20:59:44+08:00 ] ::1 /pctushu/books/index/bid/16/cid/31/content_id/7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+NOTIC: [8] Undefined index: username C:\php\www\pctushu\Index\Home\Controller\CommonController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `book_books_list` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `book_books_category` [ RunTime:0.0059s ]
+SQL: SELECT `pid_path` FROM `book_books_category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`category_name` FROM `book_books_category` WHERE `id` IN ('','1')  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `book_books_list` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `book_content_category` [ RunTime:0.0067s ]
+SQL: SELECT `content_id` FROM `book_content_category` WHERE `bid` = null AND (  `content_id` <> 0 ) ORDER BY content_id ASC LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `content_id` FROM `book_content_category` WHERE `bid` = null AND (  `content_id` <> 0 ) ORDER BY content_id DESC LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `book_content_category` WHERE `bid` = 16 ORDER BY id ASC  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `book_books_content` [ RunTime:0.0078s ]
+SQL: SELECT Books_content.id AS id,Books_content.acticle_name AS acticle_name,Books_content.key_word AS key_word,Books_content.acticle_content AS acticle_content,Books_content.acticle_click AS acticle_click,Books_content.add_time AS add_time,content_category.id AS content_cate_id,content_category.pid AS pid,content_category.bid AS bid FROM book_books_content Books_content LEFT JOIN book_content_category content_category ON Books_content.id = content_category.content_id WHERE `content_id` = '7' AND (  `books_id` = '16' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `book_books_content` [ RunTime:0.0062s ]
+SQL: UPDATE `book_books_content` SET `acticle_click`=acticle_click+1 WHERE `id` = 7 [ RunTime:0.0016s ]
+SQL: UPDATE `book_books_list` SET `books_counts`=books_counts+1 WHERE `id` = 16 [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `book_books_content` WHERE `books_id` = 16 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id` FROM `book_books_content` WHERE `books_id` = 16 ORDER BY id ASC LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] Division by zero C:\php\www\pctushu\Index\Home\Controller\BooksController.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024633s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001415s ]
+
+[ 2015-08-27T20:59:44+08:00 ] ::1 /pctushu/books/index/bid/16/cid/31/content_id/image/apic12099.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000916s ]
+
