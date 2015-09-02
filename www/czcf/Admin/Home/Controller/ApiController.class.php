@@ -77,7 +77,23 @@ class ApiController extends Controller {
             echo json_encode($memberInfo);
         }
 
+
     }
+    // 注册手机获取验证码接口
+    public function getPhoneVerify() {
+
+        $sendPhone = $_POST['phoneNumber'];
+        if(is_numeric($sendPhone) && strlen($sendPhone) == 11) {
+            sendPhone($sendPhone);
+        }
+        
+    } 
+
+    // 检测手机获取验证码
+    public function checkPhoneVerify()  {
+          
+    }
+
     // 账号金额接口
     public function accountInfo() { 
         if( ! empty($_GET['user_id'])) {
