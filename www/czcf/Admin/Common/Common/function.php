@@ -113,15 +113,14 @@ function sendPhone($phone) {
     $_SESSION['send_time'] = time();
     $_SESSION['send_code'] = $code;
     
-    $content = "你的手机验证码为：".$code." 请不要把验证码告诉任何人。";
+    $content = "你的手机验证码为：".$code." 请不要把验证码告诉任何人。该验证码5分钟内有效！";
     
     sendSMS($phone,$content);
 
 }
 
 
-function sendSMS($mobile,$content,$time='',$mid='')
-{
+function sendSMS($mobile,$content,$time='',$mid='') {
     $http = 'http://api.sms.cn/mtutf8/ ';
     $uid  = 'bjczcf';
     $pwd  = 'bjczcf';
@@ -140,8 +139,7 @@ function sendSMS($mobile,$content,$time='',$mid='')
     return $re;
 }
 
-function postSMS($url,$data='')
-{
+function postSMS($url,$data='') {
     error_reporting(0);
     $port="";
     $post="";

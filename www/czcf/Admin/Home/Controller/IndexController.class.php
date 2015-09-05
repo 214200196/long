@@ -7,7 +7,7 @@ class IndexController extends CommonController {
     	//$data = array('phone'=>18510095975,'content'=>'你的手机验证码为：356282 请不要把验证码告诉任何人。');                
         //echo sendSMS($data['phone'],$data['content']);die;
 
-        sendPhone();dump(session());die;
+        //sendPhone();dump(session());die;
 
     	//p($_SERVER);
     	$this->php_version = phpversion();

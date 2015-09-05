@@ -42,6 +42,10 @@ class ApiController extends Controller {
 
     // 注册接口
     public function register () {
+        // 手机验证码检测
+        if( ! $this->checkPhoneVerify()){
+            p(array('validate'=>'验证码错误或已失效！请重试','validateStatus'=>0)); die;
+        }
 
         $data = array(
             'email'    => $_POST['email'],
@@ -90,8 +94,14 @@ class ApiController extends Controller {
     } 
 
     // 检测手机获取验证码
-    public function checkPhoneVerify()  {
-          
+    private function checkPhoneVerify()  {
+        // 该时间差小于5*60
+        $timeDiff = time() - $_SESSION['send_time'];
+        if ($timeDiff < 300 && $_SESSION['send_code'] == $_POST['verify']) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     // 账号金额接口
@@ -102,5 +112,17 @@ class ApiController extends Controller {
         } else {
             echo json_encode("账号不存在");
         }
+    }
+    // 轮番图接口(该位置只是相对地址，使用该地址需加上http://www.bjczcf.com/)
+    public function topPhoto() {
+        
+        if( S('topPhoto') ) {
+            $topPhoto = S('topPhoto');
+        } else {
+            $topPhoto = M('scrollpic')->where(array('status'=>1,'type_id'=>1),'AND')->field('pic')->select();
+            S('topPhoto',$topPhoto,3600*24*7);
+            //echo '缓存测试';
+        }
+        echo json_encode($topPhoto);
     }
 }
