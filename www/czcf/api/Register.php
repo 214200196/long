@@ -29,9 +29,9 @@
 			 if(!isNaN(phoneNumber) && phoneNumber.length == 11){
 			 	checkPhone = true;
 				// 异步获取验证码
-				//$.post('/czcf/home/api/getPhoneVerify/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361',{phoneNumber:phoneNumber},function(data){
+				$.post('/czcf/home/api/getPhoneVerify/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361',{phoneNumber:phoneNumber},function(data){
 					$("#getVerifyok").html("<i style='color:green;font-weight:bold;'>发送成功！</i>");	
-				//},'json');
+				},'json');
 		
 			} else {
 				alert("请填写正确手机号码！");

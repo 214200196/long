@@ -2,19 +2,19 @@
 namespace Home\Controller;
 use Think\Controller;
 class ApiController extends Controller {
-	// 检测权限访问
-	public function _initialize() {
-		if ($_GET['smmkey'] != Sha1(md5(md5('北京创造财富科技有限公司888')))) {
-			//echo Sha1(md5(md5('北京创造财富科技有限公司888'))); // 3eef0f2cb569f66b61248104de523c101a1e4361
-			$this->error("非法操作！");
-		}
-	}
+    // 检测权限访问
+    public function _initialize() {
+        if ($_GET['smmkey'] != Sha1(md5(md5('北京创造财富科技有限公司888')))) {
+            //echo Sha1(md5(md5('北京创造财富科技有限公司888'))); // 3eef0f2cb569f66b61248104de523c101a1e4361
+            $this->error("非法操作！");
+        }
+    }
 
 
     // 登入接口
     public function Login() {
 
-    	$username = $_POST['username'];
+        $username = $_POST['username'];
         $password = $_POST['password'];
         if ( ! empty($username) && ! empty($password)) {
             $userInfo = M('users')->where(array('username'=>$username,'password'=>md5($password)))
@@ -44,7 +44,7 @@ class ApiController extends Controller {
     public function register () {
         // 手机验证码检测
         if( ! $this->checkPhoneVerify()){
-            p(array('validate'=>'验证码错误或已失效！请重试','validateStatus'=>0)); die;
+            echo json_encode(array('validate'=>'验证码错误或已失效！请重试','validateStatus'=>0)); die;
         }
 
         $data = array(
@@ -89,7 +89,9 @@ class ApiController extends Controller {
         $sendPhone = $_POST['phoneNumber'];
         if(is_numeric($sendPhone) && strlen($sendPhone) == 11) {
             sendPhone($sendPhone);
-        }
+        } else {
+            echo json_encode('手机格式错误,请输入正确的手机号码！');
+        } 
         
     } 
 
@@ -104,6 +106,31 @@ class ApiController extends Controller {
         }
     }
 
+    // 获取用户消息
+    public function getUserMsg() {
+        if( isset($_GET['user_id']) ) {
+            $where['receive_value'] = intval($_GET['user_id']);
+            $where['type']    = 'all';
+            $where['_logic']  = 'OR';
+            $getUserMsg = M('message')->where($where)->select();
+            //$getUserMsg = M('message')->where(array('user_id'=>intval($_GET['user_id']),'type'=>'all'),'OR')->select();
+            //echo M('message')->getLastSql();
+            echo json_encode($getUserMsg);
+        } else {
+            echo json_encode('请传入用户id来获取该用户消息');
+        }
+    }
+
+    // 获取用户投资列表
+    public function getUserInvest() {
+        if ( isset($_GET['user_id'])) {
+            $getUserInvest = D('BorrowInfoView')->where(array('borrow_tender.user_id'=>intval($_GET['user_id'])))->select();
+            echo json_encode($getUserInvest);
+        } else {
+            echo json_encode('请传入用户id来获取该用户投资列表');
+        }
+    }
+
     // 账号金额接口
     public function accountInfo() { 
         if( ! empty($_GET['user_id'])) {
@@ -113,6 +140,33 @@ class ApiController extends Controller {
             echo json_encode("账号不存在");
         }
     }
+    // 投资列表接口(正在进行中的标)
+    public function borrowList() {
+        $borrowList = M('borrow')->where(array('borrow_end_time'=>array('GT',time())))->select();
+        if( ! empty($borrowList)) {
+            echo json_encode($borrowList);
+        } else {
+            echo json_encode('当前投资列表为空！');
+            //echo M('borrow')->getLastSql();
+        }
+    }
+
+    // 投资详情页（正在进行中的标）
+    public function borrowInfo() {
+        if( ! empty($_GET['borrow_nid'])) { 
+            $borrowInfo = M('borrow')->where(array('borrow_end_time'=>array('GT',time()),'borrow_nid'=>$_GET['borrow_nid']),'AND')->select();
+            if( empty($borrowInfo) ) { 
+                echo json_encode('该标已过期或不存在该标！');
+                return;
+            } 
+            echo json_encode($borrowInfo);
+                
+        } else {
+            echo json_encode('请传入借款id来获取借款详情页');
+        }
+    }
+
+
     // 轮番图接口(该位置只是相对地址，使用该地址需加上http://www.bjczcf.com/)
     public function topPhoto() {
         
