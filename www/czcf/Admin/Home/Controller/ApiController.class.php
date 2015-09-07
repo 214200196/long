@@ -45,7 +45,7 @@ class ApiController extends Controller {
         // 手机验证码检测
         if( ! $this->checkPhoneVerify()){
             echo json_encode(array('validate'=>'验证码错误或已失效！请重试','validateStatus'=>0)); die;
-        }
+        } 
 
         $data = array(
             'email'    => $_POST['email'],
@@ -80,6 +80,11 @@ class ApiController extends Controller {
             $memberInfo = D('UserView')->where(array('user_id'=>$usersDb))->find();
             echo json_encode($memberInfo);
         }
+        // 因该接口已采用手机验证来注册则需添加手机认证已默认通过
+        $update = array( 'phone'=>$_POST['username'],
+                         'phone_status'=>1 
+                       );
+        M('users_info')->where(array('user_id'=>$usersDb))->save($update);
 
 
     }
@@ -164,6 +169,111 @@ class ApiController extends Controller {
         } else {
             echo json_encode('请传入借款id来获取借款详情页');
         }
+    }
+
+    // 实名认证接口
+    public function nameApprove() {
+        if( ! empty($_POST['user_id'])) {
+            $nameApprove = M('approve_realname')->where(array('user_id'=>$_POST['user_id']))->field('status')->find(); 
+            // 当$nameApprove 为空或 status为0 代表未进行上传或还在等待审核中 
+             //dump($nameApprove);
+            if( intval($nameApprove['status']) != 1) {
+                    //p($_POST);
+
+                if(empty($_POST['realName'])) {
+                    echo json_encode('姓名不能为空！');die;
+                }
+
+                if(empty($_POST['creditNo'])) {
+                    echo json_encode('身份证号不能为空！');die;
+                }
+                // 调用公共函数 isCreditNo 进行验证
+                if( ! isCreditNo($_POST['creditNo'])) {
+                    echo json_encode('请填写正确的身份证号码');die;
+                }
+
+
+                // 进行文件上传
+                $upload = new \Think\Upload();// 实例化上传类
+                $upload->maxSize   =     2097152 ;// 设置附件上传大小2m
+                $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+                $upload->rootPath  =     '../Uploads/approve/'; // 设置附件上传根目录
+                $upload->savePath  =     ''; // 设置附件上传（子）目录
+
+
+                // 上传文件 
+                $info   =   $upload->upload();
+                if(!$info) {// 上传错误提示错误信息
+                    //$this->error($upload->getError());
+                    echo json_encode($upload->getError());
+                }else{// 上传成功
+                    
+                    // 将上传数据写入数据库
+                    //dump($info);
+                    if( ! empty($info['card_pic1']) && ! empty($info['card_pic2'])) {
+                        // 身份证正面信息
+                        $data1 = array(
+                                'name'       => $info['card_pic1']['name'],
+                                'code'       => 'approve',
+                                'type'       => 'realname',
+                                'article_id' => $_POST['user_id'],
+                                'user_id'    => $_POST['user_id'],
+                                'filetype'   => $info['card_pic1']['ext'],
+                                'filename'   => $info['card_pic1']['savename'],
+                                'filesize'   => $info['card_pic1']['size'],
+                                'fileurl'    => '/uploads/approve/'.$info['card_pic1']['savepath'].$info['card_pic1']['savename'],
+                                'addtime'    => time(),
+                                'addip'      => get_client_ip(),
+                                'updatetime' => time(),
+                                'updateip'   => get_client_ip()
+                            );
+                        // 身份证反面信息
+                        $data2 = array(
+                                'name'       => $info['card_pic2']['name'],
+                                'code'       => 'approve',
+                                'type'       => 'realname',
+                                'article_id' => $_POST['user_id'],
+                                'user_id'    => $_POST['user_id'],
+                                'filetype'   => $info['card_pic2']['ext'],
+                                'filename'   => $info['card_pic2']['savename'],
+                                'filesize'   => $info['card_pic2']['size'],
+                                'fileurl'    => '/uploads/approve/'.$info['card_pic2']['savepath'].$info['card_pic2']['savename'],
+                                'addtime'    => time(),
+                                'addip'      => get_client_ip(),
+                                'updatetime' => time(),
+                                'updateip'   => get_client_ip()
+                            );
+
+                        $pic_id1 = M('users_upfiles')->add($data1); // 添加card_pic1信息
+                        $pic_id2 = M('users_upfiles')->add($data2); // 添加card_pic2信息
+
+                        // 更新实名认证表中数据
+                        $realNameData = array(
+                                'realname'  => $_POST['realName'],
+                                'card_id'   => $_POST['creditNo'],
+                                'card_pic1' => $pic_id1,
+                                'card_pic2' => $pic_id2,
+                                'sex'       => $_POST['sex'],
+                                'addtime'   => time(),
+                                'addip'     => get_client_ip()
+                            );
+                        M('approve_realname')->where(array('user_id'=>$_POST['user_id']))->save($realNameData);
+
+                        
+                    } else {
+
+                        echo json_encode('身份证正面或反面都不能为空');exit;
+                    
+                    }
+
+                        echo json_encode(array('validate'=>'身份证上传成功！','validateStatus'=>1));
+                }
+            } else {
+                echo json_encode('未获取到用户id');
+            }
+
+        }
+        
     }
 
 
