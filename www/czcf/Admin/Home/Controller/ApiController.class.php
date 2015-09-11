@@ -307,8 +307,10 @@ class ApiController extends Controller {
             $nameApproveStatus = M('approve_realname')->where(array('user_id'=>$_GET['user_id']))->field('status')->find();
             if($nameApproveStatus['status']) {
                 echo json_encode(array('Status'=>true));
+                return true;
             } else {
                 echo json_encode(array('Status'=>false));
+                return false;
             }
         } else {
             echo json_encode(array('msg'=>'请传入用户id再进行获取该用户状态','validateStatus'=>0));
@@ -450,6 +452,73 @@ class ApiController extends Controller {
 
         if( M('account_recharge')->add($data) ) echo json_encode(array('msg'=>'充值成功！','validateStatus'=>1));
         //p($data);
+
+    }
+    // 银行卡绑定接口
+    public function bindBank() {
+        // 验证输入数据是否合法
+        if ( empty($_POST['bank']) || !is_numeric($_POST['pcity']) || empty($_POST['devBank']) 
+            || empty($_POST['bankNumber']) || !is_numeric($_POST['bankNumber']) || empty($_POST['user_id'])) {
+            echo json_encode(array('msg'=>'非法数据,请重新输入准确信息!','validateStatus'=>0));exit;
+        }
+        // 检测是否已经实名认证
+        $nameApproveStatus = M('approve_realname')->where(array('user_id'=>intval($_POST['user_id'])))->field('status')->find();
+        if( $nameApproveStatus['status'] ){
+            // 通过穿过来的城市id 获取province 和 city
+            $getCity = isset($_POST['ccity']) ? $_POST['ccity'] : $_POST['pcity'];
+            $city = M('areas')->where(array('id'=>$getCity))->field(array('id','province','city'))->find();
+            // 进行银行卡绑定操作
+            $data = array(
+                    'user_id'   => intval($_POST['user_id']),
+                    'account'   => $_POST['bankNumber'],
+                    'bank'      => $_POST['bank'],
+                    'branch'    => $_POST['devBank'],
+                    'province'  => $city['province'],
+                    'city'      => $city['city'],
+                    'area'      => $city['id']
+                    );
+            p($data);
+
+
+        } else {
+
+            echo json_encode(array('msg'=>'请实名认证后再进行银行卡绑定操作！','validateStatus'=>0));
+        }
+
+    }
+
+    // 开户银行数据列表接口
+    public function bankList() {
+        if( S('bankList')) {
+            $bankList = S('bankList');
+        } else {
+            $bankList = M('account_bank')->select();
+            S('bankList',$bankList);
+        }
+        echo json_encode($bankList);
+    }
+
+    // 地区数据列表接口
+    public function areasCity() {
+        if ( empty($_GET['city'])) {
+            // 顶级地区
+            if( S('topCity')) {
+                $topCity = S('topCity');
+            } else {
+                $topCity = M('areas')->where(array('pid'=>0,'province'=>0,'city'=>0),'AND')->field(array('id','name'))->select();
+                S('topCity',$topCity);
+            }
+            //echo M('areas')->getLastSql();
+            //p($topCity);
+            echo json_encode($topCity);
+        } else {
+            
+            // 顶级分类下的子分类
+            $childCity = M('areas')->where(array('province'=>intval($_GET['city'])))->field(array('id','name'))->select();
+            //p($childCity);
+            echo json_encode($childCity);
+        }
+
 
     }
 
