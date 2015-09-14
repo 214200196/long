@@ -56,8 +56,8 @@ class ApiController extends Controller {
 
         // 验证规则
         $rules = array(
-             array('username','require','账号不能为空'), //默认情况下用正则进行验证
-             array('username','require','账号已存在',0,'unique'),
+             array('username','require','手机号不能为空'), //默认情况下用正则进行验证
+             array('username','require','手机号已存在',0,'unique'),
              array('username','/^[\d]{11}$/','手机格式不正确',0,'regex'), //默认情况下用正则进行验证
              array('password','/^[\S]{6,15}$/','密码格式不正确字母或数字长度6~15位',0,'regex'), // 自定义函数验证密码格式
              array('passworded','password','两次密码不一致',0,'confirm'), // 验证确认密码是否和密码一致
@@ -457,12 +457,18 @@ class ApiController extends Controller {
     // 银行卡绑定接口
     public function bindBank() {
         // 验证输入数据是否合法
-        if ( empty($_POST['bank']) || !is_numeric($_POST['pcity']) || empty($_POST['devBank']) 
+        if ( empty($_POST['bank']) || !is_numeric($_POST['bank']) || !is_numeric($_POST['pcity']) || empty($_POST['devBank']) 
             || empty($_POST['bankNumber']) || !is_numeric($_POST['bankNumber']) || empty($_POST['user_id'])) {
             echo json_encode(array('msg'=>'非法数据,请重新输入准确信息!','validateStatus'=>0));exit;
         }
         // 检测是否已经实名认证
         $nameApproveStatus = M('approve_realname')->where(array('user_id'=>intval($_POST['user_id'])))->field('status')->find();
+        // 检测是否已经绑定银行卡
+        $bindStatus = M('account_users_bank')->where(array('user_id'=>$_POST['user_id']))->field('user_id')->find();
+        if( !empty($bindStatus)) {
+            echo json_encode(array('msg'=>'非法错误，该用户已绑定银行卡！','validateStatus'=>0));exit;
+        }
+
         if( $nameApproveStatus['status'] ){
             // 通过穿过来的城市id 获取province 和 city
             $getCity = isset($_POST['ccity']) ? $_POST['ccity'] : $_POST['pcity'];
@@ -475,9 +481,13 @@ class ApiController extends Controller {
                     'branch'    => $_POST['devBank'],
                     'province'  => $city['province'],
                     'city'      => $city['city'],
-                    'area'      => $city['id']
+                    'area'      => $city['id'],
+                    'addtime'   => time(),
+                    'addip'     => get_client_ip()
                     );
-            p($data);
+            if( M('account_users_bank')->add($data) ) {
+                echo json_encode(array('msg'=>'绑定银行卡成功！','validateStatus'=>1));
+            }
 
 
         } else {
@@ -485,6 +495,20 @@ class ApiController extends Controller {
             echo json_encode(array('msg'=>'请实名认证后再进行银行卡绑定操作！','validateStatus'=>0));
         }
 
+    }
+
+    // 获取银行卡信息
+    public function getBankInfo() {
+        if( !empty($_GET['user_id'])) {
+            $getBankInfo = M('account_users_bank')->where(array('user_id'=>$_GET['user_id']))->find();
+            echo json_encode(array_merge(array('msg'=>'数据获取成功！','validateStatus'=>1),$getBankInfo));
+        }   else {
+            echo json_encode(array('msg'=>'请传入用户id后，再获取该用户银行卡信息！','validateStatus'=>0));
+        }
+    }
+    // 修改银行卡信息
+    public function updateBindBank() {
+        P($_POST);
     }
 
     // 开户银行数据列表接口
@@ -529,7 +553,12 @@ class ApiController extends Controller {
             $topPhoto = S('topPhoto');
         } else {
             $topPhoto = M('scrollpic')->where(array('status'=>1,'type_id'=>2),'AND')->field('pic')->select();
-            S('topPhoto',$topPhoto,3600*24*7);
+            $topPhotoArr = array();
+            foreach ($topPhoto as $key => $v) {
+                $topPhotoArr[] = 'http://bjczcf.com'.$v['pic'];
+            }
+            //($topPhotoArr);
+            S('topPhoto',$topPhotoArr,3600*24*7);
             //echo '缓存测试';
         }
         echo json_encode($topPhoto);
