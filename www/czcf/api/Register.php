@@ -7,7 +7,7 @@
  </head>
  <body>
  	<form action="/czcf/home/api/register/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361" method="POST">
- 	手 机 号：<input  name="username" type="text" id="phoneNumber"/><br>
+ 	手 机 号：<input  name="phoneNumber" type="text" id="phoneNumber"/><br>
  	密&nbsp;&nbsp;码：<input name="password" type="password"/><br>
  	确认密码：<input name="passworded" type="password"/><br>
  	昵&nbsp;&nbsp;称：<input name="niname" type="text"/><br>

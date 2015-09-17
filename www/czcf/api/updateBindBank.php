@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>银行卡绑定接口测试</title>
+<title>银行卡修改接口测试</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <script type="text/javascript" src="/czcf/Public/js/jquery-2.1.4.min.js"></script>
 </head>
@@ -10,7 +10,7 @@
 		// 调取用户银行卡信息
 		$cardUrl 	= @file_get_contents('http://120.25.122.205/czcf/home/api/getbankinfo/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/user_id/36');
 		$cardResult = json_decode($cardUrl,true);
-		var_dump($cardResult);
+		//var_dump($cardResult);
 	?>
 	<form action="/czcf/home/api/updateBindBank/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361" method="POST">
 	真实姓名：<input name="realname" type="text" disabled="disabled" value="龙剑威"/><br><br>
@@ -20,9 +20,18 @@
 					$url 	   = @file_get_contents('http://120.25.122.205/czcf/home/api/bankList/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361');
 	  				$urlResult = json_decode($url,true);
 					//var_dump($urlResult);
-					foreach ($urlResult as $key => $value) {
-						echo "<option value=".$value['id'].">".$value['name']."</option>";
+					$str="";
+					foreach ($urlResult as $value) {
+						//echo "<option value=".$value['id'].">".$value['name']."</option>";
+						$str .="<option value =";
+						$str .= $value['id'];
+						// 获取数据跟当前选择一致
+						if($value['id']==$cardResult['bank']) $str.=" selected='selected'";
+						$str .= ">";
+						$str .= $value['name'];
+						$str .= "</option>";
 					}
+					echo $str;
 				?>
 			  </select><br><br>
 	&nbsp;所在地：<select name="pcity" id="pcity">
@@ -30,10 +39,17 @@
 					<?php
 						$urlAreas  = @file_get_contents('http://120.25.122.205/czcf/home/api/areasCity/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361');
 		  				$urlAreasResult = json_decode($urlAreas,true);
-						//var_dump($urlAreasResult);die;
+						
+						$strs="";
 						foreach ($urlAreasResult as $key => $value) {
-							echo "<option value=".$value['id'].">".$value['name']."</option>";
+							$strs .= "<option value=";
+							$strs .=$value['id'];
+							if ($value['id'] == $cardResult['province']) $strs .=" selected='selected'";
+							$strs .=">";
+							$strs .=$value['name'];
+							$strs .="</option>";
 						}
+						echo $strs;
 					?>
 				  </select>
 
@@ -41,10 +57,12 @@
 				  	
 				  </select>
 				<br><br>
-	开户支行名称：<input name="devBank" type="text" /><br><br>
-		银行账号：<input name="bankNumber" type="text" /><br><br>
-				 <input name="user_id" value=36 type="hidden"/>
-		<input type="submit" value="提交" />
+	开户支行名称：<input name="devBank" type="text" value="<?php echo $cardResult['branch'];?>"/><br><br>
+		银行账号：<input name="bankNumber" type="text" value="<?php echo $cardResult['account'];?>"/><br><br>
+				<hr>
+ 请输入支付密码:<input name="payPassword" type="password" />
+				 <input name="user_id" value=36 type="hidden"/><br><br>
+		<input type="submit" value="修改" />
 	</form>
 
 

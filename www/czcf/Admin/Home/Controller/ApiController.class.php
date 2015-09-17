@@ -48,7 +48,7 @@ class ApiController extends Controller {
         } 
 
         $data = array(
-            'username' => $_POST['username'],
+            'username' => $_POST['phoneNumber'],
             'password' => md5($_POST['password']),
             'reg_ip'   => get_client_ip(),
             'reg_time' => time(),
@@ -59,7 +59,7 @@ class ApiController extends Controller {
              array('username','require','手机号不能为空'), //默认情况下用正则进行验证
              array('username','require','手机号已存在',0,'unique'),
              array('username','/^[\d]{11}$/','手机格式不正确',0,'regex'), //默认情况下用正则进行验证
-             array('password','/^[\S]{6,15}$/','密码格式不正确字母或数字长度6~15位',0,'regex'), // 自定义函数验证密码格式
+             array('password','/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,15}$/','密码格式不正确字母和数字组合长度6~15位',0,'regex'), // 自定义函数验证密码格式
              array('passworded','password','两次密码不一致',0,'confirm'), // 验证确认密码是否和密码一致
              //array('email','require','邮箱不能为空'), 
              //array('email','email','邮箱格式错误'),
@@ -71,6 +71,15 @@ class ApiController extends Controller {
             echo json_encode( M('users')->getError()); exit;
         }
 
+        // 昵称验证
+        if ( empty($_POST['niname']) ) {
+            echo json_encode(array('msg'=>'昵称不能为空','validateStatus'=>0));exit;
+        }
+        // 昵称规则/i 指的是不忽略大小写 加上s修饰符，.就能匹配任何字符了
+        if (! preg_match("/^[\x80-\xff|_a-zA-Z0-9]{2,15}$/",$_POST['niname'])) {
+            echo json_encode(array('msg'=>'中文或字母或数字2~15位','validateStatus'=>0));exit;
+        } 
+
         $usersDb = M('users')->add($data);
 
         if( $usersDb ) {
@@ -81,7 +90,7 @@ class ApiController extends Controller {
             echo json_encode(array_merge(array('validate'=>'注册成功！','validateStatus'=>1),$memberInfo));
         }
         // 因该接口已采用手机验证来注册则需添加手机认证已默认通过
-        $update = array( 'phone'=>$_POST['username'],
+        $update = array( 'phone'=>$_POST['phoneNumber'],
                          'phone_status'=>1 
                        );
         M('users_info')->where(array('user_id'=>$usersDb))->save($update);
@@ -121,13 +130,13 @@ class ApiController extends Controller {
         $timeDiff = time() - $_SESSION['send_time'];
         if ($timeDiff < 300 && $_SESSION['send_code'] == $_POST['verify']) {
 
-            echo json_encode(array('validateStatus'=>1));
+            echo json_encode(array('msg'=>'验证码验证正确','validateStatus'=>1));
 
             $_SESSION['checkStatus'] = 1; // 作用不要再用form进行传递再判断
 
             return true;
         } else {
-            echo json_encode(array('validateStatus'=>0));
+            echo json_encode(array('msg'=>'验证码验证不一致，请输入正确的验证码！','validateStatus'=>0));
             $_SESSION['checkStatus'] = 0; // 作用不要再用form进行传递再判断
             return false;
         }
@@ -454,6 +463,148 @@ class ApiController extends Controller {
         //p($data);
 
     }
+
+    // 用户提现接口
+    public function userWithdraw() {
+
+        if ( empty($_POST['user_id'])) {
+            echo json_encode(array('msg'=>'请传入用户id后，再进行操作！','validateStatus'=>0));exit;
+        }
+
+        if ($_POST['withdrawMoney'] <= 0 || !is_numeric($_POST['withdrawMoney'])) {
+            echo json_encode(array('msg'=>'提现金额必须为正数和必须是数字','validateStatus'=>0));exit;
+        }
+        // 获取当前用户账户信息
+        $userAccount = M('account')->where(array('user_id'=>$_POST['user_id']))->find();
+
+        if ($_POST['withdrawMoney'] > $userAccount['balance']) {
+            echo json_encode(array('msg'=>'提现金额大于可用余额！','validateStatus'=>0));exit;
+        }
+
+       // 验证支付密码是否输入正确
+       if ( ! $this->validatePayPassword()) die;
+
+       /*  ===操作数据===
+        *  1. account_cash     （提现表添加记录）
+        *  2. account           (账户表增加冻结金额及可用余额减少)
+        *  3. account_balance   (账户平衡表添加申请提现记录)
+        *  4. account_log       (账户记录表添加申请提现记录)
+        *  5. account_users     (账户用户操作记录表添加记录)
+        */
+       $nid = 'cash_'.$_POST['user_id'].time().rand(100,999);
+       $account_cash_data = array(
+            'user_id'   => $_POST['user_id'],
+            'nid'       => $nid,
+            'status'    => 0,
+            'account'   => $_POST['withdrawMoney'],
+            'bank'      => $_POST['devBank'],
+            'bank_id'   => $_POST['bankNumber'],
+            'province'  => 0,
+            'city'      => 0,
+            'total'     => $_POST['withdrawMoney'],
+            'credited'  => ($_POST['withdrawMoney'] - $_POST['withdrawMoney']*0.003),  //0.3%
+            'fee'       => $_POST['withdrawMoney']*0.003,
+            'addtime'   => time(),
+            'addip'     => get_client_ip()
+        );
+       // 获取当前最后一行account_balance数据
+       $totalLastLine = M('account_balance')->field(array('total','balance'))->order('id desc')->limit(1)->find();
+
+       $account_balance =array(
+            'nid'       => $nid,
+            'user_id'   => $_POST['user_id'],
+            'type'      => 'cash',
+            'money'     => $_POST['withdrawMoney'],
+            'total'     => $totalLastLine['total'],
+            'balance'   => $totalLastLine['balance'],
+            'income'    => 0,
+            'expend'    => 0,
+            'remark'    => 'app申请提现，冻结提现金额'.$_POST['withdrawMoney'].'元',
+            'addtime'   => time(),
+            'addip'     => get_client_ip()
+        );
+
+       if ( ! M('account_cash')->add($account_cash_data) ) {
+           echo json_encode(array('msg'=>'提现申请操作数据生成错误，请重试！','validateStatus'=>0));exit;
+       }
+
+       // account表增加冻金额 减少balance 和balance_cash的值
+       // $account_data['balance'] -= $_POST['withdrawMoney'];
+       // $account_data['balance_cash'] -= $_POST['withdrawMoney'];
+       // $account_data['frost']        += $_POST['withdrawMoney'];
+       // p($account_data);
+       $sql = "UPDATE yyd_account SET `balance`      = `balance` - {$_POST['withdrawMoney']}, 
+                                      `balance_cash` = `balance_cash` - {$_POST['withdrawMoney']},
+                                      `frost`        = `frost` + {$_POST['withdrawMoney']} 
+                                  WHERE `user_id` = {$_POST['user_id']}";
+       // M('account')->where(array('user_id'=>$_POST['user_id']))->setDec('balance',$_POST['withdrawMoney'])
+       // ->setDec('balance_cash',$_POST['withdrawMoney'])->setInc('frost',$_POST['withdrawMoney']);
+       M()->execute($sql);
+
+       if ( ! M('account_balance')->add($account_balance) ) {
+            echo json_encode(array('msg'=>'异常错误,请重试','validateStatus'=>0));exit;
+       }
+
+       $userAccountInfo = M('account')->where(array('user_id'=>$_POST['user_id']))->find();
+
+       $account_log = array(
+            'nid'               => $nid,
+            'user_id'           => $_POST['user_id'],
+            'type'              => 'cash',
+            'total'             => $userAccountInfo['total'],            // 通过用户账户信息获取
+            'total_old'         => $userAccountInfo['total'],
+            'money'             => $_POST['withdrawMoney'],
+            'income'            => $userAccountInfo['income'],
+            'income_old'        => $userAccountInfo['income'],
+            'income_new'        => 0,
+            'expend'            => $userAccountInfo['expend'],
+            'expend_old'        => $userAccountInfo['expend'],
+            'expend_new'        => 0,
+            'balance'           => $userAccountInfo['balance'],
+            'balance_old'       => $userAccountInfo['balance'] + $_POST['withdrawMoney'],
+            'balance_new'       => - $_POST['withdrawMoney'],
+            'balance_cash'      => $userAccountInfo['balance_cash'],
+            'balance_cash_old'  => $userAccountInfo['balance_cash'] + $_POST['withdrawMoney'],
+            'balance_cash_new'  => - $_POST['withdrawMoney'],
+            'balance_frost'     => $userAccountInfo['balance_frost'],
+            'balance_frost_old' => $userAccountInfo['balance_frost'],
+            'balance_frost_new' => 0,
+            'frost'             => $userAccountInfo['frost'],
+            'frost_old'         => $userAccountInfo['frost'] - $_POST['withdrawMoney'],
+            'frost_new'         => $_POST['withdrawMoney'],
+            'await'             => 0,
+            'await_old'         => 0,
+            'await_new'         => 0,
+            'to_userid'         => 0,
+            'remark'            => 'app申请提现，冻结提现金额'.$_POST['withdrawMoney'].'元',
+            'addtime'           => time(),
+            'addip'             => get_client_ip()
+        );
+
+        M('account_log')->add($account_log);
+
+        $account_users_info = M('account_users')->field(array('total','balance'))->order('id desc')->limit(1)->find();
+        $account_users = array(
+            'nid'       => $nid,
+            'user_id'   => $_POST['user_id'],
+            'type'      => 'cash',
+            'money'     => $_POST['withdrawMoney'],
+            'total'     => $account_users_info['total'],
+            'balance'   => $account_users_info['balance'],
+            'income'    => 0,
+            'expend'    => 0,
+            'frost'     => $_POST['withdrawMoney'],
+            'await'     => 0,
+            'remark'    => 'app申请提现，冻结提现金额'.$_POST['withdrawMoney'].'元',
+            'addtime'   => time(),
+            'addip'     => get_client_ip()
+        );
+        M('account_users')->add($account_users);
+        echo json_encode(array('msg'=>'申请提现成功！','validateStatus'=>1));
+
+    }
+
+
     // 银行卡绑定接口
     public function bindBank() {
         // 验证输入数据是否合法
@@ -497,7 +648,7 @@ class ApiController extends Controller {
 
     }
 
-    // 获取银行卡信息
+    // 获取银行卡信息接口
     public function getBankInfo() {
         if( !empty($_GET['user_id'])) {
             $getBankInfo = M('account_users_bank')->where(array('user_id'=>$_GET['user_id']))->find();
@@ -506,9 +657,74 @@ class ApiController extends Controller {
             echo json_encode(array('msg'=>'请传入用户id后，再获取该用户银行卡信息！','validateStatus'=>0));
         }
     }
-    // 修改银行卡信息
+
+    // 验证支付密码接口
+    public function validatePayPassword() {
+        if (empty($_POST['user_id']) || empty($_POST['payPassword'])) {
+            echo json_encode(array('msg'=>'请传入用户id和支付密码，再进行操作！','validateStatus'=>0));
+            return false;
+        }
+        // 获取用户支付密码
+        $validatePayPassword = M('users')->where(array('user_id'=>intval($_POST['user_id'])))->field('paypassword')->find();
+        if(empty($validatePayPassword)) {
+            echo json_encode(array('msg'=>'该用户还未设置支付密码！','validateStatus'=>0));
+            return false;
+        }
+        if(md5($_POST['payPassword'])==$validatePayPassword['paypassword']) {
+            echo json_encode(array('msg'=>'验证通过','validateStatus'=>1));
+            return true;
+        } else {
+            echo json_encode(array('msg'=>'支付密码输入不正确','validateStatus'=>0));
+            return false;
+        }
+    }
+
+    // 修改银行卡信息接口
     public function updateBindBank() {
-        P($_POST);
+       if ( empty($_POST['user_id'])){
+        echo json_encode(array('msg'=>'请传入用户id后，再进行操作！','validateStatus'=>0));
+       }
+       // 验证支付密码是否输入正确
+       if ( ! $this->validatePayPassword()) die;
+       
+       // 验证输入数据是否合法
+       if ( empty($_POST['bank']) || !is_numeric($_POST['bank']) || !is_numeric($_POST['pcity']) || empty($_POST['devBank']) 
+            || empty($_POST['bankNumber']) || !is_numeric($_POST['bankNumber']) || empty($_POST['user_id'])) {
+            echo json_encode(array('msg'=>'非法数据,请重新输入准确信息!','validateStatus'=>0));exit;
+       }
+
+        // 通过穿过来的城市id 获取province 和 city
+        $getCity = isset($_POST['ccity']) ? $_POST['ccity'] : $_POST['pcity'];
+        $city = M('areas')->where(array('id'=>$getCity))->field(array('id','province','city'))->find();
+        // 进行银行卡绑定操作
+        $data = array(
+                'account'   => $_POST['bankNumber'],
+                'bank'      => $_POST['bank'],
+                'branch'    => $_POST['devBank'],
+                'province'  => $city['province'],
+                'city'      => $city['city'],
+                'area'      => $city['id'],
+                'update_time' => time(),
+                'update_ip'   => get_client_ip()
+                );
+        if( M('account_users_bank')->where(array('user_id'=>$_POST['user_id']))->save($data) ) {
+            echo json_encode(array('msg'=>'修改银行卡成功！','validateStatus'=>1));
+        } else {
+            echo json_encode(array('msg'=>'修改银行卡失败，请重试！','validateStatus'=>0));
+        }
+
+    }
+
+    // 删除银行卡接口
+    public function delBindBank() {
+        if( empty($_GET['user_id'])) {
+            echo json_encode(array('msg'=>'请传入用户id后，再进行操作！','validateStatus'=>0));
+        }
+        if( M('account_users_bank')->where(array('user_id'=>$_GET['user_id']))->delete() ) {
+            echo json_encode(array('msg'=>'银行卡解除成功！','validateStatus'=>1));
+        }   else {
+            echo json_encode(array('msg'=>'删除失败，请重试！','validateStatus'=>0));
+        }
     }
 
     // 开户银行数据列表接口
@@ -545,6 +761,12 @@ class ApiController extends Controller {
 
 
     }
+
+    // 用户投资支付接口
+    public function userTender() {
+        p($_POST);
+    }
+
 
     // 轮番图接口(该位置只是相对地址，使用该地址需加上http://www.bjczcf.com/)
     public function topPhoto() {

@@ -1,0 +1,474 @@
+[ 2015-09-16T08:54:32+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-16T08:56:27+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T08:56:35+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T09:01:52+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T09:08:13+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-16T09:08:21+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T09:22:37+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-16T09:22:45+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-16T09:22:57+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-09-16T09:23:13+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-16T09:23:16+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-16T09:23:27+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-09-16T09:23:34+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-16T13:03:36+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-16T13:03:38+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T13:03:51+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-16T13:03:58+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `yyd_account` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `yyd_account` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-09-16T13:37:22+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_account` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `yyd_account` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T13:37:28+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-16T13:37:35+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_account` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `yyd_account` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-16T13:40:55+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T13:41:32+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T13:41:39+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-16T13:41:44+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T13:55:29+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T13:55:43+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T13:55:47+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-16T13:55:57+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T16:59:02+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T17:18:54+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-16T17:19:20+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_account` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `yyd_account` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0600s ]
+SQL: SELECT `paypassword` FROM `yyd_users` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T17:19:50+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_account` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `yyd_account` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0070s ]
+SQL: SELECT `paypassword` FROM `yyd_users` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-16T17:19:55+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_account` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `yyd_account` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0110s ]
+SQL: SELECT `paypassword` FROM `yyd_users` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T17:20:25+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_account` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `yyd_account` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0090s ]
+SQL: SELECT `paypassword` FROM `yyd_users` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T17:20:42+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yyd_account` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `yyd_account` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0090s ]
+SQL: SELECT `paypassword` FROM `yyd_users` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T17:21:24+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_account` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `yyd_account` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2015-09-16T17:21:29+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_account` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `yyd_account` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0110s ]
+SQL: SELECT `paypassword` FROM `yyd_users` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T17:23:24+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yyd_account` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `yyd_account` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0090s ]
+SQL: SELECT `paypassword` FROM `yyd_users` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T17:59:48+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yyd_account` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `yyd_account` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2015-09-16T18:00:16+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yyd_account` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `yyd_account` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2015-09-16T18:00:34+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yyd_account` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `yyd_account` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0120s ]
+SQL: SELECT `paypassword` FROM `yyd_users` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: account_data D:\phpStudy\WWW\czcf\Admin\Home\Controller\ApiController.class.php 第 514 行.
+NOTIC: [8] Undefined index: balance D:\phpStudy\WWW\czcf\Admin\Home\Controller\ApiController.class.php 第 514 行.
+NOTIC: [8] Undefined index: balance_cash D:\phpStudy\WWW\czcf\Admin\Home\Controller\ApiController.class.php 第 515 行.
+NOTIC: [8] Undefined index: frost D:\phpStudy\WWW\czcf\Admin\Home\Controller\ApiController.class.php 第 516 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-16T18:06:42+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `yyd_account` [ RunTime:0.0340s ]
+SQL: SELECT * FROM `yyd_account` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0090s ]
+SQL: SELECT `paypassword` FROM `yyd_users` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: account_data D:\phpStudy\WWW\czcf\Admin\Home\Controller\ApiController.class.php 第 514 行.
+NOTIC: [8] Undefined index: balance D:\phpStudy\WWW\czcf\Admin\Home\Controller\ApiController.class.php 第 514 行.
+NOTIC: [8] Undefined index: balance_cash D:\phpStudy\WWW\czcf\Admin\Home\Controller\ApiController.class.php 第 515 行.
+NOTIC: [8] Undefined index: frost D:\phpStudy\WWW\czcf\Admin\Home\Controller\ApiController.class.php 第 516 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-16T18:08:25+08:00 ] ::1 /czcf/home/api/userWithdraw/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_account` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `yyd_account` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0110s ]
+SQL: SELECT `paypassword` FROM `yyd_users` WHERE `user_id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_account_cash` [ RunTime:0.0100s ]
+SQL: INSERT INTO `yyd_account_cash` (`user_id`,`nid`,`status`,`account`,`bank`,`bank_id`,`province`,`city`,`total`,`credited`,`fee`,`addtime`,`addip`) VALUES ('36','cash_361442398105659','0','6666','中信银行昌平支行','1121163793306','0','0','6666','6646.002','19.998','1442398105','0.0.0.0') [ RunTime:0.0120s ]
+NOTIC: [8] Undefined variable: account_data D:\phpStudy\WWW\czcf\Admin\Home\Controller\ApiController.class.php 第 514 行.
+NOTIC: [8] Undefined index: balance D:\phpStudy\WWW\czcf\Admin\Home\Controller\ApiController.class.php 第 514 行.
+NOTIC: [8] Undefined index: balance_cash D:\phpStudy\WWW\czcf\Admin\Home\Controller\ApiController.class.php 第 515 行.
+NOTIC: [8] Undefined index: frost D:\phpStudy\WWW\czcf\Admin\Home\Controller\ApiController.class.php 第 516 行.
+SQL: UPDATE `yyd_account` SET `balance`='-6666',`balance_cash`='-6666',`frost`='6666' WHERE `user_id` = 36 [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
