@@ -112,12 +112,26 @@ class ApiController extends Controller {
 
     }
 
-    // 手机获取验证码接口
+    // 手机获取验证码接口(post)
     public function getPhoneVerify() {
 
         $sendPhone = $_POST['phoneNumber'];
         if(is_numeric($sendPhone) && strlen($sendPhone) == 11) {
             sendPhone($sendPhone);
+            echo json_encode(array('phoneNumber'=>$sendPhone,'validate'=>1));
+        } else {
+            echo json_encode(array('msg'=>'手机格式错误,请输入正确的手机号码！','validateStatus'=>0));
+        } 
+        
+    } 
+
+    // 手机获取验证码接口(get)
+    public function gPhoneVerify() {
+
+        $sendPhone = $_GET['phoneNumber'];
+        if(is_numeric($sendPhone) && strlen($sendPhone) == 11) {
+            sendPhone($sendPhone);
+            echo json_encode(array('phoneNumber'=>$sendPhone,'validate'=>1));
         } else {
             echo json_encode(array('msg'=>'手机格式错误,请输入正确的手机号码！','validateStatus'=>0));
         } 
@@ -765,6 +779,33 @@ class ApiController extends Controller {
     // 用户投资支付接口
     public function userTender() {
         p($_POST);
+        if ( empty($_POST['user_id']) ) {
+            echo json_encode(array('msg'=>'未获取到用户id','validateStatus'=>0));exit;
+        }
+        // 判断标号是否合法
+        $borrowInfo = M('borrow')->where(array('borrow_end_time'=>array('GT',time()),'borrow_nid'=>$_POST['borrow_nid']),'AND')->select();
+        if( empty($borrowInfo) ) {
+            echo json_encode(array('msg'=>'该标号不合法！','validateStatus'=>0));die;
+        }
+        // 检测投资金额
+        if ( ! is_numeric($_POST['tenderMoney']) || $_POST['tenderMoney'] <=0 ) {
+           echo json_encode(array('msg'=>'投资金额格式错误，请重试！','validateStatus'=>0));die;
+        }
+        // 要求投资必须大于等于100 且金额为50的倍数
+        if ( $_POST['tenderMoney'] < 100 || $_POST['tenderMoney']%50 != 0 ) {
+            echo json_encode(array('msg'=>'投资金额必须100以上，且是50的倍数！','validateStatus'=>0));die;
+        }
+        // 检测投资金额是否大于漫标金额
+        if ( $_POST['tenderMoney'] > $_POST['waitFullMoney'] ) {
+            echo json_encode(array('msg'=>'投资金额大于满标金额！','validateStatus'=>0));die;
+        }
+        if ( $_POST['tenderMoney'] > $_POST['canUseMoney'] ) {
+            echo json_encode(array('msg'=>'可用余额不足,请充值后操作！','validateStatus'=>0));die;
+        }
+        // 检测支付密码是否正确
+        if ( ! $this->validatePayPassword()) die;
+
+
     }
 
 

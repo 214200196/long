@@ -325,3 +325,382 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
+[ 2015-09-17T17:39:42+08:00 ] ::1 /czcf/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-17T17:39:45+08:00 ] ::1 /czcf/home/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-17T17:39:45+08:00 ] ::1 /czcf/home/login/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-17T17:39:49+08:00 ] ::1 /czcf/home/login/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-17T17:39:53+08:00 ] ::1 /czcf/home/login/verify/0.22801984893158078
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-17T17:39:56+08:00 ] ::1 /czcf/home/login/checklogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `yyd_admin` WHERE `username` = 'admin' AND `password` = '21232f297a57a5a743894a0e4a801fc3' LIMIT 1   [ RunTime:0.0530s ]
+SQL: UPDATE `yyd_admin` SET `update_time`='1442304101',`update_ip`='111.202.8.133',`login_time`='1442482796',`login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-17T17:40:00+08:00 ] ::1 /czcf/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0100s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '1' LIMIT 1   [ RunTime:0.0250s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\phpStudy\WWW\czcf\Admin\Home\Controller\IndexController.class.php 第 14 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant login_ip - assumed 'login_ip' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\55843b8195cd32862e5dfa640df6e51d.php 第 388 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\55843b8195cd32862e5dfa640df6e51d.php 第 388 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-17T17:40:15+08:00 ] ::1 /czcf/home/admin/modifyadmin/pli/6/cli/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0080s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`name` FROM `yyd_admin_type`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\5fa57d5a52670fef1b52b37796ce9ec5.php 第 204 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-17T17:40:17+08:00 ] ::1 /czcf/home/admin/addadmin/pli/6/cli/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0100s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '1' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-17T17:40:20+08:00 ] ::1 /czcf/home/admin/index/pli/6/cli/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0050s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-09-17T17:40:24+08:00 ] ::1 /czcf/home/borrow/index/pli/1/cli/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0100s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '1' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-09-17T17:40:27+08:00 ] ::1 /czcf/home/member/index/pli/2/cli/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0100s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '1' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.logintime AS logintime,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users.last_ip AS last_ip,users.last_time AS last_time,users_info.niname AS niname,users_info.type_id AS type_id,users_info.status AS status,users_info.realname AS realname,users_info.realname_status AS realname_status,users_info.phone AS phone,users_info.phone_status AS phone_status FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id LIMIT 0,15   [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-17T17:40:31+08:00 ] ::1 /czcf/home/member/index/pli/2/cli/0/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0100s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.logintime AS logintime,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users.last_ip AS last_ip,users.last_time AS last_time,users_info.niname AS niname,users_info.type_id AS type_id,users_info.status AS status,users_info.realname AS realname,users_info.realname_status AS realname_status,users_info.phone AS phone,users_info.phone_status AS phone_status FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id LIMIT 15,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-17T17:40:42+08:00 ] ::1 /czcf/home/member/index/pli/2/cli/0/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0100s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `yyd_users_info` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT users.user_id AS user_id,users.username AS username,users.email AS email,users.logintime AS logintime,users.reg_ip AS reg_ip,users.reg_time AS reg_time,users.last_ip AS last_ip,users.last_time AS last_time,users_info.niname AS niname,users_info.type_id AS type_id,users_info.status AS status,users_info.realname AS realname,users_info.realname_status AS realname_status,users_info.phone AS phone,users_info.phone_status AS phone_status FROM yyd_users users LEFT JOIN yyd_users_info users_info ON users.user_id = users_info.user_id LIMIT 15,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-17T17:41:04+08:00 ] ::1 /czcf/home/borrow/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0100s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '1' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-17T17:41:07+08:00 ] ::1 /czcf/home/admin/index/pli/6/cli/0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `yyd_admin` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `yyd_admin_type` [ RunTime:0.0100s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id WHERE admin.id = '1' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT admin.id AS id,admin.username AS username,admin.adminname AS adminname,admin.type_id AS type_id,admin.qq AS qq,admin.phone AS phone,admin.addtime AS addtime,admin.addip AS addip,admin.update_time AS update_time,admin.update_ip AS update_ip,admin.login_time AS login_time,admin.login_ip AS login_ip,admin_type.name AS name FROM yyd_admin admin LEFT JOIN yyd_admin_type admin_type ON admin.type_id = admin_type.id  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\phpStudy\WWW\czcf\Admin\Runtime\Cache\Home\c09665db8c8380dc4786202d054ddd84.php 第 210 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-17T18:08:55+08:00 ] ::1 /czcf/home/api/getPhoneVerify/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: port D:\phpStudy\WWW\czcf\Admin\Common\Common\function.php 第 148 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
