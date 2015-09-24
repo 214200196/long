@@ -270,43 +270,44 @@ $data = array ( 'uid'=>$uid, 'pwd'=>md5 ( $pwd .$uid ), 'mobile'=>$mobile, 'cont
 $re = self::postSMS ( $http,$data );
 return $re;
 }
-public static function postSMS($url,$data = '') {
-	$port = "";
-	$post = "";
-	$row = parse_url ( $url );
-	$host = $row ['host'];
-	$port = isset ( $row ['port'] ) ?$row ['port'] : 80;
-	$file = $row ['path'];
-	while ( list ( $k,$v ) = each ( $data ) ) 
-	{
-	$post .= rawurlencode ( $k ) ."=".rawurlencode ( $v ) ."&";
-	}
-	$post = substr ( $post,0,-1 );
-	$len = strlen ( $post );
-	$fp = @fsockopen ( $host,$port,$errno,$errstr,10 );
-	if (!$fp) 
-	{
-	return "$errstr ($errno)\n";
-	}
-	else 
-	{
-	$receive = '';
-	$out = "POST $file HTTP/1.1\r\n";
-	$out .= "Host: $host\r\n";
-	$out .= "Content-type: application/x-www-form-urlencoded\r\n";
-	$out .= "Connection: Close\r\n";
-	$out .= "Content-Length: $len\r\n\r\n";
-	$out .= $post;
-	fwrite ( $fp,$out );
-	while ( !feof ( $fp ) ) 
-	{
-	$receive .= fgets ( $fp,128 );
-	}
-	fclose ( $fp );
-	$receive = explode ( "\r\n\r\n",$receive );
-	unset ( $receive [0] );
-	return implode ( "",$receive );
-	}
+public static function postSMS($url,$data = '') 
+{
+$port = "";
+$post = "";
+$row = parse_url ( $url );
+$host = $row ['host'];
+$port = isset ( $row ['port'] ) ?$row ['port'] : 80;
+$file = $row ['path'];
+while ( list ( $k,$v ) = each ( $data ) ) 
+{
+$post .= rawurlencode ( $k ) ."=".rawurlencode ( $v ) ."&";
+}
+$post = substr ( $post,0,-1 );
+$len = strlen ( $post );
+$fp = @fsockopen ( $host,$port,$errno,$errstr,10 );
+if (!$fp) 
+{
+return "$errstr ($errno)\n";
+}
+else 
+{
+$receive = '';
+$out = "POST $file HTTP/1.1\r\n";
+$out .= "Host: $host\r\n";
+$out .= "Content-type: application/x-www-form-urlencoded\r\n";
+$out .= "Connection: Close\r\n";
+$out .= "Content-Length: $len\r\n\r\n";
+$out .= $post;
+fwrite ( $fp,$out );
+while ( !feof ( $fp ) ) 
+{
+$receive .= fgets ( $fp,128 );
+}
+fclose ( $fp );
+$receive = explode ( "\r\n\r\n",$receive );
+unset ( $receive [0] );
+return implode ( "",$receive );
+}
 }
 public static function GetSmslogList($data = array()) 
 {

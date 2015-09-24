@@ -1,3 +1,568 @@
-<?php // This file is protected by copyright dongshan
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=24148;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMTgyKTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ1pDSHhEbDlCT3k3bVM2Ri9YSlJHSXZyak10ZXFkWWlzd1E0VEVwTDAxdWs1V24zZ1ZQb2FLek5jaDhmMlVBK2I9JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+
+<?php
+require_once ("articles.model.php");
+global $articles_flag;
+$articles_flag = array ( "index"=>"首页", "ding"=>"置顶", "tuijian"=>"推荐" );
+class articlesClass 
+{
+	public static function GetList($data = array()) 
+	{
+		$_sql = " 1=1 ";
+		if (IsExiest ( $data ['user_id'] ) != false) 
+		{
+			$_sql .= " and p1.user_id = {$data['user_id']}
+		";
+	}
+	if (IsExiest ( $data ['username'] ) != false) 
+	{
+		$_sql .= " and p2.username like '%{$data['username']}
+	%'";
+}
+if (IsExiest ( $data ['name'] ) != false) 
+{
+	$_sql .= " and p1.`name` like '%".urldecode ( $data ['name'] ) ."%'";
+}
+if (IsExiest($data['flag']) != false)
+{
+	$flags=explode(',',$data['flag']);
+	foreach($flags as $vuls)
+	{
+		$_sql .= " and FIND_IN_SET('{$vuls}
+	',p1.flag)";
+}
+}
+if (IsExiest ( $data ['public'] ) != false) 
+{
+$_sql .= " and p1.public = {$data['public']}
+";
+}
+if (IsExiest ( $data ['type_pid'] ) != false) 
+{
+$result = M ( 'articles_type')->where ( "pid='{$data['type_pid']}
+'")->field ( 'id')->select ();
+if ($result != false) 
+{
+$_sql .= " and (  FIND_IN_SET('{$data['type_pid']}
+',p1.type_id) ";
+foreach ( $result as $key =>$value ) 
+{
+$_sql .= "  or FIND_IN_SET('{$value['id']}
+',p1.type_id) ";
+}
+$_sql .= " )";
+}
+}
+if (IsExiest ( $data ['type_nid'] ) != false) 
+{
+$result = M ( 'articles_type')->where ( "nid='{$data['type_nid']}
+'")->field ( 'id')->find ();
+if ($result != false) 
+{
+$_sql .= "  and FIND_IN_SET('{$result['id']}
+',p1.type_id) ";
+}
+}
+if (IsExiest ( $data ['type_id'] ) != false) 
+{
+$_sql .= " and FIND_IN_SET('{$data['type_id']}
+',p1.type_id)";
+}
+if (IsExiest ( $data ['site_id'] ) != false) 
+{
+$result = M ( 'site')->where ( "id='{$data['site_id']}
+'")->field ( '`value`,nid')->find ();
+$site_nid = $result ['nid'];
+if ($result != false) 
+{
+$_sql .= " and FIND_IN_SET('{$result['value']}
+',p1.type_id)";
+}
+}
+elseif (IsExiest ( $data ['site_nid'] ) != false) 
+{
+$sql = "select `value`,nid from `{site}` where nid='{$data['site_nid']}
+'";
+$result = M ( 'site')->where ( "nid='{$data['site_nid']}
+'")->field ( '`value`,nid')->find ();
+$site_nid = $result ['nid'];
+if ($result != false) 
+{
+$_sql .= " and FIND_IN_SET('{$result['value']}
+',p1.type_id)";
+}
+}
+$_order = " p1.order desc,p1.id desc ";
+if (IsExiest ( $data ['order'] ) != false) 
+{
+if ($data ['order'] == "id_desc") 
+{
+$_order = " p1.id desc ";
+}
+elseif ($data ['order'] == "id_asc") 
+{
+$_order = "  p1.id asc ";
+}
+elseif ($data ['order'] == "order_desc") 
+{
+$_order = "  p1.`order` desc ,p1.id desc";
+}
+elseif ($data ['order'] == "order_asc") 
+{
+$_order = " p1.`order` asc,p1.id desc";
+}
+}
+if (IsExiest ( $data ['limit'] ) != false) 
+{
+if ($data ['limit'] != "all") 
+{
+$_limit = $data ['limit'];
+}
+$result = M ( 'articles')->alias ( 'p1')->join ( presql ( '{articles_type} as p0 on p1.type_id=p0.id') )->join ( presql ( '{admin} as p2 on p2.id=p1.user_id') )->join ( presql ( '{users_upfiles} as p3 on p1.litpic=p3.id') )->where ( $_sql )->field ( ' p1.*,p0.name as type_name,p2.username,p3.fileurl')->limit ( $_limit )->order($_order)->select ();
+if ($site_nid != "") 
+{
+foreach ( $result as $key =>$value ) 
+{
+$result [$key] ["site_nid"] = $site_nid;
+}
+}
+return $result;
+}
+$row = M ( 'articles')->alias ( 'p1')->join ( presql ( '{articles_type} as p0 on p1.type_id=p0.id') )->join ( presql ( '{admin} as p2 on p2.id=p1.user_id') )->join ( presql ( '{users_upfiles} as p3 on p1.litpic=p3.id') )->where ( $_sql )->count ();
+$data ['page'] = !IsExiest ( $data ['page'] ) ?1 : $data ['page'];
+$data ['epage'] = !IsExiest ( $data ['epage'] ) ?10 : $data ['epage'];
+$Page = new \Think\Page ( $row,$data ['epage'] );
+$show = $Page->show ();
+$list = M ( 'articles')->alias ( 'p1')->join ( presql ( '{articles_type} as p0 on p1.type_id=p0.id') )->join ( presql ( '{admin} as p2 on p1.user_id=p2.id') )->join ( presql ( '{users_upfiles} as p3 on p1.litpic=p3.id') )->where ( $_sql )->field ( ' p1.*,p0.name as type_name,p2.username,p3.fileurl')->page ( $data ['page'] .",{$data ['epage']}
+")->order($_order)->select ();
+$result = array ( 'list'=>$list ?$list : array (), 'site_nid'=>$site_nid, 'total'=>$total, 'page'=>$show );
+return $result;
+}
+public static function GetTypeList($data = array()) 
+{
+$_sql = "1=1 ";
+if (IsExiest ( $data ['pid'] ) != false) 
+{
+$_sql .= " and pid = {$data['pid']}
+";
+}
+if (IsExiest ( $data ['type_id'] ) != false) 
+{
+$_sql .= " and id in({$data['type_id']}
+)";
+}
+$_order = "order desc ,id asc ";
+if (IsExiest ( $data ['limit'] ) != false) 
+{
+if ($data ['limit'] != "all") 
+{
+$_limit = $data ['limit'];
+}
+return M ( 'articles_type')->where ( $_sql )->limit ( $_limit )->select ();
+}
+$row = M ( 'articles_type')->where ( $_sql )->count ();
+$data ['page'] = !IsExiest ( $data ['page'] ) ?1 : $data ['page'];
+$data ['epage'] = !IsExiest ( $data ['epage'] ) ?10 : $data ['epage'];
+$Page = new \Think\Page ( $row,$data ['epage'] );
+$show = $Page->show ();
+$list = M ( 'articles_type')->where ( $_sql )->page ( $data ['page'] .",{$data ['epage']}
+")->select ();
+$result = array ( 'list'=>$list ?$list : array (), 'page'=>$show );
+return $result;
+}
+public static function AddType($data = array()) 
+{
+if (!IsExiest ( $data ['name'] )) return "articls_type_name_empty";
+if (!IsExiest ( $data ['nid'] )) return "articls_type_nid_empty";
+$result = M ( 'articles_type')->where ( "nid='{$data['nid']}
+'")->find ();
+if ($result !=null||$result!=false) return "articles_type_nid_exiest";
+$id = M ( 'articles_type')->add ( $data );
+return $id;
+}
+public static function GetTypeMenu($data = array()) 
+{
+$result = self::GetTypeList ( array ( "limit"=>"all" ) );
+$_result = array ();
+$var = "&nbsp;&nbsp;&nbsp;&nbsp;";
+$type_var = "—";
+foreach ( $result as $key =>$value ) 
+{
+$site_result [$value ['id']] = $value;
+$_res_pid [$value ['pid']] [] = $value ['id'];
+}
+if (IsExiest ( $data ['lgnore'] ) != false) 
+{
+unset ( $_res_pid [$data ['lgnore']] );
+}
+if (count ( $_res_pid ) >0) 
+{
+foreach ( $_res_pid [0] as $key =>$value ) 
+{
+$_result [$value] = $site_result [$value];
+$_result [$value] ['_name'] = $_result [$value] ['name'];
+$_result [$value] ['type_name'] = $_result [$value] ['name'];
+$_site_data ['site_result'] = $site_result;
+$_site_data ['result'] = $_res_pid;
+$_site_data ['_result'] = $_res_pid [$value];
+$_site_data ['var'] = $var;
+$_site_data ['type_var'] = $type_var;
+$_result = $_result +self::_GetTypeMenu ( $_site_data );
+}
+}
+if (IsExiest ( $data ['lgnore'] ) != false) 
+{
+unset ( $_result [$data ['lgnore']] );
+}
+return $_result;
+}
+public static function _GetTypeMenu($_site_data) 
+{
+$var = "&nbsp;&nbsp;&nbsp;&nbsp;";
+$type_var = "—";
+$_var = $_site_data ["var"];
+$_type_var = $_site_data ["type_var"];
+$_result = array ();
+if (isset ( $_site_data ['_result'] ) &&$_site_data ['_result'] != "") 
+{
+foreach ( $_site_data ['_result'] as $key =>$value ) 
+{
+$_result [$value] = $_site_data ["site_result"] [$value];
+$_result [$value] ['_name'] = $_var .$_result [$value] ['name'];
+$_result [$value] ['type_name'] = $_type_var .$_result [$value] ['name'];
+$_site_data ['_result'] = $_site_data ["result"] [$value];
+$_site_data ['var'] = $_site_data ['var'] .$var;
+$_site_data ['type_var'] = $_site_data ['type_var'] .$type_var;
+$_result = $_result +self::_GetTypeMenu ( $_site_data );
+}
+}
+return $_result;
+}
+public static function GetTypeOne($data = array()) 
+{
+if (!IsExiest ( $data ['id'] )) return "articls_type_id_empty";
+$result = M ( 'articles_type')->where ( "id={$data['id']}
+")->find ();
+if ($result == null) return "article_type_empty";
+return $result;
+}
+public static function UpdateType($data = array()) 
+{
+if (!IsExiest ( $data ['name'] )) return "articls_type_name_empty";
+if (!IsExiest ( $data ['nid'] )) return "articls_type_nid_empty";
+$result = M ( 'articles_type')->where ( "nid='{$data['nid']}
+' and id!={$data['id']}
+")->find ();
+if ($result != null) return "articles_type_nid_exiest";
+M ( 'articles_type')->where ( "id={$data['id']}
+")->save ( $data );
+return $data ['id'];
+}
+public static function DelType($data = array()) 
+{
+$result = M ( 'articles_type')->where ( "id={$data['id']}
+")->find ();
+if ($result == null) return "articles_type_not_exiest";
+$sql = "select 1 from `{}` where ";
+$result = M ( 'articles_type')->where ( "pid={$data['id']}
+")->find ();
+if ($result != null) return "articles_type_del_pid_exiest";
+$result = M ( 'articles')->where ( "FIND_IN_SET('{$data['id']}
+',type_id)")->find ();
+if ($result != null) return "articles_type_del_article_exiest";
+M ( 'articles_type')->where ( "id={$data['id']}
+")->delete ();
+return $data ['id'];
+}
+public static function Add($data) 
+{
+if (IsExiest ( $data ['img_error'] )) return $data ['img_error'];
+if (!IsExiest ( $data ['name'] )) return "articles_name_empty";
+if (!IsExiest ( $data ['type_id'] )) return "articles_type_id_empty";
+if ($data ['public'] == 3 &&!IsExiest ( $data ['password'] )) 
+{
+return "articles_password_empty";
+}
+$data ['addtime'] = time ();
+$data ['addip'] = get_client_ip ();
+$data ['update_time'] = time ();
+$data ['update_ip'] = get_client_ip ();
+$id = M ( 'articles')->add ( $data );
+return $id;
+}
+public static function Update($data) 
+{
+if (!IsExiest ( $data ['id'] )) return "articles_id_empty";
+if (!IsExiest ( $data ['name'] )) return "articles_name_empty";
+if (!IsExiest ( $data ['type_id'] )) return "articles_type_id_empty";
+if ($data ['public'] == 3 &&!IsExiest ( $data ['password'] )) 
+{
+return "articles_password_empty";
+}
+$result = M ( 'articles')->where ( "id={$data['id']}
+")->find ();
+$user_id = $result ['user_id'];
+if ($data ['user_id'] != ""&&$data ['user_id'] != $user_id) 
+{
+return "articles_error";
+}
+$data ['update_time'] = time ();
+$data ['update_ip'] = get_client_ip ();
+M ( 'articles')->where ( "id={$data['id']}
+")->save ( $data );
+return $data ['id'];
+}
+public static function Action($data) 
+{
+if (count ( $data ['id'] ) <= 0) return 1;
+if ($data ['type'] == 'order') 
+{
+foreach ( $data ['id'] as $key =>$value ) 
+{
+$sql = "update `{articles}` set `order`='{$data['order'][$key]}
+' where id={$value}
+";
+M ()->execute ( presql ( $sql ) );
+}
+}
+elseif ($data ['type'] == 'del') 
+{
+if (count ( $data ['aid'] ) >0) 
+{
+foreach ( $data ['aid'] as $key =>$value ) 
+{
+M ( 'articles')->where ( " id={$value}
+")->delete ();
+}
+}
+}
+return 1;
+}
+public static function GetOne($data = array()) 
+{
+if (!IsExiest ( $data ['id'] )) return "articles_id_empty";
+if ($data ['hits_status'] == 1) 
+{
+$sql = "update `{articles}` set hits =hits+1 where id={$data['id']}
+";
+M ()->execute ( presql ( $sql ) );
+}
+$_sql = "p1.id={$data['id']}
+";
+if ($data ['user_id'] != "") 
+{
+$_sql .= " and p1.user_id='{$data['user_id']}
+'";
+}
+$result = M ( 'articles')->alias ( 'p1')->join ( presql ( '`{admin}` as p2 on p2.id=p1.user_id') )->join ( presql ( '`{users_upfiles}` as p3 on p3.id=p1.litpic') )->where ( $_sql )->field ( 'p1.*,p2.username,p3.fileurl')->find ();
+if ($result == null) return "articles_not_exiest";
+return $result;
+}
+public static function Delete($data = array()) 
+{
+if (!IsExiest ( $data ['id'] )) return "articles_id_empty";
+$id = $data ['id'];
+if (!is_array ( $id )) 
+{
+$id = array ( $id );
+}
+M ( 'articles')->where ( "id in (".join ( ",",$id ) .")")->delete ();
+return $data ['id'];
+}
+public static function Verify($data = array()) 
+{
+if (!IsExiest ( $data ['id'] )) return "articles_id_empty";
+$id = $data ['id'];
+$result = M('articles')->where("id={$data['id']}
+")->field('user_id,name')->find();
+if ($result == null) return "";
+$user_id = $result ['user_id'];
+if ($result ['status'] == 1) return "articles_verify_yes";
+$sql = "update `{articles}` set status='{$data['status']}
+',verify_time='".time () ."',verify_remark='{$data['verify_remark']}
+',verify_userid='{$data['verify_userid']}
+'  where id={$id}
+";
+M()->execute(presql($sql));
+if ($data ['status'] == 1) 
+{
+$credit_log ['user_id'] = $user_id;
+$credit_log ['nid'] = "articles_add";
+$credit_log ['code'] = "articles";
+$credit_log ['type'] = "add";
+$credit_log ['addtime'] = time ();
+$credit_log ['article_id'] = $data ['id'];
+$credit_log ['remark'] = "发表[{$result['name']}
+]成功";
+\creditClass::ActionCreditLog ( $credit_log );
+$user_log ["user_id"] = $user_id;
+$user_log ["code"] = "articles";
+$user_log ["type"] = "article";
+$user_log ["operating"] = "add";
+$user_log ["article_id"] = $data ['id'];
+$user_log ["result"] = 1;
+$user_log ["content"] = "发表了[{$result['name']}
+]";
+;
+usersClass::AddUsersLog ( $user_log );
+}
+return $data ['id'];
+}
+public static function GetArticlesSide($data = array()) 
+{
+global $mysql;
+if ($data ['site_nid'] != "") 
+{
+$result =M('site')->where("nid='{$data['site_nid']}
+'")->find();
+if ($result == null) return "";
+$data ['type_id'] = $result ['value'];
+}
+$_result = array ( "nid"=>$data ['site_nid'] );
+if ($data ['type_id'] != "") 
+{
+$result = M('articles')->where(" type_id='{$data['type_id']}
+' and id>{$data['id']}
+and status='{$data['status']}
+' order by id asc")->field('id,name')->find();
+$_result ["down_id"] = $result ['id'];
+$_result ["down_name"] = $result ['name'];
+$result = M('articles')->where("type_id='{$data['type_id']}
+' and status='{$data['status']}
+' and id<{$data['id']}
+order by id desc")->field('id,name ')->find();
+$_result ["up_id"] = $result ['id'];
+$_result ["up_name"] = $result ['name'];
+}
+return $_result;
+}
+public static function AddPage($data) 
+{
+if (!IsExiest ( $data ['name'] )) return "articles_page_name_empty";
+if (!IsExiest ( $data ['nid'] )) return "articles_page_nid_empty";
+if ($data ['public'] == 3 &&!IsExiest ( $data ['password'] )) 
+{
+return "articles_page_password_empty";
+}
+$sql = "select 1 from `{}` where ";
+$result = M ( 'articles_pages')->where ( "nid='{$data['nid']}
+'")->find ();
+if ($result != null) return "articles_page_nid_exiest";
+$data ['addtime'] = time ();
+$data ['addip'] = get_client_ip ();
+$id = M ( 'articles_pages')->add ( $data );
+return $id;
+}
+public static function UpdatePage($data) 
+{
+if (!IsExiest ( $data ['id'] )) return "articles_page_id_empty";
+if (!IsExiest ( $data ['name'] )) return "articles_page_name_empty";
+if ($data ['public'] == 3 &&!IsExiest ( $data ['password'] )) 
+{
+return "articles_page_password_empty";
+}
+$result = M ( 'articles_pages')->where ( "nid='{$data['nid']}
+' and id!={$data['id']}
+")->find ();
+if ($result != null) return "articles_page_nid_exiest";
+M ( 'articles_pages')->where ( "id={$data['id']}
+")->save ( $data );
+return $data ['id'];
+}
+public static function GetPageOne($data = array()) 
+{
+if (!IsExiest ( $data ['id'] )) return "articles_page_id_empty";
+$result = M ( 'articles_pages')->alias ( 'p1')->join ( presql ( '`{admin}` as p2 on p2.id=p1.user_id') )->where ( "p1.id={$data['id']}
+")->field ( 'p1.*,p2.username')->find ();
+if ($result == null) return "articles_page_not_exiest";
+return $result;
+}
+public static function GetPageList($data = array()) 
+{
+$_sql = "1=1 ";
+$_order = "p1.order desc ,p1.id asc ";
+$field = " p1.*,p2.username";
+if (IsExiest ( $data ['limit'] ) != false) 
+{
+if ($data ['limit'] != "all") 
+{
+$_limit = $data ['limit'];
+}
+return M ( 'articles_pages')->join ( presql ( '`{admin}` as p2 on p1.user_id=p2.id ') )->where ( $_sql )->field ( $field )->limit ( $_limit )->order ( $_order )->select ();
+}
+$row = M ( 'articles_pages')->join ( presql ( '`{admin}` as p2 on p1.user_id=p2.id ') )->where ( $_sql )->count ();
+$data ['page'] = !IsExiest ( $data ['page'] ) ?1 : $data ['page'];
+$data ['epage'] = !IsExiest ( $data ['epage'] ) ?10 : $data ['epage'];
+$Page = new \Think\Page ( $row,$data ['epage'] );
+$show = $Page->show ();
+$list = M ( 'articles_pages')->join ( presql ( '`{admin}` as p2 on p1.user_id=p2.id ') )->where ( $_sql )->field ( $field )->page ( $data ['page'] .",{$data ['epage']}
+")->order ( $_order )->select ();
+;
+$result = array ( 'list'=>$list ?$list : array (), 'page'=>$show );
+return $result;
+}
+public static function GetPageMenu($data = array()) 
+{
+$field = " p1.*,p2.username";
+$result = M ( 'articles_pages')->alias ( 'p1')->join ( presql ( '`{admin}` as p2 on p1.user_id=p2.id') )->field ( $field )->select ();
+$var = "&nbsp;&nbsp;&nbsp;&nbsp;";
+$type_var = "—";
+foreach ( $result as $key =>$value ) 
+{
+$_res [$value ['id']] ['pid'] = $value ['pid'];
+if ($value ['pid'] == 0) 
+{
+$_result [$value ['id']] = $value;
+$_result [$value ['id']] ['_name'] = $value ['name'];
+$_result [$value ['id']] ['type_name'] = $value ['name'];
+$_result [$value ['id']] ['var'] = "";
+$_result1 = self::_GetPageMenu ( $result,$value ['id'],$var,$type_var );
+$_result = array_merge ( $_result,$_result1 );
+}
+}
+return $_result;
+}
+public static function _GetPageMenu($result,$pid,$var,$type_var) 
+{
+$_result = array ();
+$_var = "&nbsp;&nbsp;&nbsp;&nbsp;";
+$_type_var = "—";
+foreach ( $result as $key =>$value ) 
+{
+if ($value ['pid'] == $pid) 
+{
+if ($opid == "") 
+{
+$_result [$value ['id']] = $value;
+$_result [$value ['id']] ['_name'] = $var .$value ['name'];
+$_result [$value ['id']] ['type_name'] = $type_var .$value ['name'];
+$_result [$value ['id']] ['var'] = $var .$_var;
+$_result1 = self::_GetPageMenu ( $result,$value ['id'],$var .$_var,$type_var .$_type_var );
+$_result = array_merge ( $_result,$_result1 );
+}
+else 
+{
+$_result [$value ['id']] = $value;
+$_result [$value ['id']] ['_name'] = $var .$value ['name'];
+$_result [$value ['id']] ['type_name'] = $type_var .$value ['name'];
+$_result [$value ['id']] ['var'] = $var .$_var;
+$_result1 = self::_GetPageMenu ( $result,$value ['id'],$var .$_var,$type_var .$_type_var );
+$_result = array_merge ( $_result,$_result1 );
+}
+}
+}
+return $_result;
+}
+public static function DeletePage($data = array()) 
+{
+$sql = "select 1 from `{}` where ";
+$result = M ( 'articles_pages')->where ( "id={$data['id']}
+")->find ();
+if ($result == false) return "articles_page_not_exiest";
+$result = M ( 'articles_pages')->where ( "pid={$data['id']}
+")->find ();
+if ($result != false) return "articles_page_del_pid_exiest";
+M ( 'articles_pages')->where ( "id={$data['id']}
+")->delete ();
+return $data ['id'];
+}
+}

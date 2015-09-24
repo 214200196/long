@@ -5,56 +5,41 @@
 //此程序由【找源码】http://Www.ZhaoYuanMa.Com (免费版）在线逆向还原，QQ：7530782 
 
 namespace Index\Controller;
-class IndexController extends HomeController 
-{
-	public function index() 
-	{	
-		
+class IndexController extends HomeController {
+	
+	public function index() {	
+		echo '111111111111';
 		global $_G,$tpldir,$MsgInfo,$_U;
-		if (isset ( $_REQUEST ['site'] )) 
-		{
-
-			if ($_G ['site_result'] != false) 
-			{
-				switch ($_G ['site_result'] ['type']) 
-				{
-					case 'article': if (isset ( $_REQUEST ['id'] )) 
-					{
-						$_G ['articles_result'] = \articlesClass::GetOne ( array ( "id"=>I ( 'request.id'), "hits_status"=>1 ) );
-						$temps = $_G ['site_result'] ['content_tpl'];
-					}
-					else 
-					{
-						$data = array ();
-						$data ['page'] = I ( 'get.p');
-						$data ['type_id'] = $_G ['site_result'] ['value'];
-						$lists = \articlesClass::GetList ( $data );
-						$this->assign ( $lists );
-						$temps = $_G ['site_result'] ['list_tpl'];
-					}
-					break;
-					case 'page': if (isset ( $_REQUEST ['nid'] )) 
-					{
-						$_G ['page_result'] = \articlesClass::GetPageOne ( array ( "id"=>$_G ['site_result'] ['value'] ) );
-						$temps = $_G ['site_result'] ['content_tpl'];
-					}
-					else 
-					{
-						$temps = $_G ['site_result'] ['index_tpl'];
-					}
-					break;
+		if (isset ( $_REQUEST ['site'] )) {
+			if ($_G ['site_result'] != false) {
+				switch ($_G ['site_result'] ['type']) {
+					case 'article': if (isset ( $_REQUEST ['id'] )) {
+							$_G ['articles_result'] = \articlesClass::GetOne ( array ( "id"=>I ( 'request.id'), "hits_status"=>1 ) );
+							$temps = $_G ['site_result'] ['content_tpl'];
+						}else {
+							$data = array ();
+							$data ['page'] = I ( 'get.p');
+							$data ['type_id'] = $_G ['site_result'] ['value'];
+							$lists = \articlesClass::GetList ( $data );
+							$this->assign ( $lists );
+							$temps = $_G ['site_result'] ['list_tpl'];
+						}
+						break;
+					case 'page': if (isset ( $_REQUEST ['nid'] )) {
+							$_G ['page_result'] = \articlesClass::GetPageOne ( array ( "id"=>$_G ['site_result'] ['value'] ) );
+							$temps = $_G ['site_result'] ['content_tpl'];
+						}else {
+							$temps = $_G ['site_result'] ['index_tpl'];
+						}
+						break;
 					case 'url': redirect ( $_G ['site_result'] ['value'] );
 					exit ();
 				}
-			}
-			else 
-			{
+			}else {
 				redirect ( '/404.html');
 				exit ();
 			}
-		}
-		else 
-		{
+		}else {
 			if ($_G ['site_result'] == false) 
 			{
 				$_G ['site_result'] ['id'] = 1;
@@ -63,13 +48,16 @@ class IndexController extends HomeController
 		}
 		$this->display ( $tpldir .$temps );
 	}
-	public function tool_lixi() 
-	{
+
+
+	public function tool_lixi() {
 		global $_G,$tpldir,$MsgInfo,$_U;
 		$this->display ( $tpldir .'index.html');
 	}
-	public function reg() 
-	{
+
+
+
+	public function reg() {
 		global $_G,$tpldir,$MsgInfo,$_U;
 		$msg = '';
 		if (IS_AJAX) 

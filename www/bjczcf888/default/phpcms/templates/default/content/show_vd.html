@@ -1,0 +1,37 @@
+{template "content","header"}
+<div class="sub-banner" style="background:url({$CATEGORYS[27][image]}) center no-repeat;"></div>
+
+<div class="sub-top">
+	<div class="box">
+    
+{pc:content action="category" catid="27" siteid="$siteid" order="listorder ASC"}
+		
+		{/pc}
+    {loop $data $r}<a href="{$r[url]}" {if $catid==$r[catid] || $top_parentid==$r[catid]} class="cur"{/if}>{$r[catname]}</a>{/loop}{/pc}</div>
+</div>
+<div class="vd-box">
+	<div class="vd-player" style="text-align:center;">
+<script type="text/javascript" src="CuPlayer/images/swfobject.js"></script>
+<div class="video" id="CuPlayer">
+<strong>提示：您的Flash Player版本过低，请升级！</strong></div>
+<script type="text/javascript">
+var so = new SWFObject("CuPlayer/CuPlayerMiniV4.swf","CuPlayerV4","600","410","9","#000000");
+so.addParam("allowfullscreen","true");
+so.addParam("allowscriptaccess","always");
+so.addParam("wmode","opaque");
+so.addParam("quality","high");
+so.addParam("salign","lt");
+so.addVariable("CuPlayerSetFile","CuPlayer/CuPlayerSetFile.php"); //播放器配置文件地址,例SetFile.xml、SetFile.asp、SetFile.php、SetFile.aspx
+so.addVariable("CuPlayerFile","http://demo.cuplayer.com/file/test.mp4"); //视频文件地址
+so.addVariable("CuPlayerImage","{$thumb}");//视频略缩图,本图片文件必须正确
+so.addVariable("CuPlayerWidth","600"); //视频宽度
+so.addVariable("CuPlayerHeight","410"); //视频高度
+so.addVariable("CuPlayerAutoPlay","yes"); //是否自动播放
+so.addVariable("CuPlayerLogo",""); //Logo文件地址
+so.addVariable("CuPlayerPosition","bottom-right"); //Logo显示的位置
+so.write("CuPlayer");
+</script>
+    </div>
+    <div class="vd-tit">{$title}</div>
+</div>
+{template "content","footer"}

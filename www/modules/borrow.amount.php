@@ -1,3 +1,429 @@
-<?php // This file is protected by copyright dongshan
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=17328;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMTgyKTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ1pDSHhEbDlCT3k3bVM2Ri9YSlJHSXZyak10ZXFkWWlzd1E0VEVwTDAxdWs1V24zZ1ZQb2FLek5jaDhmMlVBK2I9JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+<?php
+//加密方式：php源码混淆类加密。免费版地址:http://www.zhaoyuanma.com/phpjm.html 免费版不能解密,可以使用VIP版本。
+
+//发现了time,请自行验证这套程序是否有时间限制.
+//此程序由【找源码】http://Www.ZhaoYuanMa.Com (免费版）在线逆向还原，QQ：7530782 
+
+class amountClass extends \autoClass 
+{
+	function GetAmountList($data = array()) 
+	{
+		$_sql = " 1=1 ";
+		if (isset ( $data ['status'] ) &&$data ['status'] != "") 
+		{
+			$_sql .= " and p1.status = {$data['status']}
+		";
+	}
+	if (isset ( $data ['user_id'] ) &&$data ['user_id'] != "") 
+	{
+		$_sql .= " and p1.user_id = {$data['user_id']}
+	";
+}
+if (isset ( $data ['username'] ) &&$data ['username'] != "") 
+{
+	$_sql .= " and p2.username like '%{$data['username']}
+%' ";
+}
+if (isset ( $data ['type'] ) &&$data ['type'] != "") 
+{
+$_sql .= " and p1.type like '%{$data['type']}
+%' ";
+}
+$field = 'p1.*,p2.username';
+$join = "{users} as p2 on p1.user_id=p2.user_id";
+if (isset ( $data ['limit'] )) 
+{
+$_limit = "";
+if ($data ['limit'] != "all") 
+{
+$_limit = $data ['limit'];
+}
+return M ( 'borrow_amount')->alias ( 'p1')->join ( presql ( $join ) )->where ( $_sql )->field ( $field )->limit ( $_limit )->select ();
+}
+$row = M ( 'borrow_amount')->alias ( 'p1')->join ( presql ( $join ) )->where ( $_sql )->count ();
+$data ['page'] = !IsExiest ( $data ['page'] ) ?1 : $data ['page'];
+$data ['epage'] = !IsExiest ( $data ['epage'] ) ?10 : $data ['epage'];
+$Page = new \Think\Page ( $row,$data ['epage'] );
+$show = $Page->show ();
+$list = M ( 'borrow_amount')->alias ( 'p1')->join ( presql ( $join ) )->where ( $_sql )->field ( $field )->page ( $data ['page'] .",{$data ['epage']}
+")->select ();
+if ($list != false) 
+{
+foreach ( $list as $key =>$value ) 
+{
+$list [$key] = self::GetAmountUsers ( array ( "user_id"=>$value ['user_id'], "amount_result"=>$value ) );
+$list [$key] ['username'] = $value ['username'];
+}
+}
+$result = array ( 'list'=>$list ?$list : array (), 'total'=>$total, 'page'=>$show ) ;
+return $result;
+}
+public static function GetAmountApplyList($data = array()) 
+{
+global $mysql;
+$_sql = " 1=1 ";
+if (IsExiest ( $data ['status'] ) != false) 
+{
+$_sql .= " and p1.status = {$data['status']}
+";
+}
+if (IsExiest ( $data ['user_id'] ) != false) 
+{
+$_sql .= " and p1.user_id = {$data['user_id']}
+";
+}
+if (IsExiest ( $data ['username'] ) != false) 
+{
+$_sql .= " and p2.username like '%{$data['username']}
+%' ";
+}
+if (IsExiest ( $data ['type'] ) != false) 
+{
+$_sql .= " and p1.type like '%{$data['type']}
+%' ";
+}
+$_order = " p1.id desc";
+$_select = 'p1.*,p2.username';
+$_join = "{users} as p2 on p1.user_id=p2.user_id";
+if (isset ( $data ['limit'] )) 
+{
+$_limit = "";
+if ($data ['limit'] != "all") 
+{
+$_limit = $data ['limit'];
+}
+return M ( 'borrow_amount_apply')->alias ( 'p1')->join ( presql ( $_join ) )->where ( $_sql )->limit ( $_limit )->field ( $_select )->order ( $_order )->select ();
+}
+$row = M ( 'borrow_amount_apply')->alias ( 'p1')->join ( presql ( $_join ) )->where ( $_sql )->count ();
+$data ['page'] = !IsExiest ( $data ['page'] ) ?1 : $data ['page'];
+$data ['epage'] = !IsExiest ( $data ['epage'] ) ?10 : $data ['epage'];
+$Page = new \Think\Page ( $row,$data ['epage'] );
+$show = $Page->show ();
+$list = M ( 'borrow_amount_apply')->alias ( 'p1')->join ( presql ( $_join ) )->where ( $_sql )->page ( $data ['page'] .",{$data ['epage']}
+")->field ( $_select )->order ( $_order )->select ();
+$result = array ( 'list'=>$list ?$list : array (), 'page'=>$show );
+return $result;
+}
+public static function AddAmountLog($data) 
+{
+if (!IsExiest ( $data ['user_id'] )) 
+{
+return "amount_user_id_empty";
+}
+$result = M ( 'borrow_amount_log')->where ( "nid='{$data['nid']}
+'")->find ();
+if ($result == false) 
+{
+$data ['addtime'] = time ();
+$data ['addip'] = get_client_ip ();
+M ( 'borrow_amount_log')->add ( $data );
+}
+if (strpos ( "borrrow",$data ['amount_type'] ) >0) 
+{
+$data ['amount_type'] = "borrow";
+}
+$usename = $data ['amount_type'] ."_use";
+$reducename = $data ['amount_type'] ."_reduce";
+$type = $data ['amount_type'];
+$account = $data ['account'];
+if ($data ['oprate'] == "reduce") 
+{
+$sql = "update `{borrow_amount}` set `{$usename}
+`={$usename}
+-$account,`{$reducename}
+`={$reducename}
++$account where user_id={$data['user_id']}
+";
+M ()->execute ( presql ( $sql ) );
+}
+else 
+{
+$sql = "update `{borrow_amount}` set `{$usename}
+`={$usename}
++$account,`{$reducename}
+`={$reducename}
+-$account where user_id={$data['user_id']}
+";
+M ()->execute ( presql ( $sql ) );
+}
+return $data ['user_id'];
+}
+function GetAmountLogList($data = array()) 
+{
+global $mysql;
+$_sql = "  1=1 ";
+if (IsExiest ( $data ['user_id'] ) != false) 
+{
+$_sql .= " and p1.user_id ='{$data['user_id']}
+'";
+}
+if (IsExiest ( $data ['username'] ) != false) 
+{
+$_sql .= " and p2.username like '%{$data['username']}
+%'";
+}
+if (IsExiest ( $data ['amount_type'] ) != false) 
+{
+$_sql .= " and p1.amount_type = '{$data['amount_type']}
+'";
+}
+if (IsExiest ( $data ['type'] ) != false) 
+{
+$_sql .= " and p1.type = '{$data['type']}
+'";
+}
+$_select = " p1.*,p2.username";
+$_order = "p1.id desc";
+$_join = "`{users}` as p2 on p1.user_id=p2.user_id";
+if (IsExiest ( $data ['limit'] ) != false) 
+{
+if ($data ['limit'] != "all") 
+{
+$_limit = $data ['limit'];
+}
+return M ( 'borrow_amount_log')->alias ( 'p1')->join ( presql ( $_join ) )->where ( $_sql )->field ( $_select )->limit ( $_limit )->order ( $_order )->select ();
+}
+$row = M ( 'borrow_amount_log')->alias ( 'p1')->join ( presql ( $_join ) )->where ( $_sql )->count ();
+$num_sql = "select p1.oprate,sum(p1.account) as num from `{borrow_amount_log}` as p1 left join `{users}` as p2 on p1.user_id=p2.user_id SQL group by p1.oprate ";
+$num_result = M ( 'borrow_amount_log')->alias ( 'p1')->join ( presql ( $_join ) )->where ( $_sql )->field ( 'p1.oprate,sum(p1.account) as num')->group ( 'p1.oprate')->select ();
+$_num_result = array ();
+if ($num_result != false) 
+{
+foreach ( $num_result as $key =>$value ) 
+{
+$_num_result [$value ['oprate']] = $value ['num'];
+}
+}
+$data ['page'] = !IsExiest ( $data ['page'] ) ?1 : $data ['page'];
+$data ['epage'] = !IsExiest ( $data ['epage'] ) ?10 : $data ['epage'];
+$Page = new \Think\Page ( $row,$data ['epage'] );
+$show = $Page->show ();
+$list = M ( 'borrow_amount_log')->alias ( 'p1')->join ( presql ( $_join ) )->where ( $_sql )->field ( $_select )->page ( $data ['page'] .",{$data ['epage']}
+")->order ( $_order )->select ();
+$result = array ( 'list'=>$list ?$list : array (), 'page'=>$show, "oprate_add"=>$_num_result ['add'], "oprate_reduce"=>$_num_result ['reduce'] );
+return $result;
+}
+public static function AddAmountApply($data = array()) 
+{
+global $mysql;
+if (!IsExiest ( $data ['user_id'] )) 
+{
+return "amount_user_id_empty";
+}
+$sql = "select 1 from `{borrow_amount}` where user_id='{$data['user_id']}
+'";
+$result = M ( 'borrow_amount')->where ( "user_id='{$data['user_id']}
+'")->find ();
+if ($result == false ||$result == NULL) 
+{
+M ( 'borrow_amount')->add ( array ( 'user_id'=>$data ['user_id'] ) );
+}
+$data ['nid'] = "apply".$data ['user_id'] .time () .rand ( 1,99 );
+$data ['addtime'] = time ();
+$data ['addip'] = get_client_ip ();
+return M ( 'borrow_amount_apply')->add ( $data );
+}
+function GetAmountApplyOne($data) 
+{
+global $mysql;
+$sql = " 1=1 ";
+if (IsExiest ( $data ['user_id'] ) != false) 
+{
+$sql .= " and p1.user_id={$data['user_id']}
+ ";
+}
+if (IsExiest ( $data ['id'] ) != false) 
+{
+$sql .= " and p1.id={$data['id']}
+";
+}
+if (IsExiest ( $data ['amount_type'] ) != false) 
+{
+$sql .= " and p1.amount_type='{$data['amount_type']}
+' ";
+}
+$result = M ( 'borrow_amount_apply')->alias ( 'p1')->join ( presql ( '`{users}` as p2 on p1.user_id=p2.user_id') )->where ( $sql )->order ( 'p1.id desc')->find ();
+if ($result === false ||$result == NULL) return false;
+return $result;
+}
+public static function CheckAmountApply($data) 
+{
+if (!IsExiest ( $data ['id'] )) 
+{
+return "amount_apply_id_empty";
+}
+$result = self::GetAmountApplyOne ( array ( "id"=>$data ['id'] ) );
+if ($result ['status'] != 0) 
+{
+return "amount_apply_check_yes";
+}
+$amount_type = $result ['amount_type'];
+$user_id = $data ['user_id'];
+if ($data ['status'] == 1) 
+{
+$_data ["user_id"] = $result ['user_id'];
+$_data ["amount_type"] = $result ['amount_type'];
+$_data ["type"] = "apply";
+$_data ["oprate"] = $result ['oprate'];
+$_data ["nid"] = $result ['nid'];
+$_data ["account"] = $data ['account'];
+$_data ["remark"] = "申请额度审核通过";
+self::AddAmountLog ( $_data );
+if ($result ['oprate'] == "reduce") 
+{
+$sql = "update {borrow_amount} set {$amount_type}
+={$amount_type}
+-{$data['account']}
+where user_id={$result['user_id']}
+";
+M ()->execute ( presql ( $sql ) );
+}
+else 
+{
+$sql = "update {borrow_amount} set {$amount_type}
+={$amount_type}
++{$data['account']}
+where user_id={$result['user_id']}
+";
+M ()->execute ( presql ( $sql ) );
+}
+}
+else 
+{
+$data ['account'] = 0;
+}
+$udata ['status'] = $data ['status'];
+$udata ['verify_time'] = time ();
+$udata ['verify_user'] = $data ['verify_userid'];
+$udata ['verify_remark'] = $data ['verify_remark'];
+$udata ['account'] = $data ['account'];
+M ( 'borrow_amount_apply')->where ( "id = {$data['id']}
+")->save ( $udata );
+return $data ['id'];
+}
+function AddAmountType($data = array()) 
+{
+if (!IsExiest ( $data ['name'] )) 
+{
+return "amount_type_name_empty";
+}
+if (!IsExiest ( $data ['nid'] )) 
+{
+return "amount_type_nid_empty";
+}
+if (IsExiest ( $data ['username'] ) != false) 
+{
+$result = M('borrow_amount_type')->where("nid ='{$data['nid']}
+'")->find();
+if ($result != null) return "amount_type_nid_exiest";
+}
+$data['addtime']=time();
+$data['addip']=get_client_ip();
+$data['updatetime']=time();
+$data['updateip']=get_client_ip();
+return M('borrow_amount_type')->add($data);
+}
+function UpdateAmountType($data = array()) 
+{
+global $mysql;
+if (!IsExiest ( $data ['name'] )) 
+{
+return "amount_type_name_empty";
+}
+if (!IsExiest ( $data ['nid'] )) 
+{
+return "amount_type_nid_empty";
+}
+if (IsExiest ( $data ['username'] ) != false) 
+{
+$result = M('borrow_amount_type')->where("nid ='{$data['nid']}
+' and id!={$data['id']}
+")->find();
+if ($result != null) return "amount_type_nid_exiest";
+}
+$data['updatetime']=time();
+$data['updateip']=get_client_ip();
+M('borrow_amount_type')->where("id={$data['id']}
+")->save($data);
+return $data ['id'];
+}
+function DelAmountType($data = array()) 
+{
+if (!IsExiest ( $data ['id'] )) return "amount_type_id_empty";
+$sql = "delete from `{borrow_amount_type}`  where id='{$data['id']}
+'";
+M()->execute(presql($sql));
+return $data ['id'];
+}
+function GetAmountTypeList($data = array()) 
+{
+$_sql = "1=1 ";
+if (IsExiest ( $data ['user_id'] ) != false) 
+{
+$_sql .= " and p1.user_id ='{$data['user_id']}
+'";
+}
+if (IsExiest ( $data ['username'] ) != false) 
+{
+$_sql .= " and p2.username like '%{$data['username']}
+%'";
+}
+$field = " p1.*,p2.name as credit_name ";
+$_order = " order by p1.id desc";
+$sql = "select SELECT from `{}` as p1 left join  SQL ORDER ";
+if (IsExiest ( $data ['limit'] ) != false) 
+{
+if ($data ['limit'] != "all") 
+{
+$_limit = $data ['limit'];
+}
+return M('borrow_amount_type')->alias('p1')->join(presql('`{credit_class}` as p2 on p1.credit_nid=p2.nid'))->where($_sql)->field($field)->limit($_limit)->order($_order)->select();
+}
+$row = M('borrow_amount_type')->alias('p1')->join(presql('`{credit_class}` as p2 on p1.credit_nid=p2.nid'))->where($_sql)->count ();
+$total = intval ( $row ['num'] );
+$data ['page'] = !IsExiest ( $data ['page'] ) ?1 : $data ['page'];
+$data ['epage'] = !IsExiest ( $data ['epage'] ) ?10 : $data ['epage'];
+$Page = new \Think\Page ( $row,$data ['epage'] );
+$show = $Page->show ();
+$list = M('borrow_amount_type')->alias('p1')->join(presql('`{credit_class}` as p2 on p1.credit_nid=p2.nid'))->where($_sql)->field($field)->page ( $data ['page'] .",{$data ['epage']}
+")->order($_order)->select();
+$result = array ( 'list'=>$list ?$list : array (), 'page'=>$show );
+return $result;
+}
+function GetAmountTypeOne($data = array()) 
+{
+global $mysql;
+if (!IsExiest ( $data ['id'] )) return "amount_type_id_empty";
+$result =M('borrow_amount_type')->where("id={$data['id']}
+")->find();
+if ($result == null) return "amount_type_empty";
+return $result;
+}
+public static function GetAmountUsers($data = array()) 
+{
+if (!IsExiest ( $data ['user_id'] )) return "amount_user_id_empty";
+$borrow_first = 0;
+if (isset ( $data ['amount_result'] ) &&$data ['amount_result'] != "") 
+{
+$result = $data ['amount_result'];
+}
+else 
+{
+$result = M ( 'borrow_amount')->where ( "user_id={$data['user_id']}
+")->find ();
+if ($result == false) 
+{
+$idata ['user_id'] = $data ['user_id'];
+M ( 'borrow_amount')->add ( $idata );
+$result = M ( 'borrow_amount')->where ( "user_id='{$data['user_id']}
+'")->find ();
+}
+}
+$_result = \borrowClass::GetBorrowCredit ( array ( "user_id"=>$data ['user_id'] ) );
+$borrow_credit = ($_result ['approve_credit']) * 0 +$_result ['borrow_credit'];
+$_data ["borrow_amount"] = $borrow_first +$borrow_credit +$result ['borrow'];
+$_data ["borrow_amount_use"] = intval ( $borrow_first +$borrow_credit +$result ['borrow_use'] );
+$_data ["borrow_amount_nouse"] = intval ( $_data ["borrow_amount"] -$_data ["borrow_amount_use"] );
+return $_data;
+}
+}

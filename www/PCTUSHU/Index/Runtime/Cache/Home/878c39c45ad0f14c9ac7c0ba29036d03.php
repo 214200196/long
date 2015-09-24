@@ -93,7 +93,8 @@
           <span>
             <?php if($_GET['content_id'] < $getMaxContentId['content_id']): ?><a class="glyphicon glyphicon-circle-arrow-right" href="<?php echo U('index',array('bid'=>$_GET['bid'],'content_id'=>$_GET['content_id']+1));?>" title="下一页"></a><?php endif; ?>
           </span>
-          </div>
+            <span><p><?php echo ($booksPercent); ?>%</p></span> 
+         </div>
       </div>
       <div class="book-content-center-content"><?php echo ($getContentList["acticle_content"]); ?></div>
         <?php if($getContentList['acticle_content']): ?><div class="book-content-center-footer">

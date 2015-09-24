@@ -1,0 +1,423 @@
+[ 2015-09-09T08:52:59+08:00 ] ::1 /admin/index/reg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0080s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0060s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0060s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0070s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ADMINS - assumed 'ADMINS' D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 13 行.
+
+[ 2015-09-09T08:53:16+08:00 ] ::1 /czmanag.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0080s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0060s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0060s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0070s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method moduleClass::GetModuleList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `yyd_modules` [ RunTime:0.0180s ]
+SQL: SELECT * FROM yyd_modules p1 WHERE (   1=1  ) ORDER BY   p1.id desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: cookie_status D:\phpStudy\WWW\app\Common\Common\function.php 第 524 行.
+
+[ 2015-09-09T08:53:17+08:00 ] ::1 /czmanag.php/admin/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0070s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0060s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0060s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0080s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method moduleClass::GetModuleList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `yyd_modules` [ RunTime:0.0030s ]
+SQL: SELECT * FROM yyd_modules p1 WHERE (   1=1  ) ORDER BY   p1.id desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: cookie_status D:\phpStudy\WWW\app\Common\Common\function.php 第 524 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 1 D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-09T08:53:18+08:00 ] ::1 /czmanag.php/admin/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0090s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0060s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0060s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0070s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0010s ]
+NOTIC: [2048] Non-static method moduleClass::GetModuleList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `yyd_modules` [ RunTime:0.0030s ]
+SQL: SELECT * FROM yyd_modules p1 WHERE (   1=1  ) ORDER BY   p1.id desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: cookie_status D:\phpStudy\WWW\app\Common\Common\function.php 第 524 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-09T08:53:22+08:00 ] ::1 /czmanag.php/admin/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0110s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0050s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0050s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0090s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method moduleClass::GetModuleList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `yyd_modules` [ RunTime:0.0030s ]
+SQL: SELECT * FROM yyd_modules p1 WHERE (   1=1  ) ORDER BY   p1.id desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: cookie_status D:\phpStudy\WWW\app\Common\Common\function.php 第 524 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-09T08:53:25+08:00 ] ::1 /czmanag.php/admin/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0060s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0060s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0050s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0070s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method moduleClass::GetModuleList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `yyd_modules` [ RunTime:0.0030s ]
+SQL: SELECT * FROM yyd_modules p1 WHERE (   1=1  ) ORDER BY   p1.id desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: cookie_status D:\phpStudy\WWW\app\Common\Common\function.php 第 524 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 1 D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-09T08:53:26+08:00 ] ::1 /czmanag.php/admin/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0100s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0100s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0100s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method moduleClass::GetModuleList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `yyd_modules` [ RunTime:0.0030s ]
+SQL: SELECT * FROM yyd_modules p1 WHERE (   1=1  ) ORDER BY   p1.id desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: cookie_status D:\phpStudy\WWW\app\Common\Common\function.php 第 524 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-09T08:53:30+08:00 ] ::1 /czmanag.php/admin/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0070s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0080s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0070s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0110s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method moduleClass::GetModuleList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `yyd_modules` [ RunTime:0.0030s ]
+SQL: SELECT * FROM yyd_modules p1 WHERE (   1=1  ) ORDER BY   p1.id desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: cookie_status D:\phpStudy\WWW\app\Common\Common\function.php 第 524 行.
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-09T08:53:35+08:00 ] ::1 /czmanag.php/admin/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0090s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0050s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0070s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0010s ]
+NOTIC: [2048] Non-static method moduleClass::GetModuleList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `yyd_modules` [ RunTime:0.0040s ]
+SQL: SELECT * FROM yyd_modules p1 WHERE (   1=1  ) ORDER BY   p1.id desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: cookie_status D:\phpStudy\WWW\app\Common\Common\function.php 第 524 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 98 行.
+NOTIC: [8] Uninitialized string offset: 1 D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-09T08:53:36+08:00 ] ::1 /czmanag.php/admin/index/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Controller\AdminController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0050s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0060s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0050s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0060s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method moduleClass::GetModuleList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Admin\Controller\AdminController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `yyd_modules` [ RunTime:0.0040s ]
+SQL: SELECT * FROM yyd_modules p1 WHERE (   1=1  ) ORDER BY   p1.id desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+NOTIC: [8] Undefined index: cookie_status D:\phpStudy\WWW\app\Common\Common\function.php 第 524 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

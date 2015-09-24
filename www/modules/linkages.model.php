@@ -1,3 +1,40 @@
-<?php // This file is protected by copyright dongshan
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=2860;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMTgxKTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ1pDSHhEbDlCT3k3bVM2Ri9YSlJHSXZyak10ZXFkWWlzd1E0VEVwTDAxdWs1V24zZ1ZQb2FLek5jaDhmMlVBK2I9JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+<?php
+$MsgInfo ['linkages_name_empty'] = "名称不能为空";
+$MsgInfo ['linkages_value_empty'] = "值不能为空";
+$MsgInfo ['linkages_add_success'] = "添加成功";
+$MsgInfo ['linkages_del_success'] = "删除成功";
+$MsgInfo ['linkages_action_success'] = "操作成功";
+$MsgInfo ['linkages_type_add_success'] = "添加成功";
+$MsgInfo ['linkages_type_update_success'] = "修改成功";
+$MsgInfo ['linkages_type_del_success'] = "删除成功";
+$MsgInfo ['linkages_type_name_empty'] = "类型名称不能为空";
+$MsgInfo ['linkages_type_nid_empty'] = "类型标识名不能为空";
+$MsgInfo ['linkages_type_nid_exiest'] = "类型标识名已经存在";
+$MsgInfo ['linkages_type_id_empty'] = "类型id不能为空";
+$MsgInfo ['linkages_type_sub_exiest'] = "此类型有子分类存在";
+$MsgInfo ["linkages_name_edit"] = "编辑";
+$MsgInfo ["linkages_name_del"] = "删除";
+$MsgInfo ["linkages_name_error"] = "操作有误";
+$MsgInfo ["linkages_name_sub"] = "联动列表";
+$MsgInfo ["linkages_name_del_msg"] = "确定要删除吗?删除后将不可恢复";
+$MsgInfo ["linkages_name_manage"] = "管理";
+$MsgInfo ["linkages_name_list"] = "类型列表";
+$MsgInfo ["linkages_name_list_new"] = "添加多条联动";
+$MsgInfo ["linkages_name_add_type"] = "添加类型";
+$MsgInfo ["linkages_name_new"] = "添加";
+$MsgInfo ["linkages_name_news"] = "批量添加";
+$MsgInfo ["linkages_name_type"] = "类型";
+$MsgInfo ["linkages_name_type_id"] = "类型ID";
+$MsgInfo ["linkages_name_type_name"] = "联动类型";
+$MsgInfo ["linkages_name_type_nid"] = "标识名";
+$MsgInfo ["linkages_name_type_order"] = "类型排序";
+$MsgInfo ["linkages_name_type_code"] = "类型模块";
+$MsgInfo ["linkages_name_type_manage"] = "操作";
+$MsgInfo ["linkages_name_code"] = "所属模块";
+$MsgInfo ["linkages_name_name"] = "名称";
+$MsgInfo ["linkages_name_id"] = "联动ID";
+$MsgInfo ["linkages_name_nid"] = "标识名";
+$MsgInfo ["linkages_name_value"] = "联动值";
+$MsgInfo ["linkages_name_order"] = "排序";
+$MsgInfo ["linkages_name_submit"] = "确认提交";
+$MsgInfo ["linkages_name_reset"] = "重新设置";

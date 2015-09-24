@@ -1,3 +1,454 @@
-<?php // This file is protected by copyright dongshan
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=16844;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMTgyKTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ1pDSHhEbDlCT3k3bVM2Ri9YSlJHSXZyak10ZXFkWWlzd1E0VEVwTDAxdWs1V24zZ1ZQb2FLek5jaDhmMlVBK2I9JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+
+<?php
+class borrowtoolClass 
+{
+	public static function TypeCount() 
+	{
+		global $mysql;
+		$sql = "select  from `{}` group by type";
+		$result = M ( 'account_log')->where ( $where )->field ( 'count(1) as num,sum(money) as count,type')->group ( 'type')->select ();
+		return $result;
+	}
+	public static function Check($data) 
+	{
+		global $mysql;
+		$key = empty ( $data ['key'] ) ?0 : $data ['key'];
+		$sql = "select count(1) as num,sum(money) as count,type from `{account_log}` group by type  limit $key,1";
+		$result = $mysql->db_fetch_array ( $sql );
+		if ($result ['type'] == "borrow_award_lower") 
+		{
+			$_result = self::borrow_award_lower ( $result );
+		}
+		elseif ($result ['type'] == "borrow_repay") 
+		{
+			$_result = self::borrow_repay ( $result );
+		}
+		elseif ($result ['type'] == "borrow_success") 
+		{
+			$_result = self::borrow_success ( $result );
+		}
+		elseif ($result ['type'] == "recharge") 
+		{
+			$_result = self::recharge ( $result );
+		}
+		elseif ($result ['type'] == "online_recharge") 
+		{
+			$_result = self::online_recharge ( $result );
+		}
+		elseif ($result ['type'] == "recharge_fee") 
+		{
+			$_result = self::recharge_fee ( $result );
+		}
+		elseif ($result ['type'] == "borrow_manage_fee") 
+		{
+			$_result = self::borrow_manage_fee ( $result );
+		}
+		elseif ($result ['type'] == "cash") 
+		{
+			$_result = self::cash ( $result );
+		}
+		elseif ($result ['type'] == "cash_success") 
+		{
+			$_result = self::cash_success ( $result );
+		}
+		elseif ($result ['type'] == "cash_false") 
+		{
+			$_result = self::cash_false ( $result );
+		}
+		elseif ($result ['type'] == "cash_cancel") 
+		{
+			$_result = self::cash_false ( $result );
+		}
+		elseif ($result ['type'] == "tender") 
+		{
+			$_result = self::tender ( $result );
+		}
+		elseif ($result ['type'] == "tender_success") 
+		{
+			$_result = self::tender_success ( $result );
+		}
+		elseif ($result ['type'] == "tender_success_frost") 
+		{
+			$_result = self::tender_success_frost ( $result );
+		}
+		elseif ($result ['type'] == "borrow_success_account") 
+		{
+			$_result = self::borrow_success_account ( $result );
+		}
+		elseif ($result ['type'] == "borrow_success_manage") 
+		{
+			$_result = self::borrow_success_manage ( $result );
+		}
+		elseif ($result ['type'] == "fengxianchi") 
+		{
+			$_result = self::fengxianchi ( $result );
+		}
+		elseif ($result ['type'] == "fengxianchi_borrow") 
+		{
+			$_result = self::fengxianchi_borrow ( $result );
+		}
+		elseif ($result ['type'] == "realname_fee") 
+		{
+			$_result = self::realname_fee ( $result );
+		}
+		elseif ($result ['type'] == "tender_repay_yes") 
+		{
+			$_result = self::tender_repay_yes ( $result );
+		}
+		elseif ($result ['type'] == "tender_user_cancel") 
+		{
+			$_result = self::tender_user_cancel ( $result );
+		}
+		elseif ($result ['type'] == "vip_success") 
+		{
+			$_result = self::vip_success ( $result );
+		}
+		else 
+		{
+			$_result = array ( "type"=>$result ['type'], "status"=>-1 );
+		}
+		return $_result;
+	}
+	public static function vip_success($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(money) as count from `{users_vip}` where status=1";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "vip_success";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = $result ['count'];
+		if ($data ['num'] == $tool ['num']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function tender_user_cancel($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(account) as count from `{borrow_tender}` where status=3";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "tender_user_cancel";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = $result ['count'];
+		if ($data ['num'] == $tool ['num']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function tender_repay_yes($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(recover_account) as count from `{borrow_recover}` where recover_status=1";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "tender_repay_yes";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = "-";
+		if ($data ['num'] == $tool ['num']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function realname_fee($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num from `{users_info}` where realname_status=1";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "realname_fee";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = "-";
+		if ($data ['num'] == $tool ['num']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function fengxianchi_borrow($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(recover_interest) as count from `{borrow_recover}` where recover_status=1";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "fengxianchi_borrow";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = "-";
+		if ($data ['num'] == $tool ['num'] &&$data ['count'] == $tool ['count']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function fengxianchi($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(recover_interest) as count from `{borrow_recover}` where recover_status=1";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "fengxianchi";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = $result ['count'] * 0.05;
+		if ($data ['num'] == $tool ['num'] &&$data ['count'] == $tool ['count']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function borrow_success_manage($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(account) as count from `{borrow}` where status=3";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "borrow_success_manage";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = "-";
+		if ($data ['num'] == $tool ['num']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function borrow_success_account($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(account) as count from `{borrow}` where status=3";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "borrow_success_account";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = "-";
+		if ($data ['num'] == $tool ['num']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function tender_success_frost($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(recover_account_all) as count from `{borrow_tender}` where status=1";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "tender_success_frost";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = $result ['count'];
+		if ($data ['num'] == $tool ['num'] &&$data ['count'] == $tool ['count']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function tender_success($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(account) as count from `{borrow_tender}` where status=1";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "tender_success";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = $result ['count'];
+		if ($data ['num'] == $tool ['num'] &&$data ['count'] == $tool ['count']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function tender($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(account) as count from `{borrow_tender}` ";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "tender";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = $result ['count'];
+		if ($data ['num'] == $tool ['num'] &&$data ['count'] == $tool ['count']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function cash_cancel($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(total) as count from `{account_cash}` where status=3 ";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "cash_cancel";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = $result ['count'];
+		if ($data ['num'] == $tool ['num'] &&$data ['count'] == $tool ['count']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function cash_false($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(total) as count from `{account_cash}` where status=2 ";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "cash_false";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = $result ['count'];
+		if ($data ['num'] == $tool ['num'] &&$data ['count'] == $tool ['count']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function cash_success($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(total) as count from `{account_cash}` where status=1 ";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "cash_success";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = $result ['count'];
+		if ($data ['num'] == $tool ['num'] &&$data ['count'] == $tool ['count']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function cash($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(total) as count from `{account_cash}` ";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "cash";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = $result ['count'];
+		if ($data ['num'] == $tool ['num'] &&$data ['count'] == $tool ['count']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function borrow_manage_fee($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(account) as count from `{borrow}` where status=3 ";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "borrow_manage_fee";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = "-";
+		if ($data ['num'] == $tool ['num']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function borrow_award_lower($data) 
+	{
+		global $mysql;
+		$sql = "select account,award_status,award_account,award_scale from `{borrow}` where (award_status>0 and status=3) or (award_false=1 and status=4 )";
+		$result = $mysql->db_fetch_arrays ( $sql );
+		$_result = 0;
+		foreach ( $result as $key =>$value ) 
+		{
+			if ($value ['award_status'] == 1) 
+			{
+				$_result += $value ['award_account'];
+			}
+			elseif ($value ['award_status'] == 2) 
+			{
+				$_result += round ( $value ['award_scale'] * $value ['account'],2 );
+			}
+		}
+		$tool ['type'] = "borrow_award_lower";
+		$tool ['status'] = 0;
+		$tool ['num'] = count ( $result );
+		$tool ['count'] = $_result;
+		if ($data ['num'] == count ( $result ) &&$data ['count'] == $_result) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function borrow_repay($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(repay_account) as count from `{borrow_repay}` where repay_status=1 ";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "borrow_repay";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = $result ['count'];
+		if ($data ['num'] == $tool ['num'] &&$data ['count'] == $tool ['count']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function borrow_success($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(account) as count from `{borrow}` where status=3 ";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "borrow_success";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = $result ['count'];
+		if ($data ['num'] == $tool ['num'] &&$data ['count'] == $tool ['count']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function recharge($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(money) as count from `{account_recharge}` where status=1 ";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "recharge";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = $result ['count'];
+		if ($data ['num'] == $tool ['num'] &&$data ['count'] == $tool ['count']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function online_recharge($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(money) as count from `{account_recharge}` where status=1 ";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "online_recharge";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = $result ['count'];
+		if ($data ['num'] == $tool ['num'] &&$data ['count'] == $tool ['count']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+	public static function recharge_fee($data) 
+	{
+		global $mysql;
+		$sql = "select count(1) as num,sum(money) as count from `{account_recharge}` where status=1 ";
+		$result = $mysql->db_fetch_array ( $sql );
+		$tool ['type'] = "recharge_fee";
+		$tool ['status'] = 0;
+		$tool ['num'] = $result ['num'];
+		$tool ['count'] = "-";
+		if ($data ['num'] == $tool ['num']) 
+		{
+			$tool ['status'] = 1;
+		}
+		return $tool;
+	}
+}

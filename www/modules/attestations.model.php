@@ -1,3 +1,23 @@
-<?php // This file is protected by copyright dongshan
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=2028;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMTgxKTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ1pDSHhEbDlCT3k3bVM2Ri9YSlJHSXZyak10ZXFkWWlzd1E0VEVwTDAxdWs1V24zZ1ZQb2FLek5jaDhmMlVBK2I9JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+
+<?php
+if (!defined ( 'ROOT_PATH')) echo "<script>window.location.href='/404.htm';</script>";
+$MsgInfo ["attestations_type_name_empty"] = "类型名称不能为空";
+$MsgInfo ["attestations_type_nid_empty"] = "类型标识名不能为空";
+$MsgInfo ["attestations_type_nid_exiest"] = "类型标识名已经存在";
+$MsgInfo ["attestations_type_add_success"] = "添加类型成功";
+$MsgInfo ["attestations_type_update_success"] = "修改类型成功";
+$MsgInfo ["attestations_type_del_success"] = "删除类型成功";
+$MsgInfo ["attestations_type_empty"] = "类型不存在";
+$MsgInfo ["attestations_type_id_empty"] = "类型ID不存在";
+$MsgInfo ["attestations_type_upfiles_exiest"] = "类型有图片存在，不能删除";
+$MsgInfo ["attestations_upfiles_empty"] = "相片不存在";
+$MsgInfo ["attestations_upfiles_id_empty"] = "相片id不存在";
+$MsgInfo ["attestations_upfiles_upfilesid_empty"] = "图片id不存在";
+$MsgInfo ["attestations_upfiles_name_empty"] = "相片名称不能为空";
+$MsgInfo ["attestations_upfiles_update_success"] = "相片修改成功";
+$MsgInfo ["attestations_upfiles_add_success"] = "相片添加成功";
+$MsgInfo ["attestations_upfiles_delete_success"] = "相片删除成功";
+$MsgInfo ["ablums_upfiles_not_exiest"] = "相片不存在";
+$MsgInfo ["attestations_uploads_user_not_exiest"] = "用户不存在";
+$MsgInfo ["attestations_credit_most"] = "总积分大于类型的积分";
+$MsgInfo ["attestations_upfiles_check_success"] = "上传图片审核成功";

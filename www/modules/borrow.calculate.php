@@ -1,3 +1,534 @@
-<?php // This file is protected by copyright dongshan
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=16708;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMTgyKTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ1pDSHhEbDlCT3k3bVM2Ri9YSlJHSXZyak10ZXFkWWlzd1E0VEVwTDAxdWs1V24zZ1ZQb2FLek5jaDhmMlVBK2I9JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+
+<?php
+function EqualInterest($data = array()) 
+{
+	if (IsExiest ( $data ["account"] ) == "") return "equal_account_empty";
+	if (IsExiest ( $data ["period"] ) == "") return "equal_period_empty";
+	if (IsExiest ( $data ["apr"] ) == "") return "equal_apr_empty";
+	if (isset ( $data ['time'] ) &&$data ['time'] >0) 
+	{
+		$data ['time'] = $data ['time'];
+	}
+	else 
+	{
+		$data ['time'] = time ();
+	}
+	$borrow_style = $data ['style'];
+	if ($borrow_style == 0) 
+	{
+		return EqualMonth ( $data );
+	}
+	elseif ($borrow_style == 1) 
+	{
+		return EqualSeason ( $data );
+	}
+	elseif ($borrow_style == 2) 
+	{
+		return EqualDayEnd ( $data );
+	}
+	elseif ($borrow_style == 3) 
+	{
+		return EqualEndMonth ( $data );
+	}
+	elseif ($borrow_style == 4) 
+	{
+		return EqualDeng ( $data );
+	}
+	elseif ($borrow_style == 5) 
+	{
+		return EqualTiyan ( $data );
+	}
+}
+function EqualMonth($data = array()) 
+{
+	$account = $data ['account'];
+	$year_apr = $data ['apr'];
+	$period = $data ['period'];
+	$time = $data ['time'];
+	$month_apr = $year_apr / (12 * 100);
+	$_li = pow ( (1 +$month_apr),$period );
+	if ($account <0) return;
+	$repay_account = round ( $account * ($month_apr * $_li) / ($_li -1),2 );
+	$_result = array ();
+	$_capital_all = 0;
+	$_interest_all = 0;
+	$_account_all = 0.00;
+	for($i = 0;$i <$period;$i ++) 
+	{
+		if ($i == 0) 
+		{
+			$interest = round ( $account * $month_apr,2 );
+		}
+		else 
+		{
+			$_lu = pow ( (1 +$month_apr),$i );
+			$interest = round ( ($account * $month_apr -$repay_account) * $_lu +$repay_account,2 );
+		}
+		if ($i == $period -1) 
+		{
+			$capital = $account -$_capital_all;
+			$interest = $repay_account -$capital;
+		}
+		else 
+		{
+			$capital = $repay_account -$interest;
+		}
+		$_account_all += $repay_account;
+		$_interest_all += $interest;
+		$_capital_all += $capital;
+		$_result [$i] ['account_all'] = round ( $repay_account,2 );
+		$_result [$i] ['account_interest'] = round ( $interest,2 );
+		$_result [$i] ['account_capital'] = round ( $capital,2 );
+		$_result [$i] ['account_other'] = round ( $repay_account * $period -$repay_account * ($i +1),2 );
+		$_result [$i] ['repay_month'] = round ( $repay_account,2 );
+		$_result [$i] ['repay_time'] = get_times ( array ( "time"=>$time, "num"=>$i +1 ) );
+	}
+	if ($data ["type"] == "all") 
+	{
+		$_result_all ['account_total'] = round ( $_account_all,2 );
+		$_result_all ['interest_total'] = round ( $_interest_all,2 );
+		$_result_all ['capital_total'] = round ( $_capital_all,2 );
+		$_result_all ['repay_month'] = round ( $repay_account,2 );
+		$_result_all ['month_apr'] = round ( $month_apr * 100,2 );
+		return $_result_all;
+	}
+	return $_result;
+}
+function EqualSeason($data = array()) 
+{
+	if (isset ( $data ['period'] ) &&$data ['period'] >0) 
+	{
+		$period = $data ['period'];
+	}
+	if ($period %3 != 0) 
+	{
+		return false;
+	}
+	if (isset ( $data ['account'] ) &&$data ['account'] >0) 
+	{
+		$account = $data ['account'];
+	}
+	else 
+	{
+		return "";
+	}
+	if (isset ( $data ['apr'] ) &&$data ['apr'] >0) 
+	{
+		$year_apr = $data ['apr'];
+	}
+	else 
+	{
+		return "";
+	}
+	if (isset ( $data ['borrow_time'] ) &&$data ['borrow_time'] >0) 
+	{
+		$borrow_time = $data ['borrow_time'];
+	}
+	else 
+	{
+		$borrow_time = time ();
+	}
+	$month_apr = $year_apr / (12 * 100);
+	$_season = $period / 3;
+	$_season_money = round ( $account / $_season,2 );
+	$_yes_account = 0;
+	$repay_account = 0;
+	$_capital_all = 0;
+	$_interest_all = 0;
+	$_account_all = 0.00;
+	for($i = 0;$i <$period;$i ++) 
+	{
+		$repay = $account -$_yes_account;
+		$interest = round ( $repay * $month_apr,2 );
+		$repay_account = $repay_account +$interest;
+		$capital = 0;
+		if ($i %3 == 2) 
+		{
+			$capital = $_season_money;
+			$_yes_account = $_yes_account +$capital;
+			$repay = $account -$_yes_account;
+			$repay_account = $repay_account +$capital;
+		}
+		$_repay_account = $interest +$capital;
+		$_result [$i] ['account_interest'] = round ( $interest,2 );
+		$_result [$i] ['account_capital'] = round ( $capital,2 );
+		$_result [$i] ['account_all'] = round ( $_repay_account,2 );
+		$_account_all += $_repay_account;
+		$_interest_all += $interest;
+		$_capital_all += $capital;
+		$_result [$i] ['account_other'] = round ( $repay,2 );
+		$_result [$i] ['repay_month'] = round ( $repay_account,2 );
+		$_result [$i] ['repay_time'] = get_times ( array ( "time"=>$time, "num"=>$i +1 ) );
+	}
+	if ($data ["type"] == "all") 
+	{
+		$_result_all ['account_total'] = round ( $_account_all,2 );
+		$_result_all ['interest_total'] = round ( $_interest_all,2 );
+		$_result_all ['capital_total'] = round ( $_capital_all,2 );
+		$_result_all ['repay_month'] = "-";
+		$_result_all ['repay_season'] = $_season_money;
+		$_result_all ['month_apr'] = round ( $month_apr * 100,2 );
+		return $_result_all;
+	}
+	return $_result;
+}
+function EqualDayEnd($data = array()) 
+{
+	if (isset ( $data ['period'] ) &&$data ['period'] >0) 
+	{
+		$period = $data ['period'];
+		if ($period == 0.03) 
+		{
+			$period = 1;
+		}
+		else if ($period == 0.06) 
+		{
+			$period = 2;
+		}
+		else if ($period == 0.10) 
+		{
+			$period = 3;
+		}
+		else if ($period == 0.13) 
+		{
+			$period = 4;
+		}
+		else if ($period == 0.16) 
+		{
+			$period = 5;
+		}
+		else if ($period == 0.20) 
+		{
+			$period = 6;
+		}
+		else if ($period == 0.23) 
+		{
+			$period = 7;
+		}
+		else if ($period == 0.26) 
+		{
+			$period = 8;
+		}
+		else if ($period == 0.30) 
+		{
+			$period = 9;
+		}
+		else if ($period == 0.33) 
+		{
+			$period = 10;
+		}
+		else if ($period == 0.36) 
+		{
+			$period = 11;
+		}
+		else if ($period == 0.40) 
+		{
+			$period = 12;
+		}
+		else if ($period == 0.43) 
+		{
+			$period = 13;
+		}
+		else if ($period == 0.46) 
+		{
+			$period = 14;
+		}
+		else if ($period == 0.50) 
+		{
+			$period = 15;
+		}
+		else if ($period == 0.53) 
+		{
+			$period = 16;
+		}
+		else if ($period == 0.56) 
+		{
+			$period = 17;
+		}
+		else if ($period == 0.60) 
+		{
+			$period = 18;
+		}
+		else if ($period == 0.63) 
+		{
+			$period = 19;
+		}
+		else if ($period == 0.66) 
+		{
+			$period = 20;
+		}
+		else if ($period == 0.70) 
+		{
+			$period = 21;
+		}
+		else if ($period == 0.73) 
+		{
+			$period = 22;
+		}
+		else if ($period == 0.76) 
+		{
+			$period = 23;
+		}
+		else if ($period == 0.80) 
+		{
+			$period = 24;
+		}
+		else if ($period == 0.83) 
+		{
+			$period = 25;
+		}
+		else if ($period == 0.86) 
+		{
+			$period = 26;
+		}
+		else if ($period == 0.90) 
+		{
+			$period = 27;
+		}
+		else if ($period == 0.93) 
+		{
+			$period = 28;
+		}
+		else if ($period == 0.96) 
+		{
+			$period = 29;
+		}
+		else 
+		{
+			$period = $period * 30;
+		}
+	}
+	if (isset ( $data ['account'] ) &&$data ['account'] >0) 
+	{
+		$account = $data ['account'];
+	}
+	else 
+	{
+		return "";
+	}
+	if (isset ( $data ['apr'] ) &&$data ['apr'] >0) 
+	{
+		$year_apr = $data ['apr'];
+	}
+	else 
+	{
+		return "";
+	}
+	if (isset ( $data ['time'] ) &&$data ['time'] >0) 
+	{
+		$borrow_time = $data ['time'];
+	}
+	else 
+	{
+		$borrow_time = time ();
+	}
+	$month_apr = $year_apr / (12 * 100);
+	$day_apr = $month_apr / 30;
+	$interest = $day_apr * $period * $account;
+	if (isset ( $data ['type'] ) &&$data ['type'] == "all") 
+	{
+		$_result_all ['account_total'] = round ( $account +$interest,2 );
+		$_result_all ['interest_total'] = round ( $interest,2 );
+		$_result_all ['capital_total'] = round ( $account,2 );
+		$_result_all ['repay_month'] = round ( $account +$interest,2 );
+		$_result_all ['month_apr'] = round ( $month_apr * 100,2 );
+		return $_result_all;
+	}
+	else 
+	{
+		$_result [0] ['account_all'] = round ( $interest +$account,2 );
+		$_result [0] ['account_interest'] = round ( $interest,2 );
+		$_result [0] ['account_capital'] = round ( $account,2 );
+		$_result [0] ['account_other'] = round ( $account,2 );
+		$_result [0] ['repay_month'] = round ( $interest +$account,2 );
+		$_result [0] ['repay_time'] = strtotime ( "+".$period ." day");
+		return $_result;
+	}
+}
+function EqualEnd($data = array()) 
+{
+	if (isset ( $data ['period'] ) &&$data ['period'] >0) 
+	{
+		$period = $data ['period'];
+	}
+	if (isset ( $data ['account'] ) &&$data ['account'] >0) 
+	{
+		$account = $data ['account'];
+	}
+	else 
+	{
+		return "";
+	}
+	if (isset ( $data ['apr'] ) &&$data ['apr'] >0) 
+	{
+		$year_apr = $data ['apr'];
+	}
+	else 
+	{
+		return "";
+	}
+	if (isset ( $data ['time'] ) &&$data ['time'] >0) 
+	{
+		$borrow_time = $data ['time'];
+	}
+	else 
+	{
+		$borrow_time = time ();
+	}
+	$month_apr = $year_apr / (12 * 100);
+	$interest = $month_apr * $period * $account;
+	if (isset ( $data ['type'] ) &&$data ['type'] == "all") 
+	{
+		$_result_all ['account_total'] = round ( $account +$interest,2 );
+		$_result_all ['interest_total'] = round ( $interest,2 );
+		$_result_all ['capital_total'] = round ( $account,2 );
+		$_result_all ['repay_month'] = round ( $account +$interest,2 );
+		$_result_all ['month_apr'] = round ( $month_apr * 100,2 );
+		return $_result_all;
+	}
+	else 
+	{
+		$_result [0] ['account_all'] = round ( $interest +$account,2 );
+		$_result [0] ['account_interest'] = round ( $interest,2 );
+		$_result [0] ['account_capital'] = round ( $account,2 );
+		$_result [0] ['account_other'] = round ( $account,2 );
+		$_result [0] ['repay_month'] = round ( $interest +$account,2 );
+		$_result [0] ['repay_time'] = get_times ( array ( "time"=>$borrow_time, "num"=>$period ) );
+		return $_result;
+	}
+}
+function EqualEndMonth($data = array()) 
+{
+	if (isset ( $data ['period'] ) &&$data ['period'] >0) 
+	{
+		$period = $data ['period'];
+	}
+	if (isset ( $data ['account'] ) &&$data ['account'] >0) 
+	{
+		$account = $data ['account'];
+	}
+	else 
+	{
+		return "";
+	}
+	if (isset ( $data ['apr'] ) &&$data ['apr'] >0) 
+	{
+		$year_apr = $data ['apr'];
+	}
+	else 
+	{
+		return "";
+	}
+	if (isset ( $data ['time'] ) &&$data ['time'] >0) 
+	{
+		$borrow_time = $data ['time'];
+	}
+	else 
+	{
+		$borrow_time = time ();
+	}
+	$month_apr = $year_apr / (12 * 100);
+	$_yes_account = 0;
+	$repayment_account = 0;
+	$interest = round ( $account * $month_apr,2 );
+	for($i = 0;$i <$period;$i ++) 
+	{
+		$capital = 0;
+		if ($i +1 == $period) 
+		{
+			$capital = $account;
+		}
+		$_account_all += $_repay_account;
+		$_interest_all += $interest;
+		$_capital_all += $capital;
+		$_result [$i] ['account_all'] = $interest +$capital;
+		$_result [$i] ['account_interest'] = $interest;
+		$_result [$i] ['account_capital'] = $capital;
+		$_result [$i] ['account_other'] = round ( $account +$interest * $period -$interest * $i -$interest,2 );
+		$_result [$i] ['repay_year'] = $account;
+		$_result [$i] ['repay_time'] = get_times ( array ( "time"=>$borrow_time, "num"=>$i +1 ) );
+	}
+	if ($data ["type"] == "all") 
+	{
+		$_result_all ['account_total'] = $account +$interest * $period;
+		$_result_all ['interest_total'] = $_interest_all;
+		$_result_all ['capital_total'] = $account;
+		$_result_all ['repay_month'] = $interest;
+		$_result_all ['month_apr'] = round ( $month_apr * 100,2 );
+		return $_result_all;
+	}
+	return $_result;
+}
+function EqualDeng($data = array()) 
+{
+	$account = $data ['account'];
+	$year_apr = $data ['apr'];
+	$period = $data ['period'];
+	$time = $data ['time'];
+	$month_apr = $year_apr / (12 * 100);
+	$_li = pow ( (1 +$month_apr),$period );
+	if ($account <0) return;
+	$repay_account = round ( $account * ($month_apr * $_li) / ($_li -1),2 );
+	$_result = array ();
+	$_capital_all = 0;
+	$_interest_all = 0;
+	$_account_all = 0.00;
+	for($i = 0;$i <$period;$i ++) 
+	{
+		$interest = round ( $account * $month_apr,2 );
+		$capital = round ( $account / $period,2 );
+		$repay_account = $interest +$capital;
+		$_account_all += $repay_account;
+		$_interest_all += $interest;
+		$_capital_all += $capital;
+		$_result [$i] ['account_all'] = $repay_account;
+		$_result [$i] ['account_interest'] = $interest;
+		$_result [$i] ['account_capital'] = $capital;
+		$_result [$i] ['account_other'] = round ( $repay_account * $period -$repay_account * ($i +1),2 );
+		$_result [$i] ['repay_month'] = round ( $repay_account,2 );
+		$_result [$i] ['repay_time'] = get_times ( array ( "time"=>$time, "num"=>$i +1 ) );
+	}
+	if ($data ["type"] == "all") 
+	{
+		$_result_all ['account_total'] = round ( $_account_all,2 );
+		$_result_all ['interest_total'] = round ( $_interest_all,2 );
+		$_result_all ['capital_total'] = round ( $_capital_all,2 );
+		$_result_all ['repay_month'] = round ( $repay_account,2 );
+		$_result_all ['month_apr'] = round ( $month_apr * 100,2 );
+		return $_result_all;
+	}
+	return $_result;
+}
+function EqualTiyan($data = array()) 
+{
+	$account = 100;
+	$year_apr = 20;
+	$period = 1;
+	$time = $data ['time'];
+	$_result = array ();
+	$_capital_all = 0;
+	$_interest_all = 0;
+	$_account_all = 0.00;
+	$interest = 2;
+	$capital = 100;
+	$repay_account = 102;
+	$_account_all = $repay_account;
+	$_interest_all = $interest;
+	$_capital_all = $capital;
+	$_result [0] ['account_all'] = $repay_account;
+	$_result [0] ['account_interest'] = $interest;
+	$_result [0] ['account_capital'] = $capital;
+	$_result [0] ['account_other'] = 102;
+	$_result [0] ['repay_month'] = 102;
+	$_result [0] ['repay_time'] = get_times ( array ( "time"=>$time, "num"=>$i +1 ) );
+	if ($data ["type"] == "all") 
+	{
+		$_result_all ['account_total'] = 102;
+		$_result_all ['interest_total'] = 2;
+		$_result_all ['capital_total'] = 100;
+		$_result_all ['repay_month'] = 102;
+		$_result_all ['month_apr'] = round ( $month_apr * 100,2 );
+		return $_result_all;
+	}
+	return $_result;
+}

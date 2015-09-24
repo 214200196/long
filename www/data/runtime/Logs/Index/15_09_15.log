@@ -1,0 +1,873 @@
+[ 2015-09-15T18:00:29+08:00 ] ::1 /index/account/cash_new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+NOTIC: [2048] Declaration of Index\Controller\HomeController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0030s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0180s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0020s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0010s ]
+NOTIC: [2048] Non-static method adminClass::GetSiteList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 14 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\modules\admin.class.php 第 243 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\admin.class.php 第 246 行.
+SQL: SHOW COLUMNS FROM `yyd_site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_site` WHERE ( 1=1  ) ORDER BY  `order` desc ,id asc   [ RunTime:0.0010s ]
+
+[ 2015-09-15T18:00:30+08:00 ] ::1 /Index/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Index\Controller\HomeController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0030s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0020s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0060s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method adminClass::GetSiteList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 14 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\modules\admin.class.php 第 243 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\admin.class.php 第 246 行.
+SQL: SHOW COLUMNS FROM `yyd_site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_site` WHERE ( 1=1  ) ORDER BY  `order` desc ,id asc   [ RunTime:0.0010s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 75 行.
+NOTIC: [8] Uninitialized string offset: 1 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 76 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\links.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_links` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.typename,p3.fileurl FROM yyd_links p1 LEFT JOIN yyd_links_type as p2 on p1.type_id= p2.id LEFT JOIN yyd_users_upfiles as p3 on p1.logoimg= p3.id  WHERE (  1=1  and p1.type_id='44' ) LIMIT 20   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 6 行.
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 6 行.
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 8 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.020001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020001s ]
+
+[ 2015-09-15T18:00:34+08:00 ] ::1 /Index/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Index\Controller\HomeController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0020s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0020s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0020s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0090s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method adminClass::GetSiteList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 14 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\modules\admin.class.php 第 243 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\admin.class.php 第 246 行.
+SQL: SHOW COLUMNS FROM `yyd_site` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `yyd_site` WHERE ( 1=1  ) ORDER BY  `order` desc ,id asc   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM yyd_users p1 LEFT JOIN yyd_users_info as p2 on p1.user_id=p2.user_id   WHERE ( p1.`password` = '4297f44b13955235245b2497399d7a93' and p1.username = 'longjianwei
+' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users_log` [ RunTime:0.0030s ]
+SQL: INSERT INTO `yyd_users_log` (`user_id`,`code`,`type`,`operating`,`article_id`,`result`,`content`,`addtime`,`addip`) VALUES ('0','users','action','login','0','0','用户“longjianwei”在“2015-09-15 18:00:34”登录失败。','1442311234','0.0.0.0') [ RunTime:0.0050s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 76 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\links.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_links` [ RunTime:0.0020s ]
+SQL: SELECT p1.*,p2.typename,p3.fileurl FROM yyd_links p1 LEFT JOIN yyd_links_type as p2 on p1.type_id= p2.id LEFT JOIN yyd_users_upfiles as p3 on p1.logoimg= p3.id  WHERE (  1=1  and p1.type_id='44' ) LIMIT 20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-15T18:00:37+08:00 ] ::1 /Index/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Index\Controller\HomeController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0020s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0020s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0060s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method adminClass::GetSiteList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 14 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\modules\admin.class.php 第 243 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\admin.class.php 第 246 行.
+SQL: SHOW COLUMNS FROM `yyd_site` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yyd_site` WHERE ( 1=1  ) ORDER BY  `order` desc ,id asc   [ RunTime:0.0010s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 75 行.
+NOTIC: [8] Uninitialized string offset: 1 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 76 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\links.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_links` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.typename,p3.fileurl FROM yyd_links p1 LEFT JOIN yyd_links_type as p2 on p1.type_id= p2.id LEFT JOIN yyd_users_upfiles as p3 on p1.logoimg= p3.id  WHERE (  1=1  and p1.type_id='44' ) LIMIT 20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 6 行.
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 6 行.
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 8 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-15T18:00:42+08:00 ] ::1 /Index/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Index\Controller\HomeController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0030s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0060s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method adminClass::GetSiteList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 14 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\modules\admin.class.php 第 243 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\admin.class.php 第 246 行.
+SQL: SHOW COLUMNS FROM `yyd_site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_site` WHERE ( 1=1  ) ORDER BY  `order` desc ,id asc   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM yyd_users p1 LEFT JOIN yyd_users_info as p2 on p1.user_id=p2.user_id   WHERE ( p1.`password` = '4297f44b13955235245b2497399d7a93' and p1.username = 'longjianwei
+' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_users_log` [ RunTime:0.0020s ]
+SQL: INSERT INTO `yyd_users_log` (`user_id`,`code`,`type`,`operating`,`article_id`,`result`,`content`,`addtime`,`addip`) VALUES ('0','users','action','login','0','0','用户“longjianwei”在“2015-09-15 18:00:42”登录失败。','1442311242','0.0.0.0') [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 76 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\links.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_links` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.typename,p3.fileurl FROM yyd_links p1 LEFT JOIN yyd_links_type as p2 on p1.type_id= p2.id LEFT JOIN yyd_users_upfiles as p3 on p1.logoimg= p3.id  WHERE (  1=1  and p1.type_id='44' ) LIMIT 20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-15T18:00:45+08:00 ] ::1 /Index/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Index\Controller\HomeController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0030s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0070s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method adminClass::GetSiteList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 14 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\modules\admin.class.php 第 243 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\admin.class.php 第 246 行.
+SQL: SHOW COLUMNS FROM `yyd_site` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `yyd_site` WHERE ( 1=1  ) ORDER BY  `order` desc ,id asc   [ RunTime:0.0010s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 75 行.
+NOTIC: [8] Uninitialized string offset: 1 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 76 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\links.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_links` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.typename,p3.fileurl FROM yyd_links p1 LEFT JOIN yyd_links_type as p2 on p1.type_id= p2.id LEFT JOIN yyd_users_upfiles as p3 on p1.logoimg= p3.id  WHERE (  1=1  and p1.type_id='44' ) LIMIT 20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 6 行.
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 6 行.
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 8 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-15T18:00:49+08:00 ] ::1 /Index/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Index\Controller\HomeController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0020s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0090s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method adminClass::GetSiteList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 14 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\modules\admin.class.php 第 243 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\admin.class.php 第 246 行.
+SQL: SHOW COLUMNS FROM `yyd_site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_site` WHERE ( 1=1  ) ORDER BY  `order` desc ,id asc   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM yyd_users p1 LEFT JOIN yyd_users_info as p2 on p1.user_id=p2.user_id   WHERE ( p1.`password` = '29fd06e62faa920cbe4b9c62018aa064' and p1.username = 'longjianwei
+' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_users_log` [ RunTime:0.0030s ]
+SQL: INSERT INTO `yyd_users_log` (`user_id`,`code`,`type`,`operating`,`article_id`,`result`,`content`,`addtime`,`addip`) VALUES ('0','users','action','login','0','0','用户“longjianwei”在“2015-09-15 18:00:49”登录失败。','1442311249','0.0.0.0') [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 76 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\links.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_links` [ RunTime:0.0020s ]
+SQL: SELECT p1.*,p2.typename,p3.fileurl FROM yyd_links p1 LEFT JOIN yyd_links_type as p2 on p1.type_id= p2.id LEFT JOIN yyd_users_upfiles as p3 on p1.logoimg= p3.id  WHERE (  1=1  and p1.type_id='44' ) LIMIT 20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-15T18:00:53+08:00 ] ::1 /Index/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Index\Controller\HomeController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0030s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0060s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method adminClass::GetSiteList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 14 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\modules\admin.class.php 第 243 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\admin.class.php 第 246 行.
+SQL: SHOW COLUMNS FROM `yyd_site` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yyd_site` WHERE ( 1=1  ) ORDER BY  `order` desc ,id asc   [ RunTime:0.0010s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 75 行.
+NOTIC: [8] Uninitialized string offset: 1 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 76 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\links.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_links` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.typename,p3.fileurl FROM yyd_links p1 LEFT JOIN yyd_links_type as p2 on p1.type_id= p2.id LEFT JOIN yyd_users_upfiles as p3 on p1.logoimg= p3.id  WHERE (  1=1  and p1.type_id='44' ) LIMIT 20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 6 行.
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 6 行.
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 8 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-15T18:00:58+08:00 ] ::1 /Index/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Index\Controller\HomeController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0040s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0050s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method adminClass::GetSiteList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 14 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\modules\admin.class.php 第 243 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\admin.class.php 第 246 行.
+SQL: SHOW COLUMNS FROM `yyd_site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_site` WHERE ( 1=1  ) ORDER BY  `order` desc ,id asc   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM yyd_users p1 LEFT JOIN yyd_users_info as p2 on p1.user_id=p2.user_id   WHERE ( p1.`password` = '5008a9c80cfec1044f0bbed6c5ee5e85' and p1.username = 'longjianwei
+' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_users_log` [ RunTime:0.0030s ]
+SQL: INSERT INTO `yyd_users_log` (`user_id`,`code`,`type`,`operating`,`article_id`,`result`,`content`,`addtime`,`addip`) VALUES ('0','users','action','login','0','0','用户“longjianwei”在“2015-09-15 18:00:58”登录失败。','1442311258','0.0.0.0') [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 76 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\links.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_links` [ RunTime:0.0020s ]
+SQL: SELECT p1.*,p2.typename,p3.fileurl FROM yyd_links p1 LEFT JOIN yyd_links_type as p2 on p1.type_id= p2.id LEFT JOIN yyd_users_upfiles as p3 on p1.logoimg= p3.id  WHERE (  1=1  and p1.type_id='44' ) LIMIT 20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-15T18:01:00+08:00 ] ::1 /Index/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Index\Controller\HomeController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0020s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0020s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0020s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0060s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0050s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0010s ]
+NOTIC: [2048] Non-static method adminClass::GetSiteList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 14 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\modules\admin.class.php 第 243 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\admin.class.php 第 246 行.
+SQL: SHOW COLUMNS FROM `yyd_site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_site` WHERE ( 1=1  ) ORDER BY  `order` desc ,id asc   [ RunTime:0.0010s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 75 行.
+NOTIC: [8] Uninitialized string offset: 1 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 76 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\links.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_links` [ RunTime:0.0020s ]
+SQL: SELECT p1.*,p2.typename,p3.fileurl FROM yyd_links p1 LEFT JOIN yyd_links_type as p2 on p1.type_id= p2.id LEFT JOIN yyd_users_upfiles as p3 on p1.logoimg= p3.id  WHERE (  1=1  and p1.type_id='44' ) LIMIT 20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 6 行.
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 6 行.
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 8 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-15T18:01:05+08:00 ] ::1 /Index/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Index\Controller\HomeController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0040s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0050s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0060s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0040s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method adminClass::GetSiteList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 14 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\modules\admin.class.php 第 243 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\admin.class.php 第 246 行.
+SQL: SHOW COLUMNS FROM `yyd_site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_site` WHERE ( 1=1  ) ORDER BY  `order` desc ,id asc   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM yyd_users p1 LEFT JOIN yyd_users_info as p2 on p1.user_id=p2.user_id   WHERE ( p1.`password` = '29fd06e62faa920cbe4b9c62018aa064' and p1.username = 'longjianwei
+' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users_log` [ RunTime:0.0020s ]
+SQL: INSERT INTO `yyd_users_log` (`user_id`,`code`,`type`,`operating`,`article_id`,`result`,`content`,`addtime`,`addip`) VALUES ('0','users','action','login','0','0','用户“longjianwei”在“2015-09-15 18:01:05”登录失败。','1442311265','0.0.0.0') [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 76 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\links.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_links` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.typename,p3.fileurl FROM yyd_links p1 LEFT JOIN yyd_links_type as p2 on p1.type_id= p2.id LEFT JOIN yyd_users_upfiles as p3 on p1.logoimg= p3.id  WHERE (  1=1  and p1.type_id='44' ) LIMIT 20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-09-15T18:01:09+08:00 ] ::1 /Index/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Index\Controller\HomeController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0020s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0070s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0020s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0010s ]
+NOTIC: [2048] Non-static method adminClass::GetSiteList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 14 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\modules\admin.class.php 第 243 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\admin.class.php 第 246 行.
+SQL: SHOW COLUMNS FROM `yyd_site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_site` WHERE ( 1=1  ) ORDER BY  `order` desc ,id asc   [ RunTime:0.0000s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 75 行.
+NOTIC: [8] Uninitialized string offset: 1 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 76 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\links.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_links` [ RunTime:0.0020s ]
+SQL: SELECT p1.*,p2.typename,p3.fileurl FROM yyd_links p1 LEFT JOIN yyd_links_type as p2 on p1.type_id= p2.id LEFT JOIN yyd_users_upfiles as p3 on p1.logoimg= p3.id  WHERE (  1=1  and p1.type_id='44' ) LIMIT 20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 6 行.
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 6 行.
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 8 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-15T18:01:48+08:00 ] ::1 /Index/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Index\Controller\HomeController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0020s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0020s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0100s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method adminClass::GetSiteList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 14 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\modules\admin.class.php 第 243 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\admin.class.php 第 246 行.
+SQL: SHOW COLUMNS FROM `yyd_site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_site` WHERE ( 1=1  ) ORDER BY  `order` desc ,id asc   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM yyd_users p1 LEFT JOIN yyd_users_info as p2 on p1.user_id=p2.user_id   WHERE ( p1.`password` = '4297f44b13955235245b2497399d7a93' and p1.username = 'longjianwei
+' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yyd_users_log` [ RunTime:0.0020s ]
+SQL: INSERT INTO `yyd_users_log` (`user_id`,`code`,`type`,`operating`,`article_id`,`result`,`content`,`addtime`,`addip`) VALUES ('0','users','action','login','0','0','用户“longjianwei”在“2015-09-15 18:01:48”登录失败。','1442311308','0.0.0.0') [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 76 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\links.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_links` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.typename,p3.fileurl FROM yyd_links p1 LEFT JOIN yyd_links_type as p2 on p1.type_id= p2.id LEFT JOIN yyd_users_upfiles as p3 on p1.logoimg= p3.id  WHERE (  1=1  and p1.type_id='44' ) LIMIT 20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 75 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 76 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\084f62c467be75b2fa4b83164c0213fd.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-15T18:01:51+08:00 ] ::1 /Index/index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Index\Controller\HomeController::display() should be compatible with Think\Controller::display($templateFile = '', $charset = '', $contentType = '', $content = '', $prefix = '') D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_system` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `yyd_system`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: con_cookie_status D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: session_id D:\phpStudy\WWW\app\Common\Common\function.php 第 519 行.
+NOTIC: [8] Undefined index: time D:\phpStudy\WWW\app\Common\Common\function.php 第 520 行.
+SQL: SHOW COLUMNS FROM `yyd_credit_class` [ RunTime:0.0080s ]
+SQL: SELECT p1.* FROM yyd_credit_class p1 WHERE (   1=1  ) ORDER BY p1.id desc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `yyd_credit_rank` [ RunTime:0.0050s ]
+SQL: SELECT p1.*,p2.nid as class_nid FROM yyd_credit_rank p1 LEFT JOIN `yyd_credit_class` as p2 on p1.class_id=p2.id  WHERE ( 1=1  ) ORDER BY p1.id desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `yyd_linkages` [ RunTime:0.0020s ]
+SQL: SELECT p1.*,p2.code,p2.name as type_name,p2.nid as type_nid FROM yyd_linkages p1 LEFT JOIN yyd_linkages_type as p2 on p1.type_id=p2.id  WHERE (  1=1  ) ORDER BY p1.order desc ,p1.id asc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: excel D:\phpStudy\WWW\modules\areas.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `yyd_areas` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `yyd_areas`  [ RunTime:0.0070s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\modules\areas.class.php 第 344 行.
+SQL: SHOW COLUMNS FROM `yyd_borrow_tender` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.borrow_period,p2.user_id as b_user_id,p2.name as borrow_name FROM yyd_borrow_tender p1 LEFT JOIN `yyd_borrow` as p2 on p2.borrow_nid =  p1.borrow_nid  WHERE ( p1.status=1 and p1.flow_status=0 and p1.flow_count >0 and p2.is_flow =1 )  [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\app\Common\Controller\BaseController.class.php 第 76 行.
+SQL: update `yyd_borrow_repay` set repay_status=1 where repay_account=repay_account_yes and repay_account > 0  [ RunTime:0.0000s ]
+NOTIC: [2048] Non-static method adminClass::GetSiteList() should not be called statically, assuming $this from incompatible context D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 14 行.
+NOTIC: [8] Undefined index: pid D:\phpStudy\WWW\modules\admin.class.php 第 243 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\admin.class.php 第 246 行.
+SQL: SHOW COLUMNS FROM `yyd_site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `yyd_site` WHERE ( 1=1  ) ORDER BY  `order` desc ,id asc   [ RunTime:0.0000s ]
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 75 行.
+NOTIC: [8] Uninitialized string offset: 1 D:\phpStudy\WWW\app\Index\Controller\HomeController.class.php 第 76 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\modules\links.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `yyd_links` [ RunTime:0.0030s ]
+SQL: SELECT p1.*,p2.typename,p3.fileurl FROM yyd_links p1 LEFT JOIN yyd_links_type as p2 on p1.type_id= p2.id LEFT JOIN yyd_users_upfiles as p3 on p1.logoimg= p3.id  WHERE (  1=1  and p1.type_id='44' ) LIMIT 20   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 6 行.
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 6 行.
+NOTIC: [8] Undefined index: articles D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 8 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 86 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 87 行.
+NOTIC: [8] Use of undefined constant site_result - assumed 'site_result' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+NOTIC: [8] Array to string conversion D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+NOTIC: [8] Use of undefined constant pid - assumed 'pid' D:\phpStudy\WWW\data\runtime\Cache\Index\92be8ed75603fdb5300cdab3123eec4d.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

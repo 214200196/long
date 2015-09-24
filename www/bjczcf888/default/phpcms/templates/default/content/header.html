@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=yes">
+
+<meta name="format-detection" content="telephone=no" />
+
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+
+<title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+
+<meta name="keywords" content="{$SEO['keyword']}">
+
+<meta name="description" content="{$SEO['description']}">
+
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script><!--俱乐部动向JS-->
+
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+
+<!--[if lt IE 9]>
+
+<script src="js/html5shiv.js"></script>
+
+<![endif]-->
+
+<script language="JavaScript" type="text/JavaScript">
+
+<!--
+
+function showdiv(targetid,objN){
+
+   
+
+      var target=document.getElementById(targetid);
+
+      var clicktext=document.getElementById(objN)
+
+
+
+            if (target.style.display=="block"){
+
+                target.style.display="none";
+
+                clicktext.innerText="";
+
+  
+
+
+
+            } else {
+
+                target.style.display="block";
+
+                clicktext.innerText='';
+
+            }
+
+   
+
+}
+
+-->
+
+</script>
+
+</head>
+
+
+
+<body>
+
+{php if(!$CATEGORYS) $CATEGORYS = getcache('category_content_'.$siteid,'commons');}
+
+<div class="header">
+
+	
+
+    	<div class="logo"><a href="{siteurl($siteid)}"><img src="images/logo.png"></a></div>
+
+        
+
+        <ul id="nav">
+
+            <li class="top home"><a href="{siteurl($siteid)}" class="top_link"><span>首页</span></a></li>
+
+            <li class="top"><a href="{$CATEGORYS[7][url]}" class="top_link"><span {if $catid==7 || $catid==8 || $catid==9 || $catid==11 || $catid==12 || $catid==13 || $catid==14}class="down"{/if}>关于我们</span></a>
+
+                <ul class="sub">
+
+                    <li class="left-nav">
+
+                    	{pc:content action="category" catid="6" siteid="$siteid" order="listorder ASC" return="dataa"}
+
+    					{loop $dataa $r}
+
+                    	<a href="{$r[url]}">{$r[catname]}</a>
+
+                    	{/loop}
+
+                        {/pc}
+
+                        
+
+                    </li>                
+
+                    <li class="rpic"><img src="{$CATEGORYS[6][navpic]}" width="210"></li>
+
+                </ul>
+
+            </li>
+
+            
+
+            <li class="top"><a href="{$CATEGORYS[16][url]}" class="top_link"><span {if $catid==16 || $catid==17 || $catid==18 || $catid==19}class="down"{/if}>业务领域</span></a>
+
+            	<ul class="sub">
+
+                    <li class="left-nav">
+
+                    	{pc:content action="category" catid="15" siteid="$siteid" order="listorder ASC" return="dataa"}
+
+    					{loop $dataa $r}
+
+                    	<a href="{$r[url]}">{$r[catname]}</a>
+
+                    	{/loop}
+
+                        {/pc}
+
+                        
+
+                    </li>                
+
+                    <li class="rpic"><img src="{$CATEGORYS[15][navpic]}" width="210" height="148"></li>
+
+                </ul>
+
+            </li>
+
+            <li class="top"><a href="{$CATEGORYS[20][url]}" class="top_link"><span {if $catid==20}class="down"{/if}>加盟风采</span></a>
+            	<ul class="sub">
+
+                    <li class="left-nav">
+
+                    	
+
+                    	<a href="{$CATEGORYS[20][url]}">加盟风采</a>
+
+                    	
+
+                        
+
+                    </li>                
+
+                    <li class="rpic"><img src="{$CATEGORYS[20][navpic]}" width="210" height="148"></li>
+
+                </ul>
+            </li>
+
+            <li class="top"><a href="{$CATEGORYS[21][url]}" class="top_link"><span {if $catid==21}class="down"{/if}>成功案例</span></a>
+            	<ul class="sub">
+
+                    <li class="left-nav">
+
+                    	
+
+                    	<a href="{$CATEGORYS[21][url]}">成功案例</a>
+
+                    	
+
+                        
+
+                    </li>                
+
+                    <li class="rpic"><img src="{$CATEGORYS[21][navpic]}" width="210" height="148"></li>
+
+                </ul>
+            </li>
+
+            <li class="top"><a href="{$CATEGORYS[28][url]}" class="top_link"><span {if $catid==27 || $catid==28 || $catid==29}class="down"{/if}>精彩视频</span></a>
+            	<ul class="sub">
+
+                    <li class="left-nav">
+
+                    	
+
+                    	{pc:content action="category" catid="27" siteid="$siteid" order="listorder ASC" return="dataa"}
+
+    					{loop $dataa $r}
+
+                    	<a href="{$r[url]}">{$r[catname]}</a>
+
+                    	{/loop}
+
+                        {/pc}
+
+                    	
+
+                        
+
+                    </li>                
+
+                    <li class="rpic"><img src="{$CATEGORYS[27][navpic]}" width="210" height="148"></li>
+
+                </ul>
+            </li>
+
+            <li class="top"><a href="{$CATEGORYS[23][url]}" class="top_link"><span {if $catid==23 || $catid==24 || $catid==25}class="down"{/if}>资讯中心</span></a>
+
+            	<ul class="sub">
+
+                    <li class="left-nav">
+
+                    	{pc:content action="category" catid="22" siteid="$siteid" order="listorder ASC" return="dataa"}
+
+    					{loop $dataa $r}
+
+                    	<a href="{$r[url]}">{$r[catname]}</a>
+
+                    	{/loop}
+
+                        {/pc}
+
+                        
+
+                    </li>                
+
+                    <li class="rpic"><img src="{$CATEGORYS[22][navpic]}" width="210" height="148"></li>
+
+                </ul>
+
+            </li>            
+
+            <!--li class="top"><a href="{$CATEGORYS[30][url]}" class="top_link"><span>财富论坛</span></a></li-->        
+
+        </ul>
+
+        <div class="top-r">
+
+        	<div class="tel"><p class="trans">咨询热线：<br><b>400-618-6608</b></p></div>
+
+        	<div class="kefu"><a href="tencent://message/?uin=2877810775&Menu=yes"></a></div>
+
+            
+
+        	<div class="sear">
+
+            	<a id="showtext" onClick="showdiv('contentid','showtext')"></a>
+
+                <div id="contentid" class="none">
+
+                <form action="{APP_PATH}index.php" method="get" target="_blank">
+
+				<input type="hidden" name="m" value="search"/>
+
+				<input type="hidden" name="c" value="index"/>
+
+				<input type="hidden" name="a" value="init"/>
+
+				<input type="hidden" name="typeid" value="{$typeid}" id="typeid"/>
+
+				<input type="hidden" name="siteid" value="{$siteid}" id="siteid"/>
+
+                <input name="" type="submit" class="sear-tj" value=""><input name="q" id="q" type="text" class="sear-ipt" placeholder="请输入关键词" required></form></div>
+
+            </div>
+
+        </div>
+
+    
+
+</div>
+
+<div class="cl"></div>
+

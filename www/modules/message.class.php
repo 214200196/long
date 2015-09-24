@@ -1,3 +1,499 @@
-<?php // This file is protected by copyright dongshan
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=22972;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMTgyKTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ1pDSHhEbDlCT3k3bVM2Ri9YSlJHSXZyak10ZXFkWWlzd1E0VEVwTDAxdWs1V24zZ1ZQb2FLek5jaDhmMlVBK2I9JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+<?php
+if (!defined ( 'ROOT_PATH')) 
+{
+	echo "<script>window.location.href='/404.htm';</script>";
+	exit ();
+}
+$message_type = array ( "all"=>"所有用户", "group"=>"群组", "users"=>"多用户", "user"=>"个人", "user_type"=>"用户类型", "admin_type"=>"管理类型" );
+global $MsgInfo,$_A;
+$_A ['message_type'] = $message_type;
+require_once ("message.model.php");
+class messageClass 
+{
+	public static function GetMessageOne($data = array()) 
+	{
+		if (!IsExiest ( $data ['id'] )) return "message_id_empty";
+		$result = M('message')->alias('p1')->join ( presql ( '`{users_info}` as p2 on p1.receive_value=p2.user_id') )->where("p1.id={$data['id']}
+	and p1.user_id={$data ['user_id']}
+")->field('p1.*,p2.niname as receive_nikename')->find();
+if ($result == null) return "message_empty";
+return $result;
+}
+public static function ActionMessageReceive($data = array()) 
+{
+if (!IsExiest ( $data ['id'] )) return "message_receive_id_empty";
+if (!IsExiest ( $data ['user_id'] )) return "message_receive_user_id_empty";
+foreach ( $data ['id'] as $key =>$value ) 
+{
+	$_data ['id'] = $value;
+	$_data ['user_id'] = $data ['user_id'];
+	$_result = self::GetMessageReceiveOne ( $_data );
+	$sql = "update `{message_receive}` set status='{$data['status']}
+' where user_id={$data['user_id']}
+and (id={$value}
+ or receive_value='{$value}
+')";
+M ()->execute ( presql ( $sql ) );
+}
+return $data ['user_id'];
+}
+public static function GetUsersMessage($data = array()) 
+{
+$_sql = "1=1 ";
+if ($data ['status'] != ""||$data ['status'] == "0") 
+{
+$_sql .= " and p1.status='{$data['status']}
+'";
+}
+$receive_result = 1;
+if (isset ( $data ['user_id'] ) &&$data ['user_id'] != "") 
+{
+$result =M('users')->alias('p1')->join(presql('`{users_info}` as p2 on p1.user_id=p2.user_id'))->where("p1.user_id ={$data['user_id']}
+")->field('p1.user_id,p1.username,p2.type_id')->find();
+if ($result == null) 
+{
+$receive_result = "";
+}
+else 
+{
+if(!isset($data['username'])||$data['username']=='') $data['username']=$result['username'];
+$receive_result = $result;
+$_sql .= " and (p1.user_id='{$result['user_id']}
+' or (p1.type='all' and  !find_in_set('{$result['user_id']}
+',receive_yes)) or ( p1.type='users' and  find_in_set('{$data['username']}
+',receive_value) and  !find_in_set('{$result['user_id']}
+',receive_yes)) or (p1.type='user_type' and  p1.receive_id='{$result['type_id']}
+'  and  !find_in_set('{$result['user_id']}
+',receive_yes)) )";
+}
+}
+$field = "COUNT(*) as num,p1.status";
+$_order = "p1.id desc ";
+$result = M('message_receive')->alias('p1')->join(presql('`{users}` as p2 on p1.user_id=p2.user_id'))->join(presql('`{users}` as p3 on p1.send_userid=p3.user_id'))->where($_sql)->field($field)->order($_order)->group('p1.status')->select();
+$_result = array ();
+foreach ( $result as $key =>$value ) 
+{
+if ($value ['status'] == 0) 
+{
+$_result ['message_no'] = $value ['num'];
+}
+$_result ['message_all'] += $value ['num'];
+}
+return $_result;
+}
+public static function AddMessage($data = array()) 
+{
+$receive_user = $data ['receive_user'];
+$receive_userid = $data ['receive_userid'];
+$receive_users = $data ['receive_users'];
+$receive_user_type = $data ['receive_user_type'];
+$receive_admin_type = $data ['receive_admin_type'];
+unset ( $data ['receive_user'] );
+unset ( $data ['receive_userid'] );
+unset ( $data ['receive_users'] );
+unset ( $data ['receive_user_type'] );
+unset ( $data ['receive_admin_type'] );
+if (!IsExiest ( $data ['name'] )) 
+{
+return "message_name_empty";
+}
+if (!IsExiest ( $data ['contents'] )) 
+{
+return "message_contents_empty";
+}
+if (!IsExiest ( $data ['type'] )) 
+{
+return "message_type_empty";
+}
+if ($data ['type'] == "user") 
+{
+if ($receive_user == ""&&$receive_userid == "") return "message_receive_user_empty";
+if ($receive_user != "") 
+{
+$result = M ( 'users')->where ( "username ='{$receive_user}
+'")->field ( 'user_id')->find ();
+if ($result == false) return "message_receive_username_not_exiest";
+$data ['receive_value'] = $result ['user_id'];
+}
+elseif ($receive_userid != "") 
+{
+$result = M ( 'users')->where ( "user_id ={$receive_userid}
+")->field ( 'user_id')->find ();
+if ($result == false) return "message_receive_username_not_exiest";
+$data ['receive_value'] = $result ['user_id'];
+}
+$data ['status'] = 1;
+if ($data ['status'] == "") 
+{
+$_data ['send_status'] = 2;
+}
+else 
+{
+$_data ['send_status'] = 1;
+}
+}
+elseif ($data ['type'] == "users") 
+{
+if ($receive_users == "") return "message_receive_users_empty";
+$data ['receive_value'] = $receive_users;
+}
+elseif ($data ['type'] == "user_type") 
+{
+if ($receive_user_type == "") return "message_receive_user_type_empty";
+$data ['receive_value'] = $receive_user_type;
+}
+elseif ($data ['type'] == "admin_type") 
+{
+if ($receive_admin_type == "") return "message_receive_admin_type_empty";
+$data ['receive_value'] = $receive_admin_type;
+}
+$data ['addtime'] = time ();
+$data ['addip'] = get_client_ip ();
+$send_id = M ( 'message')->add ( $data );
+if ($data ['status'] == 1) 
+{
+$_data ['send_id'] = $send_id;
+$_data ['send_status'] = $data ['status'];
+$result = self::SendMessage ( $_data );
+}
+return 1;
+}
+public static function SendMessage($data = array()) 
+{
+if (!IsExiest ( $data ['send_id'] )) 
+{
+return "message_id_empty";
+}
+$send_status = $data ['send_status'];
+unset ( $data ['send_status'] );
+$result = M ( 'message')->where ( "id={$data['send_id']}
+")->find ();
+if ($result == false) return "message_empty";
+$receive_value = $result ['receive_value'];
+$data ['contents'] = $result ['contents'];
+$data ['name'] = $result ['name'];
+$data ['type'] = $result ['type'];
+$data ['send_userid'] = $result ['user_id'];
+if (!IsExiest ( $data ['contents'] )) 
+{
+return "message_contents_empty";
+}
+if ($data ['type'] == "all") 
+{
+$data ['user_id'] = 0;
+}
+elseif ($data ['type'] == "users") 
+{
+$receive_value = explode ( ",",$receive_value );
+foreach ( $receive_value as $key =>$value ) 
+{
+$_receive_value [] = "'".$value ."'";
+}
+$receive_value = join ( ",",$_receive_value );
+$result = M ( 'users')->where ( "username in ({$receive_value}
+)")->field ( 'user_id,username')->select ();
+if ($result != false) 
+{
+foreach ( $result as $key =>$value ) 
+{
+$_result [] = $value ['user_id'];
+$_result_username [] = $value ['username'];
+}
+$data ['receive_id'] = join ( ",",$_result );
+$data ['receive_value'] = join ( ",",$_result_username );
+}
+$data ['user_id'] = 0;
+}
+elseif ($data ['type'] == "user_type") 
+{
+$data ['user_id'] = 0;
+$data ['receive_id'] = $receive_value;
+}
+elseif ($data ['type'] == "admin_type") 
+{
+$data ['user_id'] = 0;
+$data ['receive_id'] = $receive_value;
+}
+elseif ($data ['type'] == "user") 
+{
+$data ['user_id'] = $receive_value;
+$data ['receive_id'] = $receive_value;
+}
+$udata ['status'] = $send_status;
+M ( 'message')->where ( "id={$data['send_id']}
+")->save ( $udata );
+$data ['addtime'] = time ();
+$data ['addip'] = get_client_ip ();
+M ( 'message_receive')->add ( $data );
+return 1;
+}
+public static function DeleteMessage($data = array()) 
+{
+if (!IsExiest ( $data ['id'] )) return "message_id_empty";
+if (is_array ( $data ['id'] )) 
+{
+$data ['id'] = join ( ",",$data ['id'] );
+}
+$_sql = "id in ({$data['id']}
+)";
+if (isset ( $data ['user_id'] ) &&$data ['user_id'] != "") 
+{
+$_sql .= " and user_id='{$data['user_id']}
+' ";
+}
+M ( 'message')->where ( $_sql )->delete ();
+return 1;
+}
+function GetMessageList($data = array()) 
+{
+$_sql = "1=1 ";
+if (isset ( $data ['username'] ) &&$data ['username'] != "") 
+{
+$_sql .= " and p2.username = '{$data['username']}
+'";
+}
+$field = "p1.*,p2.username,p3.username as receive_username,p4.niname as receive_nikename,p5.niname as send_nikename";
+$_order = "p1.id desc ";
+if (IsExiest ( $data ['limit'] ) != false) 
+{
+if ($data ['limit'] != "all") 
+{
+$_limit = $data ['limit'];
+}
+return M ( 'message')->alias ( 'p1')->join ( presql ( '`{users}` as p2 on p1.user_id=p2.user_id') )->join ( presql ( '`{users}` as p3 on p1.receive_value =p3.user_id') )->join ( presql ( '`{users_info}` as p4 on p1.receive_value =p4.user_id') )->join ( presql ( '`{users_info}` as p5 on p1.user_id=p5.user_id') )->where ( $_sql )->field ( $field )->limit ( $_limit )->order ( $_order )->select ();
+}
+$row = M ( 'message')->alias ( 'p1')->join ( presql ( '`{users}` as p2 on p1.user_id=p2.user_id') )->join ( presql ( '`{users}` as p3 on p1.receive_value =p3.user_id') )->join ( presql ( '`{users_info}` as p4 on p1.receive_value =p4.user_id') )->join ( presql ( '`{users_info}` as p5 on p1.user_id=p5.user_id') )->where ( $_sql )->count ();
+$data ['page'] = !IsExiest ( $data ['page'] ) ?1 : $data ['page'];
+$data ['epage'] = !IsExiest ( $data ['epage'] ) ?10 : $data ['epage'];
+$Page = new \Think\Page ( $row,$data ['epage'] );
+$show = $Page->show ();
+$list = M ( 'message')->alias ( 'p1')->join ( presql ( '`{users}` as p2 on p1.user_id=p2.user_id') )->join ( presql ( '`{users}` as p3 on p1.receive_value =p3.user_id') )->join ( presql ( '`{users_info}` as p4 on p1.receive_value =p4.user_id') )->join ( presql ( '`{users_info}` as p5 on p1.user_id=p5.user_id') )->where ( $_sql )->field ( $field )->page ( $data ['page'] .",{$data ['epage']}
+")->order ( $_order )->select ();
+$result = array ( 'list'=>$list ?$list : array (), 'page'=>$show ) ;
+return $result;
+}
+public static function DeleteMessageReceive($data = array()) 
+{
+if (!IsExiest ( $data ['id'] )) return "message_receive_id_empty";
+if (is_array ( $data ['id'] )) 
+{
+$id=$data ['id'];
+$data ['id'] = join ( ",",$data ['id'] );
+}
+$_sql = "id in ({$data['id']}
+)";
+if (isset ( $data ['user_id'] ) &&$data ['user_id'] != "") 
+{
+$_sql .= " and user_id={$data['user_id']}
+and type='user'";
+M ( 'message_receive')->where ( $_sql )->delete ();
+if (is_array ($id )) 
+{
+$ddata['user_id']=$data ['user_id'];
+foreach ($id as $val)
+{
+$ddata['id']=$val;
+$_result = self::GetMessageReceiveOne ( $ddata );
+if ($_result ['type'] != 'user') 
+{
+M ( 'message_receive')->where ( "user_id={$data['user_id']}
+and receive_value='{$data['id']}
+'")->delete ();
+}
+}
+}
+else
+{
+$_result = self::GetMessageReceiveOne ( $data );
+$_sql .= " and user_id={$data['user_id']}
+and type='user'";
+M ( 'message_receive')->where ( $_sql )->delete ();
+if ($_result ['type'] != 'user') 
+{
+M ( 'message_receive')->where ( "user_id={$data['user_id']}
+and receive_value='{$data['id']}
+'")->delete ();
+}
+}
+return $data ['user_id'];
+}
+else 
+{
+M ( 'message_receive')->where ( $_sql )->delete ();
+}
+return $data ['id'];
+}
+public static function GetMessageReceiveOne($data = array()) 
+{
+if (!IsExiest ( $data ['id'] )) return "message_id_empty";
+if (!IsExiest ( $data ['user_id'] )) return "message_user_id_empty";
+$result = M ('message_receive')->alias ( 'p1')->join ( presql ( '`{users}` as p2 on p1.user_id=p2.user_id') )->join ( presql ( '`{users}` as p3 on p1.send_userid=p3.user_id') )->join ( presql ( '`{users_info}` as p4 on p1.send_userid=p4.user_id') )->join ( presql ( '`{users_info}` as p5 on p1.user_id=p5.user_id') )->where ( "p1.id={$data['id']}
+")->field ( 'p1.*,p2.username as receive_username,p3.username,p4.niname as send_nikename,p5.niname as receive_nikename')->find ();
+if ($result == null) return "message_receive_empty";
+if ($result ['type'] == "user") 
+{
+if ($result ['user_id'] != $data ['user_id']) return "message_receive_not_view";
+if ($data ['status'] != '') 
+{
+$sql = "update `{message_receive}` set status='{$data['status']}
+' where id={$data['id']}
+";
+M ()->execute ( presql ( $sql ) );
+}
+}
+else 
+{
+if ($result ['type'] == "users") 
+{
+$_result = M ( 'message_receive')->where ( "id={$data['id']}
+ and  find_in_set('{$data['user_id']}
+',receive_id)")->find ();
+if ($_result == null) return "message_receive_not_view";
+}
+elseif ($result ['type'] == "user_type") 
+{
+$_result = M ( 'users_info')->where ( "user_id={$data['user_id']}
+")->field ( 'type_id')->find ();
+$_result = M ( 'message_receive')->where ( "id={$data['id']}
+ and  find_in_set('{$_result['type_id']}
+',receive_id)")->find ();
+if ($_result == null) return "message_receive_not_view";
+}
+elseif ($result ['type'] == "admin_type") 
+{
+$_result = M ( 'admin')->where ( "id={$data['user_id']}
+")->field ( 'type_id')->find ();
+$_result = M ( 'message_receive')->where ( "id={$data['id']}
+ and  find_in_set('{$_result['type_id']}
+',receive_id)")->find ();
+if ($_result == null) return "message_receive_not_view";
+}
+$_result = M ( 'message_receive')->where ( "user_id={$data['user_id']}
+and receive_value='{$data['id']}
+'")->find ();
+if ($_result == null) 
+{
+if ($result ['receive_yes'] == '') 
+{
+$receive_yes = $data ['user_id'];
+}
+else 
+{
+$receive_yes = $result ['receive_yes'] .','.$data ['user_id'];
+}
+if (is_array ( $data ['id'] )) 
+{
+$data ['id'] = join ( ",",$data ['id'] );
+}
+$sql = "update `{message_receive}` set receive_yes='{$receive_yes}
+' where id in ({$data['id']}
+)";
+M ()->execute ( presql ( $sql ) );
+$sql = "insert into `{message_receive}` set type='user',user_id={$data['user_id']}
+,status=1,send_id='{$result['send_id']}
+',send_userid='{$result['send_userid']}
+',receive_id='{$data['user_id']}
+',receive_value='{$result['id']}
+',`name`='{$result['name']}
+',contents='{$result['contents']}
+',addtime='{$result['addtime']}
+',addip='{$result['addip']}
+'";
+M ()->execute ( presql ( $sql ) );
+$id = M ()->getLastInsID ();
+return self::GetMessageReceiveOne ( array ( "id"=>$id, 'user_id'=>$data ['user_id'] ) );
+}
+else 
+{
+return self::GetMessageReceiveOne ( array ( "id"=>$_result ['id'], 'user_id'=>$data ['user_id'] ) );
+}
+}
+return $result;
+}
+public static function GetMessageReceiveList($data = array()) 
+{
+$_sql = " 1=1 ";
+if ($data ['status'] != ""||$data ['status'] == "0") 
+{
+$_sql .= " and p1.status='{$data['status']}
+'";
+}
+$receive_result = 1;
+if (isset ( $data ['username'] ) &&$data ['username'] != "") 
+{
+$result = M ( 'users')->alias ( 'p1')->join ( presql ( '`{users_info}` as p2 on p1.user_id=p2.user_id') )->where ( "p1.username ='{$data['username']}
+'")->field ( "p1.user_id,p2.type_id")->find ();
+if ($result == null) 
+{
+$receive_result = "";
+}
+else 
+{
+$receive_result = $result;
+$_sql .= " and (p1.user_id='{$result['user_id']}
+' or (p1.type='all' and  !find_in_set('{$result['user_id']}
+',receive_yes)) or ( p1.type='users' and  find_in_set('{$data['username']}
+',receive_value) and  !find_in_set('{$result['user_id']}
+',receive_yes)) or (p1.type='user_type' and  p1.receive_id='{$result['type_id']}
+'  and  !find_in_set('{$result['user_id']}
+',receive_yes)) ";
+$_sql .= " )";
+}
+}
+if ($receive_result != "") 
+{
+$field = "p1.*,p2.username as receive_username,p3.username as send_username,p4.niname as send_nikename,p5.niname as receive_nikename";
+$_order = "p1.id desc ";
+if (IsExiest ( $data ['limit'] ) != false) 
+{
+if ($data ['limit'] != "all") 
+{
+$_limit = $data ['limit'];
+}
+return M ( 'message_receive')->alias ( 'p1')->join ( presql ( '`{users}` as p2 on p1.user_id=p2.user_id') )->join ( presql ( '`{users}` as p3 on p1.send_userid=p3.user_id') )->join ( presql ( '`{users_info}` as p4 on p1.send_userid=p4.user_id') )->join ( presql ( '`{users_info}` as p5 on p1.user_id=p5.user_id') )->where ( $_sql )->field ( $field )->limit ( $_limit )->order ( $_order )->select ();
+}
+$row = M ( 'message_receive')->alias ( 'p1')->join ( presql ( '`{users}` as p2 on p1.user_id=p2.user_id') )->join ( presql ( '`{users}` as p3 on p1.send_userid=p3.user_id') )->join ( presql ( '`{users_info}` as p4 on p1.send_userid=p4.user_id') )->join ( presql ( '`{users_info}` as p5 on p1.user_id=p5.user_id') )->where ( $_sql )->count ();
+$data ['page'] = !IsExiest ( $data ['page'] ) ?1 : $data ['page'];
+$data ['epage'] = !IsExiest ( $data ['epage'] ) ?10 : $data ['epage'];
+$Page = new \Think\Page ( $row,$data ['epage'] );
+$show = $Page->show ();
+$list = M ( 'message_receive')->alias ( 'p1')->join ( presql ( '`{users}` as p2 on p1.user_id=p2.user_id') )->join ( presql ( '`{users}` as p3 on p1.send_userid=p3.user_id') )->join ( presql ( '`{users_info}` as p4 on p1.send_userid=p4.user_id') )->join ( presql ( '`{users_info}` as p5 on p1.user_id=p5.user_id') )->where ( $_sql )->field ( $field )->page ( $data ['page'] .",{$data ['epage']}
+")->order ( $_order )->select ();
+$user_type_result = \usersClass::GetUsersTypelist ( array ( "limit"=>"all" ) );
+foreach ( $user_type_result as $key =>$value ) 
+{
+$_user_type_result [$value ['id']] = $value ['name'];
+}
+$admin_type_result = \uadminClass::GetAdminTypelist ( array ( "limit"=>"all" ) );
+foreach ( $admin_type_result as $key =>$value ) 
+{
+$_admin_type_result [$value ['id']] = $value ['name'];
+}
+foreach ( $list as $key =>$value ) 
+{
+if ($value ['type'] != "user") 
+{
+$list [$key] ["send_username"] = "系统";
+if ($value ['type'] == "user_type") 
+{
+$list [$key] ["receive_username"] = $_user_type_result [$value ['receive_id']];
+}
+elseif ($value ['type'] == "admin_type") 
+{
+$list [$key] ["receive_username"] = $_admin_type_result [$value ['receive_id']];
+}
+elseif ($value ['type'] == "users") 
+{
+$list [$key] ["receive_username"] = $value ['receive_value'];
+}
+elseif ($value ['type'] == "all") 
+{
+$list [$key] ["receive_username"] = "所有用户";
+}
+}
+}
+}
+$result = array ( 'list'=>$list ?$list : array (), 'page'=>$show ) ;
+return $result;
+}
+}

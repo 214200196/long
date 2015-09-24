@@ -1,0 +1,63 @@
+{template "content","header"}
+
+<div class="sub-banner" style="background:url({$CATEGORYS[6][image]}) center no-repeat;"></div>
+
+<div class="sub-top">
+
+	<div class="box">    
+
+	{pc:content action="category" catid="6" siteid="$siteid" order="listorder ASC"}
+
+    {loop $data $r}<a href="{$r[url]}" {if $catid==$r[catid] || $top_parentid==$r[catid]} class="cur"{/if}>{$r[catname]}</a>{/loop}{/pc}</div>
+
+</div>
+
+<div class="box">
+
+	<div class="team-top">{$CATEGORYS[6][description]}</div>
+
+	<div class="list-team">
+
+    	<ul>
+
+        	{pc:content action="lists" catid="$catid" num="20" order="listorder DESC" moreinfo="1" page="$page"}
+
+            {loop $data $r}
+
+        	<li>
+
+            	<div class="left-info">
+
+                	<div class="tit">{$r[title]}</div>
+
+                    <div class="entit">{$r[entit]}</div>
+
+                    <div class="con">
+
+                    	{$r[content]}
+
+                                                
+
+                    </div>
+
+                    
+
+                </div>
+
+                <div class="pic"><img src="{$r[thumb]}"></div>
+
+            </li>
+
+            {/loop}
+
+            {/pc}
+
+            
+
+        </ul>
+
+    </div>
+
+</div>
+
+{template "content","footer"}

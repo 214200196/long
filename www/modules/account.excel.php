@@ -1,3 +1,226 @@
-<?php // This file is protected by copyright dongshan
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=10764;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMTgyKTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ1pDSHhEbDlCT3k3bVM2Ri9YSlJHSXZyak10ZXFkWWlzd1E0VEVwTDAxdWs1V24zZ1ZQb2FLek5jaDhmMlVBK2I9JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+
+<?php
+if (!defined ( 'ROOT_PATH')) 
+{
+	echo "<script>window.location.href='/404.htm';</script>";
+	exit ();
+}
+global $MsgInfo;
+require_once ("account.model.php");
+class accountexcel 
+{
+	function AccountList($data) 
+	{
+		$title = array ( "Id", "用户名称", "总金额", "可用金额", "冻结金额", "待收金额" );
+		if ($data ['page'] >0) 
+		{
+			$_result = accountClass::GetList ( $data );
+			$result = $_result ['list'];
+		}
+		else 
+		{
+			$data ['limit'] = "all";
+			$result = accountClass::GetList ( $data );
+		}
+		foreach ( $result as $key =>$value ) 
+		{
+			$_data [$key] = array ( $key +1, $value ['username'], $value ['total'], $value ['balance'], $value ['frost'], $value ['await'] );
+		}
+		exportData ( "账号信息管理",$title,$_data );
+		exit ();
+	}
+	function AccountLogList($data) 
+	{
+		global $_G;
+		$title = array ( "Id", "用户名", "类型", "操作金额", "资产总额", "累计存入", "累计支出", "冻结金额", "待收金额", "可用金额", "操作时间" );
+		if ($data ['page'] >0) 
+		{
+			$_result = \accountClass::GetLogList ( $data );
+			$result = $_result ['list'];
+		}
+		else 
+		{
+			$data ['limit'] = "all";
+			$result = \accountClass::GetLogList ( $data );
+		}
+		foreach ( $result as $key =>$value ) 
+		{
+			$value ['type'] = $_G ['linkages'] ['account_type'] [$value ['type']];
+			$_data [$key] = array ( $key +1, $value ['username'], $value ['type'], $value ['money'], $value ['total'], $value ['income'], $value ['expend'], $value ['frost'], $value ['await'], $value ['balance'], date ( "Y-m-d H:i:s",$value ['addtime'] ) );
+		}
+		exportData ( "资金记录列表",$title,$_data );
+		exit ();
+	}
+	function RechargeLog($data) 
+	{
+		global $Linkages;
+		$title = array ( "Id", "用户名", "真实名", "交易号", "类型", "充值银行", "充值金额", "充值手续费", "实际到账金额", "状态", "操作时间", "操作ip" );
+		if ($data ['page'] >0) 
+		{
+			$_result = \accountClass::GetRechargeList ( $data );
+			$result = $_result ['list'];
+		}
+		else 
+		{
+			$data ['limit'] = "all";
+			$result = \accountClass::GetRechargeList ( $data );
+		}
+		foreach ( $result as $key =>$value ) 
+		{
+			$value ['type'] = $Linkages ['account_recharge_type'] [$value ['type']];
+			$value ['status'] = $Linkages ['account_recharge_status'] [$value ['status']];
+			$_data [$key] = array ( $key +1, $value ['username'], $value ['realname'], "'".$value ['nid'], $value ['type'], $value ['payment_name'], $value ['money'], $value ['fee'], $value ['balance'], $value ['status'], date ( "Y-m-d H:i:s",$value ['addtime'] ), $value ['addip'] );
+		}
+		exportData ( "充值资金记录列表",$title,$_data );
+		exit ();
+	}
+	function GetTenderList_excel($data) 
+	{
+		global $Linkages;
+		$title = array ( "Id", "投资人", "投资金额", "投资时间", "投资状态", "审核状态", "借款标", "借款标识名", "借款总额", "自动投标" );
+		if ($data ['page'] >0) 
+		{
+			$_result = \borrowClass::GetTenderList ( $data );
+			$result = $_result ['list'];
+		}
+		else 
+		{
+			$data ['limit'] = "all";
+			$result = \borrowClass::GetTenderList ( $data );
+		}
+		foreach ( $result as $key =>$value ) 
+		{
+			$value ['status'] = $Linkages ['borrow_tender_status'] [$value ['status']];
+			$value ['tender_status'] = $Linkages ['borrow_tender_verify_status'] [$value ['tender_status']];
+			$value ['auto_status'] = $Linkages ['borrow_tender_auto_status'] [$value ['auto_status']];
+			$_data [$key] = array ( $key +1, $value ['username'], $value ['account'], date ( "Y-m-d H:i:s",$value ['addtime'] ), $value ['status'], $value ['tender_status'], $value ['borrow_name'], $value ['borrow_nid'], $value ['borrow_account'], $value ['auto_status'] );
+		}
+		exportData ( "用户投资记录列表",$title,$_data );
+		exit ();
+	}
+	function CashLog($data) 
+	{
+		global $Linkages;
+		$title = array ( "Id", "用户名", "真实姓名", "提现银行", "支行", "所在地", "提现账号", "提现总额", "到账金额", "手续费", "提现时间", "提现ip", "状态" );
+		if ($data ['page'] >0) 
+		{
+			$_result = \accountClass::GetCashList ( $data );
+			$result = $_result ['list'];
+		}
+		else 
+		{
+			$data ['limit'] = "all";
+			$result = \accountClass::GetCashList ( $data );
+		}
+		foreach ( $result as $key =>$value ) 
+		{
+			$value ['status'] = $Linkages ['account_cash_status'] [$value ['status']];
+			$value ['city'] = modifier ( "areas",$value ['city'],"p,c");
+			$_data [$key] = array ( $key +1, $value ['username'], $value ['realname'], $value ['bank_name'], $value ['branch'], $value ['city'], $value ['account'], $value ['total'], $value ['credited'], $value ['fee'], date ( "Y-m-d H:i:s",$value ['addtime'] ), $value ['addip'], $value ['status'] );
+		}
+		exportData ( "提现资金记录列表",$title,$_data );
+		exit ();
+	}
+	function WebLog($data) 
+	{
+		$title = array ( "Id", "类型", "操作金额", "收入", "支出", "说明", "操作时间", "操作ip" );
+		if ($data ['page'] >0) 
+		{
+			$_result = accountClass::GetBalanceList ( $data );
+			$result = $_result ['list'];
+		}
+		else 
+		{
+			$data ['limit'] = "all";
+			$result = accountClass::GetBalanceList ( $data );
+		}
+		foreach ( $result as $key =>$value ) 
+		{
+			$type = $Linkages ['account_web_fee'] [$value ['type']];
+			if ($value ['type'] == "recharge") 
+			{
+				$income = $value ['income'];
+				$expend = $value ['expend'];
+			}
+			else 
+			{
+				$income = $value ['expend'];
+				$expend = $value ['income'];
+			}
+			$_data [$key] = array ( $key +1, $type, $value ['money'], $income, $expend, $value ['remark'], date ( "Y-m-d H:i:s",$value ['addtime'] ), $value ['addip'] );
+		}
+		exportData ( "网站费用",$title,$_data );
+		exit ();
+	}
+	function WebListLog($data) 
+	{
+		$title = array ( "Id", "用户名", "类型", "网站垫付金额", "备注", "操作时间", "操作ip" );
+		if ($data ['page'] >0) 
+		{
+			$_result = accountClass::GetWebList ( $data );
+			$result = $_result ['list'];
+		}
+		else 
+		{
+			$data ['limit'] = "all";
+			$result = accountClass::GetWebList ( $data );
+		}
+		foreach ( $result as $key =>$value ) 
+		{
+			$type = $Linkages ['account_web_type'] [$value ['type']];
+			$_data [$key] = array ( $key +1, $value ['username'], $type, round ( $value ['money'],2 ), $remark, date ( "Y-m-d H:i:s",$value ['addtime'] ), $value ['addip'] );
+		}
+		exportData ( "网站垫付费用",$title,$_data );
+		exit ();
+	}
+	function RecoverListLog($data) 
+	{
+		require_once (ROOT_PATH ."/modules/borrow/borrow.class.php");
+		$title = array ( "Id", "借款标题", "应收日期", "借款者", "第几期", "总期数", "垫付金额", "应收本金", "应收利息", "逾期罚息", "逾期天数", "状态" );
+		if ($data ['page'] >0) 
+		{
+			$_result = borrowClass::GetRecoverList ( $data );
+			$result = $_result ['list'];
+		}
+		else 
+		{
+			$data ['limit'] = "all";
+			$result = borrowClass::GetRecoverList ( $data );
+		}
+		foreach ( $result as $key =>$value ) 
+		{
+			if ($value ['recover_status'] == 1) 
+			{
+				$status = "已还";
+			}
+			else 
+			{
+				$status = "未还";
+			}
+			$_data [$key] = array ( $key +1, $value ['borrow_name'], date ( "Y-m-d",$value ['recover_time'] ), $value ['borrow_username'], $value ['recover_period'] +1, $value ['borrow_period'], $value ['recover_recover_account_yes'], $value ['recover_capital'], $value ['late_interest'], $value ['late_days'], $status );
+		}
+		exportData ( "网站应收明细账",$title,$_data );
+		exit ();
+	}
+	function UsersLog($data) 
+	{
+		$title = array ( "Id", "用户名", "类型", "操作金额", "余额", "收入", "支出", "待收", "冻结", "备注", "操作时间", "操作ip" );
+		if ($data ['page'] >0) 
+		{
+			$_result = accountClass::GetUsersList ( $data );
+			$result = $_result ['list'];
+		}
+		else 
+		{
+			$data ['limit'] = "all";
+			$result = accountClass::GetUsersList ( $data );
+		}
+		foreach ( $result as $key =>$value ) 
+		{
+			$type = $Linkages ['account_type'] [$value ['type']];
+			$_data [$key] = array ( $key +1, $value ['username'], $type, $value ['money'], $value ['balance'], $value ['income'], $value ['expend'], $value ['await'], $value ['frost'], $value ['remark'], date ( "Y-m-d H:i:s",$value ['addtime'] ), $value ['addip'] );
+		}
+		exportData ( "用户费用",$title,$_data );
+		exit ();
+	}
+}

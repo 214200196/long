@@ -4,6 +4,7 @@ use Think\Controller;
 class ApiController extends Controller {
     // 检测权限访问
     public function _initialize() {
+        header("Content-type: text/html; charset=utf-8");
         if ($_GET['smmkey'] != Sha1(md5(md5('北京创造财富科技有限公司888')))) {
             //echo Sha1(md5(md5('北京创造财富科技有限公司888'))); // 3eef0f2cb569f66b61248104de523c101a1e4361
             $this->error("非法操作！");
@@ -43,9 +44,11 @@ class ApiController extends Controller {
     // 注册接口
     public function register () {
         // 手机验证码检测
+        /*
         if( ! $this->checkPhoneVerify()){
             echo json_encode(array('validate'=>'验证码错误或已失效！请重试','validateStatus'=>0)); die;
         } 
+        */
 
         $data = array(
             'username' => $_POST['phoneNumber'],
@@ -54,21 +57,27 @@ class ApiController extends Controller {
             'reg_time' => time(),
         );
 
+        $userIsset= M('users')->where(array('username'=>$_POST['phoneNumber']))->field("user_id")->find();
+        
+        if( !empty($userIsset)) {
+            //echo json_encode(array('msg'=>'用户名已存在！','validateStatus'=>0));exit;
+        }
+
         // 验证规则
         $rules = array(
-             array('username','require','手机号不能为空'), //默认情况下用正则进行验证
-             array('username','require','手机号已存在',0,'unique'),
-             array('username','/^[\d]{11}$/','手机格式不正确',0,'regex'), //默认情况下用正则进行验证
+             array('phoneNumber','require','手机号不能为空'), //默认情况下用正则进行验证
+             array('phoneNumber','/^[\d]{11}$/','手机格式不正确',0,'regex'), //默认情况下用正则进行验证
              array('password','/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,15}$/','密码格式不正确字母和数字组合长度6~15位',0,'regex'), // 自定义函数验证密码格式
-             array('passworded','password','两次密码不一致',0,'confirm'), // 验证确认密码是否和密码一致
+             array('passworded','password','两次密码不一致',0,'confirm') // 验证确认密码是否和密码一致
              //array('email','require','邮箱不能为空'), 
              //array('email','email','邮箱格式错误'),
 
        );
         // 另一种验证规则 ! $db->validate($rules)->create($data) 
         if ( ! M('users')->validate($rules)->create() ) {
-            echo json_encode(array('validate'=>'注册失败！','validateStatus'=>0));
-            echo json_encode( M('users')->getError()); exit;
+            //echo json_encode(array('validate'=>'注册失败！请重试','validateStatus'=>0));
+            $getError = M('users')->getError();
+            echo json_encode(array('msg'=>$getError,'validateStatus'=>0)); exit;
         }
 
         // 昵称验证
@@ -76,8 +85,8 @@ class ApiController extends Controller {
             echo json_encode(array('msg'=>'昵称不能为空','validateStatus'=>0));exit;
         }
         // 昵称规则/i 指的是不忽略大小写 加上s修饰符，.就能匹配任何字符了
-        if (! preg_match("/^[\x80-\xff|_a-zA-Z0-9]{2,15}$/",$_POST['niname'])) {
-            echo json_encode(array('msg'=>'中文或字母或数字2~15位','validateStatus'=>0));exit;
+        if (! preg_match("/^[\x80-\xff|_a-zA-Z0-9]{2,12}$/",$_POST['niname'])) {
+            echo json_encode(array('msg'=>'中文或字母或数字2~12位','validateStatus'=>0));exit;
         } 
 
         $usersDb = M('users')->add($data);
@@ -159,15 +168,42 @@ class ApiController extends Controller {
     // 获取用户消息
     public function getUserMsg() {
         if( isset($_GET['user_id']) ) {
-            $where['receive_value'] = intval($_GET['user_id']);
-            $where['type']    = 'all';
-            $where['_logic']  = 'OR';
-            $getUserMsg = M('message')->where($where)->select();
-            //$getUserMsg = M('message')->where(array('user_id'=>intval($_GET['user_id']),'type'=>'all'),'OR')->select();
-            //echo M('message')->getLastSql();
+            $getUserMsg = M('message_receive')->JOIN('LEFT JOIN yyd_users_info ON yyd_users_info.user_id = yyd_message_receive.send_userid')
+                          ->where(array('receive_id'=>$_GET['user_id']))
+                          ->field(array('yyd_message_receive.id','send_userid','yyd_users_info.niname','receive_id',
+                                        'yyd_message_receive.status','name','contents','yyd_message_receive.addtime'))
+                          ->select();
+            //echo M('message_receive')->getLastSql();
             echo json_encode(array_merge(array('msg'=>'数据获取成功','validateStatus'=>1),$getUserMsg));
         } else {
-            echo json_encode(array('msg'=>'请传入用户id来获取该用户消息','validateStatus'=>0));
+            echo json_encode(array('msg'=>'请传入用户id来获取该用户消息','validateStatus'=>0));exit;
+        }
+    }
+
+    // 当前用户消息未读条数接口
+    public function getUserMsgCount() {
+        if (empty($_GET['user_id'])) {
+            echo json_encode(array('msg'=>'请传入用户id来获取该用户消息','validateStatus'=>0));exit;
+        }
+        $getUserMsgCount = M('message_receive')->where(array('receive_id'=>$_GET['user_id'],'status'=>0),'AND')->count();
+        //echo M('message_receive')->getLastSql();
+        echo json_encode(array('msg'=>'数据获取成功！','validateStatus'=>1,'msgCount'=>$getUserMsgCount));
+    }
+
+    // 删除消息接口
+    public function delUserMsg() {
+        if ( empty($_GET['del_msgid']) ) {
+            echo json_encode(array('msg'=>'请传入要删除信息id','validateStatus'=>0));exit;
+        }
+        // 判断是否存在该条消息
+        $userMsg=M('message_receive')->where(array('id'=>$_GET['del_msgid']))->count();
+        if($userMsg) {
+            // 删除消息操作
+            if( M('message_receive')->where(array('id'=>$_GET['del_msgid']))->delete() ) {
+                echo json_encode(array('msg'=>'该条消息删除成功！','validateStatus'=>1));
+            }
+        } else {
+            echo json_encode(array('msg'=>'该消息不存在,或已经删除！','validateStatus'=>0));exit;
         }
     }
 
@@ -175,10 +211,11 @@ class ApiController extends Controller {
     // 获取用户投资列表
     public function getUserInvest() {
         if ( isset($_GET['user_id'])) {
-            $getUserInvest = D('BorrowInfoView')->where(array('borrow_tender.user_id'=>intval($_GET['user_id'])))->select();
+            $getUserInvest = D('BorrowInfoView')->where(array('borrow_tender.user_id'=>intval($_GET['user_id'])))
+                                                ->order("borrow_tender.addtime desc")->select();
             echo json_encode(array_merge(array('msg'=>'数据获取成功','validateStatus'=>1),$getUserInvest));
         } else {
-            echo json_encode(array('msg'=>'请传入用户id来获取该用户投资列表','validateStatus'=>0));
+            echo json_encode(array('msg'=>'请传入用户id来获取该用户消息户id来获取该用户投资列表','validateStatus'=>0));
         }
     }
 
@@ -191,11 +228,83 @@ class ApiController extends Controller {
             echo json_encode(array('msg'=>'账号不存在','validateStatus'=>0));
         }
     }
-    // 投资列表接口(正在进行中的标)
+
+
     public function borrowList() {
-        $borrowList = M('borrow')->where(array('borrow_end_time'=>array('GT',time())))->select();
+
+       $time = time();
+
+       // 分页若传递则按规则分页
+       $pagesize = isset($_GET['pagesize']) ? $_GET['pagesize'] : 10;
+
+       // 投资列表筛选条件容器
+       $filterWhere = array();
+
+       // 标的类型筛选条件 
+       if ( isset($_GET['borrow_type']) )   $filterWhere['borrow_type']  = $_GET['borrow_type'];
+       
+       // 借款期限筛选条件
+       if ( isset($_GET['borrow_period']) )  {
+            if( $_GET['borrow_period'] =='lt3' )      $filterWhere['borrow_period'] = array('lt',3);
+            if( $_GET['borrow_period'] =='egt3lt6')  $filterWhere['borrow_period'] = array(array('egt',3),array('lt',6),'AND');
+            if( $_GET['borrow_period'] =='egt6lt12') $filterWhere['borrow_period'] = array(array('egt',6),array('lt',12),'AND');
+            if( $_GET['borrow_period'] =='egt12')     $filterWhere['borrow_period'] = array('egt',12);
+       }
+
+       // 借款金额筛选条件
+       if ( isset($_GET['account']) ) {
+            if( $_GET['account'] =='lt50000' )      $filterWhere['account'] = array('lt',50000);
+            if( $_GET['account'] =='egt50000lt100000')  $filterWhere['account'] = array(array('egt',50000),array('lt',100000),'AND');
+            if( $_GET['account'] =='egt100000lt500000') $filterWhere['account'] = array(array('egt',100000),array('lt',500000),'AND');
+            if( $_GET['account'] =='egt500000')     $filterWhere['account'] = array('egt',500000);
+       }
+
+       // 还款方式筛选条件
+       if ( isset($_GET['borrow_style'])) $filterWhere['borrow_style'] = $_GET['borrow_style'];
+
+       //p($filterWhere);
+
+       $count    = M('borrow')->JOIN('yyd_credit ON yyd_credit.user_id = yyd_borrow.user_id')
+                              ->where("(`status`=1 AND `borrow_end_time`>{$time}) OR `status`=3")
+                              ->where($filterWhere)
+                              ->count();
+                                 
+        $thinkPage  = new \Think\Page($count,$pagesize);                     
+        // 获取状态为3成功或初审成功的标1
+        $borrowList = M('borrow')->JOIN('yyd_credit ON yyd_credit.user_id = yyd_borrow.user_id')
+                                 ->where("(`status`=1 AND `borrow_end_time`>{$time}) OR `status`=3")
+                                 ->where($filterWhere)
+                                 ->field(array('name','status','account','borrow_nid','borrow_account_yes','borrow_account_wait','borrow_type',
+                                   'borrow_style','borrow_period','borrow_apr','borrow_end_time','addtime','award_status','recommend','yyd_credit.credit'))
+                                 ->order(" `addtime` desc,`order` desc")
+                                 ->limit($thinkPage->firstRow.','.$thinkPage->listRows)
+                                 ->select();
+        //echo M('borrow')->getLastSql();
+        //$borrowList = M('borrow')->where(array('borrow_end_time'=>array('GT',time())))->select();
+
+        // 将已流标的标顺序降到正在进行的标的后面
+        /*
+        $arr=array();
+        foreach ($borrowList as $k => $v) {
+            if( $v['borrow_end_time'] < time() && $v['status'] == 1) {
+                if($arr[$k]['borrow_end_time'] < $arr[$k-1]['borrow_end_time']){
+                    $arr[$k+1] = $v;
+                }
+            } else {
+                if( $arr[$k]['borrow_end_time'] > $arr[$k-1]['borrow_end_time'] ){
+                    $arr[$k-1] = $v;
+                } else {
+                    $arr[] = $v;
+                } 
+            }
+
+        }
+        //p($arr);
+        //ksort($arr);
+        //p(array_values($arr));
+        */
         if( ! empty($borrowList)) {
-            echo json_encode(array_merge(array('msg'=>'数据获取成功','validateStatus'=>1),$borrowList));
+            echo json_encode(array_merge(array('msg'=>'数据获取成功','validateStatus'=>1),$borrowList));     // 投资列表接口(正在进行中的标)
         } else {
             echo json_encode(array('msg'=>'当前投资列表为空！','validateStatus'=>0));
             //echo M('borrow')->getLastSql();
@@ -204,17 +313,50 @@ class ApiController extends Controller {
 
     // 投资详情页（正在进行中的标）
     public function borrowInfo() {
+
         if( ! empty($_GET['borrow_nid'])) { 
-            $borrowInfo = M('borrow')->where(array('borrow_end_time'=>array('GT',time()),'borrow_nid'=>$_GET['borrow_nid']),'AND')->select();
+            $borrowInfo = M('borrow')->where(array('borrow_nid'=>$_GET['borrow_nid']))
+                                     ->field(array('name','borrow_nid','borrow_apr','borrow_period','borrow_account_wait','borrow_end_time','borrow_object',
+                                       'borrow_style','nikename','user_id'))
+                                     ->select();
+            //$borrowInfo = M('borrow')->where(array('borrow_end_time'=>array('GT',time()),'borrow_nid'=>$_GET['borrow_nid']),'AND')->select();
             if( empty($borrowInfo) ) { 
-                echo json_encode(array('msg'=>'该标已过期或不存在该标！','validateStatus'=>0));
-                return;
+                echo json_encode(array('msg'=>'该标已过期或不存在该标！','validateStatus'=>0));exit;
             } 
             echo json_encode(array_merge(array('msg'=>'数据获取成功','validateStatus'=>1),$borrowInfo));
                 
         } else {
             echo json_encode(array('msg'=>'请传入借款id来获取借款详情页','validateStatus'=>0));
         }
+
+    }
+
+    // 推荐投资接口
+    public function recommendBorrow() {
+        $time = time();
+        $recommendBorrow = M('borrow')->JOIN('yyd_credit ON yyd_credit.user_id = yyd_borrow.user_id')
+                                      ->where("(`status`=1 AND `borrow_end_time`>{$time} AND `recommend`=1)")
+                                      ->field(array('name','status','account','borrow_nid','borrow_account_yes','borrow_account_wait',
+                                        'borrow_style','borrow_period','borrow_apr','borrow_end_time','addtime','award_status','recommend','yyd_credit.credit'))
+                                      ->order("borrow_apr desc")
+                                      ->limit(1)
+                                      ->find();
+        //echo M('borrow')->getLastSql();
+        if( ! empty($recommendBorrow) ) {
+            echo json_encode(array_merge(array('msg'=>'数据获取成功','validateStatus'=>1),$recommendBorrow));
+        } else {
+            // 如果正在进行的标推荐为空 则将最高利率的推荐
+            $recommendBorrowElse = M('borrow')->JOIN('yyd_credit ON yyd_credit.user_id = yyd_borrow.user_id')
+                                              ->where("(`status`=1 AND `borrow_end_time`>{$time})")
+                                              ->field(array('name','status','account','borrow_nid','borrow_account_yes','borrow_account_wait',
+                                                'borrow_style','borrow_period','borrow_apr','borrow_end_time','addtime','award_status','recommend','yyd_credit.credit'))
+                                              ->order("borrow_apr desc")
+                                              ->limit(1)
+                                              ->find();
+            echo json_encode(array_merge(array('msg'=>'获取数据成功！(当前没有推荐标，默认为最高利率标)','validateStatus'=>1),$recommendBorrowElse));
+
+        }
+        //P($recommendBorrow);
     }
 
     // 实名认证接口

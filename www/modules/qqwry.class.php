@@ -1,3 +1,158 @@
-<?php // This file is protected by copyright dongshan
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=5512;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMTgxKTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ1pDSHhEbDlCT3k3bVM2Ri9YSlJHSXZyak10ZXFkWWlzd1E0VEVwTDAxdWs1V24zZ1ZQb2FLek5jaDhmMlVBK2I9JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+<?php
+if (!defined ( 'ROOT_PATH')) 
+{
+	echo "<script>window.location.href='/404.htm';</script>";
+	exit ();
+}
+define ( '__QQWRY__',ROOT_PATH ."data/QQWry.Dat");
+class QQWry 
+{
+	var $StartIP = 0;
+	var $EndIP = 0;
+	var $Country = '';
+	var $Local = '';
+	var $CountryFlag = 0;
+	var $fp;
+	var $FirstStartIp = 0;
+	var $LastStartIp = 0;
+	var $EndIpOff = 0;
+	function getStartIp($RecNo) 
+	{
+		$offset = $this->FirstStartIp +$RecNo * 7;
+		@fseek ( $this->fp,$offset,SEEK_SET );
+		$buf = fread ( $this->fp,7 );
+		$this->EndIpOff = ord ( $buf [4] ) +(ord ( $buf [5] ) * 256) +(ord ( $buf [6] ) * 256 * 256);
+		$this->StartIp = ord ( $buf [0] ) +(ord ( $buf [1] ) * 256) +(ord ( $buf [2] ) * 256 * 256) +(ord ( $buf [3] ) * 256 * 256 * 256);
+		return $this->StartIp;
+	}
+	function getEndIp() 
+	{
+		@fseek ( $this->fp,$this->EndIpOff,SEEK_SET );
+		$buf = fread ( $this->fp,5 );
+		$this->EndIp = ord ( $buf [0] ) +(ord ( $buf [1] ) * 256) +(ord ( $buf [2] ) * 256 * 256) +(ord ( $buf [3] ) * 256 * 256 * 256);
+		$this->CountryFlag = ord ( $buf [4] );
+		return $this->EndIp;
+	}
+	function getCountry() 
+	{
+		switch ($this->CountryFlag) 
+		{
+			case 1 : case 2 : $this->Country = $this->getFlagStr ( $this->EndIpOff +4 );
+			$this->Local = (1 == $this->CountryFlag) ?'': $this->getFlagStr ( $this->EndIpOff +8 );
+			$this->City = str_replace ( "省","",substr ( $this->Country,strpos ( $this->Country,"省"),strpos ( $this->Country,"市") -strpos ( $this->Country,"省") ) );
+			break;
+			default : $this->Country = $this->getFlagStr ( $this->EndIpOff +4 );
+			$this->Local = $this->getFlagStr ( ftell ( $this->fp ) );
+		}
+	}
+	function getFlagStr($offset) 
+	{
+		$flag = 0;
+		while ( 1 ) 
+		{
+			@fseek ( $this->fp,$offset,SEEK_SET );
+			$flag = ord ( fgetc ( $this->fp ) );
+			if ($flag == 1 ||$flag == 2) 
+			{
+				$buf = fread ( $this->fp,3 );
+				if ($flag == 2) 
+				{
+					$this->CountryFlag = 2;
+					$this->EndIpOff = $offset -4;
+				}
+				$offset = ord ( $buf [0] ) +(ord ( $buf [1] ) * 256) +(ord ( $buf [2] ) * 256 * 256);
+			}
+			else 
+			{
+				break;
+			}
+		}
+		if ($offset <12) return '';
+		@fseek ( $this->fp,$offset,SEEK_SET );
+		return $this->getStr ();
+	}
+	function getStr() 
+	{
+		$str = '';
+		while ( 1 ) 
+		{
+			$c = fgetc ( $this->fp );
+			if (ord ( $c [0] ) == 0) break;
+			$str .= $c;
+		}
+		return $str;
+	}
+	function qqwry($dotip = '') 
+	{
+		if (!$dotip) return;
+		if (preg_match ( "/^(127)/",$dotip )) 
+		{
+			$this->Country = "本地网络";
+			$this->City = "本局域网";
+			return;
+		}
+		elseif (preg_match ( "/^(192)/",$dotip )) 
+		{
+			$this->Country = "本局域网";
+			$this->City = "本局域网";
+			return;
+		}
+		$nRet;
+		$ip = $this->IpToInt ( $dotip );
+		$this->fp = fopen ( __QQWRY__,"rb");
+		if ($this->fp == NULL) 
+		{
+			$szLocal = "OpenFileError";
+			return 1;
+		}
+		@fseek ( $this->fp,0,SEEK_SET );
+		$buf = fread ( $this->fp,8 );
+		$this->FirstStartIp = ord ( $buf [0] ) +(ord ( $buf [1] ) * 256) +(ord ( $buf [2] ) * 256 * 256) +(ord ( $buf [3] ) * 256 * 256 * 256);
+		$this->LastStartIp = ord ( $buf [4] ) +(ord ( $buf [5] ) * 256) +(ord ( $buf [6] ) * 256 * 256) +(ord ( $buf [7] ) * 256 * 256 * 256);
+		$RecordCount = floor ( ($this->LastStartIp -$this->FirstStartIp) / 7 );
+		if ($RecordCount <= 1) 
+		{
+			$this->Country = "FileDataError";
+			fclose ( $this->fp );
+			return 2;
+		}
+		$RangB = 0;
+		$RangE = $RecordCount;
+		while ( $RangB <$RangE -1 ) 
+		{
+			$RecNo = floor ( ($RangB +$RangE) / 2 );
+			$this->getStartIp ( $RecNo );
+			if ($ip == $this->StartIp) 
+			{
+				$RangB = $RecNo;
+				break;
+			}
+			if ($ip >$this->StartIp) $RangB = $RecNo;
+			else $RangE = $RecNo;
+		}
+		$this->getStartIp ( $RangB );
+		$this->getEndIp ();
+		if (($this->StartIp <= $ip) &&($this->EndIp >= $ip)) 
+		{
+			$nRet = 0;
+			$this->getCountry ();
+			$this->Local = str_replace ( "（我们一定要解放台湾！！！）","",$this->Local );
+		}
+		else 
+		{
+			$nRet = 3;
+			$this->Country = '未知';
+			$this->Local = '';
+		}
+		fclose ( $this->fp );
+		$this->Country = preg_replace ( "/(CZ88.NET)|(纯真网络)/","21andy.com",$this->Country );
+		$this->Local = preg_replace ( "/(CZ88.NET)|(纯真网络)/","21andy.com",$this->Local );
+		return $nRet;
+	}
+	function IpToInt($Ip) 
+	{
+		$array = explode ( '.',$Ip );
+		$Int = ($array [0] * 256 * 256 * 256) +($array [1] * 256 * 256) +($array [2] * 256) +$array [3];
+		return $Int;
+	}
+}

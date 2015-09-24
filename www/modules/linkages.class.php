@@ -1,3 +1,237 @@
-<?php // This file is protected by copyright dongshan
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=8480;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMTgxKTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ1pDSHhEbDlCT3k3bVM2Ri9YSlJHSXZyak10ZXFkWWlzd1E0VEVwTDAxdWs1V24zZ1ZQb2FLek5jaDhmMlVBK2I9JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-yDA/SxC/SxC/SxzaYBysdLvVq9lTtRw0jzA9RIPljzU0mHO0O4hEGKA/SDUVGaZVm4O0O4V1yDA/GaZVSxC/SHwEGKUVGKUVSDUV7HJ/GaC/GaZVSDU1yDUVSxC/SDUVSHVEGKUVSDUVSxZV7RV0rE6OiDJWFIy/iGYnIat9mzQ7IEYyY0ykGjJpdrJtej6cIGJIJjCSSxlzeavjqT60vpCgMInfGL61F9MovID5MTK0mHYCXE6DJItBRDp7RKP6GEAXIvyGvlvrvzQtrLl4MNJptLY1eru5q9z3qcCPd06KYjtciBpfSxDoSaXz6TdhFRWgyoEu7RE2tL6Wqc6p7HJ/SxZVGaC/SxZuFNvNMrV1yDA/SxC/SxC/SHE2xXu0q9A4MrVwyDzatKp3tLU2xXuotjlzejypjNA3MNIw7HyWer85MrYpdo8nqNJpqH8VeBZ47GW6HL6WMj6aO9PuqLnQtNvaXNPQdcSwiVK7dBv4q9pTOB6KMjJuMoCLYr8TY9pgq4CBtjJSej6K7HJEMjJQOxKwMjyoMjE17REwiVK7yBY1tjypOxKwO4ZP/GDwOTW6H4JEMjJQOlW0YBpVtvAutHYYOxKwej6atjXw7HZEt9lKMRCqycJ8d9vserX0jRZuOxUEt9lKMRCqycJ8d9vserX0jRZfOHO4FVK7erMw7DpaJjQutj6KOHwwy9JQY9DwroYKijCpjNpEyzKw7RZQ/RCLMrPatREwiVK7yBY1tjypOHhAOHOwMr8EOBZPm0J8d9vserXw/RY2y9JQY9lqycJ8d9vserX0jjK0OTW6H0K6H4JEMjJQOlW0qLlntRYYOxKwej6atjXw7HZEt9lKMRCqyN8QqrI0jRZuOxUEt9lKMRCqyN8QqrI0jRZfOHO4FVK7erMw7DpaJjQutj6KOHwwy9JQY9DwroY3MrzpyzKw7RZQ/RCLMrPatREwiVK7yBY1tjypOHhAOHOwMr8EOBZPmL8QqrIwq9p5tRZ0yjWEt9lKMvW0qLlntRYYsRI0OTW6H0K6H4JEMjJQOlW0q9pnejX0jRZAO9padNvKOHwwy9JQY9DwroYWerzuYHYYOHEw/oJEMjJQOlW0q9pnejX0jRZfOHO4FVK7ylAWerzuYHZAOHO4FVK7erMw7DpaJjQutj6KOHwwy9JQY9DwroYWerzuYHYYOHEwOGKwtLlWdNIuOBW6HLpLOHwEt9lKMRCqyNPuqrpKyzKwOGKwOLlWqHOuOBW6H4Jsq9pnejXw/RZEt9lKMRCqyNPuqrpKyzK2xXuAxXuotjJzdLhwGRZ1OHYWer85MrYpdodumG8Qq9pQdoZ1OHYVSRdumG8kqNp3OHwwdBypdclWOHwwycnWer85MrYpdzAKijCpsRCQdoCVS4Cgq4CVSR8KijCpjNpE/jZomLpEyoEw7RK+YNQpdLIw7HZEYNQpdLIw7RK+q9pnejXw7HZEjNPuqrpKOHEn/LtutrPEOHwwycZPm41wmBZomL6gt9IWdxO3qLlntRCQdoCKijCpjN8QqrIWdxO3qLpEO9laOBJ8d9vsqLpEyoEn/LAot9voOHwwycZPmLAot9voO9JpdNSwmBZPmLpEO9laModumG8atrPpMcXw7HE2xXuAxX1EdLAcOxKwGRZ1OHYWer85MrYpdodumG8Qq9pQdoZ1OHYVSRdumG8kqNp3OHwwdBypdclWOHwwycnWer85MrYpdzAKijCpsRCQdoCVS4Cgq4CVSR8KijCpjNpE/jZomLpEyoEw7RK+YNQpdLIw7HZEYNQpdLIw7RK+MNAzq0Xw7HE2xX1Et9lKMRCqycCQtNI0jRZAOHlydKvhervaYHZ1OHJEMjJQOlW0d9l0tRYYOHEw/aDwF4ZEt9lKMRCqycCQtNI0jGW6H4JEMjJQOlW0tjCQtNI0jRZAOHlydKvhervaYHZ1OHJEMjJQOlW0tjCQtNI0jRZuOxUPSHZfOHJEMjJQOlW0tjCQtNI0jGW6H4JXMrYpOxKwqLvcOlPIe9p3ezPXMrYpOHwwyBygYoVEt9lKMRCqyNvVMrYpyzKw7GW6H4Jae9AcOxKwylCQtNIn/061qcdw7HE2xX1Eq9paYHZAODKw7HZ0q9p3eNl0tjS07RK+MrPuMjSw7HZ0dxD07RK+eLAuq4Z1OBCotj6PqHZ1OHY2q9p3eNl0tj6sYBpVtjKwMjSwdxOwqNhwdxD3YBpVtvAutxzVS48utHduOHEn/0Y1tjypOHwwyBY1tjypOHEn/0CQtNIw7HZEt9lKMRCqycCQtNI0jRZ3O4P2y9JQY9DwroYpd9l0tRYYsROumG8LervWtHZ1OHYVSRhkOHPVS48TqNJpmBZomL8QqrIwMjSwYBpVtvA3MrzpmBZomL8utHCQdoCKijCpjN8utHdumG8gdLJpd4Z1OHYVSR8gdLJpd4CEtj6TOHPVSR8utHCQdNS07RK+dNvWtr6KOHwuFVK7yBypdcvWYHZAO9lodLl8OHw6H4YWej6KyaK+y9PudcXw/oJWej6KOx1wMjyoMjEw7HEWxX10d9l0tRdA/4Jae9AcOZK77GW6H0K6H0CzMLPuMoCaY9lKerSwt0v3McJuqNhwJNvKGN8p7HJEMjJQOxKwMjyoMjE17REwiVK7tNPgMLlWOHJnij6PqxW6H4JutHZAOHJEMjJQOlW0erX0jGW6HLpLOHwEerXw/GKwO4OuxXuotjJzdLhwdNvWtT1fJvyRGzO2xXuotjJzdLhwGRw0q9p3eNl0tRdumG8ce9votRw4erXAy9pEO4En/LtuqLX17GW6H0K6H0CzMLPuMoCaY9lKerSwt0v3McJuqNhwXrJE7HJEMjJQOxKwMjyoMjE17REwiVK7erMw7HlydKvhervaYHZ1OHJEMjJQOlW0qLlntRYYOHEuOBW6H0ypYBvoq4Z4q9p3eNl0tj6sqLlntvApqjCKiRO2xXuAxXuut4Z1OIpaJjQutj6KOHwwy9JQY9DwroYNMrPztRYYOHEwy4MEt9lKMRCqyctQqBvpyzKwOGKwSHEwiVK7dLvKYjy3OHyWer85MrYpdzANMrPztvApqjCKiRO2xXuAxXuotjJzdLhwGRw0q9p3eNl0tjS07RK+MrJE7HJEMjJQ7GW6H0K6H0CzMLPuMoCaY9lKerSwt0v3McJuqNhwvjCEMjJp7HJEMjJQOxKwMjyoMjE17REwiVK7y9pEOxKwy9JQY9DwroYutHYYFVK7erMw7HJEMjJQOlW0qLlntRYYOxKAOHO4sBVEt9lKMRCqyNpEyzKw/GKwO4OuOBW6H0ypYBvoq4CatrPLFTulIpy/ITW6H0K6H4Jotj6zqBXw/RC67HYWer85MrYpyoEn/0Y1tjyp7HyutHZAOHJutHOumG8aMjtp7HJEMjJQ7GW6HLpLOHwEdLvaYrPKOxKAO9tQqB6p7XK7dLvKYjy3OB6pq9MfFEvRIEARFVK7dLvKYjy3OBJoYrI2xXuAxXuVYryWerSwdcJQY9pTO9tzqL6KerA3ODJpq9vKtRwEt9lKMRZAO9lodLl87HEuOBW6H4JutHZAOHJEMjJQOlW0erX0jGW6HLpLOHwQej6sMjyoMjEw7HZEerXw7REwiVK7y9pEOxKwMjyoMjEw7ZK7y9pEOZK77GW6H0K6HEK1yNPuqLnQtNvayoEn/0Y1tjyp7HyutHCuq4Z1O48kqNp3OHwwO4V4mHJutHZuOHh47ROumG8EtrPpY9I17GW6H0ypYBvoq4ZEt9lKMRCqyNpEyzK2xXuAxXuVYryWerSwdcJQY9pTO9tzqL6KerA3ODlTY9pgq4wEt9lKMRZAO9lodLl87HEuOBW6H4J3MrzpOxKwy9JQY9DwroY3MrzpyzK2xX1EYLlWYrIw/RZEt9lKMRCqyctQqBvpyzK2xX1EqcyEtjOw/RZEt9lKMRCqyNAot9voyzK2xX1EYBpVtRZAO9padNvKOHwwy9JQY9DwroYKijCpyzKw7RZby9JQY9DwroYKijCpyzKwF4Z4OTW6H0v3dNvKOHwwy9JQY9DwroYKijCpyzKw7GW6HLpLOHwEYBpVtRZA/RZ4MrJEO4EwiVK7yBJ8d9vserXw/RZEt9lKMRCqycJ8d9vserX0jGW6HLtgdLvQMNww7HZEqLlntRCQdoZEeNv8OxK+yBtQqHZuOBW6HLpLOHwEYLlWYrIwroJ5tjpYOxKAOHO47RC2xX1EYLlWYrIwroJ5tjpYOxKwyBtQqxW6H0K6HLpLOHwEYLlWOHDAOHO47RC2xX1EdclWOxKwOLp3dNvoYHCuq0JgO9C2q9p3eNl0tj6AMHCatjXwMBJ8d9vserJw/RO3yBJ8d9vserXwm4OWM98Qqrvw/Rd4m4J3MrzpOlWEeNv8jRZ3O4dWMBtQqBvpMxK0O4hEYLlWYrIwroJ5tjpYOHh4yoPwqcyEtjyw/Rd4m4JgdLJpd4Cqy9npivKwm4O0OHO2xXu67HEn/Lvhtr6zY9I1dBypdclW7HJadrVu7GW6H0K6H0K6H0zpqB6pOBW6H4JutHZAOHJEMjJQOlW0erX0jGW6HLtgdLvQMNww7HZEerXwMjSwy9npiRZA/4JNMrVw7RC2xXuut4Z1y98QqrIwroJ5tjpYOHDAOHO47RC2xX1EdclWOxKwO0vVt9lKtRCwiNPuqLnQtNvasrZwdNvKO9C3MrzpMxK0O4hEqLlntRCqy9npivKwm4O0m9CNMrPztrZAyoO3yBtQqBvpOlWEeNv8jRZ3O4dWM9Aot9voMxK0O4hEqcyEtjOwroJ5tjpYOHh4yoCce9votRCutxKEYLlWOTW6HEK17RK+tjQpMcvKtRQVdLvadrV1yB6PqHEuFVK7sXK7sXK7sXK7dLvKYjy3OBJoYrI2xXuAxXuVYryWerSwdcJQY9pTO9tzqL6KerA3ODYpYlJ8d9vSej6K7HJEMjJQOxzQd0yQiRwu7RC2xX1Ejc6PqHZAOHOP/GDwOTW6HLpLOHQydKvhervaYHZ1OHJEMjJQOlW0qLlntRYYOHEwOGKwtLlWdNIuOBW6H4JsdclWOHhAOHOwMr8EO98QqrIwq9p5tRZ0yjWEt9lKMvW0qLlntRYYsRI0OTW6H0K6HLpLOHQydKvhervaYHZ1OHJEMjJQOlW0qLpEyzKw7RZQ/RCLMrPatREwiVK7ylAadrVwmTKwO4CQqLXwqLpEOHZAOHY2y9JQY9lqyN8utHYYsRd4FVK7sXK7erMw7DpaJjQutj6KOHwwy9JQY9DwroYTqNJpyzKw7RZQ/RCLMrPatREwiVK7ylAadrVwmTKwO4CQqLXwMNAEtRZw/RZ0ioJEMjJQroYTqNJpyzzAyoO2xXuAxX1EjNAot9voOxKwOLCgdLJpdLZwt9vaMoPutHCEtj6TOTW6HLpLOHQydKvhervaYHZ1OHJEMjJQOlW0q9pnejX0jRZuOHDAO9tQqB6p7RC2xXuut4Z1y9JQY9DwroYWerzuYHYYOHDAOHyQq9V47RC2xX1EjNPuqrpKOxKwy9JQY9DwroYWerzuYHYYFVK7sXK7dLvKYjy3ODK1yNPuqLnQtNvajcJ8d9I07RK+YNQpdLI1ylAadrVumG8WerzuYHwEjNPuqrpK7RK+qcyEtjO1ylAgdLJpd4En/06pq9vTYHwuFVK7sXK7yBygYoZAODK1yNPuqLnQtNvajcJ8d9I07RK+YNQpdLI1ylAadrVumG8Tqcv3YHZ17GW6H4JEMjJQOlW0d9l0tRYYOxKwOIpaJjQutj6KOHwwy9JQY9DwroYVMrYpyzKw7RZbSRZfOHJEMjJQOlW0d9l0tRYYFVK7y9JQY9DwroYpd9l0tRYYOxKwOIpaJjQutj6KOHwwy9JQY9DwroYpd9l0tRYYOHEw/aDVOx1wy9JQY9DwroYpd9l0tRYYFVK7ylCQtNIw/RC3tjdwjlJ1er85jlCQtNIw7HZEdLAcmHJEMjJQOlW0tjCQtNI0jRZuFVK7yB61qcdw/RZEI9l0tRK+dNQgYoZ17GW6H4JWej6KOxKwGRw0q9p3eNl0tj6sYBpVtRdumG8ce9votRwEjc6PqHEn/0CQtNIw7HZEt9lKMRCqycCQtNI0jRZ3O4P2y9JQY9DwroYpd9l0tRYYsROumG8gdLJpd4wEjNAot9vo7RK+dNvWtr6K7HE2xXuotjJzdLhwMjyoMjEw7ZK7yNPudcX0/GhEq9paYHZby9PudcXwF4CQd0yQiRZ17RV6H4YVMrYpyaK+yB61qcd6H4E2xXuAxXuVYryWerSwdcJQY9pTO9tzqL6KerA3ODYpYlJ8d9I1y9JQY9Dw/RCQd0yQiRwu7RC2xX1Ejc6PqHZAOHOP/GDwOTW6HLpLOHQydKvhervaYHZ1OHJEMjJQOlW0erX0jRZuOHDAO9tQqB6p7RC2xX1Ejc6PqHZ3/RZ4O9l3tHCutHZAycWEt9lKMvW0erX0jjK0OTW6HTW6H0K6HLpLOHQydKvhervaYHZ1OHJEMjJQOlW0qLpEyzKw7RZQ/RCLMrPatREwiVK7ylAadrVwmTKwO4CQqLXwqLpEOHZAOHY2y9JQY9lqyN8utHYYsRd4FVK7FVK7sXK7yBypdcvWYHZAODK1yNPuqLnQtNvajcJ8d9I07RK+YNQpdLI1ylAadrVumG8Ler8E7HE2xXuotjJzdLhwyBypdcvWYxW6H0K6H0CzMLPuMoCaY9lKerSwt0v3McJuqNhwXrJEvBpVtRwEt9lKMRZAO9lodLl87HEuOBW6HLpLOHwQRj6li9ppdcXw7HZEt9lKMRCqyN8QqrI0jRZu7RC2xXuotjJzdLhwOLPuqLnQtNvajcJ8d9vsqLlntvApqjCKiRO2xXuAxXuut4Z1OIpaJjQutj6KOHwwy9JQY9DwroY3erX0jRZu7RC2xXuotjJzdLhwOLPuqLnQtNvajcJ8d9vsqLpEjNvndBJ8OTW6H0K6H4Jotj6zqBXw/RC67HYWer85MrYpdzAKijCpyoEn/0Y1tjyp7HywqLpEMHZAOHd4m4JEMjJQOlW0qLpEyzKwm4O0O4En/LtuqLX17GW6HLpLOHwEdLvaYrPKOHDAO98zq9VuxXuotjJzdLhwOLPuqLnQtNvajcJ8d9vsqLpEjNvhervaYHO2xXuotjJzdLhwGRw0q9p3eNl0tj6sYBpVtRdumG8Qt9X1y9JQY9DuFVK7sXK7dBv4q9pTOB6KMjJuMoCLYr8TY9pgq4Cvd9JQY9vIijCp7HJEMjJQOxKwMjyoMjE17REwiVK7erMw7HlydKvhervaYHZ1OHJEMjJQOlW0erX0jRZu7RC2xXuotjJzdLhwOLPuqLnQtNvajcJ8d9vserJstrzVYBE4FVK7sXK7erMw7HlydKvhervaYHZ1OHJEMjJQOlW0qLlntRYYOHEuOBW6H0ypYBvoq4Z4q9p3eNl0tj6sYBpVtvA3MrzpjNvndBJ8OTW6H0K6HLpLOHwQRj6li9ppdcXw7HZEt9lKMRCqyN8utHYYOHEuOBW6H0ypYBvoq4Z4q9p3eNl0tj6sYBpVtvA3erJstrzVYBE4FVK7sXK7yBypdcvWYHZAGRw0q9p3eNl0tj6sYBpVtRdumG8ce9votRw4M98ut9Zw/RZ0O4hEt9lKMRCqyN8utHYYOHh4yoCQqLXwerXQ/RY2y9JQY9lqyNpEyzzAyoOumG8Ler8E7HE2xXuut4Z1yBypdcvWYHZQ/RC3YrPW7XK7dLvKYjy3OHyWer85MrYpdzAKijCpjN8utlApi9ppdcX4FVK7GRw0q9p3eNl0tj6sYBpVtRdumG8ce9votRw4M9pEMHZAioJEMjJQroYutHYYsROumG8aMjtp7HJEMjJQ7GW6H0ypYBvoq4ZEt9lKMRCqyNpEyzK2xXuAxXuVYryWerSwdcJQY9pTO9tzqL6KerA3ODJpqlJ8d9I1y9JQY9Dw/RCQd0yQiRwu7RC2xXuut4Z1OIpaJjQutj6KOHwwy9JQY9DwroYutHYYOHEuOBW6H0ypYBvoq4Z4q9p3eNl0tj6sYBpVtvAutlApqjCKiRO2xXuAxX1EdLvaYrPKOxz67HYWer85MrYpdodumG8ce9votRw4YBpVtvAutxz2y9JQY9lqyNpEyzzAO4En/LtuqLX17GW6HLpLOHwEdLvaYrPKOHDAO98zq9VuxXuotjJzdLhwOLPuqLnQtNvajcJ8d9vsdcv4jNvhervaYHO2xXu67HYWer85MrYpdzAKijCpyoEn/0Y1tjyp7Hyutxz2y9JQY9lqyNpEyzzAO4En/LJpq9vKtRwuFVK7dLvKYjy3OHJEMjJQOlW0erX0jGW6H0K6H0CzMLPuMoCaY9lKerSwt0v3McJuqNhwXr6KerA3vBpVtRwEt9lKMRZAO9lodLl87HEuOBW6H4J3erXw/RZEt9lKMRCqyN8utHYYFVK7y98QqrIw/RZEt9lKMRCqyN8QqrI0jGW6H4JgdLJpd4ZAOHJEMjJQOlW0qcyEtjO0jGW6H4JutHZAOHJEMjJQOlW0erX0jGW6HLtgdLvQMNww7HZEerXwMjSwy9npiRZA/4JNMrVw7RC2xXuut4Z1y98QqrIwroJ5tjpYOHDAOHO47RC2xX1EdclWOxKwO0vVt9lKtRC2q9p3eNl0tj6sYBpVtjKwdNvKO9C3MrzpMxK0O4hEqLlntRCqy9npivKwm4O0m9CgdLJpdLZAyoO3y9Aot9voOlWEeNv8jRZ3O4dwYNQpdLIwerXAioJNMrPAOTW6HEK17RK+tjQpMcvKtRQVdLvadrV1yB6PqHEuFVK7sXK7sXK7dLvKYjy3OBJoYrI2xXuAxXuAxX1=
+
+<?php
+global $MsgInfo;
+require_once ("linkages.model.php");
+class linkagesClass 
+{
+	public static function GetList($data = array()) 
+	{
+		$where = " 1=1 ";
+		$data ['type_id'] = isset ( $data ['type_id'] ) ?$data ['type_id'] : "";
+		if (IsExiest ( $data ['type_id'] ) != false) 
+		{
+			$where .= " and p1.type_id ='{$data['type_id']}
+		'";
+	}
+	$data ['name'] = isset ( $data ['name'] ) ?$data ['name'] : "";
+	if (IsExiest ( $data ['name'] ) != false) 
+	{
+		$where .= " and p1.name like '%{$data['name']}
+	%'";
+}
+$data ['limit'] = isset ( $data ['limit'] ) ?$data ['limit'] : "";
+$_limit = "";
+if (IsExiest ( $data ['limit'] ) != false) 
+{
+	if ($data ['limit'] != "all") 
+	{
+		$_limit = $data ['limit'];
+	}
+	return M ( 'linkages')->alias ( 'p1')->join ( presql ( '{linkages_type} as p2 on p1.type_id=p2.id') )->where ( $where )->limit ( $_limit )->field ( 'p1.* ,p2.code,p2.name as type_name,p2.nid as type_nid')->order ( 'p1.order desc ,p1.id asc')->select ();
+}
+$row = M ( 'linkages')->alias ( 'p1')->join ( presql ( '{linkages_type} as p2 on p1.type_id=p2.id') )->where ( $where )->count ();
+$data ['page'] = !IsExiest ( $data ['page'] ) ?1 : $data ['page'];
+$data ['epage'] = !IsExiest ( $data ['epage'] ) ?10 : $data ['epage'];
+$Page = new \Think\Page ( $row,$data ['epage'] );
+$show = $Page->show ();
+$list = M ( 'linkages')->alias ( 'p1')->join ( presql ( '{linkages_type} as p2 on p1.type_id=p2.id') )->where ( $where )->page ( $data ['page'] .",{$data ['epage']}
+")->field ( 'p1.* ,p2.code,p2.name as type_name,p2.nid as type_nid')->order ( 'p1.order desc ,p1.id asc')->select ();
+$result = array ( 'list'=>$list ?$list : array (), 'page'=>$show );
+}
+public static function GetOne($data = array()) 
+{
+global $mysql;
+$id = $data ['id'];
+if ($id == "") return self::ERROR;
+return M('linkage')->where("id=$id")->find();
+}
+public static function Add($data = array()) 
+{
+if (!IsExiest ( $data ['name'] )) 
+{
+return "linkages_name_empty";
+}
+if (!IsExiest ( $data ['value'] ) &&$data ['value'] != 0) 
+{
+return "linkages_value_empty";
+}
+return M('linkages')->add($data);
+}
+public static function Update($data = array()) 
+{
+$id = $data ['id'];
+if ($data ['name'] == ""||$data ['id'] == "") 
+{
+return self::ERROR;
+}
+$result = M('linkage')->where("id = $id")->save($data);
+if ($result == false) return self::ERROR;
+return true;
+}
+public static function Delete($data = array()) 
+{
+$id = $data ['id'];
+if (!is_array ( $id )) 
+{
+$id = array ( $id );
+}
+M('linkages')->where("id in (".join ( ",",$id ) .")")->delete();
+return $data ['id'];
+}
+public static function Action($data = array()) 
+{
+$name = $data ['name'];
+$value = $data ['value'];
+$order = $data ['order'];
+$type = isset ( $data ['type'] ) ?$data ['type'] : "";
+unset ( $data ['type'] );
+if ($type == "add") 
+{
+$type_id = $data ['type_id'];
+foreach ( $name as $key =>$val ) 
+{
+	if ($value [$key] == "") 
+	{
+		$value [$key] = $val;
+	}
+	if ($val != "") 
+	{
+		$sql = "insert into `{linkages}` set `type_id`=".$type_id .",`name`='".$name [$key] ."',`value`='".$value [$key] ."',`order`='".$order [$key] ."' ";
+		M()->execute(presql($sql));
+	}
+}
+}
+else 
+{
+$id = $data ['id'];
+foreach ( $id as $key =>$val ) 
+{
+	if ($name [$key] != "") 
+	{
+		$sql = "update `{linkages}` set `name`='".$name [$key] ."',`value`='".$value [$key] ."',`order`='".$order [$key] ."' where id=$val";
+		M()->execute(presql($sql));
+	}
+}
+}
+return true;
+}
+public static function GetTypeList($data =array()) 
+{
+$_sql = "1=1 ";
+if (IsExiest ( $data ['name'] ) != false) 
+{
+$_sql .= " and name like '%{$data['name']}
+%'";
+}
+if (IsExiest ( $data ['nid'] ) != false) 
+{
+$_sql .= " and nid  = '{$data['nid']}
+'";
+}
+if (IsExiest ( $data ['code'] ) != false) 
+{
+$_sql .= " and code  = '{$data['code']}
+'";
+}
+$_order = "`order` desc,id desc";
+if (IsExiest ( $data ['limit'] ) != false) 
+{
+if ($data ['limit'] != "all") 
+{
+$_limit = $data ['limit'];
+}
+return M('linkages_type')->where($_sql)->limit($_limit)->order($_order)->select();
+}
+$row = M('linkages_type')->where($_sql)->count ();
+$data ['page'] = !IsExiest ( $data ['page'] ) ?1 : $data ['page'];
+$data ['epage'] = !IsExiest ( $data ['epage'] ) ?10 : $data ['epage'];
+$Page = new \Think\Page ( $row,$data ['epage'] );
+$show = $Page->show ();
+$list = M('linkages_type')->where($_sql)->page ( $data ['page'] .",{$data ['epage']}
+")->order($_order)->select();
+return array ( 'list'=>$list ?$list : array (), 'page'=>$show );
+}
+public static function GetType($data = array()) 
+{
+$_sql = "1=1 ";
+if (IsExiest ( $data ['id'] ) != false) 
+{
+$_sql .= " and id ='{$data['id']}
+'";
+;
+}
+if (IsExiest ( $data ['nid'] ) != false) 
+{
+$_sql .= " and nid  = '{$data['nid']}
+'";
+;
+}
+$result = M('linkages_type')->where($_sql)->find();
+return $result;
+}
+public static function AddType($data = array()) 
+{
+if (!IsExiest ( $data ['name'] )) 
+{
+return "linkages_type_name_empty";
+}
+if (!IsExiest ( $data ['nid'] )) 
+{
+return "linkages_type_nid_empty";
+}
+$result = M('linkages_type')->where("`nid` = '".$data ['nid'] ."'")->find();
+if ($result != null) return "linkages_type_nid_exiest";
+return M('linkages_type')->add($data);
+}
+public static function UpdateType($data = array()) 
+{
+if (!IsExiest ( $data ['id'] )) 
+{
+return "linkages_type_id_empty";
+}
+if (!IsExiest ( $data ['name'] )) 
+{
+return "linkages_type_name_empty";
+}
+if (!IsExiest ( $data ['nid'] )) 
+{
+return "linkages_type_nid_empty";
+}
+$result =M('linkages_type')->where("`nid` = '".$data ['nid'] ."' and id!='{$data['id']}
+'")->find();
+if ($result != null) return "linkages_type_nid_exiest";
+M('linkages_type')->where("`id` ={$data['id']}
+")->save($data);
+return $data ['id'];
+}
+public static function DelType($data = array()) 
+{
+if (!IsExiest ( $data ['id'] )) 
+{
+return "linkages_type_id_empty";
+}
+$result =M('linkages')->where("type_id={$data['id']}
+")->find();
+if ($result != null) return "linkages_type_sub_exiest";
+M('linkages_type')->where("id={$data['id']}
+")->delete();
+return $data ['id'];
+}
+public static function ActionType($data = array()) 
+{
+$nid = $data ['nid'];
+$name = $data ['name'];
+$order = $data ['order'];
+$id = $data ['id'];
+foreach ( $id as $key =>$val ) 
+{
+if ($name [$key] != "") 
+{
+$sql = "update {linkages_type} set `name`='".$name [$key] ."',`order`='".$order [$key] ."' where id={$val}
+";
+M()->execute(presql($sql));
+}
+}
+return true;
+}
+}

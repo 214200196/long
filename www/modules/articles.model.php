@@ -1,3 +1,38 @@
-<?php // This file is protected by copyright dongshan
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=2976;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMTgxKTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ1pDSHhEbDlCT3k3bVM2Ri9YSlJHSXZyak10ZXFkWWlzd1E0VEVwTDAxdWs1V24zZ1ZQb2FLek5jaDhmMlVBK2I9JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+
+<?php
+if (!defined ( 'ROOT_PATH')) 
+{
+	echo "<script>window.location.href='/404.htm';</script>";
+	exit ();
+}
+$MsgInfo ["articles_type_nid_exiest"] = "类型别名已经存在";
+$MsgInfo ["articls_type_name_empty"] = "类型名称不能为空";
+$MsgInfo ["articls_type_nid_empty"] = "类型别名不能为空";
+$MsgInfo ["articles_type_add_success"] = "类型添加成功";
+$MsgInfo ["articles_type_update_success"] = "类型修改成功";
+$MsgInfo ["articles_type_id_empty"] = "文章类型id不能为空";
+$MsgInfo ["articles_type_del_success"] = "类型删除成功";
+$MsgInfo ["articles_type_not_exiest"] = "文章类型不存在，请不要乱操作";
+$MsgInfo ["articles_type_del_pid_exiest"] = "有子类栏目，不能删除";
+$MsgInfo ["articles_type_del_article_exiest"] = "栏目下有文章，不能删除栏目";
+$MsgInfo ["articles_error"] = "您的操作有误";
+$MsgInfo ["articles_verify_yes"] = "已经审核通过";
+$MsgInfo ["articles_action_success"] = "文章操作成功";
+$MsgInfo ["articles_yes_not"] = "此文章已经通过不能修改和删除";
+$MsgInfo ["articles_name_empty"] = "文章标题不能为空";
+$MsgInfo ["articles_add_success"] = "文章添加成功";
+$MsgInfo ["articles_contents_empty"] = "文章内容不能为空";
+$MsgInfo ["articles_not_exiest"] = "文章不存在";
+$MsgInfo ["articles_type_id_empty"] = "文章的栏目不能为空";
+$MsgInfo ["articles_img_error"] = "上传缩略图格式错误";
+$MsgInfo ["articles_id_empty"] = "文章id为空";
+$MsgInfo ["articles_password_empty"] = "你设定了加密，密码不能为空。";
+$MsgInfo ["articles_add_type_empty"] = "请先添加文章类型。";
+$MsgInfo ["articles_del_success"] = "文章删除成功";
+$MsgInfo ["articles_page_name_empty"] = "页面标题不能为空";
+$MsgInfo ["articles_page_nid_empty"] = "页面标识名不能为空";
+$MsgInfo ["articles_page_nid_exiest"] = "页面标识名已经存在";
+$MsgInfo ["articles_page_not_exiest"] = "页面不存在";
+$MsgInfo ["articles_page_id_empty"] = "页面id为空";
+$MsgInfo ["articles_page_password_empty"] = "你设定了加密，密码不能为空。";
+$MsgInfo ["articles_page_del_pid_exiest"] = "有子类栏目，不能删除";
