@@ -8,7 +8,7 @@
 <body>
 		<?php
 			// 获取投资标信息
-			$tenderUrl 	 	= @file_get_contents("http://120.25.122.205/czcf/home/api/borrowinfo/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/borrow_nid/421442562821");
+			$tenderUrl 	 	= @file_get_contents("http://120.25.122.205/czcf/home/api/borrowinfo/smmkey/3eef0f2cb569f66b61248104de523c101a1e4361/borrow_nid/421443088692");
 			$tenderResult	= json_decode($tenderUrl,true);
 			// var_dump($tenderUrl);
 			// 获取当前可用余额

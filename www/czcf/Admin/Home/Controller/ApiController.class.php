@@ -254,8 +254,8 @@ class ApiController extends Controller {
        // 借款金额筛选条件
        if ( isset($_GET['account']) ) {
             if( $_GET['account'] =='lt50000' )      $filterWhere['account'] = array('lt',50000);
-            if( $_GET['account'] =='egt50000lt100000')  $filterWhere['account'] = array(array('egt',50000),array('lt',100000),'AND');
-            if( $_GET['account'] =='egt100000lt500000') $filterWhere['account'] = array(array('egt',100000),array('lt',500000),'AND');
+            if( $_GET['account'] =='egt50000lt100000')  $filterWhere['account'] = array('between',array(50000,100000));
+            if( $_GET['account'] =='egt100000lt500000') $filterWhere['account'] = array('between',array(100000,500000));
             if( $_GET['account'] =='egt500000')     $filterWhere['account'] = array('egt',500000);
        }
 
@@ -827,7 +827,7 @@ class ApiController extends Controller {
             return false;
         }
         if(md5($_POST['payPassword'])==$validatePayPassword['paypassword']) {
-            echo json_encode(array('msg'=>'验证通过','validateStatus'=>1));
+            //echo json_encode(array('msg'=>'验证通过','validateStatus'=>1));
             return true;
         } else {
             echo json_encode(array('msg'=>'支付密码输入不正确','validateStatus'=>0));
@@ -925,7 +925,7 @@ class ApiController extends Controller {
             echo json_encode(array('msg'=>'未获取到用户id','validateStatus'=>0));exit;
         }
         // 判断标号是否合法
-        $borrowInfo = M('borrow')->where(array('borrow_end_time'=>array('GT',time()),'borrow_nid'=>$_POST['borrow_nid']),'AND')->select();
+        $borrowInfo = M('borrow')->where(array('borrow_end_time'=>array('GT',time()),'borrow_nid'=>$_POST['borrow_nid']),'AND')->count();
         if( empty($borrowInfo) ) {
             echo json_encode(array('msg'=>'该标号不合法！','validateStatus'=>0));die;
         }
@@ -944,8 +944,114 @@ class ApiController extends Controller {
         if ( $_POST['tenderMoney'] > $_POST['canUseMoney'] ) {
             echo json_encode(array('msg'=>'可用余额不足,请充值后操作！','validateStatus'=>0));die;
         }
+        // 是否投资自己发布的借款标
+        $ifSelfBorrow = M('borrow')->where(array('borrow_nid'=>$_POST['borrow_nid'],'user_id'=>$_POST['user_id']),'AND')->count();
+        //echo M('borrow')->getLastSql(); // 该sql无需优化已达到ref引用常量级别
+        if ( $ifSelfBorrow ) {
+            echo json_encode(array('msg'=>'不能对自己的标进行投资！','validateStatus'=>0));die;
+        }
         // 检测支付密码是否正确
         if ( ! $this->validatePayPassword()) die;
+
+        /*  === 购买投资流程 ===
+        *   1. account           (对账户冻结资金及资金平衡进行增减投资金额)
+        *   2. account_balance   (新增投资资金变化同而导致资金平衡表改变)
+        *   3. account_log       (新增投资数据及数据变化)
+        *   4. account_users
+        *   
+        *   5. borrow            (已投资金额增加，等待投资金额减少，投资进度更改)
+        *   6. borrow_count      (更改投资金额，投资冻结金额)
+        *   7. borrow_count_log  (新增投资日志)
+        *   8. borrow_tender     (新增该标投资金额)
+        */
+
+        $time = time();
+
+        // 1. account 更新操作
+        $sql = "UPDATE yyd_account set `balance`        = `balance` - {$_POST['tenderMoney']},
+                                        `balance_frost` = `balance_frost` - {$_POST['tenderMoney']},
+                                        `frost`         = `frost` + {$_POST['tenderMoney']} 
+                                    where `user_id` = {$_POST['user_id']} ";
+        //echo $sql;
+        //M()->execute($sql);
+
+        // 2. account_balance 新增操作
+        $lastData = M('account_balance')->order('id DESC')->field(array('total','balance'))->limit(1)->find();
+        //echo M('account_balance')->getLastSql(); // 该条语句type：index（将索引全遍历） 待优化
+        $account_balance = array(
+                'nid'       => 'tender_frost_'.$_POST['user_id'].'_'.$time,
+                'user_id'   => $_POST['user_id'],
+                'type'      => 'tender',
+                'money'     => $_POST['tenderMoney'],
+                'total'     => $lastData['total'],
+                'balance'   => $lastData['balance'],
+                'income'    => 0,
+                'expend'    => 0,
+                'remark'    => 'App 对标'.$_POST['borrow_nid'].'号进行投资，冻结'.$_POST['tenderMoney'].'元',
+                'addtime'   => $time,
+                'addip'     => get_client_ip()
+            );
+        //M('account_balance')->add($account_balance);
+
+        // 3. account_log 新增操作
+        $userAccountInfo = M('account')->where(array('user_id'=>$_POST['user_id']))->find();
+        //p($userAccountInfo);
+        $toUserid = M('borrow')->where(array('borrow_nid'=>$_POST['borrow_nid']))->field("user_id")->find();
+        //p($toUserid);
+        $account_log = array(
+                'nid'               => 'tender_frost_'.$_POST['user_id'].'_'.$time,
+                'user_id'           => $_POST['user_id'],
+                'type'              => 'tender',
+                'total'             => $userAccountInfo['total'],
+                'total_old'         => $userAccountInfo['total'],
+                'money'             => $_POST['tenderMoney'],
+                'income'            => $userAccountInfo['income'],
+                'income_old'        => $userAccountInfo['income'],
+                'income_new'        => 0,
+                'expend'            => $userAccountInfo['expend'],
+                'expend_old'        => $userAccountInfo['expend'],
+                'expend_new'        => 0,
+                'balance'           => $userAccountInfo['balance'],
+                'balance_old'       => $userAccountInfo['balance'] + $_POST['tenderMoney'],
+                'balance_new'       => - $_POST['tenderMoney'],
+                'balance_cash'      => $userAccountInfo['balance_cash'],
+                'balance_cash_old'  => $userAccountInfo['balance_cash'],
+                'balance_cash_new'  => 0,
+                'balance_frost'     => $userAccountInfo['balance_frost'],
+                'balance_frost_old' => $userAccountInfo['balance_frost'] + $_POST['tenderMoney'],
+                'balance_frost_new' => - $_POST['tenderMoney'],
+                'frost'             => $userAccountInfo['frost'],
+                'frost_old'         => $userAccountInfo['frost'] - $_POST['tenderMoney'],
+                'frost_new'         => $_POST['tenderMoney'],
+                'await'             => 0,
+                'await_old'         => 0,
+                'await_new'         => 0,
+                'to_userid'         => $toUserid['user_id'],
+                'remark'            => 'App 对标'.$_POST['borrow_nid'].'号进行投资，冻结'.$_POST['tenderMoney'].'元',
+                'addtime'           => $time,
+                'addip'             => get_client_ip()
+            );
+        //M('account_log')->add($account_log);
+
+        // 4.account_users 新增操作
+        $lastAccountUsers = M('account_users')->order('id DESC')->field(array('total','balance'))->limit(1)->find();
+
+        $account_users = array(
+                'nid'       => 'tender_frost_'.$_POST['user_id'].'_'.$time,
+                'user_id'   => $_POST['user_id'],
+                'type'      => 'tender',
+                'money'     => $_POST['tenderMoney'],
+                'total'     => $lastAccountUsers['total'],
+                'balance'   => $lastAccountUsers['balance'],
+                'income'    => 0,
+                'expend'    => 0,
+                'frost'     => $_POST['tenderMoney'],
+                'await'     => 0,
+                'remark'    => 'App 对标'.$_POST['borrow_nid'].'号进行投资，冻结'.$_POST['tenderMoney'].'元',
+                'addtime'   => $time,
+                'addip'     => get_client_ip()
+            );
+        //M('account_users')->add($account_users);
 
 
     }
