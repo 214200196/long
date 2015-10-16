@@ -25,7 +25,7 @@
                 border: 1px solid #d3d3d3;
                 padding: 10px 10px;
                 margin-top: 20px;
-                width: 290px;
+                width: 340px;
                 border-radius: 4px;
                 padding-left: 35px;
                 -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
@@ -171,7 +171,7 @@
             <div class="tou"></div>
             <div class="initial_left_hand" id="left_hand"></div>
             <div class="initial_right_hand" id="right_hand"></div></div>
-            <form action="{:U('checkLogin')}" method="POST">
+            <form action="<?php echo site_url('admin/login/check_login');?>" method="POST">
                 <P style="padding: 30px 0px 10px; position: relative;"><span  class="u_logo"></span>         
                     <input class="ipt" id ="adminname" type="text" placeholder="请输入用户名或邮箱" name="adminname" value=""> 
                 </P>
@@ -179,8 +179,8 @@
                     <input class="ipt" id="password" type="password" placeholder="请输入密码" name="pwd" value="">   
                 </P>
                 <P style="position: relative;margin-top:10px;"><span class="p_logo"></span>         
-                    <input class="ipt" id="verify" type="text" placeholder="验证码" name="verify" value="" style="width:140px;"> 
-                    <a href="#" onclick="load_captcha('captcha','<?php echo site_url('admin/login/verify');?>');" title="換一張" id="captcha" ><?php echo $get_verify['image'];?></a>
+                    <input class="ipt" id="verify" type="text" placeholder="验证码" name="verify" value="" style="width:210px;"> 
+                    <a href="#" onclick="load_captcha('captcha','<?php echo site_url('admin/login/get_verify');?>');" title="换一张" id="captcha" style="width:120px; height:35px;margin-left:20px;position:relative;top:12px;" ><?php echo $get_verify['image'];?></a>
                 </P>
                 <div style="height: 50px; line-height: 50px; margin-top: 30px; border-top-color: rgb(231, 231, 231); border-top-width: 1px; border-top-style: solid;">
                     <span style="">
